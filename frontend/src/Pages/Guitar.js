@@ -1,8 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Card from 'react-bootstrap/Card'
+import { BrowserRouter,Routes, Route, Link } from "react-router-dom"; 
 
-const Guitar = () => {
+
+export const Guitar = () => {
     return(
         <>
         <Card>
@@ -22,7 +24,7 @@ const Guitar = () => {
       <div className="card-body">
         <h5 className="card-title">Title</h5>
         <p className="card-text">Description</p>
-        <p className="card-text"><small class="text-muted">Reviews</small></p>
+        <p className="card-text"><small className="text-muted">Reviews</small></p>
       </div>
     </div>
   </div>
@@ -33,4 +35,4 @@ const Guitar = () => {
 
 
 
-export default Guitar;
+// export default Guitar;
