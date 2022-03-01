@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export const Artcourses = () => { 
+export const Workshop = () => { 
   return (<>
         <div className="">
           <div className="card bg-dark text-white">
