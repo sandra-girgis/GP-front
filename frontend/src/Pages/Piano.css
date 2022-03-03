@@ -1,43 +1,53 @@
-/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Poppins:wght@500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=League+Spartan:wght@500&family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&display=swap');
-
-
-/* .card-img{
-    height:80vh ;
+/* .card{
+    height:70vh ;
+} */
+.card-img{
+    height:70vh ;
+    weight: 70vh ;
 }
 .card-img-overlay{
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family:serif;
+    color: #168eca;
+} 
+.im{
+    display: flex!important;
+    flex-direction: row-reverse;
+}
+/* .container{
+    padding: 6rem;
+    /* margin-left: 12rem; */
+    /* display: flex;
+    justify-content: center; */
+
+/* } */ 
+ .instractor{
+    /* border-radius: 50%; */
+    justify-content: center!important;
+    display: flex!important;
+    flex-direction: column;
+    align-items: center;
+}
+/* .slid{
+    height: inherit;
 } */
 
-.font{
-    /* font-family: 'League Spartan', sans-serif; */
-    font-family: 'Lato', sans-serif;
-    font-size:50pt;
-    /* margin-bottom:10%; */
-}
-.course{
-    font-family: 'Playfair Display', serif;
-    font-size:30pt;
-    /* margin-left:5.5%; */
-}
-.head{
-    /* background-image:url("https://images.unsplash.com/photo-1548426589-b5560481a46e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+/* .boback{
+    background: linear-gradient(-45deg,#168eca,#ee4a8b);
+    animation: gradient 15s ease infinite;
+   }
+   @keyframes gradient {
+       0% {
+           background-position: 0% 50%;
+       }
+       50% {
+           background-position: 100% 50%;
+       }
+       100% {
+           background-position: 0% 50%;
+       } */ 
+/* } */
 
-.title{
-    
-    font-family: 'Noto Serif Display', serif;    
-}
-.reviews{
-    font-family: 'Noto Serif Display', serif;    
-
-}
