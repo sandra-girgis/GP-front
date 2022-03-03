@@ -41,7 +41,7 @@ function Navbar () {
           </NavDropdown>
           <NavDropdown title="Classical Arts " id="basic-nav-dropdown"> 
                   <NavDropdown.Item><NavLink className="nav" exact to={"/art Courses"}>Art Courses</NavLink></NavDropdown.Item>
-                  <NavDropdown.Item><NavLink className="nav" exact to={"/workshop"}>Workshops</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to={"/workshop"}>Workshop</NavLink></NavDropdown.Item>
           </NavDropdown>
         </ul>
       </div>
