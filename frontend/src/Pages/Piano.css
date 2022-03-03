@@ -1,9 +1,9 @@
-.card{
-
-    height:80vh ;
-}
+/* .card{
+    height:70vh ;
+} */
 .card-img{
-    height:80vh ;
+    height:70vh ;
+    weight: 70vh ;
 }
 .card-img-overlay{
     padding: 1rem;
@@ -11,4 +11,33 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family:serif;
+    color: #168eca;
+} 
+
+/* .container{
+    padding: 6rem;
+    /* margin-left: 12rem; */
+    /* display: flex;
+    justify-content: center; */
+
+/* } */ 
+ .instractor{
+    border-radius: 50%;
 }
+/* .boback{
+    background: linear-gradient(-45deg,#168eca,#ee4a8b);
+    animation: gradient 15s ease infinite;
+   }
+   @keyframes gradient {
+       0% {
+           background-position: 0% 50%;
+       }
+       50% {
+           background-position: 100% 50%;
+       }
+       100% {
+           background-position: 0% 50%;
+       } */ 
+/* } */
+

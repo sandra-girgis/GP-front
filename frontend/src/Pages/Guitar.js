@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Card from 'react-bootstrap/Card'
-import { BrowserRouter,Routes, Route, Link } from "react-router-dom"; 
+// import { BrowserRouter,Routes, Route, Link } from "react-router-dom"; 
 
 
 export const Guitar = () => {

@@ -26,17 +26,17 @@ function App() {
   <Navbar />
   <div>
      <Switch>
-     <Route path="/piano" component={Piano} />
-     <Route path="/" component={Home} />
-     <Route path='/artcourses' component={Artcourses} /> 
-    <Route path='/ballet' component={Ballet} />
-    <Route path='/flute' component={Flute} />
-    <Route path='/gallery' component={Gallery} />
-    <Route path='/guitar' component={Guitar} />
-    <Route path='/news' component={News} />
-    <Route path='/violin' component={Violin} />
-    <Route path='/theatre' component={Theatre} />
-    <Route path='/workshop' component={Workshop} />
+     <Route path="/piano" exact component={Piano} />
+     <Route path="/" exact component={Home} />
+     <Route path="/artcourses" exact component={Artcourses} /> 
+    <Route path="/ballet" exact component={Ballet} />
+    <Route path="/flute" exact component={Flute} />
+    <Route path="/gallery" exact component={Gallery} />
+    <Route path="/guitar" exact component={Guitar} />
+    <Route path="/news" exact component={News} />
+    <Route path="/violin" exact component={Violin} />
+    <Route path="/theatre" exact component={Theatre} />
+    <Route path="/workshop" exact component={Workshop} />
  </Switch>
  <Footer/>
 </div>

@@ -7,8 +7,8 @@ export const Footer = ()=> {
             <>
                 <div className="bg-dark text-white footer">
                     <div className="row col-12">
-                        <div className="col-4"><h6 >Get In Touch</h6></div>
-                        <div className="col-4 text-center"><button className="btn btn-outline-light" > Contact Me </button></div>
+                        <div className="col-4"><h6 >Contact Us</h6></div>
+                        <div className="col-4 text-center"><button className="btn btn-outline-light" >Join Us</button></div>
                         <div className="col-4 text-end">3</div>
                     </div>
                 </div>
