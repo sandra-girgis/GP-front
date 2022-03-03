@@ -14,7 +14,10 @@
     font-family:serif;
     color: #168eca;
 } 
-
+.im{
+    display: flex!important;
+    flex-direction: row-reverse;
+}
 /* .container{
     padding: 6rem;
     /* margin-left: 12rem; */
@@ -29,6 +32,9 @@
     flex-direction: column;
     align-items: center;
 }
+/* .slid{
+    height: inherit;
+} */
 
 /* .boback{
     background: linear-gradient(-45deg,#168eca,#ee4a8b);

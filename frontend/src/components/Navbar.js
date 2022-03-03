@@ -2,20 +2,24 @@ import { NavLink } from 'react-router-dom';
 import React from "react";
 import "./Navbar.css";
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import img from "../images/logo.ico"
+// import img from "../images/logo.ico"
+
 function Navbar () { 
   return (<>
 <div cz-shortcut-listen="true">
 <main>
 <nav className="navbar navbar-expand-sm navbar-light bg-light" aria-label="Third navbar example">
     <div className="container-fluid">
-      <img src= {img} alt="logo.img" className='log' style={{width:"3rem"}}/>   
+
+    <img src={require('../images/logo.ico')} alt="logo.img" className='log' style={{width:"3rem"}}/> 
+    
+      {/* <img src= {img} alt="logo.img" className='log' style={{width:"3rem"}}/>    */}
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
 
       <div className="collapse navbar-collapse colr" id="navbarsExample03">
-        <ul className="navbar-nav me-auto mb-2 mb-sm-0">
+        <ul className="navbar-nav me-auto mb-2 mb-sm-0" >
           <li className="nav-item">
           <NavLink className="nav nav-link active" exact to={"/"}>Home</NavLink>
           </li>

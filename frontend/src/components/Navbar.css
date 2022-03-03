@@ -17,6 +17,10 @@
 {
     border-radius: 50% ;
 }
+.nav-link {
+    color: #0d6efd!important;
+}
+
 /* .home
 {
     color:#8ec63f;
