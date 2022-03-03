@@ -4,7 +4,7 @@ import "./Navbar.css";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 // import img from "../images/logo.ico"
 
-function Navbar () { 
+function Navbar() { 
   return (<>
 <div cz-shortcut-listen="true">
 <main>
@@ -21,26 +21,26 @@ function Navbar () {
       <div className="collapse navbar-collapse colr" id="navbarsExample03">
         <ul className="navbar-nav me-auto mb-2 mb-sm-0" >
           <li className="nav-item">
-          <NavLink className="nav nav-link active" exact to={"/"}>Home</NavLink>
+          <NavLink className="nav nav-link active" exact to="/">Home</NavLink>
           </li>
           <li className="nav-item">
-          <NavLink className="nav nav-link active" exact to={"/news"}>News</NavLink>
+          <NavLink className="nav nav-link active" exact to="/news">News</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav nav-link active" exact to={"/gallery"}>Gallery</NavLink>
+            <NavLink className="nav nav-link active" exact to="/gallery">Gallery</NavLink>
           </li>
           <NavDropdown title="Music" id="basic-nav-dropdown"> 
-                  <NavDropdown.Item><NavLink className="nav" exact to={"/piano"}>Piano</NavLink></NavDropdown.Item>
-                  <NavDropdown.Item><NavLink className="nav" exact to={"/violin"}>Violin</NavLink></NavDropdown.Item>
-                  <NavDropdown.Item><NavLink className="nav" exact to={"/flute"}>Flute</NavLink></NavDropdown.Item>
-                  <NavDropdown.Item><NavLink className="nav" exact to={"/guitar"}>Guitar</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to="/piano">Piano</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to="/violin">Violin</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to="/flute">Flute</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to="/guitar">Guitar</NavLink></NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Performance Arts " id="basic-nav-dropdown"> 
-                  <NavDropdown.Item><NavLink className="nav" exact to={"/ballet"}>Ballet</NavLink></NavDropdown.Item>
-                  <NavDropdown.Item><NavLink className="nav"  exact to={"/theatre"}>Theatre</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to="/ballet">Ballet</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to="/theatre">Theatre</NavLink></NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Classical Arts " id="basic-nav-dropdown"> 
-                  <NavDropdown.Item><NavLink className="nav" exact to={"/art Courses"}>Art Courses</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to={"/artCourses"}>Art Courses</NavLink></NavDropdown.Item>
                   <NavDropdown.Item><NavLink className="nav" exact to={"/workshop"}>Workshop</NavLink></NavDropdown.Item>
           </NavDropdown>
         </ul>

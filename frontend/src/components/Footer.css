@@ -1,25 +1,28 @@
-@import  url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
 .footer{
-    height: 20vh;
-    display: flex;
+    /* height: 25vh; */
+    /* display: flex; */
     align-items: center;
-    justify-content: space-between;
-    margin:0;
-    padding:0;
-    font-family:"Raleway";
-    /* background: linear-gradient(-45deg,#168eca,#ee4a8b); */
-    /* background-size: 120% 100%; */
-      /* animation: gradient 15s ease infinite; */
-      /* height: 100vh; */
-   /* }
-   /* @keyframes gradient {
-       0% {
-           background-position: 0% 50%;
-       }
-       50% {
-           background-position: 100% 50%;
-       }
-       100% {
-           background-position: 0% 50%;
-       } */
-   } 
+    text-align:center;
+background-color:#78adfd;
+width:100%;
+    /* justify-content: space-between; */
+   }
+
+.foot{
+list-style:none;    /* flex-wrap: wrap; */
+}
+.icons{
+    padding-right: 6%;
+}
+.text{
+    text-align:justify;
+}
+.text_color{
+    color:white;
+text-decoration: none;
+}

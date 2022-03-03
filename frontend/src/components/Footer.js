@@ -1,20 +1,125 @@
 import React from "react";
 import "./Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-export const Footer = ()=> { 
-     
-        return (
-            <>
-                <div className="bg-dark text-white footer">
-                    <div className="row col-12">
-                        <div className="col-4"><h6 >Contact Us</h6></div>
-                        <div className="col-4 text-center"><button className="btn btn-outline-light" >Join Us</button></div>
-                        <div className="col-4 text-end">3</div>
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons"
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+
+export const Footer = () => {
+
+    return (
+        <>
+   
+            <footer class="text-center text-lg-start bg-light text-muted footer ">
+
+
+                <section class="footer pb-5 pt-2">
+                    <div class="container ">
+                        <div class="row mt-4 ">
+                            <div class="col-md-3 col-lg-2 mx-auto text_color ">
+                                <h6 class="text-uppercase fw-bold mb-4 text_color ">
+                                    Ensan Art
+                                </h6>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/">Home</Link>
+                                </p>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/news">News</Link>
+                                </p>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/gallery">Gallery</Link>
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-lg-2 mx-auto text_color">
+                                <h6 class="text-uppercase fw-bold mb-4 text_color">
+                                    Music
+                                </h6>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/piano">Piano</Link>
+                                </p>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/violin">Violin</Link>
+                                </p>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/flute">Flute</Link>
+                                </p>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/guitar">Guitar</Link>
+                                </p>
+                            </div>
+
+                            <div class="col-md-3 col-lg-2 mx-auto text_color">
+                                <h6 class="text-uppercase fw-bold mb-4 text_color">
+                                    Performance Art
+                                </h6>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/ballet">Ballet</Link>
+                                </p>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/theatre">Theatre</Link>
+                                </p>
+                            </div>
+
+                            <div class="col-md-3 col-lg-2 mx-auto text_color">
+                                <h6 class="text-uppercase fw-bold mb-4 text_color">
+                                    Classical Art
+                                </h6>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/artCourses">Art Courses</Link>
+                                </p>
+                                <p>
+                                    <Link className="text-reset text_color " exact to="/workshop">Workshop</Link>
+                                </p>
+
+                            </div>
+
+                            
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text_color">
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Contact
+                                </h6>
+                                <p className="px-2">
+                                    <FontAwesomeIcon className="px-2 text_color" icon={faHome} />
+                                    19 st Ahmed Abd El-Aziz,Kafr abdo,Alexandria,Egypt
+                                </p>
+                                <p className="px-2 text_color">
+                                    <a className="px-2 text_color" href="mailto:totajo1999@gmail.com">
+
+                                        <FontAwesomeIcon className="px-2 text_color" icon={faGoogle} />
+                                        ensan.art@gmail.com
+                                    </a>
+                                </p>
+                                <p className="px-2 text_color">
+                                    <FontAwesomeIcon className=" px-2 text_color" icon={faPhoneAlt } />
+                                    01149656688
+                                </p>
+                                <span className="px-2 text_color"> 
+                                <Link className="px-2 text_color" to={{ pathname: "https://www.facebook.com/EnsanArt/" }} target="_facebook">
+                                    <FontAwesomeIcon className="px-2 text_color" icon={faFacebook} />
+                                </Link>
+                                </span>
+
+                                <span className="text_color">
+                                    <Link className=" text_color" to={{ pathname: "https://instagram.com/ensanart?utm_medium=copy_link" }} target="_instagram">
+                                        <FontAwesomeIcon className="text_color" icon={faInstagram } />
+
+                                    </Link>
+                                </span>
+
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </>
-        );
-    }
+                </section>
+
+            </footer>
+        </>
+    );
+}
 
 
 

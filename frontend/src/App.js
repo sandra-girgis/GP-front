@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import {NavBar} from './components/Navbar';
-import {Guitar} from './Pages/Guitar';
-import { BrowserRouter,Routes, Route, Switch , Link } from "react-router-dom"; 
+import { BrowserRouter,Route, Switch } from "react-router-dom"; 
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
 import {Artcourses} from "./Pages/Artcourses";
+import {Guitar} from "./Pages/Guitar";
 import {Ballet} from "./Pages/Ballet";
 import {Flute} from "./Pages/Flute";
 import {Gallery} from "./Pages/Gallery";
@@ -17,6 +16,8 @@ import {Violin} from "./Pages/Violin";
 import {Workshop} from "./Pages/Workshop";
 // {}>> <function></function>
 import {Footer} from './components/Footer';
+// import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
      <Switch>
      <Route path="/piano" exact component={Piano} />
      <Route path="/" exact component={Home} />
-     <Route path="/artcourses" exact component={Artcourses} /> 
+     <Route path="/artCourses" exact component={Artcourses} /> 
     <Route path="/ballet" exact component={Ballet} />
     <Route path="/flute" exact component={Flute} />
     <Route path="/gallery" exact component={Gallery} />
