@@ -1,11 +1,7 @@
 import React from "react";
 import "./Piano.css";
-// import logo from './images/ee7493467b11a597da884bdd3a15f443.png';
 import "bootstrap/dist/css/bootstrap.min.css";
-// class Piano extends React.Component {
-//   constructor() {
-//     super();
-//   }
+
 export const Piano = () => { 
   return (<>
         <div className="">

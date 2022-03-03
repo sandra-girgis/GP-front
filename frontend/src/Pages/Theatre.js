@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export const Ballet = () => { 
+export const Theatre = () => { 
   return (<>
         <div className="">
           <div className="card bg-dark text-white">

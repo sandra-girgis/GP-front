@@ -1,4 +1,5 @@
 import React from "react";
+// import "./Piano.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Violin = () => { 
@@ -11,7 +12,7 @@ export const Violin = () => {
               alt="Card image"
             />
             <div className="card-img-overlay text-center col-3 ms-5 ">
-              <h1 className="card-title  ">Piano</h1>
+              <h1 className="card-title  ">Violin</h1>
               {/* <button className="btn btn-dark btn-lg card-text">
                 Join Us
               </button> */}
@@ -21,14 +22,14 @@ export const Violin = () => {
        {/* <div class="card mb-3" style="max-width: 540px;"> */}
   <div className="row g-0">
     <div className="col-md-4">
-      <img src="https://www.teahub.io/photos/full/216-2164494_blue-violin-music-data-src-blue-music-wallpaper.jpg"
+      <img  src="https://www.teahub.io/photos/full/216-2164494_blue-violin-music-data-src-blue-music-wallpaper.jpg"
        className="img-fluid rounded-start" alt="..."/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
-        <h5 className="card-title">Title</h5>
-        <p className="card-text">Description</p>
-        <p className="card-text"><small className="text-muted">Reviews</small></p>
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
   </div>
