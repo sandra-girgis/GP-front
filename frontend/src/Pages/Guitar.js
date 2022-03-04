@@ -62,7 +62,7 @@ export const Guitar = () => {
        {/* <div class="card mb-3" style="max-width: 540px;"> */}
 
        <div className="container mt-5 mb-5">
-              <h1 className="mb-5  text-center fw-bold display-4">About Our Classes</h1>
+       <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Classes</h1>
               <div className="container mb-5">
                   <div className="row g-0 ">
                     <div className="col-md-4 border border-primary rounded">
@@ -71,7 +71,7 @@ export const Guitar = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="card-body">
-                        <h5 className="card-title">kids</h5>
+                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                     </div>
@@ -82,7 +82,7 @@ export const Guitar = () => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2">
                     <div className="card-body">
-                      <h5 className="card-title">middle age</h5>
+                      <h5 className="card-title"style={{color:"#f1552d"}}>middle age</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -101,7 +101,7 @@ export const Guitar = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">
-                      <h5 className="card-title">Elderly</h5>
+                      <h5 className="card-title"style={{color:"#77aa2a"}}>Elderly</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
 
@@ -114,7 +114,7 @@ export const Guitar = () => {
         
 
         <div className="container mb-5">
-        <h1 className="mb-5  text-center fw-bold display-4">About Our Instractors</h1>
+        <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Instractors</h1>
         <div className="card mb-3 instractor">
             <div className="row g-0">
             <div className="col-md-4">
@@ -123,19 +123,24 @@ export const Guitar = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Dina Dawood </h5>
+                <p className="card-text desc">Dina Dawood was born in 1991.
+                 She started his Studies in Conservatoire de Musique d'Alexandrie first, 
+                 under the supervision of Mr. Shady Nagy, after that he has been studying with Mr.
+                Karim Frege till now. She finished 5th Grade, in the year of 2017 and 7th Grade in 2019;
+               she also did the 5th Grade ABRSM Music theory exam in 2018. 
+               Dina attended and performed in a Masterclass for Classical Guitar of Pawel Kuzuma, 
+               David Pavlovits and Chelsea Green in 2015, 2016, and 2018. Dina is now working as a Music 
+               teacher in IBCA and a guitar teacher in Bibliotheca Alexandrina and Ensan Art Center. </p>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="card mb-3">
+
+
+
+        {/* <div className="card mb-3">
             <div className="row g-0">
             
             <div className="col-md-8">
@@ -154,69 +159,17 @@ export const Guitar = () => {
               className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
           </div>
-        </div>
-        <div className="card mb-3 instractor">
-            <div className="row g-0">
-            <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card mb-3">
-            <div className="row g-0">
-            
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-            <div className="col-md-4 im">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-              className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-          </div>
-        </div>
+        </div> */}
         
-        <div className="card mb-3 instractor">
-            <div className="row g-0">
-            <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         
+
+
+
+
+
+
+
 
 
 

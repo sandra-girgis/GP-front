@@ -65,7 +65,7 @@ export const Violin = () => {
        {/* <div class="card mb-3" style="max-width: 540px;"> */}
 
        <div className="container mt-5 mb-5">
-              <h1 className="mb-5  text-center fw-bold display-4">About Our Classes</h1>
+       <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Classes</h1>
               <div className="container mb-5">
                   <div className="row g-0 ">
                     <div className="col-md-4 border border-primary rounded">
@@ -74,7 +74,7 @@ export const Violin = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="card-body">
-                        <h5 className="card-title">kids</h5>
+                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                     </div>
@@ -85,7 +85,7 @@ export const Violin = () => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2">
                     <div className="card-body">
-                      <h5 className="card-title">middle age</h5>
+                      <h5 className="card-title"style={{color:"#f1552d"}}>middle age</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -104,7 +104,7 @@ export const Violin = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">
-                      <h5 className="card-title">Elderly</h5>
+                      <h5 className="card-title"style={{color:"#77aa2a"}}>Elderly</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
 
@@ -117,7 +117,7 @@ export const Violin = () => {
         
 
         <div className="container mb-5">
-        <h1 className="mb-5  text-center fw-bold display-4">About Our Instractors</h1>
+        <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Instractors</h1>
         <div className="card mb-3 instractor">
             <div className="row g-0">
             <div className="col-md-4">
@@ -126,8 +126,8 @@ export const Violin = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Omar Akl</h5>
-                <p className="card-text"> Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Omar Akl</h5>
+                <p className="card-text desc"> Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on ,<br></br>
@@ -144,19 +144,22 @@ export const Violin = () => {
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Maya</h5>
-                <p className="card-text">Since 2002 the age of 5 and half she Playing the violin,
-                in 2008-2009 Participated as a section leader in the musical camp of 
-                “Chateau d’Oex” in Geneva, Switzerland ,Since 2010 Member of the Arabic Youth 
-                Philharmonic Orchestra (AYPO)-Section Leader three years in a row 
-                (Participation at AlJem Music Festival-Tunisia/Young Euro Classic Festival, Berlin-Germany), 
-                Member of the International Youth Symphonic Orchestra (IYSO),France,
-                in May 2014 she git Diploma from the Cairo Conservatory, in 2016-2017 she was Member of the University of Warwick Symphony 
-                Orchestra (UWSO) and Member of the City of Birmingham Symphony Orchestra for Youth (CBSO),in 
-                2017-2019 she was Member and concert Master of the Choir and Orchestra of Sciences Po (COSP),
-                France, in May 2014 she git Diploma from the Cairo Conservatory,Jan 2020 Part-time member of the Cairo Symphony Orchestra.
-                and in Feb 2020 Played with the “Sout Masr” at Ali El Haggar’s honorary concert.
-</p>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Maya</h5>
+                <p className="card-text desc">Since 2002  she Playing the violin when she has the age of 5 and a half
+                ,in Jan 2020 Part-time member of the Cairo Symphony Orchestra.
+                Feb 2020 Played with the “Sout Masr” at Ali El Haggar’s honorary concert,
+                in 2017-2019 she was Member and concert Master of the Choir and Orchestra of Sciences
+                 Po (COSP),in 2016-2017 she was Member of the University of Warwick
+                  Symphony Orchestra (UWSO) and Member of the City of Birmingham Symphony 
+                  Orchestra for Youth (CBSO),
+                  France, in May 2014 she git Diploma from the Cairo Conservatory,
+                   in May 2014 she git Diploma from the Cairo Conservatory, 
+                   Since 2010 Member of the Arabic Youth Philharmonic Orchestra (AYPO)-Section 
+                   Leader three years in a row (Participation at AlJem Music Festival-Tunisia/Young 
+                   Euro Classic Festival, Berlin-Germany), Member of the International Youth 
+                   Symphonic Orchestra (IYSO),France and in
+                  2008-2009 Participated as a section leader in the musical camp of 
+                  “Chateau d’Oex” in Geneva, Switzerland.</p>
               </div>
             </div>
             <div className="col-md-4 im">
@@ -165,6 +168,10 @@ export const Violin = () => {
             </div>
           </div>
         </div>
+
+
+
+
 
           {/* <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col instractor">

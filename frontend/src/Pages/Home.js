@@ -51,7 +51,7 @@ export default function Home() {
               <div className="card-body">
                 <h5 className="card-title">News</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div className="col-4 text-center"><button style={{backgroundColor:"#168eca"}} className="btn btn-outline-light" > <NavLink className="nav nav-link active" exact to={"/news"}>Show All News</NavLink>
+                <div className="col-4 text-center"><button style={{backgroundColor:"#168eca"}} className="btn btn-outline-light " > <NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink>
                 </button></div>
             </div>
             </div>

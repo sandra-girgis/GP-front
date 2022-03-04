@@ -65,7 +65,7 @@ export const Flute = () => {
        {/* <div class="card mb-3" style="max-width: 540px;"> */}
 
        <div className="container mt-5 mb-5">
-              <h1 className="mb-5  text-center fw-bold display-4">About Our Classes</h1>
+       <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Classes</h1>
               <div className="container mb-5">
                   <div className="row g-0 ">
                     <div className="col-md-4 border border-primary rounded">
@@ -74,7 +74,7 @@ export const Flute = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="card-body">
-                        <h5 className="card-title">kids</h5>
+                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                     </div>
@@ -85,7 +85,7 @@ export const Flute = () => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2">
                     <div className="card-body">
-                      <h5 className="card-title">middle age</h5>
+                      <h5 className="card-title"style={{color:"#f1552d"}}>middle age</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
@@ -104,7 +104,7 @@ export const Flute = () => {
                   </div>
                   <div className="col-md-6">
                     <div className="card-body">
-                      <h5 className="card-title">Elderly</h5>
+                      <h5 className="card-title"style={{color:"#77aa2a"}}>Elderly</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
 
@@ -117,7 +117,7 @@ export const Flute = () => {
         
 
         <div className="container mb-5">
-        <h1 className="mb-5  text-center fw-bold display-4">About Our Instractors</h1>
+        <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Instractors</h1>
         <div className="card mb-3 instractor">
             <div className="row g-0">
             <div className="col-md-4">
@@ -126,8 +126,8 @@ export const Flute = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -143,8 +143,8 @@ export const Flute = () => {
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -166,8 +166,8 @@ export const Flute = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -183,8 +183,8 @@ export const Flute = () => {
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -207,8 +207,8 @@ export const Flute = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
