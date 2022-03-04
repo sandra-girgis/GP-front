@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Route, Switch } from "react-router-dom"; 
 import Navbar from "./components/Navbar";
-import Home from "./Pages/Home";
+import {Home} from "./Pages/Home";
 import {Artcourses} from "./Pages/Artcourses";
 import {Guitar} from "./Pages/Guitar";
 import {Ballet} from "./Pages/Ballet";
@@ -29,7 +29,7 @@ function App() {
      <Switch>
      <Route path="/piano" exact component={Piano} />
      <Route path="/" exact component={Home} />
-     <Route path="/artcourses" exact component={Artcourses} /> 
+     <Route path="/artCourses" exact component={Artcourses} /> 
     <Route path="/ballet" exact component={Ballet} />
     <Route path="/flute" exact component={Flute} />
     <Route path="/gallery" exact component={Gallery} />

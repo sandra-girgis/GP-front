@@ -2,8 +2,13 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import "./Piano.css";
 import { NavLink } from 'react-router-dom';
-export default function Home() {
-  return <>
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+export const Home =() =>{
+  return (<>
 <div className="boback">
 <Carousel>
   <Carousel.Item interval={1000}>
@@ -58,6 +63,26 @@ export default function Home() {
           </div>
         </div>
   <br></br>
+  <hr></hr>
+  <h3 className='new2 pt-2'>Send us a message</h3>
+  <br></br>
+  <Form style={{width:"50%"}} className="mx-auto">
+  <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="name@example.com" />
+  </Form.Group>
+  <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+    <Form.Label>Message</Form.Label>
+    <Form.Control as="textarea" rows={3} />
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+<br>
+</br>
 </div>
-  </>;
+
+  </>
+  );
 }

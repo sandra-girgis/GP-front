@@ -51,3 +51,16 @@
        } */ 
 /* } */
 
+/* news */
+.new{
+align-items:center;
+text-align:justify;
+}
+.new2{
+    text-align: center;
+    color:#168eca;
+}
+
+.bord{
+    border:1px ridge rgb(240, 191, 229);
+}
