@@ -112,7 +112,6 @@ export const Violin = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 text-center"><button className="btn-outline-light btn-lg fs-2" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
         </div>
         
 
@@ -168,6 +167,7 @@ export const Violin = () => {
             </div>
           </div>
         </div>
+        <div className="col-12 text-center"><button className="btn-outline-light btn-lg fs-2" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
 
 
 

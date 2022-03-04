@@ -2,14 +2,20 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import "./Piano.css";
 import { NavLink } from 'react-router-dom';
+import img1 from "../images/home.jpg"
+import img2 from "../images/4.jpg"
+import img3 from "../images/v2.jpg"
+import img4 from "../images/k6.jpg"
+import img5 from "../images/c2.jpg"
+
 export default function Home() {
   return <>
 <div className="boback">
 <Carousel>
-  <Carousel.Item interval={1000}>
+  <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
-      src="https://media.istockphoto.com/photos/grand-piano-in-dark-background-3d-rendering-picture-id1331353069?b=1&k=20&m=1331353069&s=170667a&w=0&h=-PfN3Mkh2fC78wPw54ZuWozUKtjmf5Le3J061E-j-Ko="
+      src={img1}
       alt="First slide"
     />
     <Carousel.Caption>
@@ -19,8 +25,7 @@ export default function Home() {
   </Carousel.Item>
   <Carousel.Item interval={500}>
     <img
-      className="d-block w-100"
-      src="https://media.istockphoto.com/photos/grand-piano-in-dark-background-3d-rendering-picture-id1331353069?b=1&k=20&m=1331353069&s=170667a&w=0&h=-PfN3Mkh2fC78wPw54ZuWozUKtjmf5Le3J061E-j-Ko="
+      className="d-block w-100" src={img2}
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -30,13 +35,30 @@ export default function Home() {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
-      src="https://media.istockphoto.com/photos/grand-piano-in-dark-background-3d-rendering-picture-id1331353069?b=1&k=20&m=1331353069&s=170667a&w=0&h=-PfN3Mkh2fC78wPw54ZuWozUKtjmf5Le3J061E-j-Ko="
+      className="d-block w-100"src={img3}
       alt="Third slide"
     />
     <Carousel.Caption>
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={500}>
+    <img
+      className="d-block w-100"src={img4}alt="First slide"/>
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item interval={500}>
+    <img
+      className="d-block w-100" src={img5}
+      alt="Second slide"
+    />
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

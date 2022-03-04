@@ -108,7 +108,6 @@ export const Piano = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 text-center"><button className="btn-outline-light btn-lg fs-2" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
         </div>
         
 
@@ -235,6 +234,7 @@ She worked as a piano trainer for children and adults at Sporting Club from 2014
             </div>
           </div>
         </div>
+        <div className="col-12 text-center"><button className="btn-outline-light btn-lg fs-2" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
 
         
 
