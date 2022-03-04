@@ -2,8 +2,8 @@ import React from "react";
 import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
 import "bootstrap/dist/css/bootstrap.min.css";
-import img1 from "../images/k7.jpg"
-import img2 from "../images/k6.jpg"
+import img1 from "../images/k6.jpg"
+import img2 from "../images/k7.jpg"
 import img3 from "../images/k8.jpg"
 import img4 from "../images/k4.jpg"
 import img5 from "../images/k1.jpg"
@@ -15,12 +15,12 @@ import img8 from "../images/kold.jpg"
 export const Violin = () => { 
   return (<>
   <Carousel>
-  <Carousel.Item interval={500}>
+  <Carousel.Item>
     <img
       className="d-block w-100 " 
       src={img1} alt="First slide"/>
   </Carousel.Item>
-  <Carousel.Item interval={500}>
+  <Carousel.Item >
     <img
       className="d-block w-100"
       src={img2}   alt="Second slide"/>
@@ -126,11 +126,12 @@ export const Violin = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title">Omar Akl</h5>
+                <p className="card-text"> Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
+                                          Later on ,<br></br>
+                                          he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
                                           Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
                                           He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
               </div>
@@ -143,13 +144,19 @@ export const Violin = () => {
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                <h5 className="card-title">Maya</h5>
+                <p className="card-text">Since 2002 the age of 5 and half she Playing the violin,
+                in 2008-2009 Participated as a section leader in the musical camp of 
+                “Chateau d’Oex” in Geneva, Switzerland ,Since 2010 Member of the Arabic Youth 
+                Philharmonic Orchestra (AYPO)-Section Leader three years in a row 
+                (Participation at AlJem Music Festival-Tunisia/Young Euro Classic Festival, Berlin-Germany), 
+                Member of the International Youth Symphonic Orchestra (IYSO),France,
+                in May 2014 she git Diploma from the Cairo Conservatory, in 2016-2017 she was Member of the University of Warwick Symphony 
+                Orchestra (UWSO) and Member of the City of Birmingham Symphony Orchestra for Youth (CBSO),in 
+                2017-2019 she was Member and concert Master of the Choir and Orchestra of Sciences Po (COSP),
+                France, in May 2014 she git Diploma from the Cairo Conservatory,Jan 2020 Part-time member of the Cairo Symphony Orchestra.
+                and in Feb 2020 Played with the “Sout Masr” at Ali El Haggar’s honorary concert.
+</p>
               </div>
             </div>
             <div className="col-md-4 im">
@@ -158,72 +165,6 @@ export const Violin = () => {
             </div>
           </div>
         </div>
-        <div className="card mb-3 instractor">
-            <div className="row g-0">
-            <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card mb-3">
-            <div className="row g-0">
-            
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-            <div className="col-md-4 im">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-              className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-          </div>
-        </div>
-        
-        <div className="card mb-3 instractor">
-            <div className="row g-0">
-            <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-
-
-
-
 
           {/* <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col instractor">
