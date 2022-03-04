@@ -40,8 +40,8 @@ function Navbar() {
                   <NavDropdown.Item><NavLink className="nav" exact to="/theatre">Theatre</NavLink></NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Classical Arts " id="basic-nav-dropdown"> 
-                  <NavDropdown.Item><NavLink className="nav" exact to="/artCourses">Art Courses</NavLink></NavDropdown.Item>
-                  <NavDropdown.Item><NavLink className="nav" exact to="/workshop">Workshop</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to={"/artCourses"}>Art Courses</NavLink></NavDropdown.Item>
+                  <NavDropdown.Item><NavLink className="nav" exact to={"/workshop"}>Workshop</NavLink></NavDropdown.Item>
           </NavDropdown>
         </ul>
       </div>

@@ -10,13 +10,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family:serif;
+    /* font-family:serif; */
     color: #168eca;
 } 
 .im{
     display: flex!important;
     flex-direction: row-reverse;
 }
+/* .courses{
+    height:100%!important;
+} */
 /* .container{
     padding: 6rem;
     /* margin-left: 12rem; */
@@ -30,6 +33,13 @@
     display: flex!important;
     flex-direction: column;
     align-items: center;
+}
+.desc{
+    text-align: justify;
+    /* color:#168eca; */
+}
+.colorr{
+    color:white!important;
 }
 /* .slid{
     height: inherit;
