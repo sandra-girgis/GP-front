@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import "bootstrap/dist/css/bootstrap.min.css";
 import img1 from "../images/home.jpg"
-import img2 from "../images/4.jpg"
+// import img2 from "../images/4.jpg"
 import img3 from "../images/v2.jpg"
 import img4 from "../images/k6.jpg"
 import img5 from "../images/c2.jpg"
@@ -29,7 +29,7 @@ export const Home =() =>{
   </Carousel.Item>
   <Carousel.Item interval={500}>
     <img
-      className="d-block w-100" src={img2}
+      className="d-block w-100" src="https://media.istockphoto.com/photos/children-doing-autumn-handcrafts-picture-id1168454133?k=20&m=1168454133&s=612x612&w=0&h=v9aCQ4OwzW8V44rVCPBmcraNx8iETRpfePH9KrTSTZM="
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -67,6 +67,8 @@ export const Home =() =>{
   </Carousel.Item>
 </Carousel>
 <br></br>
+<h3 className='new2 pt-2'style={{color:"#f1552d"}}>About Our News</h3>
+<br></br>
 <div className="container col-md-11" >
           <div className="row g-0 ">
             <div className="col-md-5">
@@ -75,7 +77,6 @@ export const Home =() =>{
             </div>
             <div className="col-md-6">
               <div className="card-body">
-              <h3 className='new2 pt-2'style={{color:"#f1552d"}}>About Our News</h3>
                 <h5 className="card-title"style={{color:"#168eca"}}>News</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div className="col-4 text-center"><button style={{backgroundColor:"#168eca"}} className="btn btn-outline-light " > <NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink>
