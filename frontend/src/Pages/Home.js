@@ -11,6 +11,28 @@ import img3 from "../images/v2.jpg"
 import img4 from "../images/k6.jpg"
 import img5 from "../images/c2.jpg"
 
+// export default class extends React.Component {
+//   constructor(props){
+//     super(props);
+//     this.state={feedback:'',name:'Name',email:'rehabmohamedaziz99@gmail.com'};
+//     this.handleChange=this.handleChange.bind(this);
+//     this.handleSubmit=this.handleSubmit.bind(this);
+
+//   }
+//   handleChange(e){
+//     this.setState({feedback:e.target.value})
+//   }
+//   handleSubmit(e){
+//     const templateId='template_id';
+//     this.sendFeedback(templateId,{message_html:this.state.feedback,from_name:this.state.name,reply_to:this.state.email})
+//   }
+//   sendFeedback(templateId,variables){
+//     window.emailjs.send('gmail',templateId,variables).then(res=>{console.log('email etba3t')})
+//     .catch(err=>console.log('sorry',err))
+//   }
+// }
+
+
 export const Home =() =>{
   return (<>
 
@@ -94,9 +116,13 @@ export const Home =() =>{
   </Form.Group>
   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" rows={3} />
+    <Form.Control  as="textarea" rows={3} />
+
+    {/* <Form.Control onChange={this.handleChange} value={this.state.feedback} as="textarea" rows={3} /> */}
   </Form.Group>
-  <Button variant="primary" type="submit">
+  <Button variant="primary" type="submit" >
+
+  {/* <Button variant="primary" type="submit" onClick={this.handleSubmit} > */}
     Submit
   </Button>
 </Form>
@@ -107,3 +133,5 @@ export const Home =() =>{
   </>
   );
 }
+
+
