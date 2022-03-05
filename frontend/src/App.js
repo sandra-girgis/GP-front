@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Route, Switch } from "react-router-dom"; 
-import Navbar from "./components/Navbar";
+import Nav from "./components/Navbar";
 import Home from "./Pages/Home";
 import {Artcourses} from "./Pages/Artcourses";
 import {Guitar} from "./Pages/Guitar";
@@ -24,7 +24,7 @@ function App() {
   return (
     <>
   <BrowserRouter>
-  <Navbar />
+  <Nav />
   <div>
      <Switch>
      <Route path="/piano" exact component={Piano} />

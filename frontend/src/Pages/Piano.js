@@ -112,7 +112,7 @@ export const Piano = () => {
         
 
         <div className="container mb-5">
-        <h1 className="mb-5  text-center fw-bold display-4" style={{color:"#f1552d"}}>About Our Instractors</h1>
+        <h1 className="mb-5  text-center fw-bold display-4" style={{color:"#f1552d"}}>About Our Instructors</h1>
         <div className="card mb-3 instractor">
             <div className="row g-0">
             <div className="col-md-4">
