@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Route, Switch } from "react-router-dom"; 
 import Nav from "./components/Navbar";
-import Home from "./Pages/Home";
+import {Home} from "./Pages/Home";
 import {Artcourses} from "./Pages/Artcourses";
 import {Guitar} from "./Pages/Guitar";
 import {Ballet} from "./Pages/Ballet";

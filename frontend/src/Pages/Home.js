@@ -75,7 +75,8 @@ export const Home =() =>{
             </div>
             <div className="col-md-6">
               <div className="card-body">
-                <h5 className="card-title">News</h5>
+              <h3 className='new2 pt-2'style={{color:"#f1552d"}}>About Our News</h3>
+                <h5 className="card-title"style={{color:"#168eca"}}>News</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div className="col-4 text-center"><button style={{backgroundColor:"#168eca"}} className="btn btn-outline-light " > <NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink>
                 </button></div>
@@ -85,18 +86,18 @@ export const Home =() =>{
         </div>
   <br></br>
   <hr></hr>
-  <h3 className='new2 pt-2'>Send us a message</h3>
+  <h3 className='new2 pt-2'style={{color:"#f1552d"}}>Send us a message</h3>
   <br></br>
   <Form style={{width:"50%"}} className="mx-auto">
   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-    <Form.Label>Email address</Form.Label>
+    <Form.Label style={{color:"#ee4a8b"}}>Email address</Form.Label>
     <Form.Control type="email" placeholder="name@example.com" />
   </Form.Group>
   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-    <Form.Label>Message</Form.Label>
+    <Form.Label style={{color:"#ee4a8b"}}>Message</Form.Label>
     <Form.Control as="textarea" rows={3} />
   </Form.Group>
-  <Button variant="primary" type="submit">
+  <Button style={{backgroundColor:"#168eca"}} type="submit">
     Submit
   </Button>
 </Form>

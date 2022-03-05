@@ -18,25 +18,19 @@ export const Ballet = () => {
   <Carousel.Item>
     <img
       className="d-block w-100 " 
-      src="https://media.istockphoto.com/photos/cute-ballet-group-of-little-girls-streching-to-be-able-to-do-more-picture-id1146994624?k=20&m=1146994624&s=612x612&w=0&h=u0-PeBoisYiDwcNbtNtnd7F9UBQl9wuOMva3dwLQy3s="
+      src="https://images.unsplash.com/photo-1598255539863-122cca274e15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJhbGxldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
       alt="First slide"/>
   </Carousel.Item>
   <Carousel.Item >
     <img
       className="d-block w-100"
-     src="https://media.istockphoto.com/photos/ballet-school-class-picture-id658947658?k=20&m=658947658&s=612x612&w=0&h=roMAGQQ27CWiwKyyixT5VmhbRfHSs5d9piT-CzDKfEU="
+     src="https://media.istockphoto.com/photos/rehearsal-in-childrens-ballet-studio-picture-id1071207976?k=20&m=1071207976&s=612x612&w=0&h=4dVx2LfpcZfQ57_4IfSI2iKqbUen6Vhlhft29tQa5lw="
       alt="Second slide"/>
   </Carousel.Item>
   <Carousel.Item >
     <img
       className="d-block w-100"
-     src="https://media.istockphoto.com/photos/girl-dreaming-of-becoming-a-ballerina-picture-id1128473828?k=20&m=1128473828&s=612x612&w=0&h=w1faMuGELcptktjj0IOG_UTQhckjpDg8Aj_cYN2PMVM="
-      alt="Second slide"/>
-  </Carousel.Item>
-  <Carousel.Item >
-    <img
-      className="d-block w-100"
-     src="https://media.istockphoto.com/photos/ballet-shoes-picture-id168779481?k=20&m=168779481&s=612x612&w=0&h=gPcv6QiggNxw0ZbmelcknxC8i21x77nh7AuUfR4tCiI="
+     src="https://media.istockphoto.com/photos/beautiful-legs-of-dancer-in-pointe-picture-id540375066?k=20&m=540375066&s=612x612&w=0&h=wDinAgkWrsA0DpNso-aM76WSIvvd3O1eV5zxiF_Z70I="
       alt="Second slide"/>
   </Carousel.Item>
   {/* <Carousel.Item >
