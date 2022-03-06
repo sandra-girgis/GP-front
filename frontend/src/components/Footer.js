@@ -97,6 +97,7 @@ export const Footer = () => {
                                     <FontAwesomeIcon className=" px-2 text_color" icon={faPhoneAlt } />
                                     01149656688
                                 </p>
+                                
                                 <span className="px-2 text_color"> 
                                 <Link className="px-2 text_color" to={{ pathname: "https://www.facebook.com/EnsanArt/" }} target="_facebook">
                                     <FontAwesomeIcon className="px-2 text_color" icon={faFacebook} />
