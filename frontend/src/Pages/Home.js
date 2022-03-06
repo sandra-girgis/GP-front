@@ -78,7 +78,7 @@ export const Home =() =>{
 <br></br>
 <h3 className='new2 pt-2 fw-bold'style={{color:"#f1552d"}}>Our Events</h3>
 <br></br>
-<div className="container col-md-11" >
+<div className="container col-md-12 flip-card shadow ">
           <div className="row g-0 ">
             <div className="col-md-5">
               <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c="
@@ -88,10 +88,10 @@ export const Home =() =>{
               <div className="card-body">
                 <h5 className="card-title fw-bold"style={{color:"#168eca"}}>News</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                {/* <div className="col-4 text-center"><button style={{backgroundColor:"#168eca"}} className="btn btn-outline-light " > <NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink>
-                </button></div> */}
-              <div className="col-4 text-center"><FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /><NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink>
+                <div className="col-4 text-center"> <NavLink className="nav  btn  nav-link butt active " exact to={"/news"}>Show All News</NavLink>
                </div>
+              {/* <div className="col-4 text-center"><FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /><NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink> */}
+               {/* </div> */}
             </div>
             </div>
           </div>
@@ -116,25 +116,89 @@ export const Home =() =>{
 <br>
 </br> */}
 
+<div className="container mt-5  mb-5 justify-content-center">
+<div className="row">
+  <div className="flip-box col-md-3 me-md-5">
+    <div className="flip-box-inner mb-5">
+      <div className="flip-box-front">
+        <img src={img9} alt="Paris" className="img"/>
+      </div>
+      <div className="flip-box-back">
+        <img src={img7} alt="Paris" className="img"/>
+      </div>
+    </div>
+  </div>
+  <div className="flip-box col-md-3 me-md-5">
+    <div className="flip-box-inner mb-5">
+      <div className="flip-box-front">
+        <img src={img9} alt="Paris" className="img"/>
+      </div>
+      <div className="flip-box-back">
+        <img src={img6} alt="Paris" className="img"/>
+      </div>
+    </div>
+  </div>
+    <div className="flip-box col-md-3 me-md-5">
+    <div className="flip-box-inner mb-5">
+      <div className="flip-box-front ">
+        <img src={img9} alt="Paris" className="img"/>
+      </div>
+      <div className="flip-box-back ">
+        <img src={img7} alt="Paris" className="img"/>
+      </div>
+    </div>
+  </div>
+  <div className="flip-box col-md-3">
+    <div className="flip-box-inner mb-5">
+      <div className="flip-box-front ">
+        <img src={img9} alt="Paris" className="img"/>
+      </div>
+      <div className="flip-box-back ">
+        <img src={img6} alt="Paris" className="img"/>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
 
-<div class="card-deck flip-box container  mt-5 mb-5 ">
-  <div class="card flip-box-inner img-fluid rounded-start">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <div className="card-deck row container  mt-5 mb-5 ">
+  <div className=" col-md-6 flip-box-inner  rounded-start">
     <div className='flip-box-front'>
-    <img class="card-img-top" src="https://media.istockphoto.com/photos/little-ballerinas-in-ballet-studio-picture-id1161652373?k=20&m=1161652373&s=612x612&w=0&h=8xIBoeahwR8G6RRrLGmj9ACtpCaM0sO5uD6NfuLvQQg="/>
+    <img  src="https://media.istockphoto.com/photos/little-ballerinas-in-ballet-studio-picture-id1161652373?k=20&m=1161652373&s=612x612&w=0&h=8xIBoeahwR8G6RRrLGmj9ACtpCaM0sO5uD6NfuLvQQg="/>
     </div>
     <div className='flip-box-back'>
-    <img class="card-img-top" src={img8} alt="Card image cap"/>
+    <img  src={img8} alt="Card image cap"/>
     </div> 
   </div>
-  <div class="card flip-box-inner flipp mb-lg-5 img-fluid rounded-start">
+  <div className=" col-md-6  flip-box-inner flipp mb-lg-5  rounded-start">
     <div className='flip-box-front'>
-    <img class="card-img-top" src={img9}/>
+    <img  src={img9}/>
     </div>
     <div className='flip-box-back'>
-    <img class="card-img-top" src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134=" alt="Card image cap"/>
+    <img  src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134=" alt="Card image cap"/>
     </div> 
-  </div>
-  <div className="flip-box col-md-6 ml-5">
+  </div> */}
+  {/* <div className="flip-box col-md-6 ml-5">
     <div className="flip-box-inner">
       <div className="flip-box-front">
         <img src={img7} alt="kids" 
@@ -144,7 +208,7 @@ export const Home =() =>{
         <img src={img6} alt="kids" />
       </div>
     </div>
-  </div>
+  </div> */}
 
 
 
@@ -200,7 +264,7 @@ export const Home =() =>{
 
 
 
-</div>
+{/* </div> */}
 
 
 
@@ -256,19 +320,19 @@ export const Home =() =>{
 
 {/* <div className="card-group container mb-5 flipp">
   <div className="card">
-    <img className="card-img-top" src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
+    <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
   </div>
   <div className="card">
-    <img className="card-img-top" src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
+    <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
   </div>
 </div>
 
 <div className="card-group  container mb-5 flip-box">
   <div className="card">
-    <img className="card-img-top" src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
+    <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
   </div>
   <div className="card">
-    <img className="card-img-top" src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
+    <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
   </div>
   </div> */}
 
