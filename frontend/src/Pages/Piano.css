@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* font-family:serif; */
     color: #168eca;
 } 
 .im{
@@ -67,7 +66,6 @@ align-items:center;
 text-align:justify;
 }
 .new2{
-    text-align: center;
     color:#f1552d;
 }
 
@@ -136,14 +134,63 @@ text-align:justify;
     transform: rotateY(180deg);
   }  */
 
+  @keyframes example {
+    from {  transform: rotateY(0deg);}
+    to {  transform: rotateY(180deg);}
+  }
+  
+  /* The element to apply the animation to */
+  
+  @keyframes example2 {
+    from {  transform: rotateY(180deg);}
+    to {  transform: rotateY(0deg);}
+  }
+  
+  .flip-box {
+    width: 20vw;
+    height: 20vw;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    animation-name: example2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-back {
+    transform: rotateY(180deg);
+  }
+  .img{
+    width: 22vw;
+    height: 18vw;
+  }
+
+
+
+
+
+
+
   /* The animation code */
-@keyframes example {
+/* @keyframes example {
   from {  transform: rotateY(0deg);}
   to {  transform: rotateY(180deg);}
-}
+} */
 
 /* The element to apply the animation to */
-
+/* 
 @keyframes example2 {
   from {  transform: rotateY(180deg);}
   to {  transform: rotateY(0deg);}
@@ -155,6 +202,13 @@ text-align:justify;
   animation-name: example;
   animation-duration: 6s;
   animation-iteration-count: infinite;
+}
+.img{
+  width: 22rem;
+  height: 18rem;
+}
+.space{
+  justify-content: space-around;
 }
 
 .flip-box-inner {
@@ -174,11 +228,7 @@ text-align:justify;
 
 .flip-box-back {
   transform: rotateY(180deg);
-}
-.img{
-  width: 200px;
-  height: 200px;
-}
+} */
 
 
 
@@ -238,11 +288,19 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 }
 
 
+@keyframes mymove{
+  0% {width:80%;}
+  25% {width:90%;}
+  100% {width: 73rem;}
+}
 
 
-
-
-
+.flip_card2:hover{
+  animation: mymove 5s;
+}
+.date{
+  font-size:1.2vw;
+}
 
 
 
