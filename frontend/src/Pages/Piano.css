@@ -224,6 +224,19 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 
 }
 
+.bu{
+  border-radius: 20%;
+  background-color:#ffffff!important;
+  color: #168eca!important;
+  /* border: 1px solid #168eca; */
+}
+.bu:hover{
+ /* background-color:#168eca !important; */
+ color: #ee4a8b!important;
+ /* border: 1px solid #ee4a8b; */
+
+}
+
 
 
 
