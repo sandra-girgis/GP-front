@@ -15,6 +15,8 @@ import img5 from "../images/c2.jpg"
 import img7 from "../images/kkids.jpg"
 import img8 from "../images/v1.jpg"
 import img9 from "../images/5.jpg"
+import img10 from "../images/17.jpg"
+import img11 from "../images/18.jpg"
 
 
 
@@ -88,8 +90,8 @@ export const Home =() =>{
               <div className="card-body">
                 <h5 className="card-title fw-bold"style={{color:"#168eca"}}>News</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div className="col-4 text-center"> <NavLink className="nav  btn  nav-link butt active " exact to={"/news"}>Show All News</NavLink>
-               </div>
+                <div className="col-4 text-center"><button className=" butt"><NavLink className="nav nav-link bu active " exact to={"/news"}>Show All News</NavLink>
+                </button></div>
               {/* <div className="col-4 text-center"><FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /><NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink> */}
                {/* </div> */}
             </div>
@@ -116,7 +118,61 @@ export const Home =() =>{
 <br>
 </br> */}
 
-<div className="container mt-5  mb-5 justify-content-center">
+
+
+<div class="container mt-5">
+<div class="row mt-5 mb-5 justify-content-center">
+  <div class="flip-box col-md-6 me-5 mb-5">
+    <div class="flip-box-inner">
+      <div class="flip-box-front mt-5">
+      <NavLink className="nav nav-link bu active " exact to={"/ballet"}><img src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE=" alt="art" class="img"/>
+      </NavLink>
+      </div>
+      <div class="flip-box-back mt-5">
+        <img src={img8} alt="art" class="img"/>
+      </div>
+    </div>
+  </div>
+  <div class="flip-box col-md-6 mb-5">
+    <div class="flip-box-inner">
+      <div class="flip-box-front mt-5">
+        <img src={img9} alt="art" class="img"/>
+      </div>
+      <div class="flip-box-back mt-5">
+        <img src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134=" alt="Card image cap"  alt="art" class="img"/>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="row mt-5 mb-5 justify-content-center">
+    <div class="flip-box col-md-6 me-5 mb-5">
+    <div class="flip-box-inner">
+      <div class="flip-box-front mt-5">
+        <img src={img7} alt="art" class="img"/>
+      </div>
+      <div class="flip-box-back mt-5">
+        <img src={img6} alt="art" class="img"/>
+      </div>
+    </div>
+  </div>
+  <div class="flip-box col-md-6 mb-5">
+    <div class="flip-box-inner">
+      <div class="flip-box-front mt-5">
+        <img src={img10} alt="art" class="img"/>
+      </div>
+      <div class="flip-box-back mt-5">
+        <img src={img11} alt="art" class="img"/>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+
+{/* <div className="container mt-5  mb-5 justify-content-center">
 <div className="row">
   <div className="flip-box col-md-3 me-md-5">
     <div className="flip-box-inner mb-5">
@@ -159,7 +215,7 @@ export const Home =() =>{
     </div>
   </div>
 </div>
-  </div>
+  </div> */}
 
 
 

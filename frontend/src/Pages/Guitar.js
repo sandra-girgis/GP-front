@@ -62,8 +62,8 @@ export const Guitar = () => {
        {/* <div class="card mb-3" style="max-width: 540px;"> */}
 
        <div className="container mt-5 mb-5">
-       <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Classes</h1>
-              <div className="container mb-5">
+       <h1 className="mb-5  fw-bold display-4"style={{color:"#f1552d"}}>About Our Classes</h1>
+              <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
                     <div className="col-md-4 border border-primary rounded">
                       <img  src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134="
@@ -78,7 +78,7 @@ export const Guitar = () => {
                     </div>
                   </div>
               </div>
-              <div className="container mb-5">
+              <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2">
                     <div className="card-body">
@@ -93,7 +93,7 @@ export const Guitar = () => {
                   </div>
                 </div>
               </div>        
-              <div className="container mb-5">
+              <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border border-success rounded">
                     <img  src="https://media.istockphoto.com/photos/guitar-player-picture-id165836804?k=20&m=165836804&s=612x612&w=0&h=N8OWw6xTxVSEX2EDXb1V-80XbzQfAcMPOkHG8kibork="
@@ -113,8 +113,8 @@ export const Guitar = () => {
         
 
         <div className="container mb-5">
-        <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Instructors</h1>
-        <div className="card mb-3 instractor">
+        <h1 className="mb-5 fw-bold display-4"style={{color:"#f1552d"}}>About Our Instructors</h1>
+        <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
