@@ -66,7 +66,7 @@ export const Home = () => {
           </Carousel.Item>
         </Carousel>
         <br></br>
-        <h2 className="text-center pt-2 fw-bold" style={{ color: "#f1552d" }}>
+        <h2 className="text-center pt-2 fw-bold" style={{color:"#ee4a8b"}}>
           Our Events
         </h2>
         <br></br>
