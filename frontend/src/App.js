@@ -9,7 +9,7 @@ import {Guitar} from "./Pages/Guitar";
 import {Ballet} from "./Pages/Ballet";
 import {Flute} from "./Pages/Flute";
 import {Gallery} from "./Pages/Gallery";
-import {News} from "./Pages/News";
+import News from "./Pages/News";
 import {Piano} from "./Pages/Piano";
 import {Theatre} from "./Pages/Theatre";
 import {Violin} from "./Pages/Violin";
