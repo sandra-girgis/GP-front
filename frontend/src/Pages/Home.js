@@ -139,7 +139,7 @@ export const Home =() =>{
         <img src={img9} alt="art" class="img"/>
       </div>
       <div class="flip-box-back mt-5">
-        <img src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134=" alt="Card image cap"  alt="art" class="img"/>
+        <img src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134=" alt="Card image cap" class="img"/>
       </div>
     </div>
   </div>
