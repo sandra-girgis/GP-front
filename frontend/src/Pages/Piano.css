@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* font-family:serif; */
     color: #168eca;
 } 
 .im{
@@ -38,9 +37,9 @@
     text-align: justify;
     /* color:#168eca; */
 }
-.colorr{
+/* .colorr{
     color:white!important;
-}
+} */
 /* .slid{
     height: inherit;
 } */
@@ -67,10 +66,264 @@ align-items:center;
 text-align:justify;
 }
 .new2{
-    text-align: center;
-    color:#168eca;
+    color:#f1552d;
 }
 
 .bord{
     border:1px ridge rgb(240, 191, 229);
 }
+
+
+
+
+
+
+
+/* The animation code */
+/* @keyframes example {
+    from {  transform: rotateY(0deg);}
+    to {  transform: rotateY(180deg);}
+  } */
+  
+  /* The element to apply the animation to */
+  
+  /* @keyframes example2 {
+    from {  transform: rotateY(180deg);}
+    to {  transform: rotateY(0deg);}
+  } */
+  
+  /* .flip-box {
+    background-color: transparent; */
+    /* width: 200px;
+    height: 200px; */
+    /* border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  } */
+  
+  /* .flip-box-inner {
+    position: relative; */
+    /* width: 100%;
+    height: 100%; */
+    /* text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  } */
+  
+  /* .flip-box-front, .flip-box-back { */
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%; */
+    /* -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  } */
+  
+  /* .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+   */
+  /* .flip-box-back {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+  }  */
+
+  @keyframes example {
+    from {  transform: rotateY(0deg);}
+    to {  transform: rotateY(180deg);}
+  }
+  
+  /* The element to apply the animation to */
+  
+  @keyframes example2 {
+    from {  transform: rotateY(180deg);}
+    to {  transform: rotateY(0deg);}
+  }
+  
+  .flip-box {
+    width: 20vw;
+    height: 20vw;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    animation-name: example2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-back {
+    transform: rotateY(180deg);
+  }
+  .img{
+    width: 22vw;
+    height: 18vw;
+  }
+
+
+
+
+
+
+
+  /* The animation code */
+/* @keyframes example {
+  from {  transform: rotateY(0deg);}
+  to {  transform: rotateY(180deg);}
+} */
+
+/* The element to apply the animation to */
+/* 
+@keyframes example2 {
+  from {  transform: rotateY(180deg);}
+  to {  transform: rotateY(0deg);}
+}
+
+.flip-box {
+  width: 200px;
+  height: 200px;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.img{
+  width: 22rem;
+  height: 18rem;
+}
+.space{
+  justify-content: space-around;
+}
+
+.flip-box-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  animation-name: example2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  transform: rotateY(180deg);
+} */
+
+
+
+
+  .flip-card {
+    transition: all 1s ease;
+    /* width: 300px;
+    height: 300px; */
+    perspective: 1000px;
+  }
+  
+  .flip-card:hover{
+    transform: scale(1.1); 
+  }
+
+.shadow{
+box-shadow:10px 10px 40px 5px #ee4a8b!important;
+}
+.shadow1{
+  box-shadow:10px 10px 40px 5px #168eca!important;
+  }
+.shadow2{
+    box-shadow:10px 10px 40px 5px #ee4a8b!important;
+    }
+.shadow3{
+      box-shadow:10px 10px 40px 5px #168eca!important;
+      }
+.shadow4{
+        box-shadow:10px 10px 40px 5px #ee4a8b!important;
+        }
+
+
+.butt {
+  border-radius: 20%;
+  background-color:#ffffff!important;
+  color: #168eca!important;
+  border: 1px solid #168eca;
+}
+.butt:hover{
+ /* background-color:#168eca !important; */
+ color: #ee4a8b!important;
+ border: 1px solid #ee4a8b;
+
+}
+
+.bu{
+  border-radius: 20%;
+  background-color:#ffffff!important;
+  color: #168eca!important;
+  /* border: 1px solid #168eca; */
+}
+.bu:hover{
+ /* background-color:#168eca !important; */
+ color: #ee4a8b!important;
+ /* border: 1px solid #ee4a8b; */
+
+}
+
+
+@keyframes mymove{
+  0% {width:80%;}
+  25% {width:90%;}
+  100% {width: 73rem;}
+}
+
+
+.flip_card2:hover{
+  animation: mymove 5s;
+}
+.date{
+  font-size:1.2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes flip {
+    50% {
+      transform: rotate3d(0, 1, 0, 90deg);
+    }
+  }
+  
+.flipp {
+    animation: flip 1.6s linear infinite;
+  } */
+  

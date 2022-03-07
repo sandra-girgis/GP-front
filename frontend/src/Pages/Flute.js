@@ -64,9 +64,9 @@ export const Flute = () => {
        </div> */}
        {/* <div class="card mb-3" style="max-width: 540px;"> */}
 
-       <div className="container mt-5 mb-5">
-       <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Classes</h1>
-              <div className="container mb-5">
+       <div className="container mt-5 mb-5 ">
+       <h1 className="mb-5 fw-bold display-4"style={{color:"#f1552d"}}>About Our Classes</h1>
+              <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
                     <div className="col-md-4 border border-primary rounded">
                       <img  src="https://media.istockphoto.com/photos/homeschooling-music-classes-picture-id1300130169?k=20&m=1300130169&s=612x612&w=0&h=PpTkQl5W_CiUv8a1hPt6ATS4IL5ZdMtw2toXv0SKktA="
@@ -81,7 +81,7 @@ export const Flute = () => {
                     </div>
                   </div>
               </div>
-              <div className="container mb-5">
+              <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2">
                     <div className="card-body">
@@ -96,7 +96,7 @@ export const Flute = () => {
                   </div>
                 </div>
               </div>        
-              <div className="container mb-5">
+              <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border border-success rounded">
                   <img  src="https://media.istockphoto.com/photos/flutist-playing-her-instrument-on-stage-picture-id587817144?k=20&m=587817144&s=612x612&w=0&h=_R2x1qzfl0f0hhfpfw6wKhTEJeqCdV6dbbkuiJN2ERI="
@@ -116,8 +116,8 @@ export const Flute = () => {
         
 
         <div className="container mb-5">
-        <h1 className="mb-5  text-center fw-bold display-4"style={{color:"#f1552d"}}>About Our Instractors</h1>
-        <div className="card mb-3 instractor">
+        <h1 className="mb-5 fw-bold display-4"style={{color:"#f1552d"}}>About Our Instructors</h1>
+        <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
@@ -137,7 +137,7 @@ export const Flute = () => {
           </div>
         </div>
         
-        <div className="card mb-3">
+        <div className="card mb-5 flip-card shadow1">
             <div className="row g-0">
             
             <div className="col-md-8">
@@ -157,7 +157,7 @@ export const Flute = () => {
             </div>
           </div>
         </div>
-        <div className="card mb-3 instractor">
+        <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
@@ -177,7 +177,7 @@ export const Flute = () => {
           </div>
         </div>
 
-        <div className="card mb-3">
+        <div className="card mb-5  flip-card shadow1">
             <div className="row g-0">
             
             <div className="col-md-8">
@@ -198,7 +198,7 @@ export const Flute = () => {
           </div>
         </div>
         
-        <div className="card mb-3 instractor">
+        <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
@@ -218,7 +218,7 @@ export const Flute = () => {
           </div>
         </div>
         
-        <div className="col-12 text-center"><button className="btn-outline-light btn-lg fs-2" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
+        <div className="col-12 text-center"><button className="btn-outline-light butt btn-lg fs-2" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
 
 
         
