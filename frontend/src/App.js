@@ -15,6 +15,7 @@ import { Theatre } from "./Pages/Theatre";
 import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
 import { Joinus } from "./Pages/Joinus";
+import { Admin } from "./Pages/Admin";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -38,7 +39,8 @@ function App() {
             <Route path="/theatre" exact component={Theatre} />
             <Route path="/workshop" exact component={Workshop} />
             <Route path="/joinus" exact component={Joinus} />
- 
+            <Route path="/admin" exact component={Admin} />
+
           </Switch>
           <Footer />
         </div>
