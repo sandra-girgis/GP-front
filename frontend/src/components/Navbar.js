@@ -91,6 +91,11 @@ function Nav() {
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
+            <li className="nav-item">
+              <NavLink className="nav nav-link pink bl" exact to="/login">
+                Login
+              </NavLink>
+            </li>
           </ul>
         </Navbar.Collapse>
       </Navbar>

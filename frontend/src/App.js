@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -14,11 +14,19 @@ import { Piano } from "./Pages/Piano";
 import { Theatre } from "./Pages/Theatre";
 import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
+import  Login  from "./Pages/login";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
+
+  const [token,setToken] = useState('')
+
+
+  const userlogin = (tok) =>{
+    setToken(tok);
+  }
   return (
     <>
       <BrowserRouter>
@@ -36,6 +44,9 @@ function App() {
             <Route path="/violin" exact component={Violin} />
             <Route path="/theatre" exact component={Theatre} />
             <Route path="/workshop" exact component={Workshop} />
+            <Route path="/login" exact >
+              <Login userlogin={userlogin}/>
+            </Route>
           </Switch>
           <Footer />
         </div>
