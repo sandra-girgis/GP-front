@@ -117,15 +117,14 @@ function Nav() {
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-<<<<<<< HEAD
-            <li className="nav-item">
-              <NavLink className="nav nav-link pink bl" exact to="admin">
+            <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/admin">
                 Admin
-=======
+                </NavLink>
+            </li>
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/login">
                 Login
->>>>>>> 7d395a8157ac4054c0480015a1931da1605c91e9
               </NavLink>
             </li>
           </ul>
