@@ -2,6 +2,8 @@ import React from "react";
 import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel';
 import "bootstrap/dist/css/bootstrap.min.css";
+import img1 from "../images/k6.jpg"
+
 // import img1 from "../images/v1.jpg"
 // import img2 from "../images/v2.jpg"
 // import img3 from "../images/k8.jpg"
@@ -18,19 +20,49 @@ export const Workshop = () => {
   <Carousel.Item>
     <img
       className="d-block w-100 " 
-      src="https://images.unsplash.com/photo-1598255539863-122cca274e15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJhbGxldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+      src="https://images.unsplash.com/photo-1560831340-b9679dc9e9f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXJ0JTIwd29ya3Nob3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
       alt="First slide"/>
   </Carousel.Item>
   <Carousel.Item >
     <img
       className="d-block w-100"
-     src="https://media.istockphoto.com/photos/rehearsal-in-childrens-ballet-studio-picture-id1071207976?k=20&m=1071207976&s=612x612&w=0&h=4dVx2LfpcZfQ57_4IfSI2iKqbUen6Vhlhft29tQa5lw="
+     src="https://media.istockphoto.com/photos/cropped-image-of-african-american-parents-and-daughter-painting-eggs-picture-id935695902?k=20&m=935695902&s=612x612&w=0&h=gxNhsYXnJL0YT8rFbhKNpX8bDXhpREz9_4zJzAOIvb8="
       alt="Second slide"/>
   </Carousel.Item>
   <Carousel.Item >
     <img
       className="d-block w-100"
-     src="https://media.istockphoto.com/photos/beautiful-legs-of-dancer-in-pointe-picture-id540375066?k=20&m=540375066&s=612x612&w=0&h=wDinAgkWrsA0DpNso-aM76WSIvvd3O1eV5zxiF_Z70I="
+     src={img1}
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://media.istockphoto.com/photos/two-kids-painting-easter-eggs-picture-id1138260123?k=20&m=1138260123&s=612x612&w=0&h=VTOBf26wc5fCHlHxMULZc8gEYljJdYqX_5Duy2GCLe0= "
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://media.istockphoto.com/photos/little-kids-holding-christmas-character-decorated-popsicle-sticks-picture-id881475192?k=20&m=881475192&s=612x612&w=0&h=E1kbcHAs-vuOcI4cO4s0ZR4dJQrv0QMjiO-HeyAYuj0="
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://media.istockphoto.com/photos/playing-the-drums-in-class-picture-id1296597806?k=20&m=1296597806&s=612x612&w=0&h=_5irS-wAIoYs9lWRI179eb9SiMcYMRvs_3YGC0Up7xQ="
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://media.istockphoto.com/photos/music-class-in-daycare-picture-id1063797254?k=20&m=1063797254&s=612x612&w=0&h=0nPeuLNIcss26QeHk75qRH1B61HYl56VUXhabaU-FFI= "
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://media.istockphoto.com/photos/online-dance-class-homeschooling-during-pandemic-coronavirus-picture-id1217851796?k=20&m=1217851796&s=612x612&w=0&h=f-g6aA-9h9zBFRK-ZeLNNZr0m4AwUIW6NcYTtmbHGfc="
       alt="Second slide"/>
   </Carousel.Item>
   {/* <Carousel.Item >
@@ -82,7 +114,7 @@ export const Workshop = () => {
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
                     <div className="col-md-4 border border-primary rounded">
-                      <img  src="https://media.istockphoto.com/photos/little-ballerinas-in-ballet-studio-picture-id1161652373?k=20&m=1161652373&s=612x612&w=0&h=8xIBoeahwR8G6RRrLGmj9ACtpCaM0sO5uD6NfuLvQQg="
+                      <img  src="https://media.istockphoto.com/photos/elementary-school-students-picture-id1153552608?k=20&m=1153552608&s=612x612&w=0&h=RKOLQdh12l8mqLM0CsN3DNuIZB6xbXSDzQ9m1rbBD5Q="
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
@@ -104,7 +136,7 @@ export const Workshop = () => {
                   </div>
                   </div>
                   <div className="col-md-4 border border-danger rounded">
-                  <img  src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE="
+                  <img  src="https://media.istockphoto.com/photos/close-up-two-women-practice-yoga-by-planking-on-mat-work-out-concept-picture-id1166073253?k=20&m=1166073253&s=612x612&w=0&h=2KdOiqfWOnaBnNtfmrJc4vrm1Qdh_yMFvu1WHsE_twc="
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
                 </div>
@@ -112,7 +144,7 @@ export const Workshop = () => {
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border border-success rounded">
-                  <img  src="https://media.istockphoto.com/photos/group-of-ballerinas-on-ballet-class-picture-id1144347933?k=20&m=1144347933&s=612x612&w=0&h=ePIvveM1FFEhVgi4hXiacurn464Rj_CDVmWDwXEmaeo="
+                  <img  src="https://media.istockphoto.com/photos/pupils-playing-musical-instruments-in-school-orchestra-picture-id498131225?k=20&m=498131225&s=612x612&w=0&h=Vukan68nBgbPGqEBfWXMb_kQmQ0iB9IGiP4SEl8qcxc="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
                   <div className="col-md-6" style={{backgroundColor:"#fff2f7"}}>

@@ -96,7 +96,7 @@ export const Guitar = () => {
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border border-success rounded">
-                    <img  src="https://media.istockphoto.com/photos/guitar-player-picture-id165836804?k=20&m=165836804&s=612x612&w=0&h=N8OWw6xTxVSEX2EDXb1V-80XbzQfAcMPOkHG8kibork="
+                    <img  src="https://media.istockphoto.com/photos/musician-plays-guitar-close-up-picture-id1097767690?k=20&m=1097767690&s=612x612&w=0&h=7YF-DXt5DxaimNnWgq2-f4lIK8Kr64G6kMyvTV_5IUM="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>

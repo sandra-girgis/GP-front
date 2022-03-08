@@ -18,19 +18,19 @@ export const Theatre = () => {
   <Carousel.Item>
     <img
       className="d-block w-100 " 
-      src="https://images.unsplash.com/photo-1598255539863-122cca274e15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJhbGxldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+      src="https://media.istockphoto.com/photos/red-theatre-curtain-picture-id672272950?k=20&m=672272950&s=612x612&w=0&h=crLfjyP2Oa4neLkgdMu4fFlqsrKrTIO5whQTwm1Q9M8="
       alt="First slide"/>
   </Carousel.Item>
   <Carousel.Item >
     <img
       className="d-block w-100"
-     src="https://media.istockphoto.com/photos/rehearsal-in-childrens-ballet-studio-picture-id1071207976?k=20&m=1071207976&s=612x612&w=0&h=4dVx2LfpcZfQ57_4IfSI2iKqbUen6Vhlhft29tQa5lw="
+     src="https://www.kuna.net.kw/NewsPictures/2015/5/20/dc805567-f85f-4952-abb5-e304c49cd57c.jpg"
       alt="Second slide"/>
   </Carousel.Item>
   <Carousel.Item >
     <img
       className="d-block w-100"
-     src="https://media.istockphoto.com/photos/beautiful-legs-of-dancer-in-pointe-picture-id540375066?k=20&m=540375066&s=612x612&w=0&h=wDinAgkWrsA0DpNso-aM76WSIvvd3O1eV5zxiF_Z70I="
+     src="https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80 "
       alt="Second slide"/>
   </Carousel.Item>
   {/* <Carousel.Item >
@@ -82,7 +82,7 @@ export const Theatre = () => {
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
                     <div className="col-md-4 border border-primary rounded">
-                      <img  src="https://media.istockphoto.com/photos/little-ballerinas-in-ballet-studio-picture-id1161652373?k=20&m=1161652373&s=612x612&w=0&h=8xIBoeahwR8G6RRrLGmj9ACtpCaM0sO5uD6NfuLvQQg="
+                      <img  src="https://media.istockphoto.com/photos/boy-wearing-make-up-and-large-coat-with-toy-sword-picture-id488845584?k=20&m=488845584&s=612x612&w=0&h=0URSpcg36ptWT7vOzh1zv2x2LSlplQAJqJRf0Lvruzw="
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
                     <div className="col-md-6">
@@ -104,7 +104,7 @@ export const Theatre = () => {
                   </div>
                   </div>
                   <div className="col-md-4 border border-danger rounded">
-                  <img  src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE="
+                  <img  src="https://daycreekhowl.org/wp-content/uploads/2019/03/Day-In-The-Life-.jpg"
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export const Theatre = () => {
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border border-success rounded">
-                  <img  src="https://media.istockphoto.com/photos/group-of-ballerinas-on-ballet-class-picture-id1144347933?k=20&m=1144347933&s=612x612&w=0&h=ePIvveM1FFEhVgi4hXiacurn464Rj_CDVmWDwXEmaeo="
+                  <img  src="https://media.istockphoto.com/photos/acting-coach-directing-an-improv-exercise-with-her-students-in-a-picture-id1348130723?k=20&m=1348130723&s=612x612&w=0&h=TwEljwjsFCbjOiXgFqJQ5Q9M__ZskV5EFu4X1cECvGk="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
