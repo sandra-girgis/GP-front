@@ -1,108 +1,40 @@
-// import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
-
-// export const Theatre = () => { 
-//   return (<>
-//         <div className="">
-//           <div className="card bg-dark text-white">
-//             <img
-//               className="card-img"
-//               src="https://wallpaperaccess.com/full/1562020.jpg"
-//               alt="Card image"
-//             />
-//             <div className="card-img-overlay text-center col-3 ms-5 ">
-//               <h1 className="card-title  ">Piano</h1>
-//               {/* <button className="btn btn-dark btn-lg card-text">
-//                 Join Us
-//               </button> */}
-//             </div>
-//           </div>
-//        </div>
-//        {/* <div class="card mb-3" style="max-width: 540px;"> */}
-//   <div className="row g-0">
-//     <div className="col-md-4">
-//       <img src="https://wallpaperaccess.com/full/1562020.jpg"
-//        className="img-fluid rounded-start" alt="..."/>
-//     </div>
-//     <div className="col-md-8">
-//       <div className="card-body">
-//         <h5 className="card-title">Title</h5>
-//         <p className="card-text">Description</p>
-//         <p className="card-text"><small className="text-muted">Reviews</small></p>
-//       </div>
-//     </div>
-//   </div>
-
-//       </>
-//     );
-//   }
-// // }
-// // export default Piano;
-// import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
-
-// export const Artcourses = () => { 
-//   return (<>
-//         <div className="">
-//           <div className="card bg-dark text-white">
-//             <img
-//               className="card-img"
-//               src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
-//               alt="Card image"
-//             />
-//             <div className="card-img-overlay text-center col-3 ms-5 ">
-//               <h1 className="card-title  ">Piano</h1>
-//               {/* <button className="btn btn-dark btn-lg card-text">
-//                 Join Us
-//               </button> */}
-//             </div>
-//           </div>
-//        </div>
-//        {/* <div class="card mb-3" style="max-width: 540px;"> */}
-//   <div className="row g-0">
-//     <div className="col-md-4">
-//       <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
-//        className="img-fluid rounded-start" alt="..."/>
-//     </div>
-//     <div className="col-md-8">
-//       <div className="card-body">
-//         <h5 className="card-title">Title</h5>
-//         <p className="card-text">Description</p>
-//         <p className="card-text"><small className="text-muted">Reviews</small></p>
-//       </div>
-//     </div>
-//   </div>
-
-//       </>
-//     );
-//   }
-// // }
-// // export default Piano;
-
 import React from "react";
 import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import img1 from "../images/01.jpg"
-import img2 from "../images/12.jpg"
-import img3 from "../images/17.jpg"
-import img4 from "../images/18.jpg"
-import img5 from "../images/15.jpg"
+// import img1 from "../images/v1.jpg"
+// import img2 from "../images/v2.jpg"
+// import img3 from "../images/k8.jpg"
+// import img4 from "../images/k4.jpg"
+// import img5 from "../images/k1.jpg"
+// import img6 from "../images/kkids.jpg"
+// import img7 from "../images/kmag.jpg"
+// import img8 from "../images/kold.jpg"
+
 
 export const Theatre = () => { 
   return (<>
   <Carousel>
-  <Carousel.Item interval={500}>
+  <Carousel.Item>
     <img
       className="d-block w-100 " 
-      src={img1} alt="First slide"/>
-  </Carousel.Item>
-  <Carousel.Item interval={500}>
-    <img
-      className="d-block w-100"
-      src={img2}   alt="Second slide"/>
+      src="https://media.istockphoto.com/photos/red-theatre-curtain-picture-id672272950?k=20&m=672272950&s=612x612&w=0&h=crLfjyP2Oa4neLkgdMu4fFlqsrKrTIO5whQTwm1Q9M8="
+      alt="First slide"/>
   </Carousel.Item>
   <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://www.kuna.net.kw/NewsPictures/2015/5/20/dc805567-f85f-4952-abb5-e304c49cd57c.jpg"
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80 "
+      alt="Second slide"/>
+  </Carousel.Item>
+  {/* <Carousel.Item >
     <img
       className="d-block w-100"
       src={img3}
@@ -122,7 +54,7 @@ export const Theatre = () => {
       src={img5}
       alt="fifth slide"
     />
-  </Carousel.Item>
+  </Carousel.Item> */}
 </Carousel>
         {/* <div className="boback">
         <div className="">
@@ -141,47 +73,52 @@ export const Theatre = () => {
        </div> */}
        {/* <div class="card mb-3" style="max-width: 540px;"> */}
 
+
+       
+     
+      
+  
        <div className="container mt-5 mb-5">
-              <h1 className="mb-5  text-center fw-bold display-4">About Our Classes</h1>
-              <div className="container mb-5">
+       <h1 className="mb-5 fw-bold display-4" style={{color:"#ee4a8b"}}> About Our Classes</h1>
+              <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
-                    <div className="col-md-4 border border-primary rounded">
-                      <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c="
-                      className="img-fluid rounded-start" alt="..."/>
+                    <div className="col-md-4 border rounded">
+                      <img  src="https://media.istockphoto.com/photos/boy-wearing-make-up-and-large-coat-with-toy-sword-picture-id488845584?k=20&m=488845584&s=612x612&w=0&h=0URSpcg36ptWT7vOzh1zv2x2LSlplQAJqJRf0Lvruzw="
+                      className="img-fluid rounded-start" alt="kids"/>
                     </div>
                     <div className="col-md-6">
-                      <div className="card-body">
-                        <h5 className="card-title">kids</h5>
+                      <div className="card-body"style={{backgroundColor:"#fff2f7"}}>
+                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                     </div>
                   </div>
               </div>
-              <div className="container mb-5">
+              <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                <div className="col-md-6 offset-md-2">
+                <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title">middle age</h5>
+                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
-                    <img  src="https://media.istockphoto.com/photos/piano-lesson-picture-id1285507317?k=20&m=1285507317&s=612x612&w=0&h=yl7ThegscO4Nv8pEumIz6qxYR-UkoNc4fWy_Z7Z1uEM="
-                    className="img-fluid rounded-start" alt="..."/>
+                  <div className="col-md-4 border rounded">
+                  <img  src="https://daycreekhowl.org/wp-content/uploads/2019/03/Day-In-The-Life-.jpg"
+                    className="img-fluid rounded-start" alt="middle age"/>
                   </div>
                 </div>
               </div>        
-              <div className="container mb-5">
+              <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
-                    <img  src="https://media.istockphoto.com/photos/friends-playing-piano-all-together-picture-id991893172?k=20&m=991893172&s=612x612&w=0&h=L8ewogV3w1WnM6TYBmU5lanUBwjxdpW5gL8V6pfxmAI="
-                    className="img-fluid rounded-start" alt="..."/>
+                  <div className="col-md-4 border rounded">
+                  <img  src="https://media.istockphoto.com/photos/acting-coach-directing-an-improv-exercise-with-her-students-in-a-picture-id1348130723?k=20&m=1348130723&s=612x612&w=0&h=TwEljwjsFCbjOiXgFqJQ5Q9M__ZskV5EFu4X1cECvGk="
+                    className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title">Elderly</h5>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
 
@@ -189,13 +126,12 @@ export const Theatre = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-12 text-center"><button className="btn-primary btn-lg fs-2" >Join Us</button></div>
         </div>
         
 
         <div className="container mb-5">
-        <h1 className="mb-5  text-center fw-bold display-4">About Our Instractors</h1>
-        <div className="card mb-3 instractor">
+        <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Instructors</h1>
+        <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
@@ -203,8 +139,8 @@ export const Theatre = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -215,13 +151,13 @@ export const Theatre = () => {
           </div>
         </div>
         
-        <div className="card mb-3">
+        <div className="card mb-5 flip-card shadow1">
             <div className="row g-0">
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -235,7 +171,7 @@ export const Theatre = () => {
             </div>
           </div>
         </div>
-        <div className="card mb-3 instractor">
+        <div className="card mb-5 instractor flip-card shadow2">
             <div className="row g-0">
             <div className="col-md-4">
               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
@@ -243,8 +179,8 @@ export const Theatre = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -255,13 +191,13 @@ export const Theatre = () => {
           </div>
         </div>
 
-        <div className="card mb-3">
+        <div className="card mb-5 flip-card shadow3">
             <div className="row g-0">
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -276,7 +212,7 @@ export const Theatre = () => {
           </div>
         </div>
         
-        <div className="card mb-3 instractor">
+        <div className="card mb-5 instractor flip-card shadow4">
             <div className="row g-0">
             <div className="col-md-4">
               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
@@ -284,8 +220,8 @@ export const Theatre = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Born in Alexandria in 1998.
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
                                           Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
@@ -295,11 +231,61 @@ export const Theatre = () => {
             </div>
           </div>
         </div>
+        
+        <div className="col-12 text-center">
+          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+            <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
+
+        
+
+
+
+
+
+          {/* <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="col instractor">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                 className="card-img-top  rounded-circle" style={{width:"15rem"}}  alt="instractor-img"/>
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Born in Alexandria in 1998.
+                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
+                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
+                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
+                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
+                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                </div>
+            </div>
+            <div className="col instractor">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+                className="card-img-top  rounded-circle" style={{width:"15rem"}} alt="instractor-img"/>
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a short card.</p>
+              </div>
+            </div>
+            <div className="col instractor">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+                className="card-img-top  rounded-circle" style={{width:"15rem"}} alt="instractor-img"/>
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            <div className="col instractor">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                className="card-img-top rounded-circle" style={{width:"15rem"}} alt="instractor-img"/>
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+           </div> */}
         </div>
        
 
 
-      
+        {/* </div> */}
 
       </>
     );

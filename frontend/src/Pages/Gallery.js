@@ -39,7 +39,7 @@ class Gallery extends Component {
     <>
       <section className="text-left mt-3">
         <div className="container">
-          <h1 className="new2">Concerts</h1>
+          <h1 className=""style={{color:"#ee4a8b"}}>Concerts</h1>
         </div>
       </section>
       <div className="album py-5 bg-light">

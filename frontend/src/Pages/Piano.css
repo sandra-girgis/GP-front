@@ -80,64 +80,12 @@ text-align:justify;
 
 
 /* The animation code */
-/* @keyframes example {
-    from {  transform: rotateY(0deg);}
-    to {  transform: rotateY(180deg);}
-  } */
-  
-  /* The element to apply the animation to */
-  
-  /* @keyframes example2 {
-    from {  transform: rotateY(180deg);}
-    to {  transform: rotateY(0deg);}
-  } */
-  
-  /* .flip-box {
-    background-color: transparent; */
-    /* width: 200px;
-    height: 200px; */
-    /* border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  } */
-  
-  /* .flip-box-inner {
-    position: relative; */
-    /* width: 100%;
-    height: 100%; */
-    /* text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    animation-name: example2;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  } */
-  
-  /* .flip-box-front, .flip-box-back { */
-    /* position: absolute; */
-    /* width: 100%;
-    height: 100%; */
-    /* -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  } */
-  
-  /* .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
-   */
-  /* .flip-box-back {
-    background-color: #555;
-    color: white;
-    transform: rotateY(180deg);
-  }  */
-
-  @keyframes example {
+@keyframes example {
     from {  transform: rotateY(0deg);}
     to {  transform: rotateY(180deg);}
   }
+  
+  
   
   /* The element to apply the animation to */
   
@@ -150,32 +98,57 @@ text-align:justify;
     width: 20vw;
     height: 20vw;
     animation-name: example;
-    animation-duration: 6s;
+    /* animation-duration: 6s; */
     animation-iteration-count: infinite;
   }
-  
+
   .flip-box-inner {
-    position: relative;
+    position: relative; 
+    /* width: 100%; */
+    /* height: 100%; */ 
     text-align: center;
-    transition: transform 0.8s;
+    /* transition: transform 0.8s; */
     transform-style: preserve-3d;
     animation-name: example2;
-    animation-duration: 6s;
+    /* animation-duration: 6s; */
     animation-iteration-count: infinite;
+  } 
+
+
+  .flip-box-inner:hover
+  {
+    animation-duration: 6s;
   }
-  
-  .flip-box-front, .flip-box-back {
+
+  .flip-box-front, .flip-box-back { 
     position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    /* -webkit-backface-visibility: hidden; */
     backface-visibility: hidden;
   }
-  
+
   .flip-box-back {
     transform: rotateY(180deg);
-  }
+  } 
   .img{
     width: 22vw;
     height: 18vw;
   }
+
+  /* The element to apply the animation to */
+  
+
+  
+ 
+  
+
+
+
+
+ 
+
+ 
 
 
 

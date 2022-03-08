@@ -1,6 +1,7 @@
 import React from "react";
 import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import img1 from "../images/k6.jpg"
 import img2 from "../images/k7.jpg"
@@ -65,14 +66,14 @@ export const Violin = () => {
        {/* <div class="card mb-3" style="max-width: 540px;"> */}
 
        <div className="container mt-5 mb-5">
-       <h1 className="mb-5 fw-bold display-4"style={{color:"#f1552d"}}>About Our Classes</h1>
+       <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Classes</h1>
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
-                    <div className="col-md-4 border border-primary rounded">
+                    <div className="col-md-4 border rounded">
                       <img  src={img6}
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
                         <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -83,14 +84,14 @@ export const Violin = () => {
               </div>
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                <div className="col-md-6 offset-md-2">
+                <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#f1552d"}}>middle age</h5>
+                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src={img7}
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
@@ -98,13 +99,13 @@ export const Violin = () => {
               </div>        
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src={img8}
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#77aa2a"}}>Elderly</h5>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
 
@@ -116,7 +117,7 @@ export const Violin = () => {
         
 
         <div className="container mb-5">
-        <h1 className="mb-5  fw-bold display-4"style={{color:"#f1552d"}}>About Our Instructors</h1>
+        <h1 className="mb-5  fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Instructors</h1>
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
@@ -167,8 +168,9 @@ export const Violin = () => {
             </div>
           </div>
         </div>
-        <div className="col-12 text-center"><button className="btn-outline-light btn-lg butt fs-2" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
-
+        <div className="col-12 text-center">
+          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+            <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
 
 

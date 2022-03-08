@@ -53,7 +53,7 @@ class News extends Component {
   render() {
     return (
       <>     
-        <h1 className='new2 container'>
+        <h1 className='container'style={{color:"#ee4a8b"}}>
           NEWS
         </h1>
         <div className="container ">
