@@ -38,6 +38,10 @@ function App() {
             <Route path="/violin" exact component={Violin} />
             <Route path="/theatre" exact component={Theatre} />
             <Route path="/workshop" exact component={Workshop} />
+            {/* <Route path="/classes" exact component={Classes} />
+            <Route path="/concerts" exact component={Concerts} />
+            <Route path="/exhibitions" exact component={Exhibitions} />
+            <Route path="/workshops" exact component={Workshops} /> */}
             <Route path="/joinus" exact component={Joinus} />
             <Route path="/admin" exact component={Admin} />
 

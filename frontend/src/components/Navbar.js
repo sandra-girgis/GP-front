@@ -17,7 +17,7 @@ function Nav() {
             className="log"
             style={{ width: "3rem" }}
           />
-          <ul className="navbar-nav me-auto mb-2 mb-sm-0">
+          <ul className="navbar-nav mb-2 ml-auto">
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/">
                 Home
@@ -28,11 +28,37 @@ function Nav() {
                 News
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/gallery">
                 Gallery
               </NavLink>
-            </li>
+            </li> */}
+            <NavDropdown
+              title="Gallery"
+              id="basic-nav-dropdown"
+              className=" pink bl"
+            >
+              <NavDropdown.Item>
+                <NavLink className="nav pink bl" exact to="/concerts">
+                  Concerts
+                </NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink className="nav pink bl" exact to="/workshops">
+                  Workshops
+                </NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink className="nav pink bl" exact to="/exhibitions">
+                  Exhibitions
+                </NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink className="nav pink bl" exact to="/classes">
+                  Classes
+                </NavLink>
+              </NavDropdown.Item>
+            </NavDropdown>
             <NavDropdown
               title="Music"
               id="basic-nav-dropdown"
@@ -91,9 +117,15 @@ function Nav() {
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
+<<<<<<< HEAD
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="admin">
                 Admin
+=======
+            <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/login">
+                Login
+>>>>>>> 7d395a8157ac4054c0480015a1931da1605c91e9
               </NavLink>
             </li>
           </ul>
