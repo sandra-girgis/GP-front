@@ -82,7 +82,7 @@ export const Theatre = () => {
        <h1 className="mb-5 fw-bold display-4" style={{color:"#ee4a8b"}}> About Our Classes</h1>
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
-                    <div className="col-md-4 border border-primary rounded">
+                    <div className="col-md-4 border rounded">
                       <img  src="https://media.istockphoto.com/photos/boy-wearing-make-up-and-large-coat-with-toy-sword-picture-id488845584?k=20&m=488845584&s=612x612&w=0&h=0URSpcg36ptWT7vOzh1zv2x2LSlplQAJqJRf0Lvruzw="
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
@@ -104,7 +104,7 @@ export const Theatre = () => {
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src="https://daycreekhowl.org/wp-content/uploads/2019/03/Day-In-The-Life-.jpg"
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
@@ -112,7 +112,7 @@ export const Theatre = () => {
               </div>        
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src="https://media.istockphoto.com/photos/acting-coach-directing-an-improv-exercise-with-her-students-in-a-picture-id1348130723?k=20&m=1348130723&s=612x612&w=0&h=TwEljwjsFCbjOiXgFqJQ5Q9M__ZskV5EFu4X1cECvGk="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>

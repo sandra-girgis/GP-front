@@ -89,7 +89,7 @@ export const Artcourses = () => {
        <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Classes</h1>
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
-                    <div className="col-md-4 border border-primary rounded">
+                    <div className="col-md-4 border rounded">
                     <img  src={img7}
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
@@ -111,7 +111,7 @@ export const Artcourses = () => {
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src={img8}
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
@@ -119,7 +119,7 @@ export const Artcourses = () => {
               </div>        
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src="https://media.istockphoto.com/photos/happy-latin-female-working-on-a-painting-picture-id1144643775?b=1&k=20&m=1144643775&s=170667a&w=0&h=4nagCwIv30VVCMonQg2KTHiL5SxeENGzUzbpzX2VR4M="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>

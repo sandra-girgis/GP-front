@@ -114,7 +114,7 @@ export const Workshop = () => {
        <h1 className="mb-5 fw-bold display-4" style={{color:"#ee4a8b"}}> About Our Classes</h1>
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
-                    <div className="col-md-4 border border-primary rounded">
+                    <div className="col-md-4 border rounded">
                       <img  src="https://media.istockphoto.com/photos/elementary-school-students-picture-id1153552608?k=20&m=1153552608&s=612x612&w=0&h=RKOLQdh12l8mqLM0CsN3DNuIZB6xbXSDzQ9m1rbBD5Q="
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
@@ -136,7 +136,7 @@ export const Workshop = () => {
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src="https://media.istockphoto.com/photos/close-up-two-women-practice-yoga-by-planking-on-mat-work-out-concept-picture-id1166073253?k=20&m=1166073253&s=612x612&w=0&h=2KdOiqfWOnaBnNtfmrJc4vrm1Qdh_yMFvu1WHsE_twc="
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
@@ -144,7 +144,7 @@ export const Workshop = () => {
               </div>        
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src="https://media.istockphoto.com/photos/pupils-playing-musical-instruments-in-school-orchestra-picture-id498131225?k=20&m=498131225&s=612x612&w=0&h=Vukan68nBgbPGqEBfWXMb_kQmQ0iB9IGiP4SEl8qcxc="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>

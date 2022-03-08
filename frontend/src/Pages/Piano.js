@@ -87,7 +87,7 @@ export const Piano = () => {
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
+                  <div className="col-md-4 border rounded">
                     <img  src="https://media.istockphoto.com/photos/piano-lesson-picture-id1285507317?k=20&m=1285507317&s=612x612&w=0&h=yl7ThegscO4Nv8pEumIz6qxYR-UkoNc4fWy_Z7Z1uEM="
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
@@ -95,7 +95,7 @@ export const Piano = () => {
               </div>        
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
+                  <div className="col-md-4 border rounded">
                     <img  src="https://media.istockphoto.com/photos/friends-playing-piano-all-together-picture-id991893172?k=20&m=991893172&s=612x612&w=0&h=L8ewogV3w1WnM6TYBmU5lanUBwjxdpW5gL8V6pfxmAI="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>

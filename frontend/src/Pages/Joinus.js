@@ -7,12 +7,13 @@ import Button from "react-bootstrap/Button";
 
 export const Joinus = () => { 
   return (<>
-          <h3 className='new2 pt-2'style={{color:"#ee4a8b"}}>Send us a message</h3>
-          <br></br>
+          <h3 className='new2 pt-2 mb-5'style={{color:"#ee4a8b"}}>Send us a message</h3>
+          <div style={{backgroundColor:"#fff2f7"}}>
           <Form style={{width:"50%"}} className="mx-auto">
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label style={{color:"#168eca"}}>Email address</Form.Label>
             <Form.Control type="email" placeholder="name@example.com" />
+            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
           </Form.Group>
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label style={{color:"#168eca"}}>Message</Form.Label>
@@ -22,8 +23,8 @@ export const Joinus = () => {
             Submit
           </Button>
         </Form>
-        <br>
-        </br>
+        </div>
+        <div className="mb-5"></div>
       </>
     );
   }

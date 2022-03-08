@@ -82,7 +82,7 @@ export const Ballet = () => {
        <h1 className="mb-5 fw-bold display-4" style={{color:"#ee4a8b"}}> About Our Classes</h1>
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
-                    <div className="col-md-4 border border-primary rounded">
+                    <div className="col-md-4 border rounded">
                       <img  src="https://media.istockphoto.com/photos/little-ballerinas-in-ballet-studio-picture-id1161652373?k=20&m=1161652373&s=612x612&w=0&h=8xIBoeahwR8G6RRrLGmj9ACtpCaM0sO5uD6NfuLvQQg="
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
@@ -104,7 +104,7 @@ export const Ballet = () => {
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
+                  <div className="col-md-4 border  rounded">
                   <img  src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE="
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
@@ -112,7 +112,7 @@ export const Ballet = () => {
               </div>        
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src="https://media.istockphoto.com/photos/group-of-ballerinas-on-ballet-class-picture-id1144347933?k=20&m=1144347933&s=612x612&w=0&h=ePIvveM1FFEhVgi4hXiacurn464Rj_CDVmWDwXEmaeo="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>

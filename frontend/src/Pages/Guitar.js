@@ -66,7 +66,7 @@ export const Guitar = () => {
        <h1 className="mb-5  fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Classes</h1>
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
-                    <div className="col-md-4 border border-primary rounded">
+                    <div className="col-md-4 border rounded">
                       <img  src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134="
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
@@ -88,7 +88,7 @@ export const Guitar = () => {
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
+                  <div className="col-md-4 border rounded">
                     <img  src="https://media.istockphoto.com/photos/female-pupil-playing-guitar-in-high-school-orchestra-picture-id498129995?k=20&m=498129995&s=612x612&w=0&h=oqKZBNcoa_YndIOzwyd5JhNyaSKB6gHLzXp5dZaaNy0="
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
@@ -96,7 +96,7 @@ export const Guitar = () => {
               </div>        
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
+                  <div className="col-md-4 border rounded">
                     <img  src="https://media.istockphoto.com/photos/musician-plays-guitar-close-up-picture-id1097767690?k=20&m=1097767690&s=612x612&w=0&h=7YF-DXt5DxaimNnWgq2-f4lIK8Kr64G6kMyvTV_5IUM="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
