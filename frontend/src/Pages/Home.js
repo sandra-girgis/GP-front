@@ -96,7 +96,7 @@ export const Home = () => {
                       exact
                       to={"/news"}
                     >
-                      Show All News
+                      Show All Events
                     </NavLink>
                   </button>
                 </div>

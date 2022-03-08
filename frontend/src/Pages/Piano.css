@@ -275,7 +275,12 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
   font-size:1.2vw;
 }
 
-
+.adm{
+  color:#ee4a8b!important;
+}
+.adm:hover {
+  color:#168eca!important;
+}
 
 
 
