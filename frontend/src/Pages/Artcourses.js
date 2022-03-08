@@ -1,6 +1,7 @@
 import React from "react";
 import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import img1 from "../images/v1.jpg"
 // import img2 from "../images/v2.jpg"
@@ -238,8 +239,9 @@ export const Artcourses = () => {
           </div>
         </div>
         
-        <div className="col-12 text-center"><button className="btn-outline-light btn-lg  butt fs-2" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
-
+        <div className="col-12 text-center">
+          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+            <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
         
 
