@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -16,11 +16,19 @@ import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
 import { Joinus } from "./Pages/Joinus";
 import { Admin } from "./Pages/Admin";
+import  Login  from "./Pages/login";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
+
+  const [token,setToken] = useState('')
+
+
+  const userlogin = (tok) =>{
+    setToken(tok);
+  }
   return (
     <>
       <BrowserRouter>
@@ -44,7 +52,8 @@ function App() {
             <Route path="/workshops" exact component={Workshops} /> */}
             <Route path="/joinus" exact component={Joinus} />
             <Route path="/admin" exact component={Admin} />
-
+            <Route path="/login" exact ><Login userlogin={userlogin}/>
+            </Route>
           </Switch>
           <Footer />
         </div>
