@@ -15,7 +15,6 @@ import { Theatre } from "./Pages/Theatre";
 import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
 import { Joinus } from "./Pages/Joinus";
-import { Admin } from "./Pages/Admin/Admin";
 import { Events } from "./Pages/Admin/Events";
 import { Imagealbum } from "./Pages/Admin/Imagealbum";
 import { Instructors } from "./Pages/Admin/Instructors";
@@ -57,8 +56,7 @@ function App() {
             <Route path="/exhibitions" exact component={Exhibitions} />
             <Route path="/workshops" exact component={Workshops} /> */}
             <Route path="/joinus" exact component={Joinus} />
-            <Route path="/admin" exact component={Admin} />
-            <Route path="/admin" exact component={Events} />
+            <Route path="/event" exact component={Events} />
             <Route path="/imagealbum" exact component={Imagealbum} />
             <Route path="/instructors" exact component={Instructors} />
             <Route path="/students" exact component={Students} />
