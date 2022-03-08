@@ -8,6 +8,8 @@ import { Artcourses } from "./Pages/Artcourses";
 import { Guitar } from "./Pages/Guitar";
 import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
+import { Instructor } from "./Pages/Instructor";
+
 import Gallery from "./Pages/Gallery";
 import News from "./Pages/News";
 import { Piano } from "./Pages/Piano";
@@ -42,6 +44,8 @@ function App() {
             <Route path="/exhibitions" exact component={Exhibitions} />
             <Route path="/workshops" exact component={Workshops} /> */}
             <Route path="/joinus" exact component={Joinus} />
+            <Route path="/instructor" exact component={Instructor} />
+
  
           </Switch>
           <Footer />

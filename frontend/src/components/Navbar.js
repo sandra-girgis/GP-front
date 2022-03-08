@@ -118,10 +118,16 @@ function Nav() {
               </NavDropdown.Item>
             </NavDropdown>
             <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/instructor">
+                Instructor
+              </NavLink>
+            </li>
+            <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/login">
                 Login
               </NavLink>
             </li>
+            
           </ul>
         </Navbar.Collapse>
       </Navbar>

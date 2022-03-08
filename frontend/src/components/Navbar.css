@@ -43,6 +43,7 @@ rehab
 
 .bl {
   color: #168eca !important;
+  text-decoration:none;
 }
 .dropdown-toggle::after {
   content: none;
