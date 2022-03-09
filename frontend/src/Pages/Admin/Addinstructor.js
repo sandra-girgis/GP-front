@@ -22,7 +22,7 @@
     // //         }
     //     }
     // }
-    // export default Addevent;
+    // export default Addinstructor;
 
 
 

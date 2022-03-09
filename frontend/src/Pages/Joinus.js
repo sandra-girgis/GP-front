@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 export const Joinus = () => { 
   return (<>
           <h3 className='new2 pt-2 mb-5'style={{color:"#ee4a8b"}}>Send us a message</h3>
-          <div className="shadow container mt-3" style={{ height:"20rem"}}>
+          <div className="shado container mt-3" style={{ height:"20rem"}}>
           <Form style={{width:"50%"}} className="mx-auto mt-3">
           <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
             <Form.Label style={{color:"#168eca"}}>Email address</Form.Label>

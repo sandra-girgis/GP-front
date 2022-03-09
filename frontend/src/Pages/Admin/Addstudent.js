@@ -15,12 +15,14 @@ import { NavLink } from "react-router-dom";
             //  Is-Staff: "",
             //  Email: "",
 //             Phone-Number: "",
+            //    Payment Status:"",
+
             //  Courses: "",
             //   image:"",
 //         }
 //     }
 // }
-// export default Addevent;
+// export default Addstudent;
 
 
 
@@ -47,6 +49,10 @@ return (<>
 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label style={{color:"#168eca"}}>Courses</Form.Label>
             <Form.Control as="textarea" rows={2} />
+</Form.Group>
+<Form.Group className="mb-3" controlId="exampleForm.ControlNumber">
+            <Form.Label style={{color:"#168eca"}}>Payment Status</Form.Label>
+            <Form.Control as="textarea" rows={1} />
 </Form.Group>
 <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check  style={{color:"#168eca"}} type="checkbox" label="Is Staff" />

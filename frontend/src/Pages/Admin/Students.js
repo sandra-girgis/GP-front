@@ -29,6 +29,8 @@ export const Students = () => {
         <th scope="col">Email</th>
         <th scope="col">image</th>
         <th scope="col">Phone-Number</th>
+        <th scope="col">Phone-Number</th>
+        <th scope="col">Payment Status</th>
         <th scope="col">Courses</th>
         <th scope="col">Edit</th>
         <th scope="col">Delete</th>
@@ -43,6 +45,9 @@ export const Students = () => {
       <td>@mdo</td>
       <td>@mdo</td>
       <td>@mdo</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+
 
       <td>
         <Link to="#" style={{textDecoration:"none"}}>
@@ -63,6 +68,8 @@ export const Students = () => {
       <td>@mdo</td>
       <td>@mdo</td>
       <td>@mdo</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
 
       <td>
         <Link to="#" style={{textDecoration:"none"}}>
@@ -79,6 +86,8 @@ export const Students = () => {
       <td>3</td>
       <td colSpan={2}>Larry the Bird</td>
       <td>@twitter</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
       <td>@mdo</td>
       <td>@mdo</td>
       <td>@mdo</td>
