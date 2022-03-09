@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import {HashLink} from 'react-router-hash-link';
 
 export const Instructor = () => {
     return (
@@ -32,7 +33,7 @@ export const Instructor = () => {
       <div className="ins_info fs-md-4 text-muted">
           Salary:
       </div>
-      <button className="ins_info fs-md-6 btn btn-primary mt-3">
+      <button style={{backgroundColor:"white" , border:"1px solid grey"}} className="ins_info fs-md-6 btn  mt-3 pink">
           Edit Password
       </button>
       </div>
@@ -40,21 +41,21 @@ export const Instructor = () => {
       <div className=" col-md-6 ">
        <Navbar>
 
-      <ul className="list-inline bl">
+      <ul className="list-inline">
             <li className="list-inline-item">
-              <Link className=" pink bl" exact to="/">
+              <HashLink className=" pink ins_nav" smooth to="#intro">
                 Introduction
-              </Link>
+              </HashLink>
             </li>
             <li className="list-inline-item">
-              <Link className=" pink bl ms-5" exact to="/news">
+              <HashLink className=" pink ins_nav ms-5" smooth to="#cour">
                 Courses
-              </Link>
+              </HashLink>
             </li>
             </ul>
         </Navbar>
-        <h3 className="ms-3">Bio</h3>
-        <p className="ins_bio mt-4 fs-6 container">
+        <h3 style={{color:"#ee4a8b"}} id="intro" className="ms-3">Bio</h3>
+        <p className="ins_bio mt-4 fs-6 container course_text">
           Salma Wael is an architect who works as a part time TA at the Arab Academy 
                 for science and Technology and works at Omran architects. 
                 She started playing piano when she was 7 years old and graduated 
@@ -65,11 +66,11 @@ export const Instructor = () => {
                   Furthermore Salma has teached piano for 4 months in 2018 at Tchikovsky
                    school for Preforming Arts.</p>  
 
-        <h3 className="ms-3 mt-5">Courses</h3>
+        <h3 style={{color:"#ee4a8b"}} className="ms-3 mt-5" id="cour">Courses</h3>
         <Card className="ms-3 mt-4" style={{ width: '30rem' }}>
   <Card.Body >
-    <Card.Title className="fs-4">Course Title</Card.Title>
-    <Card.Subtitle className="mb-3 course_text">Course Content</Card.Subtitle>
+  <Card.Title style={{color:"#236aec"}} className="fs-4">Course Title</Card.Title>
+    <Card.Subtitle  className="mb-3 mt-4 course_text">Course Content</Card.Subtitle>
     <Card.Text className="text-muted">
       From:
     </Card.Text>
