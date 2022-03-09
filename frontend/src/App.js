@@ -8,6 +8,8 @@ import { Artcourses } from "./Pages/Artcourses";
 import { Guitar } from "./Pages/Guitar";
 import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
+import { Instructor } from "./Pages/Instructor";
+
 import Gallery from "./Pages/Gallery";
 import News from "./Pages/News";
 import { Piano } from "./Pages/Piano";
@@ -62,6 +64,9 @@ function App() {
             <Route path="/students" exact component={Students} />
             <Route path="/login" exact ><Login userlogin={userlogin}/>
             </Route>
+            <Route path="/instructor" exact component={Instructor} />
+
+ 
           </Switch>
           <Footer />
         </div>

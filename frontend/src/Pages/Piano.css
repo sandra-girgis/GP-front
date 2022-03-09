@@ -135,6 +135,14 @@ text-align:justify;
     width: 22vw;
     height: 18vw;
   }
+  .card-img-overlay{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #168eca;
+    
+} 
 
   /* The element to apply the animation to */
   
@@ -287,9 +295,36 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 th{
   color:#ee4a8b;
 }
+/* ------------------------ */
+/* instructor */
 
+.ins_header{
+  background-color: cornflowerblue;
+  height: 18vw;
+  /* position: relative; */
+  width: 100%;
+  /* background-image:url("https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg") */
+}
+.ins_name{
+  margin-left:15%;
+  /* margin-top:8%; */
+}
+.ins_info{
+  margin-left:5%;
+}
+.ins_image{
 
-
+  width:25%;
+  border-radius:50%; 
+  shape-outside: circle(50%);
+  /* clip-path: circle(9rem at 17rem 9rem); */
+} 
+.ins_bio{
+  text-align: justify;
+}
+.course_text{
+  font-size:1.2vw;
+}
 
 
 
