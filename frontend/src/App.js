@@ -9,7 +9,6 @@ import { Guitar } from "./Pages/Guitar";
 import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
 import { Instructor } from "./Pages/Instructor";
-
 import Gallery from "./Pages/Gallery";
 import News from "./Pages/News";
 import { Piano } from "./Pages/Piano";
@@ -21,7 +20,10 @@ import { Events } from "./Pages/Admin/Events";
 import { Imagealbum } from "./Pages/Admin/Imagealbum";
 import { Instructors } from "./Pages/Admin/Instructors";
 import { Students } from "./Pages/Admin/Students";
-
+import { Addstudent } from "./Pages/Admin/Addstudent";
+import { Addinstructor } from "./Pages/Admin/Addinstructor";
+import { Addevent } from "./Pages/Admin/Addevent";
+import { Addimage} from "./Pages/Admin/Addimage";
 
 import  Login  from "./Pages/login";
 // {}>> <function></function>
@@ -62,6 +64,11 @@ function App() {
             <Route path="/imagealbum" exact component={Imagealbum} />
             <Route path="/instructors" exact component={Instructors} />
             <Route path="/students" exact component={Students} />
+            <Route path="/addstudent" exact component={Addstudent} />
+            <Route path="/addevent" exact component={Addevent} />
+            <Route path="/addimage" exact component={Addimage} />
+            <Route path="/addinstructor" exact component={Addinstructor} />
+            
             <Route path="/login" exact ><Login userlogin={userlogin}/>
             </Route>
             <Route path="/instructor" exact component={Instructor} />
