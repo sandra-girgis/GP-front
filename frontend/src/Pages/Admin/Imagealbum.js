@@ -36,9 +36,7 @@ export const Imagealbum = () => {
       <td>Mark</td>
       <td>Otto</td>
       <td>
-        <Link to="#" style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
-        </Link>
+      <button className="butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addimage"}>Edit</NavLink></button>
         </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
@@ -51,9 +49,7 @@ export const Imagealbum = () => {
       <td>Jacob</td>
       <td>Thornton</td>
       <td>
-        <Link to="#" style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
-        </Link>
+      <button className=" butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addimage"}>Edit</NavLink></button>
         </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
@@ -66,9 +62,7 @@ export const Imagealbum = () => {
       <td>Jacob</td>
       <td>Thornton</td>
       <td>
-        <Link to="#" style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
-        </Link>
+      <button className=" butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addimage"}>Edit</NavLink></button>
         </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
@@ -78,18 +72,6 @@ export const Imagealbum = () => {
     </tr>
   </tbody>
 </Table>
-
-
-
-
-
-
-
-
-
-
-
-
       </>
     );
   }

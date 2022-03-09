@@ -25,6 +25,15 @@ import { Addinstructor } from "./Pages/Admin/Addinstructor";
 import { Addevent } from "./Pages/Admin/Addevent";
 import { Addimage} from "./Pages/Admin/Addimage";
 
+// import { Editevent} from "./Pages/Admin/Editevent";
+// import { Deletevent} from "./Pages/Admin/Deletevent";
+// import { Editimage} from "./Pages/Admin/Editimage";
+// import { Deletimage} from "./Pages/Admin/Deletimage";
+// import { Deleteinstractor} from "./Pages/Admin/Deleteinstractor";
+// import { Editinstructor} from "./Pages/Admin/Editinstructor";
+// import { Editstudent} from "./Pages/Admin/Editstudent";
+// import { Deletstudent} from "./Pages/Admin/Deletstudent";
+
 import  Login  from "./Pages/login";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
@@ -68,12 +77,20 @@ function App() {
             <Route path="/addevent" exact component={Addevent} />
             <Route path="/addimage" exact component={Addimage} />
             <Route path="/addinstructor" exact component={Addinstructor} />
-            
+
+            {/* <Route path="/editevent" exact component={Editevent} />
+            <Route path="/deletevent" exact component={Deletevent} />
+            <Route path="/editimage" exact component={Editimage} />
+            <Route path="/ deletimage" exact component={Deletimage} />
+            <Route path="/deleteinstractor" exact component={Deleteinstractor} />
+            <Route path="/editinstructor" exact component={Editinstructor} />
+            <Route path="/editstudent" exact component={Editstudent} />
+            <Route path="/deletstudent" exact component={Deletstudent} /> */}
+
             <Route path="/login" exact ><Login userlogin={userlogin}/>
             </Route>
             <Route path="/instructor" exact component={Instructor} />
 
- 
           </Switch>
           <Footer />
         </div>

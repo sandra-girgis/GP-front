@@ -42,9 +42,7 @@ export const Events = () => {
       <td>@mdo</td>
       <td>@mdo</td>
       <td>
-        <Link to="#" style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
-        </Link>
+      <button className="butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addevent"}>Edit</NavLink></button>
         </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
@@ -59,9 +57,7 @@ export const Events = () => {
       <td>@fat</td>
       <td>@mdo</td>
       <td>
-        <Link to="#" style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
-        </Link>
+      <button className="butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addevent"}>Edit</NavLink></button>
         </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
@@ -75,9 +71,7 @@ export const Events = () => {
       <td>@twitter</td>
       <td>@mdo</td>
       <td>
-        <Link to="#" style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
-        </Link>
+      <button className="butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addevent"}>Edit</NavLink></button>
         </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
