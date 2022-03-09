@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -9,6 +9,7 @@ import { Guitar } from "./Pages/Guitar";
 import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
 import { Instructor } from "./Pages/Instructor";
+import { Student } from "./Pages/Student";
 
 import Gallery from "./Pages/Gallery";
 import News from "./Pages/News";
@@ -17,11 +18,25 @@ import { Theatre } from "./Pages/Theatre";
 import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
 import { Joinus } from "./Pages/Joinus";
+import { Events } from "./Pages/Admin/Events";
+import { Imagealbum } from "./Pages/Admin/Imagealbum";
+import { Instructors } from "./Pages/Admin/Instructors";
+import { Students } from "./Pages/Admin/Students";
+
+
+import  Login  from "./Pages/login";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
+
+  const [token,setToken] = useState('')
+
+
+  const userlogin = (tok) =>{
+    setToken(tok);
+  }
   return (
     <>
       <BrowserRouter>
@@ -46,7 +61,14 @@ function App() {
             <Route path="/joinus" exact component={Joinus} />
             <Route path="/instructor" exact component={Instructor} />
 
- 
+            <Route path="/student" exact component={Student} />
+
+            <Route path="/event" exact component={Events} />
+            <Route path="/imagealbum" exact component={Imagealbum} />
+            <Route path="/instructors" exact component={Instructors} />
+            <Route path="/students" exact component={Students} />
+            <Route path="/login" exact ><Login userlogin={userlogin}/>
+            </Route>
           </Switch>
           <Footer />
         </div>

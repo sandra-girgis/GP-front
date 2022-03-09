@@ -25,7 +25,7 @@ function Nav() {
             </li>
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/news">
-                News
+                Events
               </NavLink>
             </li>
             {/* <li className="nav-item">
@@ -118,9 +118,19 @@ function Nav() {
               </NavDropdown.Item>
             </NavDropdown>
             <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/event">
+                Admin
+                </NavLink>
+            </li>
+            <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/instructor">
                 Instructor
-              </NavLink>
+                </NavLink>
+            </li>
+            <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/student">
+Student
+                </NavLink>
             </li>
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/login">
