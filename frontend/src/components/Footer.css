@@ -33,3 +33,7 @@ list-style:none;    /* flex-wrap: wrap; */
     color:white;
 text-decoration: none;
 }
+.pink:hover {
+    color: rgb(245, 49, 196) !important;
+    text-decoration: none;
+  }

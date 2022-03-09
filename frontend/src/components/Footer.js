@@ -17,7 +17,7 @@ export const Footer = () => {
             <footer class="text-center text-lg-start bg-light text-muted footer ">
 
 
-                <section class="footer pb-5 pt-2">
+                <section class="footer pb-5 pt-2 ">
                     <div class="container ">
                         <div class="row mt-4 ">
                             <div class="col-md-3 col-lg-2 mx-auto text_color ">
@@ -25,13 +25,13 @@ export const Footer = () => {
                                     Ensan Art
                                 </h6>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/">Home</Link>
+                                    <Link className="text-reset text_color pink " exact to="/">Home</Link>
                                 </p>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/news">News</Link>
+                                    <Link className="text-reset text_color pink" exact to="/news">Events</Link>
                                 </p>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/gallery">Gallery</Link>
+                                    <Link className="text-reset text_color pink" exact to="/gallery">Gallery</Link>
                                 </p>
                             </div>
                             <div class="col-md-3 col-lg-2 mx-auto text_color">
@@ -39,16 +39,16 @@ export const Footer = () => {
                                     Music
                                 </h6>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/piano">Piano</Link>
+                                    <Link className="text-reset text_color pink" exact to="/piano">Piano</Link>
                                 </p>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/violin">Violin</Link>
+                                    <Link className="text-reset text_color pink" exact to="/violin">Violin</Link>
                                 </p>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/flute">Flute</Link>
+                                    <Link className="text-reset text_color pink" exact to="/flute">Flute</Link>
                                 </p>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/guitar">Guitar</Link>
+                                    <Link className="text-reset text_color pink" exact to="/guitar">Guitar</Link>
                                 </p>
                             </div>
 
@@ -57,10 +57,10 @@ export const Footer = () => {
                                     Performance Art
                                 </h6>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/ballet">Ballet</Link>
+                                    <Link className="text-reset text_color pink" exact to="/ballet">Ballet</Link>
                                 </p>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/theatre">Theatre</Link>
+                                    <Link className="text-reset text_color pink" exact to="/theatre">Theatre</Link>
                                 </p>
                             </div>
 
@@ -69,10 +69,10 @@ export const Footer = () => {
                                     Classical Art
                                 </h6>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/artCourses">Art Courses</Link>
+                                    <Link className="text-reset text_color pink" exact to="/artCourses">Art Courses</Link>
                                 </p>
                                 <p>
-                                    <Link className="text-reset text_color " exact to="/workshop">Workshop</Link>
+                                    <Link className="text-reset text_color pink" exact to="/workshop">Workshop</Link>
                                 </p>
 
                             </div>
