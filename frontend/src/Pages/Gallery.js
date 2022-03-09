@@ -16,7 +16,7 @@ class Gallery extends Component {
 
   async componentDidMount() {
     try {
-      const albumsRes = await fetch('http://localhost:8000/Ensan/albumphotonew/1/2');
+      const albumsRes = await fetch('http://localhost:8000/Ensan/albumphotonew/1');
       const AlbumList = await albumsRes.json();
       this.setState({
         AlbumList
