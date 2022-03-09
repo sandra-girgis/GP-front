@@ -10,16 +10,17 @@ import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
 import { Instructor } from "./Pages/Instructor";
 import Gallery from "./Pages/Gallery";
+import Concerts from "./Pages/Concerts";
 import News from "./Pages/News";
 import { Piano } from "./Pages/Piano";
 import { Theatre } from "./Pages/Theatre";
 import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
 import { Joinus } from "./Pages/Joinus";
-import { Events } from "./Pages/Admin/Events";
-import { Imagealbum } from "./Pages/Admin/Imagealbum";
-import { Instructors } from "./Pages/Admin/Instructors";
-import { Students } from "./Pages/Admin/Students";
+import Events from "./Pages/Admin/Events";
+import Imagealbum from "./Pages/Admin/Imagealbum";
+import Instructors from "./Pages/Admin/Instructors";
+import Students from "./Pages/Admin/Students";
 import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
 import { Addevent } from "./Pages/Admin/Addevent";
@@ -64,9 +65,9 @@ function App() {
             <Route path="/violin" exact component={Violin} />
             <Route path="/theatre" exact component={Theatre} />
             <Route path="/workshop" exact component={Workshop} />
-            {/* <Route path="/classes" exact component={Classes} />
+             {/* <Route path="/classes" exact component={Classes} /> */}
             <Route path="/concerts" exact component={Concerts} />
-            <Route path="/exhibitions" exact component={Exhibitions} />
+            {/*<Route path="/exhibitions" exact component={Exhibitions} />
             <Route path="/workshops" exact component={Workshops} /> */}
             <Route path="/joinus" exact component={Joinus} />
             <Route path="/event" exact component={Events} />

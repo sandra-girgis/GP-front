@@ -273,9 +273,11 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 
 
 @keyframes mymove{
-  0% {width:80%;}
-  25% {width:90%;}
-  100% {width: 73rem;}
+  0% {width:90%;}
+  25% {width:100%;}
+  50% {width:110%;}
+  75% {width:105%;}
+  100% {width:100%;}
 }
 
 

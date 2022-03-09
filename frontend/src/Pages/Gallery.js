@@ -57,7 +57,7 @@ class Gallery extends Component {
                   </p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                    <Example photo={this.Albums()} />
+                    {/* <Example photo={this.Albums()} /> */}
                     </div>
                   </div>
                 </div>
