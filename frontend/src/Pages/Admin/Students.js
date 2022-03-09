@@ -21,7 +21,7 @@ export const Students = () => {
 <Link to="#" style={{textDecoration:"none"}}>
 <button className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}>Add Student</button>
 </Link>
-<Table striped bordered hover className="shadow1 container mb-5">
+<Table striped bordered hover className="shado container mb-5">
   <thead>
     <tr class="text-center">
         <th scope="col">Id</th>

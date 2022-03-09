@@ -19,9 +19,9 @@ export const Imagealbum = () => {
 
 <h1 className="fw-bold display-4 text-center"style={{color:"#168eca"}}>Image Album</h1>
 <Link to="#" style={{textDecoration:"none"}}>
-<button className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}>Add Image Album</button>
+<button className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}>Add Image</button>
 </Link>
-<Table striped bordered hover className="shadow1 container mb-5">
+<Table striped bordered hover className="shado container mb-5">
   <thead>
     <tr class="text-center">
         <th scope="col">picture</th>
