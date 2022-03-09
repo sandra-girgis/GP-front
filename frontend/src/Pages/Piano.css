@@ -240,6 +240,9 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 .shadow4{
         box-shadow:10px 10px 40px 5px #ee4a8b!important;
         }
+.shado{
+  box-shadow:10px 10px 40px 5px #a5a5a5!important;
+  }
 
 
 .butt {
@@ -270,9 +273,11 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 
 
 @keyframes mymove{
-  0% {width:80%;}
-  25% {width:90%;}
-  100% {width: 73rem;}
+  0% {width:90%;}
+  25% {width:100%;}
+  50% {width:110%;}
+  75% {width:105%;}
+  100% {width:100%;}
 }
 
 
@@ -283,6 +288,18 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
   font-size:1.2vw;
 }
 
+.adm{
+  color:#ee4a8b!important;
+}
+.adm:hover {
+  color:#168eca!important;
+}
+.nav-underline{
+  background-color: #cdece1!important;
+}
+th{
+  color:#ee4a8b;
+}
 /* ------------------------ */
 /* instructor */
 
@@ -297,8 +314,18 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
   margin-left:15%;
   /* margin-top:8%; */
 }
+.stu_info{
+  margin-left:5%;
+  
+}
 .ins_info{
   margin-left:5%;
+  color: #168eca;
+  border:1px solid grey;
+}
+.ins_info:hover{
+  border-color:#ee4a8b;
+  color:#ee4a8b;
 }
 .ins_image{
   width:25%;

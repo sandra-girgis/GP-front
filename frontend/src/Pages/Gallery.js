@@ -16,7 +16,7 @@ class Gallery extends Component {
 
   async componentDidMount() {
     try {
-      const albumsRes = await fetch('http://localhost:8000/Ensan/albumphotonew/1/2');
+      const albumsRes = await fetch('http://localhost:8000/Ensan/albumphotonew/1');
       const AlbumList = await albumsRes.json();
       this.setState({
         AlbumList
@@ -57,7 +57,7 @@ class Gallery extends Component {
                   </p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                    <Example photo={this.Albums()} />
+                    {/* <Example photo={this.Albums()} /> */}
                     </div>
                   </div>
                 </div>
