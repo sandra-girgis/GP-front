@@ -19,9 +19,7 @@ export const Events = () => {
 </div>
 
 <h1 className="fw-bold display-4 text-center"style={{color:"#168eca"}}>Events</h1>
-{/* <Link to="#" style={{textDecoration:"none"}}> */}
 <button className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addevent"}>Add Event</NavLink></button>
-{/* </Link> */}
 <Table striped bordered hover className="shado container mb-5">
   <thead>
     <tr class="text-center">
@@ -41,8 +39,10 @@ export const Events = () => {
       <td>Otto</td>
       <td>@mdo</td>
       <td>@mdo</td>
-      <td>
-      <button className="butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addevent"}>Edit</NavLink></button>
+      <td>      
+      <Link to={"/addevent"} style={{textDecoration:"none"}}>
+        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
+        </Link>
         </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
@@ -57,8 +57,9 @@ export const Events = () => {
       <td>@fat</td>
       <td>@mdo</td>
       <td>
-      <button className="butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addevent"}>Edit</NavLink></button>
-        </td>
+      <Link to={"/addevent"} style={{textDecoration:"none"}}>
+        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
+        </Link>        </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
         <button className="butt" style={{backgroundColor:"#168eca"}}>Delete</button>
@@ -71,8 +72,9 @@ export const Events = () => {
       <td>@twitter</td>
       <td>@mdo</td>
       <td>
-      <button className="butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addevent"}>Edit</NavLink></button>
-        </td>
+      <Link to={"/addevent"} style={{textDecoration:"none"}}>
+        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
+        </Link>        </td>
         <td>
         <Link to="#"style={{textDecoration:"none"}}>
         <button className="butt" style={{backgroundColor:"#168eca"}}>Delete</button>

@@ -3,11 +3,11 @@ import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import img1 from "../images/01.jpg"
-import img2 from "../images/12.jpg"
-import img3 from "../images/17.jpg"
-import img4 from "../images/18.jpg"
-import img5 from "../images/15.jpg"
+// import img1 from "../images/01.jpg"
+// import img2 from "../images/12.jpg"
+// import img3 from "../images/17.jpg"
+// import img4 from "../images/18.jpg"
+// import img5 from "../images/15.jpg"
 
 
 export const Guitar = () => { 
@@ -16,34 +16,36 @@ export const Guitar = () => {
   <Carousel.Item interval={500}>
     <img
       className="d-block w-100 " 
-      src={img1} alt="First slide"/>
+      src="https://media.istockphoto.com/photos/vintage-vinyl-record-playing-on-player-and-acoustic-guitar-on-with-picture-id956587676?k=20&m=956587676&s=612x612&w=0&h=ohV_VrGL_4a838UB8QiiZFi3WwPWxBXGoh6o8TklQG4=" 
+      alt="First slide"/>
   </Carousel.Item>
   <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
-      src={img2}   alt="Second slide"/>
+      src="https://media.istockphoto.com/photos/dad-teaching-guitar-and-ukulele-to-his-daughterlittle-girl-learning-picture-id1219407299?k=20&m=1219407299&s=612x612&w=0&h=v5lDASvutwXgi5vE3jSdSKs_v4Mc4MGxdokYhaun9iM="  
+       alt="Second slide"/>
   </Carousel.Item>
   <Carousel.Item >
     <img
       className="d-block w-100"
-      src={img3}
+      src="https://media.istockphoto.com/photos/young-teenager-girl-alone-at-home-childhood-picture-id825882882?k=20&m=825882882&s=612x612&w=0&h=ifc7rhHFqJCHuSoiiho1XFNGGwKu0vc6vzkMTboGx2g="
       alt="Third slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={img4}
+      src="https://media.istockphoto.com/photos/boy-teaching-to-play-guitar-picture-id1048436392?k=20&m=1048436392&s=612x612&w=0&h=rEk017VuXGj2hzIQosYbscycasBlAfwFWKkZBlzMPHo="
       alt="fourth slide"
     />
   </Carousel.Item>
-  <Carousel.Item>
+  {/* <Carousel.Item>
     <img
       className="d-block w-100"
       src={img5}
       alt="fifth slide"
     />
-  </Carousel.Item>
+  </Carousel.Item> */}
 </Carousel>
         {/* <div className="boback">
         <div className="">
