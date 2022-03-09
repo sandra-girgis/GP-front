@@ -25,9 +25,9 @@ import { NavLink } from "react-router-dom";
 
 export const Addevent = () => { 
   return (<>
-<h3 className='new2 pt-2 mb-5'style={{color:"#ee4a8b"}}>Add Event</h3>
-<div className="shadow mb-5 pt-3 container">
+<div className="shado mb-5 pt-3 container">
 <Form>
+<h3 className='new2 pt-2 mb-5 text-center'style={{color:"#ee4a8b"}}>Add Event</h3>
 <Form.Group className="mb-3 mt-5" controlId="exampleForm.ControlTextarea1">
             <Form.Label style={{color:"#168eca"}}>title</Form.Label>
             <Form.Control as="textarea" rows={1} />
