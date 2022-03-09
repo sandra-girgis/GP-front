@@ -19,9 +19,7 @@ export const Students = () => {
 </div>
 
 <h1 className="fw-bold display-4 text-center"style={{color:"#168eca"}}>Students</h1>
-{/* <Link to="#" style={{textDecoration:"none"}}> */}
 <button className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addstudent"}>Add Student</NavLink></button>
-{/* </Link> */}
 <Table striped bordered hover className="shado container mb-5">
   <thead>
     <tr class="text-center">

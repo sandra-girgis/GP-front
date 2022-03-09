@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table'
 // import Carousel from 'react-bootstrap/Carousel'
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
 
 
 export const Instructors = () => { 
@@ -18,9 +19,7 @@ export const Instructors = () => {
 </div>
 
 <h1 className="fw-bold display-4 text-center"style={{color:"#168eca"}}>Instructors</h1>
-<Link to="#" style={{textDecoration:"none"}}>
-<button className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}>Add Instructors</button>
-</Link>
+<button className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/addinstructor"}>Add Instructors</NavLink></button>
 <Table striped bordered hover className="shado container mb-5">
   <thead>
     <tr class="text-center">
