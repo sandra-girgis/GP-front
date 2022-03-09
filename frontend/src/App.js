@@ -1,63 +1,57 @@
-import React, { Component } from "react"
+import React ,{useState} from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Nav from "./components/Navbar";
+import { Home } from "./Pages/Home";
+import { Artcourses } from "./Pages/Artcourses";
+import { Guitar } from "./Pages/Guitar";
+import { Ballet } from "./Pages/Ballet";
+import { Flute } from "./Pages/Flute";
+import Gallery from "./Pages/Gallery";
+import News from "./Pages/News";
+import { Piano } from "./Pages/Piano";
+import { Theatre } from "./Pages/Theatre";
+import { Violin } from "./Pages/Violin";
+import { Workshop } from "./Pages/Workshop";
+import  Login  from "./Pages/login";
+// {}>> <function></function>
+import { Footer } from "./components/Footer";
+// import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+function App() {
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      viewCompleted: false,
-      activeItem: {
-        title: "",
-        description: "",
-        completed: false
-      },
-      classList: []
-      };
+  const [token,setToken] = useState('')
+
+
+  const userlogin = (tok) =>{
+    setToken(tok);
   }
-
-    async componentDidMount() {
-      try {
-        const res = await fetch('http://localhost:8000/Ensan/all-classes');
-        const classList = await res.json();
-        this.setState({
-          classList
-        });
-      } catch (e) {
-        console.log(e);
-    }
-    }
-    renderItems = () => {
-      const newItems = this.state.classList
-      return newItems.map(item => (
-        <div key={item.id}>
-          <div>
-            <h1>id : {item.id}</h1>
-            <p>title : {item.title}</p>
-            <h1>content : {item.content}</h1>
-            <h1>fromTime : {item.fromTime}</h1>
-            <h1>toTime : {item.toTime}</h1>
-            <h1>day : {item.day}</h1>
-            <h1>Category_ID : {item.Category_ID}</h1>
-            <h1>Instructor_ID : {item.Instructor_ID}</h1>
-          </div>
+  return (
+    <>
+      <BrowserRouter>
+        <Nav />
+        <div>
+          <Switch>
+            <Route path="/piano" exact component={Piano} />
+            <Route path="/" exact component={Home} />
+            <Route path="/artCourses" exact component={Artcourses} />
+            <Route path="/ballet" exact component={Ballet} />
+            <Route path="/flute" exact component={Flute} />
+            <Route path="/gallery" exact component={Gallery} />
+            <Route path="/guitar" exact component={Guitar} />
+            <Route path="/news" exact component={News} />
+            <Route path="/violin" exact component={Violin} />
+            <Route path="/theatre" exact component={Theatre} />
+            <Route path="/workshop" exact component={Workshop} />
+            <Route path="/login" exact >
+              <Login userlogin={userlogin}/>
+            </Route>
+          </Switch>
+          <Footer />
         </div>
-      ));
-    };
-
-    render() {
-      return (
-        <main className="content">
-        <div className="row">
-          <div className="col-md-6 col-sm-10 mx-auto p-0">
-            <div className="card p-3">
-              <ul className="list-group list-group-flush">
-                {this.renderItems()}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </main>
-      )
-    }
-  }
-  
+      </BrowserRouter>
+    </>
+  );
+}
 export default App;
