@@ -88,9 +88,8 @@ export const Ballet = () => {
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
-                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title"style={{color:"#168eca"}}>Ballet Classes </h5>
+                        <p className="card-text desc">from 4 years old and above, by Dr. Tahany Hassan. (group classes from 15 students).</p>
                     </div>
                     </div>
                   </div>
@@ -99,9 +98,9 @@ export const Ballet = () => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Ballet at Ensan Art?</h5>
+                      <p className="card-text desc">    • Highly qualified and friendly Ballet instructors
+    • Annual Student Performance</p>
                   </div>
                   </div>
                   <div className="col-md-4 border  rounded">
@@ -119,9 +118,13 @@ export const Ballet = () => {
                   {/* style={{backgroundColor:"#edf7f3"}} */}
                   <div className="col-md-6" style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Benefit of dancing Ballet: </h5>
+                      <p className="card-text desc">    • Ballet makes us understand our body better
+    • It teaches flexibility, poise and grace
+    • Builds strong lean muscles
+    • Gives one a good grounding technique
+    • Better appreciate rhythm and music
+    • Qualified and Friendly Instructors</p>
 
                   </div>
                   </div>

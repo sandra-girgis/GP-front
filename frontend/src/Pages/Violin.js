@@ -75,9 +75,9 @@ export const Violin = () => {
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
-                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title"style={{color:"#168eca"}}>Violin Classes</h5>
+                        <p className="card-text desc">from 8 years old and above and adults.
+With: Omar Akl , Maya ElRemaly and Noran ElKobesy(Group classes from 8 students).</p>
                     </div>
                     </div>
                   </div>
@@ -86,9 +86,10 @@ export const Violin = () => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Violin at Ensan Art?</h5>
+                      <p className="card-text desc">    • Highly qualified Violin instructors
+    • Teaching International Curriculum (ABRSM)
+    • Annual Students Concert </p>
                   </div>
                   </div>
                   <div className="col-md-4 border rounded">
@@ -105,9 +106,15 @@ export const Violin = () => {
                   </div>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Benefit of playing Violin:</h5>
+                      <p className="card-text desc">    • Improved attention span and focus as he/she learns how to read music
+    • Sharpened memory from learning how to memories
+    • Improved self-discipline through practicing certain skills over and over
+    • Stronger connections between left and right brain functions
+    • Improved right and left hand coordination
+    • Develops self-discipline,
+    • Develops competency control
+    • Improve the team work skills</p>
 
                   </div>
                   </div>
@@ -144,7 +151,7 @@ export const Violin = () => {
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Maya</h5>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Maya ElRemaly</h5>
                 <p className="card-text desc">Since 2002  she Playing the violin when she has the age of 5 and a half
                 ,in Jan 2020 Part-time member of the Cairo Symphony Orchestra.
                 Feb 2020 Played with the “Sout Masr” at Ali El Haggar’s honorary concert,

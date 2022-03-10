@@ -74,11 +74,6 @@ text-align:justify;
 }
 
 
-
-
-
-
-
 /* The animation code */
 @keyframes example {
     from {  transform: rotateY(0deg);}
@@ -145,24 +140,6 @@ text-align:justify;
 } 
 
   /* The element to apply the animation to */
-  
-
-  
- 
-  
-
-
-
-
- 
-
- 
-
-
-
-
-
-
 
   /* The animation code */
 /* @keyframes example {
@@ -273,9 +250,11 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 
 
 @keyframes mymove{
-  0% {width:80%;}
-  25% {width:90%;}
-  100% {width: 73rem;}
+  0% {width:90%;}
+  25% {width:100%;}
+  50% {width:110%;}
+  75% {width:105%;}
+  100% {width:100%;}
 }
 
 
@@ -322,13 +301,32 @@ th{
   shape-outside: circle(50%);
   /* clip-path: circle(9rem at 17rem 9rem); */
 } 
+.adm{
+  color:#ee4a8b!important;
+}
+.adm:hover {
+  color:#168eca!important;
+}
+.nav-underline{
+  background-color: #cdece1!important;
+}
+th{
+  color:#ee4a8b;
+}
+
+  
 .ins_bio{
   text-align: justify;
 }
 .course_text{
-  font-size:1.2vw;
+  font-size:1.1vw;
+  color: #168eca;
+  /* color: #90b4f7; */
 }
-
+.ins_nav{
+  color:#699af5;
+  text-decoration: none;
+}
 
 
 

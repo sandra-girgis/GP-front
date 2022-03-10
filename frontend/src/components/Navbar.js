@@ -10,13 +10,14 @@ function Nav() {
     <>
       <Navbar bg="light" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <img
+        <img
             src={require("../images/logo.ico")}
             alt="logo.img"
             className="log"
             style={{ width: "3rem" }}
           />
+        <Navbar.Collapse id="basic-navbar-nav">
+        
           <ul className="navbar-nav mb-2 ml-auto">
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/">
@@ -120,9 +121,16 @@ function Nav() {
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/event">
                 Admin
-                </NavLink>
+              </NavLink>
+            </li>
+            <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/instructor">
                 Instructor
+              </NavLink>
+            </li>
+            <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/student">
+                Student
               </NavLink>
             </li>
             <li className="nav-item ms-4">
@@ -130,7 +138,6 @@ function Nav() {
                 Login
               </NavLink>
             </li>
-            
           </ul>
         </Navbar.Collapse>
       </Navbar>

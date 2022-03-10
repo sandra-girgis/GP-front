@@ -75,9 +75,9 @@ export const Flute = () => {
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
-                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title"style={{color:"#168eca"}}>Flute and Recorder Classes</h5>
+                        <p className="card-text desc">from 7 years old and above, also for adults. 
+With: Nouran Hathout. </p>
                     </div>
                     </div>
                   </div>
@@ -86,9 +86,10 @@ export const Flute = () => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Flute at Ensan Art?</h5>
+                      <p className="card-text desc">    • Highly qualified Flute instructors
+    • International curriculum.
+    • Annual Students Concert.</p>
                   </div>
                   </div>
                   <div className="col-md-4 border rounded">
@@ -105,9 +106,11 @@ export const Flute = () => {
                   </div>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Benefit of playing Flute:</h5>
+                      <p className="card-text desc">    • Improves Reasoning Capacity
+    • Improves Student’s Time Management
+    • Improves Organizational Skills
+    • Builds Confidence and Encourages Self-expression</p>
 
                   </div>
                   </div>
