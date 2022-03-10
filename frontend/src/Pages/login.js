@@ -28,7 +28,7 @@ class Login extends Component {
     }
 
     login = event => {
-        fetch('http://localhost:8000/auth/',{
+        fetch('http://localhost:8000/Ensan/authtoken/',{
             method : 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(this.state.details)
@@ -53,25 +53,25 @@ class Login extends Component {
     render(){
         return (
             <div className="justify-content-center row">
-                <div className="card bg-dark text-white col-5 p-5 mt-5 mb-5">
-                    <h1>Log in form</h1>
+                <div className="card shado col-md-5 p-5 mt-5 mb-5">
+                    <h1 style={{color:"#ee4a8b"}}>Log in form</h1>
                     <div className="form-group">
-                        <label htmlFor="u">User Name</label>
+                        <label htmlFor="u"style={{color:"#168eca"}}>User Name</label>
                         <input name="username" type="text" className="form-control"
                             id="u" placeholder="Enter username"
                             value={this.state.details.username}
                             onChange={this.inputChanged}/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="p">Password</label>
+                        <label htmlFor="p" style={{color:"#168eca"}}>Password</label>
                         <input name="password" type="password" className="form-control"
                             id="p" placeholder="Password"
                             value={this.state.details.password}
                             onChange={this.inputChanged}/>
                     </div>
                     <div className="row mb-5 mt-5">
-                        <button onClick={this.login} className="btn btn-primary col-4 offset-1">Log in</button>
-                        <button onClick={this.register} className="btn btn-primary col-4 offset-1">Register</button>
+                        <button onClick={this.login} className="btn-outline-light btn-lg mb-5 butt" style={{backgroundColor:"#168eca"}}>Log in</button>
+                        <button onClick={this.register} className="btn-outline-light btn-lg  butt" style={{backgroundColor:"#168eca"}}>Register</button>
                     </div>
                 </div>
             </div>

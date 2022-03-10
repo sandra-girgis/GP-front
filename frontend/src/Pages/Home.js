@@ -2,8 +2,8 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./Piano.css";
 import { NavLink } from "react-router-dom";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
+// import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import img1 from "../images/home.jpg";
@@ -66,7 +66,7 @@ export const Home = () => {
           </Carousel.Item>
         </Carousel>
         <br></br>
-        <h2 className="text-center pt-2 fw-bold" style={{ color: "#f1552d" }}>
+        <h2 className="text-center pt-2 fw-bold" style={{color:"#ee4a8b"}}>
           Our Events
         </h2>
         <br></br>
@@ -96,7 +96,7 @@ export const Home = () => {
                       exact
                       to={"/news"}
                     >
-                      Show All News
+                      Show All Events
                     </NavLink>
                   </button>
                 </div>
@@ -126,51 +126,51 @@ export const Home = () => {
         <br>
         </br> */}
 
-<div class="container mt-5">
-<div class="row mt-5 mb-5 justify-content-center">
-  <div class="flip-box col-md-6 me-5 mb-5">
-    <div class="flip-box-inner">
-      <div class="flip-box-front mt-5">
+<div className="container mt-5">
+<div className="row mt-5 mb-5 justify-content-center">
+  <div className="flip-box col-md-6 me-5 mb-5">
+    <div className="flip-box-inner">
+      <div className="flip-box-front mt-5">
       {/* <NavLink className="nav nav-link bu active " exact to={"/ballet"}> */}
-        <img src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE=" alt="art" class="img"/>
+        <img src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE=" alt="art" className="img"/>
       {/* </NavLink> */}
       </div>
-      <div class="flip-box-back mt-5">
-        <img src={img8} alt="art" class="img"/>
+      <div className="flip-box-back mt-5">
+        <img src={img8} alt="art" className="img"/>
       </div>
     </div>
   </div>
-  <div class="flip-box col-md-6 mb-5">
-    <div class="flip-box-inner">
-      <div class="flip-box-front mt-5">
-        <img src={img9} alt="art" class="img"/>
+  <div className="flip-box col-md-6 mb-5">
+    <div className="flip-box-inner">
+      <div className="flip-box-front mt-5">
+        <img src={img9} alt="art" className="img"/>
       </div>
-      <div class="flip-box-back mt-5">
-        <img src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134=" alt="art" class="img"/>
+      <div className="flip-box-back mt-5">
+        <img src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134=" alt="art" className="img"/>
       </div>
     </div>
   </div>
   </div>
   
   
-  <div class="row mt-5 mb-5 justify-content-center">
-    <div class="flip-box col-md-6 me-5 mb-5">
-    <div class="flip-box-inner">
-      <div class="flip-box-front mt-5">
-        <img src={img7} alt="art" class="img"/>
+  <div className="row mt-5 mb-5 justify-content-center">
+    <div className="flip-box col-md-6 me-5 mb-5">
+    <div className="flip-box-inner">
+      <div className="flip-box-front mt-5">
+        <img src={img7} alt="art" className="img"/>
       </div>
-      <div class="flip-box-back mt-5">
-        <img src={img6} alt="art" class="img"/>
+      <div className="flip-box-back mt-5">
+        <img src={img6} alt="art" className="img"/>
       </div>
     </div>
   </div>
-  <div class="flip-box col-md-6 mb-5">
-    <div class="flip-box-inner">
-      <div class="flip-box-front mt-5">
-        <img src={img10} alt="art" class="img"/>
+  <div className="flip-box col-md-6 mb-5">
+    <div className="flip-box-inner">
+      <div className="flip-box-front mt-5">
+        <img src={img10} alt="art" className="img"/>
       </div>
-      <div class="flip-box-back mt-5">
-        <img src={img11} alt="art" class="img"/>
+      <div className="flip-box-back mt-5">
+        <img src={img11} alt="art" className="img"/>
       </div>
     </div>
   </div>

@@ -17,7 +17,7 @@ function Nav() {
             className="log"
             style={{ width: "3rem" }}
           />
-          <ul className="navbar-nav me-auto mb-2 mb-sm-0">
+          <ul className="navbar-nav mb-2 ml-auto">
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/">
                 Home
@@ -25,14 +25,40 @@ function Nav() {
             </li>
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/news">
-                News
+                Events
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/gallery">
                 Gallery
               </NavLink>
-            </li>
+            </li> */}
+            <NavDropdown
+              title="Gallery"
+              id="basic-nav-dropdown"
+              className=" pink bl"
+            >
+              <NavDropdown.Item>
+                <NavLink className="nav pink bl" exact to="/concerts">
+                  Concerts
+                </NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink className="nav pink bl" exact to="/workshops">
+                  Workshops
+                </NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink className="nav pink bl" exact to="/exhibitions">
+                  Exhibitions
+                </NavLink>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <NavLink className="nav pink bl" exact to="/classes">
+                  Classes
+                </NavLink>
+              </NavDropdown.Item>
+            </NavDropdown>
             <NavDropdown
               title="Music"
               id="basic-nav-dropdown"
@@ -91,7 +117,22 @@ function Nav() {
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-            <li className="nav-item">
+            <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/event">
+                Admin
+              </NavLink>
+            </li>
+            <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/instructor">
+                Instructor
+              </NavLink>
+            </li>
+            <li className="nav-item ms-4">
+              <NavLink className="nav nav-link pink bl" exact to="/student">
+                Student
+              </NavLink>
+            </li>
+            <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/login">
                 Login
               </NavLink>

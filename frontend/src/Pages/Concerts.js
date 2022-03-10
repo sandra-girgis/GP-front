@@ -6,7 +6,7 @@ import { render } from "react-dom";
 import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 
-class Gallery extends Component {
+class Concerts extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,7 +42,7 @@ class Gallery extends Component {
           <h1 className=""style={{color:"#ee4a8b"}}>Concerts</h1>
         </div>
       </section>
-      <div className="album py-5 bg-light">
+      <div className="album py-5">
         <div className="container">
           <div className="row">
             <div className="col-md-4">
@@ -57,7 +57,7 @@ class Gallery extends Component {
                   </p>
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="btn-group">
-                    {/* <Example photo={this.Albums()} /> */}
+                    <Example photo={this.Albums()} />
                     </div>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ class Gallery extends Component {
   );
 };
 }
-export default Gallery;
+export default Concerts;
 
 
 function Example(props) {

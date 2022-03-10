@@ -11,7 +11,7 @@ class News extends Component {
   }
   async componentDidMount() {
     try {
-      const newsRes = await fetch('http://localhost:8000/Ensan/news');
+      const newsRes = await fetch('http://localhost:8000/Ensan/news/');
       const NewsList = await newsRes.json();
       this.setState({
         NewsList
@@ -23,10 +23,9 @@ class News extends Component {
   News = () => {
     const news = this.state.NewsList
     return news.map(item => (
-      <>
         <div key={item.id} className="row flip_card2 ">
           <div className="col-md-6 mt-4 rounded">
-            <img src={require('../images'+item.picture.replaceAll('%20'," "))} className="img-fluid rounded-start big" alt="..."/>
+            <img src={require('../images'+item.picture.replaceAll('http://localhost:8000',"").replaceAll('%20'," "))} className="img-fluid rounded-start big" alt="..."/>
           </div>
           <div className="col-md-5">
             <div className="card-body ">
@@ -38,14 +37,13 @@ class News extends Component {
                 <span className="card-text ps-3 text-muted date">
                   {item.date.replaceAll("T"," ").replaceAll("Z"," ")}
                 </span>
-                <span className='btn btn-dark ms-3'>
+                <span className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}>
                   {item.Category_ID}
                 </span>
               </div>
             </div>
           </div>
         </div>
-      </>
       )
     )
   }
@@ -53,10 +51,10 @@ class News extends Component {
   render() {
     return (
       <>     
-        <h1 className='new2 container'>
+        <h1 className='container'style={{color:"#ee4a8b"}}>
           NEWS
         </h1>
-        <div className="container ">
+        <div className="container mb-5 mt-5">
           {this.News()}
         </div>
       </>

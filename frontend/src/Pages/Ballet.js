@@ -1,6 +1,7 @@
 import React from "react";
 import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import img1 from "../images/v1.jpg"
 // import img2 from "../images/v2.jpg"
@@ -10,9 +11,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import img6 from "../images/kkids.jpg"
 // import img7 from "../images/kmag.jpg"
 // import img8 from "../images/kold.jpg"
-
-
-export const Ballet = () => { 
+export const Ballet = (props) => { 
+  console.log(props.token)
   return (<>
   <Carousel>
   <Carousel.Item>
@@ -78,14 +78,14 @@ export const Ballet = () => {
       
   
        <div className="container mt-5 mb-5">
-       <h1 className="mb-5 fw-bold display-4" style={{color:"#f1552d"}}> About Our Classes</h1>
+       <h1 className="mb-5 fw-bold display-4" style={{color:"#ee4a8b"}}> About Our Classes</h1>
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
-                    <div className="col-md-4 border border-primary rounded">
+                    <div className="col-md-4 border rounded">
                       <img  src="https://media.istockphoto.com/photos/little-ballerinas-in-ballet-studio-picture-id1161652373?k=20&m=1161652373&s=612x612&w=0&h=8xIBoeahwR8G6RRrLGmj9ACtpCaM0sO5uD6NfuLvQQg="
                       className="img-fluid rounded-start" alt="kids"/>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
                         <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -96,14 +96,14 @@ export const Ballet = () => {
               </div>
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                <div className="col-md-6 offset-md-2">
+                <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#f1552d"}}>middle age</h5>
+                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                   </div>
-                  <div className="col-md-4 border border-danger rounded">
+                  <div className="col-md-4 border  rounded">
                   <img  src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE="
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
@@ -111,13 +111,14 @@ export const Ballet = () => {
               </div>        
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
-                  <div className="col-md-4 border border-success rounded">
+                  <div className="col-md-4 border rounded">
                   <img  src="https://media.istockphoto.com/photos/group-of-ballerinas-on-ballet-class-picture-id1144347933?k=20&m=1144347933&s=612x612&w=0&h=ePIvveM1FFEhVgi4hXiacurn464Rj_CDVmWDwXEmaeo="
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
-                  <div className="col-md-6">
+                  {/* style={{backgroundColor:"#edf7f3"}} */}
+                  <div className="col-md-6" style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#77aa2a"}}>Elderly</h5>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
                       <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                       <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
 
@@ -129,7 +130,7 @@ export const Ballet = () => {
         
 
         <div className="container mb-5">
-        <h1 className="mb-5 fw-bold display-4"style={{color:"#f1552d"}}>About Our Instructors</h1>
+        <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Instructors</h1>
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
@@ -230,9 +231,16 @@ export const Ballet = () => {
             </div>
           </div>
         </div>
-        
-        <div className="col-12 text-center"><button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>Join Us</button></div>
+ 
+        <div className="col-12 text-center">
+          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+            <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
+                      
+                      
+                      
+                    
+                
 
         
 
