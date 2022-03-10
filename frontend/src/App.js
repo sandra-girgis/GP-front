@@ -30,6 +30,7 @@ import { Addinstructor } from "./Pages/Admin/Addinstructor";
 import { Addevent } from "./Pages/Admin/Addevent";
 import { Addimage} from "./Pages/Admin/Addimage";
 
+
 // import { Editevent} from "./Pages/Admin/Editevent";
 // import { Deletevent} from "./Pages/Admin/Deletevent";
 // import { Editimage} from "./Pages/Admin/Editimage";

@@ -246,11 +246,18 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 
 
 .butt {
-  border-radius: 20%;
-  background-color:#ffffff!important;
+  border-radius: 15%;
+  /* background-color:#ffffff!important; */
   color: #168eca!important;
-  border: 1px solid #168eca;
+  border-color: #168eca;
+
 }
+.show{
+
+text-decoration:none;
+
+}
+
 .butt:hover{
  /* background-color:#168eca !important; */
  color: #ee4a8b!important;
@@ -358,6 +365,12 @@ th{
 .ins_nav{
   color:#699af5;
   text-decoration: none;
+}
+.star{
+  color:rgb(238, 234, 9);
+}
+.star:target{
+color:rgb(32, 240, 32);
 }
 
 

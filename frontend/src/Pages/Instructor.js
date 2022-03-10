@@ -1,11 +1,15 @@
-import React from "react";
+import React ,{useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Piano.css";
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Card from 'react-bootstrap/Card';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from 'react-bootstrap/Button';
 import {HashLink} from 'react-router-hash-link';
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+// import { faRegStar } from "@fortawesome/free-solid-svg-icons";
 
 export const Instructor = () => {
     return (
@@ -80,6 +84,22 @@ export const Instructor = () => {
     <Card.Text className="text-muted">
       Day:
     </Card.Text>
+    <span className="ps-2">
+    <FontAwesomeIcon className="star" icon={faStar} />
+    </span>
+    {/* <span className="ps-2"> 
+    <FontAwesomeIcon className="star" icon={faStar} />
+    </span>
+    
+    <span className="ps-2">
+    <FontAwesomeIcon className="star" icon={faStar} />
+    </span>    
+    <span className="ps-2">
+    <FontAwesomeIcon className="star" icon={faStar} />
+    </span>
+    <span className="ps-2">
+    <FontAwesomeIcon className="star" icon={faStar} />
+    </span> */}
   </Card.Body>
 </Card>        
 <br>
