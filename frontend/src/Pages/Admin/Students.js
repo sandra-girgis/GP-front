@@ -5,7 +5,6 @@ import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// export const Students = () => {
 class Students extends Component {
   constructor(props) {
     super(props);

@@ -18,7 +18,6 @@ class Events extends Component {
         "http://localhost:8000/Ensan/news/"
       );
       const StudentList = await StudentRes.json();
-      console.log(StudentList);
       this.setState({
         StudentList,
       });

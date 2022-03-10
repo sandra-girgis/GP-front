@@ -11,9 +11,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import img6 from "../images/kkids.jpg"
 // import img7 from "../images/kmag.jpg"
 // import img8 from "../images/kold.jpg"
-
-
-export const Ballet = () => { 
+export const Ballet = (props) => { 
+  console.log(props.token)
   return (<>
   <Carousel>
   <Carousel.Item>

@@ -3,7 +3,7 @@
 } */
 .card-img{
     height:70vh ;
-    weight: 70vh ;
+    width: 70vh ;
 }
 .card-img-overlay{
     padding: 1rem;
