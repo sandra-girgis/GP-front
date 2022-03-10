@@ -25,7 +25,7 @@ import Instructors from "./Pages/Admin/Instructors";
 import Students from "./Pages/Admin/Students";
 import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
-import { Addevent } from "./Pages/Admin/Addevent";
+import  Addevent  from "./Pages/Admin/Addevent";
 import { Addimage} from "./Pages/Admin/Addimage";
 
 // import { Editevent} from "./Pages/Admin/Editevent";
@@ -92,7 +92,8 @@ function App() {
             <Route path="/editinstructor" exact component={Editinstructor} />
             <Route path="/editstudent" exact component={Editstudent} />
             <Route path="/deletstudent" exact component={Deletstudent} /> */}
-            <Route path="/login" exact ><Login userlogin={userlogin}/>
+            <Route path="/login" exact >
+              <Login userlogin={userlogin} />
             </Route>
           </Switch>
           <Footer />

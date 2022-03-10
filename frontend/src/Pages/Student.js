@@ -28,6 +28,9 @@ class Student extends Component {
       console.log(e);
     }
   }
+  update = (e) =>{
+    console.log(e.target.id)
+  }
   render() {
     const instructor = this.state.InstructorList;
     const ins = this.state.ins;
@@ -46,7 +49,7 @@ class Student extends Component {
 
             <div className=" fs-md-4 ins_info text-muted">Email : {instructor.email}</div>
             <div className="ins_info fs-md-4 text-muted">Mobile Phone : {instructor.phoneNumber}</div>
-            <button
+            <button id={instructor.id} onClick={this.update}
               style={{ backgroundColor: "white", border: "1px solid grey" }}
               className="ins_info fs-md-6 btn mt-3 pink bl"
             >

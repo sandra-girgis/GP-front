@@ -5,34 +5,52 @@ import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Addevent from "./Addevent";
 class Events extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      StudentList: [],
+      EventList: [],
     };
   }
   async componentDidMount() {
     try {
-      const StudentRes = await fetch(
-        "http://localhost:8000/Ensan/news/"
-      );
-      const StudentList = await StudentRes.json();
+      const EventRes = await fetch("http://localhost:8000/Ensan/news/");
+      const EventList = await EventRes.json();
       this.setState({
-        StudentList,
+        EventList,
       });
     } catch (e) {
       console.log(e);
     }
   }
-
-  Student = () => {
-    const students = this.state.StudentList;
-    return students.map((item) => (
+  delete = (e) => {
+    // console.log(`http://localhost:8000/Ensan/news/${e.target.id}`)
+    fetch(`http://localhost:8000/Ensan/news/${e.target.id}`,{
+            method : 'delete',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(this.state.details)
+        })
+        .then(
+            data => data.json()
+        )
+        .then(
+            data => {
+                console.log(data);
+            }
+        )
+        .catch(error => console.error(error))
+  }
+  edit = (e) => {
+    <Addevent id={e.target.id} />
+  }
+  Event = () => {
+    const events = this.state.EventList;
+    return events.map((item) => (
       <tr key={item.id}>
         <td>{item.title}</td>
         <td>{item.content}</td>
-        <td>{item.date.replaceAll("T"," ").replaceAll("Z"," ")}</td>
+        <td>{item.date.replaceAll("T", " ").replaceAll("Z", " ")}</td>
         <td>
           <img
             src={require("../../images" +
@@ -45,15 +63,22 @@ class Events extends Component {
         </td>
         <td>{item.Category_ID}</td>
         <td>
+          <Link to="#" style={{ textDecoration: "none" }}>
+            <button id={item.id} className="butt" style={{ backgroundColor: "#168eca" }} onClick={this.edit}>
+            Edit
+            </button>
+          </Link>
+        </td>
+        {/* <td>
           <button className="butt" style={{ backgroundColor: "#168eca" }}>
-            <NavLink className="nav nav-link bu active " exact to={"/addevent"}>
+            <NavLink className="nav nav-link bu active " exact to={"/addevent"} id={item.id} >
               Edit
             </NavLink>
           </button>
-        </td>
+        </td> */}
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" style={{ backgroundColor: "#168eca" }}>
+            <button id={item.id} className="butt" style={{ backgroundColor: "#168eca" }} onClick={this.delete}>
               Delete
             </button>
           </Link>
@@ -70,8 +95,8 @@ class Events extends Component {
             <Link className="nav-link  adm" to="/instructors">
               Instructors
             </Link>
-            <Link className="nav-link  adm" to="/students">
-              Students
+            <Link className="nav-link  adm" to="/events">
+              Student
             </Link>
             <Link className="nav-link  adm" to="/event">
               Events
@@ -88,7 +113,6 @@ class Events extends Component {
         >
           Events
         </h1>
-        {/* <Link to="#" style={{textDecoration:"none"}}> */}
         <button
           className="btn-outline-light btn-lg ms-5 mb-5 butt"
           style={{ backgroundColor: "#168eca" }}
@@ -97,7 +121,6 @@ class Events extends Component {
             Add Event
           </NavLink>
         </button>
-        {/* </Link> */}
         <Table striped bordered hover className="shado container mb-5">
           <thead>
             <tr class="text-center">
@@ -110,9 +133,7 @@ class Events extends Component {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>
-            {this.Student()}
-          </tbody>
+          <tbody>{this.Event()}</tbody>
         </Table>
       </>
     );
