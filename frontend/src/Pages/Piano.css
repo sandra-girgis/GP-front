@@ -1,6 +1,12 @@
 /* .card{
     height:70vh ;
 } */
+.kirly
+{
+  height: 45vh !important;
+  width: 40vw !important;
+}
+
 .card-img{
     height:70vh ;
     weight: 70vh ;

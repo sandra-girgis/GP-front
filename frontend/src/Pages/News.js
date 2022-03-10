@@ -54,7 +54,7 @@ class News extends Component {
     return (
       <>     
         <h1 className='container'style={{color:"#ee4a8b"}}>
-          NEWS
+          Events
         </h1>
         <div className="container mb-5 mt-5">
           {this.News()}

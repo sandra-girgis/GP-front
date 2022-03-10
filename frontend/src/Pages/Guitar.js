@@ -75,8 +75,8 @@ export const Guitar = () => {
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
                         <h5 className="card-title"style={{color:"#168eca"}}>Guitar Classes</h5>
-                        <p className="card-text desc">From 6 year sold and above also for Adults.  
-With Dina Dawood.</p>
+                        <p className="card-text desc">From 6 year sold and above also for Adults 
+                        <br></br>With Dina Dawood</p>
                     </div>
                     </div>
                   </div>
@@ -86,9 +86,9 @@ With Dina Dawood.</p>
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Guitar at Ensan Art?</h5>
-                      <p className="card-text desc">    • Highly qualified and friendly instructors
-    • International Curriculum (ABRSM).
-    • Bi-Annual concert.</p>
+                      <p className="card-text desc">    • Highly qualified and friendly instructors<br></br>
+    • International Curriculum (ABRSM)<br></br> 
+    • Bi-Annual concert</p>
                   </div>
                   </div>
                   <div className="col-md-4 border rounded">
@@ -106,10 +106,10 @@ With Dina Dawood.</p>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Benefit of playing classical Guitar:</h5>
-                      <p className="card-text desc">T    • Improved self-discipline through practicing certain skills over and over
-    • Stronger connections between left and right brain functions
-    • Improved right and left hand coordination
-    • Develops self-discipline.</p>
+                      <p className="card-text desc">   • Improved self-discipline through practicing certain skills over and over<br></br>
+    • Stronger connections between left and right brain functions<br></br>
+    • Improved right and left hand coordination<br></br>
+    • Develops self-discipline</p>
 
                   </div>
                   </div>

@@ -76,8 +76,8 @@ export const Flute = () => {
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
                         <h5 className="card-title"style={{color:"#168eca"}}>Flute and Recorder Classes</h5>
-                        <p className="card-text desc">from 7 years old and above, also for adults. 
-With: Nouran Hathout. </p>
+                        <p className="card-text desc">from 7 years old and above, also for adults
+                        <br></br>  With: Nouran Hathout </p>
                     </div>
                     </div>
                   </div>
@@ -87,9 +87,9 @@ With: Nouran Hathout. </p>
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Flute at Ensan Art?</h5>
-                      <p className="card-text desc">    • Highly qualified Flute instructors
-    • International curriculum.
-    • Annual Students Concert.</p>
+                      <p className="card-text desc">    • Highly qualified Flute instructors<br></br>
+    • International curriculum<br></br>
+    • Annual Students Concert</p>
                   </div>
                   </div>
                   <div className="col-md-4 border rounded">
@@ -107,9 +107,9 @@ With: Nouran Hathout. </p>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Benefit of playing Flute:</h5>
-                      <p className="card-text desc">    • Improves Reasoning Capacity
-    • Improves Student’s Time Management
-    • Improves Organizational Skills
+                      <p className="card-text desc">    • Improves Reasoning Capacity<br></br>
+    • Improves Student’s Time Management<br></br>
+    • Improves Organizational Skills<br></br>
     • Builds Confidence and Encourages Self-expression</p>
 
                   </div>

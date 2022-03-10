@@ -89,7 +89,7 @@ export const Ballet = () => {
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
                         <h5 className="card-title"style={{color:"#168eca"}}>Ballet Classes </h5>
-                        <p className="card-text desc">from 4 years old and above, by Dr. Tahany Hassan. (group classes from 15 students).</p>
+                        <p className="card-text desc">from 4 years old and above<br></br> with Dr. Tahany Hassan. (group classes from 15 students)</p>
                     </div>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ export const Ballet = () => {
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Ballet at Ensan Art?</h5>
-                      <p className="card-text desc">    • Highly qualified and friendly Ballet instructors
+                      <p className="card-text desc">    • Highly qualified and friendly Ballet instructors<br></br>
     • Annual Student Performance</p>
                   </div>
                   </div>
@@ -119,11 +119,11 @@ export const Ballet = () => {
                   <div className="col-md-6" style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Benefit of dancing Ballet: </h5>
-                      <p className="card-text desc">    • Ballet makes us understand our body better
-    • It teaches flexibility, poise and grace
-    • Builds strong lean muscles
-    • Gives one a good grounding technique
-    • Better appreciate rhythm and music
+                      <p className="card-text desc">    • Ballet makes us understand our body better<br></br> 
+    • It teaches flexibility, poise and grace<br></br>
+    • Builds strong lean muscles<br></br>
+    • Gives one a good grounding technique<br></br>
+    • Better appreciate rhythm and music<br></br>
     • Qualified and Friendly Instructors</p>
 
                   </div>

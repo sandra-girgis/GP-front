@@ -88,22 +88,23 @@ export const Artcourses = () => {
        <div className="container mt-5 mb-5">
        <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Classes</h1>
               <div className="container mb-5 flip-card">
-                  <div className="row g-0 ">
+                  <div className="row g-0 "style={{height:"40vh"}}>
                     <div className="col-md-4 border rounded">
-                    <img  src={img7}
-                      className="img-fluid rounded-start" alt="kids"/>
+                    <img  src={img7} 
+                      className="img-fluid rounded-start kirly" alt="kids"/>
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
                         <h5 className="card-title"style={{color:"#168eca"}}>kids  (From 4 to 6 years old)</h5>
                         <p className="card-text desc">
  The drawing course for this age is designed to let the kids unleash
- their imagination during the painting.
- In addition to learning the basic geometric shapes in an indirect way.</p>
+ their imagination during the painting
+ In addition to learning the basic geometric shapes in an indirect way</p>
                     </div>
                     </div>
                   </div>
               </div>
+              <br></br>
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
@@ -113,12 +114,12 @@ export const Artcourses = () => {
 At this age stage, the kids start to learn more about the basic proportions of the human body and faces. Also, they train about the famous artists.</p>
                   </div>
                   </div>
-                  <div className="col-md-4 border rounded">
+                  <div className="col-md-4 border rounded ">
                   <img  src={img8}
-                    className="img-fluid rounded-start" alt="middle age"/>
+                    className="img-fluid rounded-start kirly" alt="middle age"/>
                   </div>
                 </div>
-              </div>        
+              </div>
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border rounded">

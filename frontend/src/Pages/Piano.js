@@ -73,7 +73,7 @@ export const Piano = () => {
                       <div className="card-body">
                         <h5 className="card-title"style={{color:"#168eca"}}>Piano Classes</h5>
                         <p className="card-text desc">from 4 years old and above, also for adults.
-With: Nada Magdy, Yomna Magdy, Youssef Sameh, Salma Wael and May Adel. </p>
+ <br></br>With: Nada Magdy, Yomna Magdy, Youssef Sameh, Salma Wael and May Adel. </p>
                     </div>
                     </div>
                   </div>
@@ -83,9 +83,9 @@ With: Nada Magdy, Yomna Magdy, Youssef Sameh, Salma Wael and May Adel. </p>
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Piano at Ensan Art?</h5>
-                      <p className="card-text desc">    • Using a real piano in the classroom
-    • Highly qualified Piano instructors
-    • International curriculum.
+                      <p className="card-text desc">    • Using a real piano in the classroom <br></br>
+    • Highly qualified Piano instructors<br></br>
+    • International curriculum.<br></br>
     • Annual Student Concert.</p>
                   </div>
                   </div>
@@ -104,9 +104,9 @@ With: Nada Magdy, Yomna Magdy, Youssef Sameh, Salma Wael and May Adel. </p>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Benefits of playing piano:</h5>
-                      <p className="card-text desc">    • Promotes Better Hand-Eye Coordination
-    • Enhances Multi-tasking Capabilities
-    • Promotes Balanced Character
+                      <p className="card-text desc">    • Promotes Better Hand-Eye Coordination<br></br>
+    • Enhances Multi-tasking Capabilities<br></br>
+    • Promotes Balanced Character<br></br>
     • Builds Confidence and Encourages Self-expression</p>
 
                   </div>

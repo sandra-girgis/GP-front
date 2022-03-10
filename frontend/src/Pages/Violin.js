@@ -76,8 +76,9 @@ export const Violin = () => {
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
                         <h5 className="card-title"style={{color:"#168eca"}}>Violin Classes</h5>
-                        <p className="card-text desc">from 8 years old and above and adults.
-With: Omar Akl , Maya ElRemaly and Noran ElKobesy(Group classes from 8 students).</p>
+                        <p className="card-text desc">from 8 years old and above and adults.<br></br>
+With: Omar Akl , Maya ElRemaly and Noran ElKobesy<br></br>
+(Group classes from 8 students)</p>
                     </div>
                     </div>
                   </div>
@@ -87,8 +88,8 @@ With: Omar Akl , Maya ElRemaly and Noran ElKobesy(Group classes from 8 students)
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Violin at Ensan Art?</h5>
-                      <p className="card-text desc">    • Highly qualified Violin instructors
-    • Teaching International Curriculum (ABRSM)
+                      <p className="card-text desc">    • Highly qualified Violin instructors<br></br>
+    • Teaching International Curriculum (ABRSM)<br></br>
     • Annual Students Concert </p>
                   </div>
                   </div>
@@ -107,14 +108,14 @@ With: Omar Akl , Maya ElRemaly and Noran ElKobesy(Group classes from 8 students)
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>Benefit of playing Violin:</h5>
-                      <p className="card-text desc">    • Improved attention span and focus as he/she learns how to read music
-    • Sharpened memory from learning how to memories
-    • Improved self-discipline through practicing certain skills over and over
-    • Stronger connections between left and right brain functions
-    • Improved right and left hand coordination
-    • Develops self-discipline,
+                      <p className="card-text desc">    • Improved attention span and focus as he/she learns how to read music<br></br>
+    • Sharpened memory from learning how to memories<br></br>
+    • Improved self-discipline through practicing certain skills over and over<br></br>
+    • Stronger connections between left and right brain functions<br></br>
+    • Improved right and left hand coordination<br></br>
+    • Develops self-discipline<br></br>
     • Develops competency control
-    • Improve the team work skills</p>
+   and Improve the team work skills</p>
 
                   </div>
                   </div>
