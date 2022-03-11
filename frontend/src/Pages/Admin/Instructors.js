@@ -11,6 +11,7 @@ class Instructors extends Component {
     super(props);
     this.state = {
       InstructorList: [],
+      id: 0,
     };
   }
   async componentDidMount() {
@@ -25,6 +26,21 @@ class Instructors extends Component {
       console.log(e);
     }
   }
+
+  delete = (e) => {
+    // console.log(`http://localhost:8000/Ensan/instructors/${e.target.id}`)
+    fetch(`http://localhost:8000/Ensan/instructors/${e.target.id}`, {
+      method: "delete",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(this.state.details),
+    })
+      .then((data) => data.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => console.error(error));
+  };
+
   Instructor = () => {
     const instructors = this.state.InstructorList;
     return instructors.map((item) => (
@@ -57,7 +73,12 @@ class Instructors extends Component {
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" >
+          <button
+              id={item.id}
+              className="butt"
+              
+              onClick={this.delete}
+            >
               Delete
             </button>
           </Link>
