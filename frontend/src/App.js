@@ -8,12 +8,13 @@ import { Artcourses } from "./Pages/Artcourses";
 import { Guitar } from "./Pages/Guitar";
 import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
-import { Instructor } from "./Pages/Instructor";
-import { Student } from "./Pages/Student";
-
-import Gallery from "./Pages/Gallery";
+import Instructor from "./Pages/Instructor";
+import Student from "./Pages/Student";
 import Concerts from "./Pages/Concerts";
 import News from "./Pages/News";
+import Classes from "./Pages/Classes";
+import Exhibitions from "./Pages/Exhibitions";
+import Workshops from "./Pages/Workshops";
 import { Piano } from "./Pages/Piano";
 import { Theatre } from "./Pages/Theatre";
 import { Violin } from "./Pages/Violin";
@@ -25,8 +26,9 @@ import Instructors from "./Pages/Admin/Instructors";
 import Students from "./Pages/Admin/Students";
 import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
-import { Addevent } from "./Pages/Admin/Addevent";
+import  Addevent  from "./Pages/Admin/Addevent";
 import { Addimage} from "./Pages/Admin/Addimage";
+
 
 // import { Editevent} from "./Pages/Admin/Editevent";
 // import { Deletevent} from "./Pages/Admin/Deletevent";
@@ -38,6 +40,7 @@ import { Addimage} from "./Pages/Admin/Addimage";
 // import { Deletstudent} from "./Pages/Admin/Deletstudent";
 
 import  Login  from "./Pages/login";
+import  Register  from "./Pages/register";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -59,18 +62,19 @@ function App() {
             <Route path="/piano" exact component={Piano} />
             <Route path="/" exact component={Home} />
             <Route path="/artCourses" exact component={Artcourses} />
-            <Route path="/ballet" exact component={Ballet} />
+            <Route path="/ballet" exact >
+              <Ballet token={token} />
+            </Route>
             <Route path="/flute" exact component={Flute} />
-            <Route path="/gallery" exact component={Gallery} />
             <Route path="/guitar" exact component={Guitar} />
             <Route path="/news" exact component={News} />
             <Route path="/violin" exact component={Violin} />
             <Route path="/theatre" exact component={Theatre} />
             <Route path="/workshop" exact component={Workshop} />
-             {/* <Route path="/classes" exact component={Classes} /> */}
+            <Route path="/classes" exact component={Classes} />
             <Route path="/concerts" exact component={Concerts} />
-            {/*<Route path="/exhibitions" exact component={Exhibitions} />
-            <Route path="/workshops" exact component={Workshops} /> */}
+            <Route path="/exhibitions" exact component={Exhibitions} /> 
+            <Route path="/workshops" exact component={Workshops} /> 
             <Route path="/joinus" exact component={Joinus} />
             <Route path="/instructor" exact component={Instructor} />
             <Route path="/student" exact component={Student} />
@@ -90,8 +94,10 @@ function App() {
             <Route path="/editinstructor" exact component={Editinstructor} />
             <Route path="/editstudent" exact component={Editstudent} />
             <Route path="/deletstudent" exact component={Deletstudent} /> */}
-            <Route path="/login" exact ><Login userlogin={userlogin}/>
+            <Route path="/login" exact >
+              <Login userlogin={userlogin} />
             </Route>
+            <Route path="/register" exact component={Register} />
           </Switch>
           <Footer />
         </div>

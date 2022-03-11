@@ -46,14 +46,14 @@ class Imagealbum extends Component {
         <td>{item.Album_ID}</td>
         <td>
           <Link to="/addimage" style={{ textDecoration: "none" }}>
-            <button className="butt" style={{ backgroundColor: "#168eca" }}>
+            <button className="butt" >
             Edit
             </button>
           </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" style={{ backgroundColor: "#168eca" }}>
+            <button className="butt" >
               Delete
             </button>
           </Link>
@@ -88,7 +88,7 @@ class Imagealbum extends Component {
         </h1>
         <button
           className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          style={{ backgroundColor: "#168eca" }}
+          
         >
           <NavLink className="nav nav-link bu active " exact to={"/addimage"}>
             Add Image
@@ -96,7 +96,7 @@ class Imagealbum extends Component {
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
-            <tr class="text-center">
+            <tr className="text-center">
               <th scope="col">picture</th>
               <th scope="col">Album_ID</th>
               <th scope="col">Name</th>

@@ -5,7 +5,6 @@ import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// export const Students = () => {
 class Students extends Component {
   constructor(props) {
     super(props);
@@ -52,12 +51,12 @@ class Students extends Component {
         </td>
         <td>
         <Link to="/addstudent"style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
+        <button className="butt" >Edit</button>
         </Link> 
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" style={{ backgroundColor: "#168eca" }}>
+            <button className="butt" >
               Delete
             </button>
           </Link>
@@ -93,7 +92,7 @@ class Students extends Component {
         </h1>
         <button
           className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          style={{ backgroundColor: "#168eca" }}
+          
         >
           <NavLink className="nav nav-link bu active " exact to={"/addstudent"}>
             Add Student
@@ -101,7 +100,7 @@ class Students extends Component {
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
-            <tr class="text-center">
+            <tr className="text-center">
               <th scope="col">Id</th>
               <th scope="col">Student-Name</th>
               <th scope="col">Email</th>

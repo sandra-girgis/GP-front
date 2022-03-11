@@ -14,14 +14,14 @@ export const Footer = () => {
     return (
         <>
    
-            <footer class="text-center text-lg-start bg-light text-muted footer ">
+            <footer className="text-center text-lg-start bg-light text-muted footer ">
 
 
-                <section class="footer pb-5 pt-2 ">
-                    <div class="container ">
-                        <div class="row mt-4 ">
-                            <div class="col-md-3 col-lg-2 mx-auto text_color ">
-                                <h6 class="text-uppercase fw-bold mb-4 text_color ">
+                <section className="footer pb-5 pt-2 ">
+                    <div className="container ">
+                        <div className="row mt-4 ">
+                            <div className="col-md-3 col-lg-2 mx-auto text_color ">
+                                <h6 className="text-uppercase fw-bold mb-4 text_color ">
                                     Ensan Art
                                 </h6>
                                 <p>
@@ -34,8 +34,8 @@ export const Footer = () => {
                                     <Link className="text-reset text_color pink" exact to="/gallery">Gallery</Link>
                                 </p>
                             </div>
-                            <div class="col-md-3 col-lg-2 mx-auto text_color">
-                                <h6 class="text-uppercase fw-bold mb-4 text_color">
+                            <div className="col-md-3 col-lg-2 mx-auto text_color">
+                                <h6 className="text-uppercase fw-bold mb-4 text_color">
                                     Music
                                 </h6>
                                 <p>
@@ -52,8 +52,8 @@ export const Footer = () => {
                                 </p>
                             </div>
 
-                            <div class="col-md-3 col-lg-2 mx-auto text_color">
-                                <h6 class="text-uppercase fw-bold mb-4 text_color">
+                            <div className="col-md-3 col-lg-2 mx-auto text_color">
+                                <h6 className="text-uppercase fw-bold mb-4 text_color">
                                     Performance Art
                                 </h6>
                                 <p>
@@ -64,8 +64,8 @@ export const Footer = () => {
                                 </p>
                             </div>
 
-                            <div class="col-md-3 col-lg-2 mx-auto text_color">
-                                <h6 class="text-uppercase fw-bold mb-4 text_color">
+                            <div className="col-md-3 col-lg-2 mx-auto text_color">
+                                <h6 className="text-uppercase fw-bold mb-4 text_color">
                                     Classical Art
                                 </h6>
                                 <p>
@@ -78,8 +78,8 @@ export const Footer = () => {
                             </div>
 
                             
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text_color">
-                                <h6 class="text-uppercase fw-bold mb-4">
+                            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text_color">
+                                <h6 className="text-uppercase fw-bold mb-4">
                                     Contact
                                 </h6>
                                 <p className="px-2">

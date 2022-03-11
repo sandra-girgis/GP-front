@@ -52,12 +52,12 @@ class Instructors extends Component {
         <td>{item.salary}</td>
         <td>
         <Link to="/addinstructor"style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
+        <button className="butt" >Edit</button>
         </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" style={{ backgroundColor: "#168eca" }}>
+            <button className="butt" >
               Delete
             </button>
           </Link>
@@ -93,7 +93,7 @@ class Instructors extends Component {
         </h1>
         <button
           className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          style={{ backgroundColor: "#168eca" }}
+          
         >
           <NavLink
             className="nav nav-link bu active "
@@ -105,7 +105,7 @@ class Instructors extends Component {
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
-            <tr class="text-center">
+            <tr className="text-center">
               <th scope="col">Id</th>
               <th scope="col">Instructors-Name</th>
               <th scope="col">Email</th>
