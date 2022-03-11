@@ -42,6 +42,7 @@ import { Addimage} from "./Pages/Admin/Addimage";
 // import { Deletstudent} from "./Pages/Admin/Deletstudent";
 
 import  Login  from "./Pages/login";
+import  Register  from "./Pages/register";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -99,6 +100,7 @@ function App() {
             <Route path="/login" exact >
               <Login userlogin={userlogin} />
             </Route>
+            <Route path="/register" exact component={Register} />
           </Switch>
           <Footer />
         </div>

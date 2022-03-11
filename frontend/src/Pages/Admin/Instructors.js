@@ -111,7 +111,7 @@ class Instructors extends Component {
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
-            <tr class="text-center">
+            <tr className="text-center">
               <th scope="col">Id</th>
               <th scope="col">Instructors-Name</th>
               <th scope="col">Email</th>
