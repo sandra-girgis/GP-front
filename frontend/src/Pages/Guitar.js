@@ -3,7 +3,7 @@ import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import img1 from "../images/01.jpg"
+import img1 from "../images/i4.jpg"
 // import img2 from "../images/12.jpg"
 // import img3 from "../images/17.jpg"
 // import img4 from "../images/18.jpg"
@@ -123,7 +123,7 @@ export const Guitar = () => {
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img1}
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">

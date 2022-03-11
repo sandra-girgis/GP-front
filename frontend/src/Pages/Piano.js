@@ -8,6 +8,15 @@ import img2 from "../images/12.jpg"
 import img3 from "../images/17.jpg"
 import img4 from "../images/18.jpg"
 import img5 from "../images/15.jpg"
+import img6 from "../images/i9.jpg"
+import img7 from "../images/i1.jpg"
+import img8 from "../images/i8.jpg"
+import img9 from "../images/i12.jpg"
+import img10 from "../images/i2.jpg"
+
+
+
+
 
 export const Piano = () => { 
   return (<>
@@ -121,7 +130,7 @@ export const Piano = () => {
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img6} 
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
@@ -160,7 +169,7 @@ She worked as a piano trainer for children and adults at Sporting Club from 2014
               </div>
             </div>
             <div className="col-md-4 im">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              <img src={img7}
               className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
           </div>
@@ -168,7 +177,7 @@ She worked as a piano trainer for children and adults at Sporting Club from 2014
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img8} 
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
@@ -202,7 +211,7 @@ She worked as a piano trainer for children and adults at Sporting Club from 2014
                   Alexandria Opera House – Sayed Darwish – Alexandria, 2012 – 2015: Piano
                    Teacher at Arts Academy (Conservatoire of Music) – Tharwat St. – Alexandria,
                     2009 – Oct 2012: Piano Teacher at Art's World Center,Jun 2014: Piano
-                     Accompaniment for Alexandria Opera House Children & Youth Orchestra, 
+                     Accompaniment for Alexandria Opera House Children and Youth Orchestra, 
                      Jun 2013:  Piano Soloist at the Russian Cultural Center – Alexandria , 
                      Dec 2011: Piano Soloist at the Artistic Taste Palace – Sidi Gaber,
                       Jul 2010:   Piano Soloist at Alexandria Center of Arts, Jun 2008: Piano
@@ -212,7 +221,7 @@ She worked as a piano trainer for children and adults at Sporting Club from 2014
               </div>
             </div>
             <div className="col-md-4 im">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              <img src={img9}
               className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
           </div>
@@ -221,7 +230,7 @@ She worked as a piano trainer for children and adults at Sporting Club from 2014
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img10}
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">

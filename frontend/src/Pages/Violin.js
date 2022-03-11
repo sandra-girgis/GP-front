@@ -11,6 +11,8 @@ import img5 from "../images/k1.jpg"
 import img6 from "../images/kkids.jpg"
 import img7 from "../images/kmag.jpg"
 import img8 from "../images/kold.jpg"
+import img9 from "../images/i7.jpg"
+import img10 from "../images/i5.jpg"
 
 
 export const Violin = () => { 
@@ -129,7 +131,7 @@ With: Omar Akl , Maya ElRemaly and Noran ElKobesy<br></br>
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img9} 
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
@@ -171,7 +173,7 @@ With: Omar Akl , Maya ElRemaly and Noran ElKobesy<br></br>
               </div>
             </div>
             <div className="col-md-4 im">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              <img src={img10}
               className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
           </div>
