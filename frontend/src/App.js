@@ -8,8 +8,9 @@ import { Artcourses } from "./Pages/Artcourses";
 import { Guitar } from "./Pages/Guitar";
 import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
-import { Instructor } from "./Pages/Instructor";
-import { Student } from "./Pages/Student";
+import Instructor from "./Pages/Instructor";
+import Student from "./Pages/Student";
+
 import Gallery from "./Pages/Gallery";
 import Concerts from "./Pages/Concerts";
 import News from "./Pages/News";
@@ -27,7 +28,7 @@ import Instructors from "./Pages/Admin/Instructors";
 import Students from "./Pages/Admin/Students";
 import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
-import { Addevent } from "./Pages/Admin/Addevent";
+import  Addevent  from "./Pages/Admin/Addevent";
 import { Addimage} from "./Pages/Admin/Addimage";
 
 
@@ -62,7 +63,9 @@ function App() {
             <Route path="/piano" exact component={Piano} />
             <Route path="/" exact component={Home} />
             <Route path="/artCourses" exact component={Artcourses} />
-            <Route path="/ballet" exact component={Ballet} />
+            <Route path="/ballet" exact >
+              <Ballet token={token} />
+            </Route>
             <Route path="/flute" exact component={Flute} />
             <Route path="/gallery" exact component={Gallery} />
             <Route path="/guitar" exact component={Guitar} />
@@ -76,9 +79,7 @@ function App() {
             <Route path="/workshops" exact component={Workshops} /> 
             <Route path="/joinus" exact component={Joinus} />
             <Route path="/instructor" exact component={Instructor} />
-
             <Route path="/student" exact component={Student} />
-
             <Route path="/event" exact component={Events} />
             <Route path="/imagealbum" exact component={Imagealbum} />
             <Route path="/instructors" exact component={Instructors} />
@@ -87,7 +88,6 @@ function App() {
             <Route path="/addevent" exact component={Addevent} />
             <Route path="/addimage" exact component={Addimage} />
             <Route path="/addinstructor" exact component={Addinstructor} />
-
             {/* <Route path="/editevent" exact component={Editevent} />
             <Route path="/deletevent" exact component={Deletevent} />
             <Route path="/editimage" exact component={Editimage} />
@@ -96,8 +96,8 @@ function App() {
             <Route path="/editinstructor" exact component={Editinstructor} />
             <Route path="/editstudent" exact component={Editstudent} />
             <Route path="/deletstudent" exact component={Deletstudent} /> */}
-
-            <Route path="/login" exact ><Login userlogin={userlogin}/>
+            <Route path="/login" exact >
+              <Login userlogin={userlogin} />
             </Route>
           </Switch>
           <Footer />

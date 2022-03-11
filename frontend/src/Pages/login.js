@@ -10,8 +10,8 @@ class Login extends Component {
 
     register = event => {
         // fetch('http://localhost:8000/Ensan/persons/',{
-        // fetch('http://localhost:8000/Ensan/students/',{
-        fetch('http://localhost:8000/Ensan/instructors/',{
+        fetch('http://localhost:8000/Ensan/students/',{
+        // fetch('http://localhost:8000/Ensan/instructors/',{
             method : 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(this.state.details)

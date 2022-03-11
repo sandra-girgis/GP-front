@@ -125,7 +125,7 @@ function Nav() {
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/instructor">
                 Instructor
-                </NavLink>
+              </NavLink>
             </li>
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/student">
@@ -137,7 +137,6 @@ Student
                 Login
               </NavLink>
             </li>
-            
           </ul>
         </Navbar.Collapse>
       </Navbar>

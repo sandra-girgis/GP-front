@@ -3,7 +3,7 @@
 } */
 .card-img{
     height:70vh ;
-    weight: 70vh ;
+    width: 70vh ;
 }
 .card-img-overlay{
     padding: 1rem;
@@ -74,11 +74,6 @@ text-align:justify;
 }
 
 
-
-
-
-
-
 /* The animation code */
 @keyframes example {
     from {  transform: rotateY(0deg);}
@@ -145,24 +140,6 @@ text-align:justify;
 } 
 
   /* The element to apply the animation to */
-  
-
-  
- 
-  
-
-
-
-
- 
-
- 
-
-
-
-
-
-
 
   /* The animation code */
 /* @keyframes example {
