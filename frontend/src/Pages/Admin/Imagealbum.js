@@ -11,6 +11,7 @@ class Imagealbum extends Component {
     super(props);
     this.state = {
       StudentList: [],
+      id: 0,
     };
   }
   async componentDidMount() {
@@ -27,6 +28,22 @@ class Imagealbum extends Component {
       console.log(e);
     }
   }
+
+
+  delete = (e) => {
+    // console.log(`http://localhost:8000/Ensan/albumPhotos/${e.target.id}`)
+    fetch(`http://localhost:8000/Ensan/albumPhotos/${e.target.id}`, {
+      method: "delete",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(this.state.details),
+    })
+      .then((data) => data.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => console.error(error));
+  };
+
 
   Student = () => {
     const students = this.state.StudentList;
@@ -53,7 +70,12 @@ class Imagealbum extends Component {
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" >
+            <button
+              id={item.id}
+              className="butt"
+              
+              onClick={this.delete}
+            >
               Delete
             </button>
           </Link>
