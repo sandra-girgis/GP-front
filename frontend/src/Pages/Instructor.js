@@ -61,9 +61,11 @@ class Instructor extends Component {
             <div className="ins_info fs-md-4 text-muted">
               Salary:{instructor.salary}
             </div>
+            <div className="ins_info">
+                    <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
             <button
-              style={{ backgroundColor: "white", border: "1px solid grey" }}
-              className="ins_info fs-md-6 btn  mt-3 pink"
+              className=" edit_pass fs-md-6 btn  mt-3"
             >
               Edit Password
             </button>
@@ -107,6 +109,8 @@ class Instructor extends Component {
                     </Card.Text>
                     <Card.Text className="text-muted">To : {i.to}</Card.Text>
                     <Card.Text className="text-muted">Day : {i.day}</Card.Text>
+                    
+
                   </Card.Body>
                 </Card>
               </>

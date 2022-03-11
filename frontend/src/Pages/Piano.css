@@ -302,12 +302,17 @@ th{
   margin-left:5%;
   
 }
-.ins_info{
+.edit_pass{
   margin-left:5%;
   color: #168eca;
   border:1px solid grey;
+
 }
-.ins_info:hover{
+.ins_info{
+  margin-left:5%;
+  /* border:1px solid grey; */
+}
+.edit_pass:hover{
   border-color:#ee4a8b;
   color:#ee4a8b;
 }
@@ -346,9 +351,9 @@ th{
 .star{
   color:rgb(238, 234, 9);
 }
-.star:target{
+/* .star:{
 color:rgb(32, 240, 32);
-}
+} */
 
 
 
