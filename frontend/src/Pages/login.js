@@ -52,7 +52,7 @@ class Login extends Component {
                             onChange={this.inputChanged}/>
                     </div>
                     <div className="row mb-5 mt-5">
-                        <button onClick={this.login} className="btn-outline-light btn-lg mb-5 butt" style={{backgroundColor:"#168eca"}}>Log in</button>
+                        <button onClick={this.login} className="btn-outline-light btn-lg mb-5 butt" >Log in</button>
                     </div>
                     <NavLink className="nav nav-link pink bl" exact to="/register">
                         register

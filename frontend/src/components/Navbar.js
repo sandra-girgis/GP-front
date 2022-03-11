@@ -10,13 +10,14 @@ function Nav() {
     <>
       <Navbar bg="light" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <img
+        <img
             src={require("../images/logo.ico")}
             alt="logo.img"
             className="log"
             style={{ width: "3rem" }}
           />
+        <Navbar.Collapse id="basic-navbar-nav">
+        
           <ul className="navbar-nav mb-2 ml-auto">
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/">

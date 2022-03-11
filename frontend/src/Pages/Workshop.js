@@ -265,7 +265,7 @@ export const Workshop = () => {
         </div>
         
         <div className="col-12 text-center">
-          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+          <button className="btn-outline-light btn-lg fs-2 butt" >
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
         

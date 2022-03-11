@@ -1,6 +1,15 @@
 /* .card{
     height:70vh ;
 } */
+.kirly
+{
+  height: 45vh !important;
+  width: 40vw !important;
+}
+.flute{
+  height: 60vh!important;
+}
+
 .card-img{
     height:70vh ;
     width: 70vh ;
@@ -224,15 +233,14 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 
 .butt {
   border-radius: 15%;
-  /* background-color:#ffffff!important; */
+  background-color:#ffffff!important;
   color: #168eca!important;
   border-color: #168eca;
 
 }
+
 .show{
-
 text-decoration:none;
-
 }
 
 .butt:hover{
@@ -356,14 +364,6 @@ color:rgb(32, 240, 32);
 } */
 
 
-
-
-
-
-
-
-
-
 /* @keyframes flip {
     50% {
       transform: rotate3d(0, 1, 0, 90deg);
@@ -373,4 +373,3 @@ color:rgb(32, 240, 32);
 .flipp {
     animation: flip 1.6s linear infinite;
   } */
-  

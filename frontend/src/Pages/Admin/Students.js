@@ -50,19 +50,13 @@ class Students extends Component {
           ))}
         </td>
         <td>
-          <button className="butt" style={{ backgroundColor: "#168eca" }}>
-            <NavLink
-              className="nav nav-link bu active "
-              exact
-              to={"/addstudent"}
-            >
-              Edit
-            </NavLink>
-          </button>
+        <Link to="/addstudent"style={{textDecoration:"none"}}>
+        <button className="butt" >Edit</button>
+        </Link> 
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" style={{ backgroundColor: "#168eca" }}>
+            <button className="butt" >
               Delete
             </button>
           </Link>
@@ -98,7 +92,7 @@ class Students extends Component {
         </h1>
         <button
           className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          style={{ backgroundColor: "#168eca" }}
+          
         >
           <NavLink className="nav nav-link bu active " exact to={"/addstudent"}>
             Add Student

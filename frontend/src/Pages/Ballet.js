@@ -3,7 +3,7 @@ import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import img1 from "../images/v1.jpg"
+import img1 from "../images/i10.jpg"
 // import img2 from "../images/v2.jpg"
 // import img3 from "../images/k8.jpg"
 // import img4 from "../images/k4.jpg"
@@ -87,9 +87,8 @@ export const Ballet = (props) => {
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
-                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title"style={{color:"#168eca"}}>Ballet Classes </h5>
+                        <p className="card-text desc">from 4 years old and above<br></br> with Dr. Tahany Hassan. (group classes from 15 students)</p>
                     </div>
                     </div>
                   </div>
@@ -98,9 +97,9 @@ export const Ballet = (props) => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Ballet at Ensan Art?</h5>
+                      <p className="card-text desc">    • Highly qualified and friendly Ballet instructors<br></br>
+    • Annual Student Performance</p>
                   </div>
                   </div>
                   <div className="col-md-4 border  rounded">
@@ -118,9 +117,13 @@ export const Ballet = (props) => {
                   {/* style={{backgroundColor:"#edf7f3"}} */}
                   <div className="col-md-6" style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Benefit of dancing Ballet: </h5>
+                      <p className="card-text desc">    • Ballet makes us understand our body better<br></br> 
+    • It teaches flexibility, poise and grace<br></br>
+    • Builds strong lean muscles<br></br>
+    • Gives one a good grounding technique<br></br>
+    • Better appreciate rhythm and music<br></br>
+    • Qualified and Friendly Instructors</p>
 
                   </div>
                   </div>
@@ -134,7 +137,7 @@ export const Ballet = (props) => {
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img1}
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
@@ -233,7 +236,7 @@ export const Ballet = (props) => {
         </div>
  
         <div className="col-12 text-center">
-          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+          <button className="btn-outline-light btn-lg fs-2 butt" >
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
                       

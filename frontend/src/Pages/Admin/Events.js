@@ -27,22 +27,18 @@ class Events extends Component {
 
   delete = (e) => {
     // console.log(`http://localhost:8000/Ensan/news/${e.target.id}`)
-    fetch(`http://localhost:8000/Ensan/news/${e.target.id}`,{
-            method : 'delete',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(this.state.details)
-        })
-        .then(
-            data => data.json()
-        )
-        .then(
-            data => {
-                console.log(data);
-            }
-        )
-        .catch(error => console.error(error))
-  }
-  
+    fetch(`http://localhost:8000/Ensan/news/${e.target.id}`, {
+      method: "delete",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(this.state.details),
+    })
+      .then((data) => data.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => console.error(error));
+  };
+
   Event = () => {
     const events = this.state.EventList;
     return events.map((item) => (
@@ -62,15 +58,20 @@ class Events extends Component {
         </td>
         <td>{item.Category_ID}</td>
         <td>
-          <button className="butt" style={{ backgroundColor: "#168eca" }}>
-            <NavLink className="nav nav-link bu active " exact to={"/addevent"} id={item.id} >
+          <Link to={"/addevent"} style={{ textDecoration: "none" }}>
+            <button className="butt">
               Edit
-            </NavLink>
-          </button>
+            </button>
+          </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button id={item.id} className="butt" style={{ backgroundColor: "#168eca" }} onClick={this.delete}>
+            <button
+              id={item.id}
+              className="butt"
+              
+              onClick={this.delete}
+            >
               Delete
             </button>
           </Link>
@@ -107,7 +108,7 @@ class Events extends Component {
         </h1>
         <button
           className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          style={{ backgroundColor: "#168eca" }}
+          
         >
           <NavLink className="nav nav-link bu active " exact to={"/addevent"}>
             Add Event

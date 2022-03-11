@@ -37,7 +37,7 @@ class News extends Component {
                 <span className="card-text ps-3 text-muted date">
                   {item.date.replaceAll("T"," ").replaceAll("Z"," ")}
                 </span>
-                <span className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}>
+                <span className="btn-outline-light btn-lg ms-5 mb-5 butt" >
                   {item.Category_ID}
                 </span>
               </div>
@@ -52,7 +52,7 @@ class News extends Component {
     return (
       <>     
         <h1 className='container'style={{color:"#ee4a8b"}}>
-          NEWS
+          Events
         </h1>
         <div className="container mb-5 mt-5">
           {this.News()}

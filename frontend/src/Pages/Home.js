@@ -32,8 +32,11 @@ export const Home = () => {
           <Carousel.Item interval={500}>
             <img className="d-block w-100" src={img1} alt="First slide" />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3 className="fs-5">Ensan Art was established in 2012, it is one of the leading Arts schools in Egypt. 
+                Our center takes pride in providing drawing classes, music lessons,
+                 and ballet courses for kids and adults. Our team consists of highly qualified 
+                 teachers</h3>
+              {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -43,31 +46,36 @@ export const Home = () => {
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 className="fs-5" style={{color:"#000000"}}>Our music courses help our students to learn, 
+                read and understand notes, learn theory, and training.</h3>
+              {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={img3} alt="Third slide" />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
+              <h3 className="fs-5" >We provide music lessons such are: Piano, Guitar, Violin classes.
+                 Our programs are designed to fully equip our students with the right elements they needed.
+                 We are also a registered institution to the prestigious ABRSM and Trinity of London </h3>
+              {/* <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              </p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
             <img className="d-block w-100" src={img4} alt="First slide" />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3 className="fs-5" style={{color:"#000000"}}>The majority of our students and their parents opted to choose Ensan Art 
+                mainly because of our quality education, friendly, family-oriented atmosphere,
+                 and the exceptional service that we aim to provide to our customers.</h3>
+              {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
             <img className="d-block w-100" src={img5} alt="Second slide" />
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              {/* <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -124,7 +132,7 @@ export const Home = () => {
             <Form.Label style={{color:"#ee4a8b"}}>Message</Form.Label>
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
-          <Button style={{backgroundColor:"#168eca"}} type="submit">
+          <Button  type="submit">
             Submit
           </Button>
         </Form>

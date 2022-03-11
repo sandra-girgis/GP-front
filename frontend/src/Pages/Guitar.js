@@ -3,11 +3,11 @@ import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import img1 from "../images/01.jpg"
-import img2 from "../images/12.jpg"
-import img3 from "../images/17.jpg"
-import img4 from "../images/18.jpg"
-import img5 from "../images/15.jpg"
+import img1 from "../images/i4.jpg"
+// import img2 from "../images/12.jpg"
+// import img3 from "../images/17.jpg"
+// import img4 from "../images/18.jpg"
+// import img5 from "../images/15.jpg"
 
 
 export const Guitar = () => { 
@@ -16,34 +16,36 @@ export const Guitar = () => {
   <Carousel.Item interval={500}>
     <img
       className="d-block w-100 " 
-      src={img1} alt="First slide"/>
+      src="https://media.istockphoto.com/photos/vintage-vinyl-record-playing-on-player-and-acoustic-guitar-on-with-picture-id956587676?k=20&m=956587676&s=612x612&w=0&h=ohV_VrGL_4a838UB8QiiZFi3WwPWxBXGoh6o8TklQG4=" 
+      alt="First slide"/>
   </Carousel.Item>
   <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
-      src={img2}   alt="Second slide"/>
+      src="https://media.istockphoto.com/photos/dad-teaching-guitar-and-ukulele-to-his-daughterlittle-girl-learning-picture-id1219407299?k=20&m=1219407299&s=612x612&w=0&h=v5lDASvutwXgi5vE3jSdSKs_v4Mc4MGxdokYhaun9iM="  
+       alt="Second slide"/>
   </Carousel.Item>
   <Carousel.Item >
     <img
       className="d-block w-100"
-      src={img3}
+      src="https://media.istockphoto.com/photos/young-teenager-girl-alone-at-home-childhood-picture-id825882882?k=20&m=825882882&s=612x612&w=0&h=ifc7rhHFqJCHuSoiiho1XFNGGwKu0vc6vzkMTboGx2g="
       alt="Third slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={img4}
+      src="https://media.istockphoto.com/photos/boy-teaching-to-play-guitar-picture-id1048436392?k=20&m=1048436392&s=612x612&w=0&h=rEk017VuXGj2hzIQosYbscycasBlAfwFWKkZBlzMPHo="
       alt="fourth slide"
     />
   </Carousel.Item>
-  <Carousel.Item>
+  {/* <Carousel.Item>
     <img
       className="d-block w-100"
       src={img5}
       alt="fifth slide"
     />
-  </Carousel.Item>
+  </Carousel.Item> */}
 </Carousel>
         {/* <div className="boback">
         <div className="">
@@ -72,9 +74,9 @@ export const Guitar = () => {
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
-                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title"style={{color:"#168eca"}}>Guitar Classes</h5>
+                        <p className="card-text desc">From 6 year sold and above also for Adults 
+                        <br></br>With Dina Dawood</p>
                     </div>
                     </div>
                   </div>
@@ -83,9 +85,10 @@ export const Guitar = () => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Guitar at Ensan Art?</h5>
+                      <p className="card-text desc">    • Highly qualified and friendly instructors<br></br>
+    • International Curriculum (ABRSM)<br></br> 
+    • Bi-Annual concert</p>
                   </div>
                   </div>
                   <div className="col-md-4 border rounded">
@@ -102,9 +105,11 @@ export const Guitar = () => {
                   </div>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Benefit of playing classical Guitar:</h5>
+                      <p className="card-text desc">   • Improved self-discipline through practicing certain skills over and over<br></br>
+    • Stronger connections between left and right brain functions<br></br>
+    • Improved right and left hand coordination<br></br>
+    • Develops self-discipline</p>
 
                   </div>
                   </div>
@@ -118,7 +123,7 @@ export const Guitar = () => {
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img1}
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
@@ -137,7 +142,7 @@ export const Guitar = () => {
           </div>
         </div>
         <div className="col-12 text-center">
-          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+          <button className="btn-outline-light btn-lg fs-2 butt" >
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
         
 

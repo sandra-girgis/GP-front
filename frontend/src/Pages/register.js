@@ -65,8 +65,7 @@ class Register extends Component {
           <div className="row mb-5 mt-5">
             <button
               onClick={this.register}
-              className="btn-outline-light btn-lg  butt"
-              style={{ backgroundColor: "#168eca" }}
+              className="btn-outline-light btn-lg butt"
             >
               Register
             </button>

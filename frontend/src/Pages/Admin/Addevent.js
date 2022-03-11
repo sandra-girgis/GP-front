@@ -155,7 +155,7 @@ onSubmit(e) {
           </div>
             <Button
               className="btn-outline-light btn-lg ms-5 mb-5 butt"
-              style={{ backgroundColor: "#168eca" }}
+              
             >
               <NavLink className="nav nav-link bu active " exact to={"/event"} >
                 Submit

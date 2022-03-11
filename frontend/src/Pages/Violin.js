@@ -11,6 +11,8 @@ import img5 from "../images/k1.jpg";
 import img6 from "../images/kkids.jpg";
 import img7 from "../images/kmag.jpg";
 import img8 from "../images/kold.jpg";
+import img9 from "../images/i7.jpg";
+import img10 from "../images/i5.jpg";
 
 export const Violin = () => {
   return (
@@ -32,23 +34,6 @@ export const Violin = () => {
           <img className="d-block w-100" src={img5} alt="fifth slide" />
         </Carousel.Item>
       </Carousel>
-      {/* <div className="boback">
-        <div className="">
-          <div className="card bg-dark text-white">
-            <img
-              className="card-img"
-              src="https://media.istockphoto.com/photos/grand-piano-in-dark-background-3d-rendering-picture-id1331353069?b=1&k=20&m=1331353069&s=170667a&w=0&h=-PfN3Mkh2fC78wPw54ZuWozUKtjmf5Le3J061E-j-Ko="
-              alt="piano-img"
-            />
-            <div className="card-img-overlay text-center col-3 ms-5 "> */}
-      {/* <button className="btn btn-dark btn-lg card-text">
-                Join Us
-              </button> */}
-      {/* </div>
-          </div>
-       </div> */}
-      {/* <div className="card mb-3" style="max-width: 540px;"> */}
-
       <div className="container mt-5 mb-5">
         <h1 className="mb-5 fw-bold display-4" style={{ color: "#ee4a8b" }}>
           About Our Classes
@@ -61,15 +46,12 @@ export const Violin = () => {
             <div className="col-md-6" style={{ backgroundColor: "#fff2f7" }}>
               <div className="card-body">
                 <h5 className="card-title" style={{ color: "#168eca" }}>
-                  kids
+                  Violin Classes
                 </h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Last updated 3 mins ago</small>
+                <p className="card-text desc">
+                  from 8 years old and above and adults.<br></br>
+                  With: Omar Akl , Maya ElRemaly and Noran ElKobesy<br></br>
+                  (Group classes from 8 students)
                 </p>
               </div>
             </div>
@@ -83,15 +65,13 @@ export const Violin = () => {
             >
               <div className="card-body">
                 <h5 className="card-title" style={{ color: "#168eca" }}>
-                  middle age
+                  Why to learn Violin at Ensan Art?
                 </h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Last updated 3 mins ago</small>
+                <p className="card-text desc">
+                  {" "}
+                  • Highly qualified Violin instructors<br></br>• Teaching
+                  International Curriculum (ABRSM)<br></br>• Annual Students
+                  Concert{" "}
                 </p>
               </div>
             </div>
@@ -116,21 +96,24 @@ export const Violin = () => {
             <div className="col-md-6" style={{ backgroundColor: "#fff2f7" }}>
               <div className="card-body">
                 <h5 className="card-title" style={{ color: "#168eca" }}>
-                  Elderly
+                  Benefit of playing Violin:
                 </h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Last updated 3 mins ago</small>
+                <p className="card-text desc">
+                  {" "}
+                  • Improved attention span and focus as he/she learns how
+                  to read music<br></br>• Sharpened memory from learning how
+                  to memories<br></br>• Improved
+                  self-discipline through practicing certain skills over and
+                  over<br></br>• Stronger connections between left and right
+                  brain functions<br></br>• Improved right and left hand
+                  coordination<br></br>• Develops self-discipline<br></br>•
+                  Develops competency control and Improve the team work skills
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div className="container mb-5">
         <h1 className="mb-5  fw-bold display-4" style={{ color: "#ee4a8b" }}>
           About Our Instructors
@@ -139,7 +122,7 @@ export const Violin = () => {
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                src={img9}
                 className="img-fluid rounded-start rounded-circle"
                 style={{ width: "15rem" }}
                 alt="instractors"
@@ -176,7 +159,7 @@ export const Violin = () => {
             <div className="col-md-8">
               <div className="card-body">
                 <h5 className="card-title" style={{ color: "#ee4a8b" }}>
-                  Maya
+                  Maya ElRemaly
                 </h5>
                 <p className="card-text desc">
                   Since 2002 she Playing the violin when she has the age of 5
@@ -201,7 +184,7 @@ export const Violin = () => {
             </div>
             <div className="col-md-4 im">
               <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                src={img10}
                 className="img-fluid rounded-end rounded-circle"
                 style={{ width: "15rem" }}
                 alt="instractors"
@@ -212,18 +195,47 @@ export const Violin = () => {
         <div className="col-12 text-center">
           <button
             className="btn-outline-light btn-lg fs-2 butt"
-            style={{ backgroundColor: "#168eca" }}
+            
           >
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>
               Join Us
             </NavLink>
           </button>
         </div>
+      </div>
+    </>
+  );
+};
 
-        {/* <div className="row row-cols-1 row-cols-md-3 g-4">
+{
+  /* <div className="boback">
+  <div className="">
+    <div className="card bg-dark text-white">
+      <img
+        className="card-img"
+        src="https://media.istockphoto.com/photos/grand-piano-in-dark-background-3d-rendering-picture-id1331353069?b=1&k=20&m=1331353069&s=170667a&w=0&h=-PfN3Mkh2fC78wPw54ZuWozUKtjmf5Le3J061E-j-Ko="
+        alt="piano-img"
+      />
+      <div className="card-img-overlay text-center col-3 ms-5 "> */
+}
+{
+  /* <button className="btn btn-dark btn-lg card-text">
+          Join Us
+        </button> */
+}
+{
+  /* </div>
+    </div>
+  </div> */
+}
+{
+  /* <div className="card mb-3" style="max-width: 540px;"> */
+}
+{
+  /* <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col instractor">
                 <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                 className="card-img-top  rounded-circle" style={{width:"15rem"}}  alt="instractor-img"/>
+                className="card-img-top  rounded-circle" style={{width:"15rem"}}  alt="instractor-img"/>
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">Born in Alexandria in 1998.
@@ -258,10 +270,9 @@ export const Violin = () => {
                   <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
               </div>
-           </div> */}
-      </div>
+           </div> */
+}
 
-      {/* </div> */}
-    </>
-  );
-};
+{
+  /* </div> */
+}

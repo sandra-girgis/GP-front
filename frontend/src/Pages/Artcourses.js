@@ -3,9 +3,9 @@ import "./Piano.css";
 import Carousel from 'react-bootstrap/Carousel'
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import img1 from "../images/v1.jpg"
-// import img2 from "../images/v2.jpg"
-// import img3 from "../images/k8.jpg"
+import img1 from "../images/i6.jpg"
+import img2 from "../images/i19.jpg"
+import img3 from "../images/i11.jpg"
 // import img4 from "../images/k4.jpg"
 // import img5 from "../images/k1.jpg"
 // import img6 from "../images/kkids.jpg"
@@ -88,35 +88,38 @@ export const Artcourses = () => {
        <div className="container mt-5 mb-5">
        <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Classes</h1>
               <div className="container mb-5 flip-card">
-                  <div className="row g-0 ">
+                  <div className="row g-0 "style={{height:"40vh"}}>
                     <div className="col-md-4 border rounded">
-                    <img  src={img7}
-                      className="img-fluid rounded-start" alt="kids"/>
+                    <img  src={img7} 
+                      className="img-fluid rounded-start kirly" alt="kids"/>
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
-                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title"style={{color:"#168eca"}}>kids  (From 4 to 6 years old)</h5>
+                        <p className="card-text desc">
+ The drawing course for this age is designed to let the kids unleash
+ their imagination during the painting
+ In addition to learning the basic geometric shapes in an indirect way</p>
                     </div>
                     </div>
                   </div>
               </div>
+              <br></br>
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}} >middle age</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}} >middle age  (From 7 to 9 years old)</h5>
+                      <p className="card-text desc">
+At this age stage, the kids start to learn more about the basic proportions of the human body and faces. Also, they train about the famous artists.</p>
                   </div>
                   </div>
-                  <div className="col-md-4 border rounded">
+                  <div className="col-md-4 border rounded ">
                   <img  src={img8}
-                    className="img-fluid rounded-start" alt="middle age"/>
+                    className="img-fluid rounded-start kirly" alt="middle age"/>
                   </div>
                 </div>
-              </div>        
+              </div>
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border rounded">
@@ -125,9 +128,9 @@ export const Artcourses = () => {
                   </div>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly (From 9 years old and above)</h5>
+                      <p className="card-text desc">The teens start to use different materials and colors, 
+                      to produce a painting integrates elements</p>
 
                   </div>
                   </div>
@@ -141,12 +144,12 @@ export const Artcourses = () => {
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img1} 
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Amira Shousha – Head of Art Team</h5>
                 <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
@@ -163,7 +166,7 @@ export const Artcourses = () => {
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Maryam Reda</h5>
                 <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
@@ -173,7 +176,7 @@ export const Artcourses = () => {
               </div>
             </div>
             <div className="col-md-4 im">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              <img src={img2}
               className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
           </div>
@@ -181,12 +184,12 @@ export const Artcourses = () => {
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img3} 
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Menna Allah Hazem</h5>
                 <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
@@ -203,7 +206,7 @@ export const Artcourses = () => {
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Rawan Haggag</h5>
                 <p className="card-text desc">Born in Alexandria in 1998.
                                           Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
                                           In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
@@ -219,28 +222,10 @@ export const Artcourses = () => {
           </div>
         </div>
         
-        <div className="card mb-5 instractor flip-card shadow">
-            <div className="row g-0">
-            <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
         
         <div className="col-12 text-center">
-          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+          <button className="btn-outline-light btn-lg fs-2 butt" >
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
         

@@ -51,19 +51,13 @@ class Instructors extends Component {
         </td>
         <td>{item.salary}</td>
         <td>
-          <button className="butt" style={{ backgroundColor: "#168eca" }}>
-            <NavLink
-              className="nav nav-link bu active "
-              exact
-              to={"/addinstructor"}
-            >
-              Edit
-            </NavLink>
-          </button>
+        <Link to="/addinstructor"style={{textDecoration:"none"}}>
+        <button className="butt" >Edit</button>
+        </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" style={{ backgroundColor: "#168eca" }}>
+            <button className="butt" >
               Delete
             </button>
           </Link>
@@ -99,7 +93,7 @@ class Instructors extends Component {
         </h1>
         <button
           className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          style={{ backgroundColor: "#168eca" }}
+          
         >
           <NavLink
             className="nav nav-link bu active "

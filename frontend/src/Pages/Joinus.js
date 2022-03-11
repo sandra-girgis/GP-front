@@ -33,8 +33,7 @@ export const Joinus = () => {
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
             <Button
-              className="btn-outline-light btn-lg  butt"
-              style={{ backgroundColor: "#168eca" }}
+              className="btn-outline-light btn-lg butt"
               type="submit"
             >
               Submit
