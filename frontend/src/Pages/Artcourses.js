@@ -145,17 +145,17 @@ At this age stage, the kids start to learn more about the basic proportions of t
             <div className="row g-0">
             <div className="col-md-4">
               <img src={img1} 
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
+              className="img-fluid rounded-start rounded-circle art flute" style={{width:"24rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Amira Shousha – Head of Art Team</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Amira Shousha (visual artist)</h5>
+                <p className="card-text desc">is the head of the trainers at Ensan Art. 
+During her 6 years of instructing art in different shapes(painting, drawing, collage, clay, and crafts), she had organized and prepared for three Art exhibitions Lots of creative workshops
+In addition, she participated in a few art competitions. 
+She is patient and determined to bring the best out of her students At the same time she is a Professional Photographer and a Creative Graphic Designer, Amira uses her skills in designing to create amazing posters, flyers, and posts for Ensan Art. 
+is a graduate of the 2012 faculty of Fine Arts( Graphic department).
+Amira loves and enjoys practicing art with her students.</p>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@ At this age stage, the kids start to learn more about the basic proportions of t
           </div>
         </div>
 
-        <div className="card mb-5 flip-card shadow1">
+        {/* <div className="card mb-5 flip-card shadow1">
             <div className="row g-0">
             
             <div className="col-md-8">
@@ -220,7 +220,7 @@ At this age stage, the kids start to learn more about the basic proportions of t
               className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
           </div>
-        </div>
+        </div> */}
         
         
         

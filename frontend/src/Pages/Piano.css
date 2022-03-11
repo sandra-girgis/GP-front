@@ -9,7 +9,9 @@
 .flute{
   height: 60vh!important;
 }
-
+.art{
+  height: 16rem!important;
+}
 .card-img{
     height:70vh ;
     weight: 70vh ;
