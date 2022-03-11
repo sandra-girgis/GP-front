@@ -62,17 +62,12 @@ class Events extends Component {
         </td>
         <td>{item.Category_ID}</td>
         <td>
-            <button className="butt" style={{ backgroundColor: "#168eca" }} >
-            Edit
-            </button>
-        </td>
-        {/* <td>
           <button className="butt" style={{ backgroundColor: "#168eca" }}>
             <NavLink className="nav nav-link bu active " exact to={"/addevent"} id={item.id} >
               Edit
             </NavLink>
           </button>
-        </td> */}
+        </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
             <button id={item.id} className="butt" style={{ backgroundColor: "#168eca" }} onClick={this.delete}>
@@ -92,7 +87,7 @@ class Events extends Component {
             <Link className="nav-link  adm" to="/instructors">
               Instructors
             </Link>
-            <Link className="nav-link  adm" to="/events">
+            <Link className="nav-link  adm" to="/students">
               Student
             </Link>
             <Link className="nav-link  adm" to="/event">

@@ -10,8 +10,6 @@ import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
 import Instructor from "./Pages/Instructor";
 import Student from "./Pages/Student";
-
-import Gallery from "./Pages/Gallery";
 import Concerts from "./Pages/Concerts";
 import News from "./Pages/News";
 import { Piano } from "./Pages/Piano";
@@ -64,7 +62,6 @@ function App() {
               <Ballet token={token} />
             </Route>
             <Route path="/flute" exact component={Flute} />
-            <Route path="/gallery" exact component={Gallery} />
             <Route path="/guitar" exact component={Guitar} />
             <Route path="/news" exact component={News} />
             <Route path="/violin" exact component={Violin} />
