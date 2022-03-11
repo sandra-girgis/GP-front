@@ -6,6 +6,12 @@ import { NavLink } from "react-router-dom";
 // import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+import { faRegStar } from "@fortawesome/free-solid-svg-icons";
+
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+
 import img1 from "../images/home.jpg";
 // import img2 from "../images/4.jpg"
 import img6 from "../images/12.jpg";
@@ -89,16 +95,15 @@ export const Home = () => {
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                <div className="col-4 text-center">
-                  <button className=" butt">
+                <div className="col-3  butt">
                     <NavLink
-                      className="nav nav-link bu active "
+                      className="show btn"
                       exact
                       to={"/news"}
                     >
-                      Show All Events
+                    All Events  <FontAwesomeIcon className="" icon={faAngleDoubleRight} />
+
                     </NavLink>
-                  </button>
                 </div>
                 {/* <div className="col-4 text-center"><FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /><NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink> */}
                 {/* </div> */}

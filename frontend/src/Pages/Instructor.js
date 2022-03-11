@@ -1,11 +1,16 @@
+import  {useState} from "react";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Piano.css";
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { HashLink } from "react-router-hash-link";
+import Card from 'react-bootstrap/Card';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from 'react-bootstrap/Button';
+import {HashLink} from 'react-router-hash-link';
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+// import { faRegStar } from "@fortawesome/free-solid-svg-icons";
 
 class Instructor extends Component {
   constructor(props) {
@@ -56,9 +61,11 @@ class Instructor extends Component {
             <div className="ins_info fs-md-4 text-muted">
               Salary:{instructor.salary}
             </div>
+            <div className="ins_info">
+                    <FontAwesomeIcon className="star" icon={faStar} />
+            </div>
             <button
-              style={{ backgroundColor: "white", border: "1px solid grey" }}
-              className="ins_info fs-md-6 btn  mt-3 pink"
+              className=" edit_pass fs-md-6 btn  mt-3"
             >
               Edit Password
             </button>
@@ -102,6 +109,8 @@ class Instructor extends Component {
                     </Card.Text>
                     <Card.Text className="text-muted">To : {i.to}</Card.Text>
                     <Card.Text className="text-muted">Day : {i.day}</Card.Text>
+                    
+
                   </Card.Body>
                 </Card>
               </>

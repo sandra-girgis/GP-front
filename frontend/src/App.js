@@ -12,6 +12,9 @@ import Instructor from "./Pages/Instructor";
 import Student from "./Pages/Student";
 import Concerts from "./Pages/Concerts";
 import News from "./Pages/News";
+import Classes from "./Pages/Classes";
+import Exhibitions from "./Pages/Exhibitions";
+import Workshops from "./Pages/Workshops";
 import { Piano } from "./Pages/Piano";
 import { Theatre } from "./Pages/Theatre";
 import { Violin } from "./Pages/Violin";
@@ -25,6 +28,7 @@ import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
 import  Addevent  from "./Pages/Admin/Addevent";
 import { Addimage} from "./Pages/Admin/Addimage";
+
 
 // import { Editevent} from "./Pages/Admin/Editevent";
 // import { Deletevent} from "./Pages/Admin/Deletevent";
@@ -67,10 +71,10 @@ function App() {
             <Route path="/violin" exact component={Violin} />
             <Route path="/theatre" exact component={Theatre} />
             <Route path="/workshop" exact component={Workshop} />
-             {/* <Route path="/classes" exact component={Classes} /> */}
+             <Route path="/classes" exact component={Classes} />
             <Route path="/concerts" exact component={Concerts} />
-            {/*<Route path="/exhibitions" exact component={Exhibitions} />
-            <Route path="/workshops" exact component={Workshops} /> */}
+            <Route path="/exhibitions" exact component={Exhibitions} /> 
+            <Route path="/workshops" exact component={Workshops} /> 
             <Route path="/joinus" exact component={Joinus} />
             <Route path="/instructor" exact component={Instructor} />
             <Route path="/student" exact component={Student} />

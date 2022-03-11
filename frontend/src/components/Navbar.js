@@ -25,7 +25,7 @@ function Nav() {
             </li>
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/news">
-                Events
+                News
               </NavLink>
             </li>
             {/* <li className="nav-item">
@@ -120,7 +120,7 @@ function Nav() {
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/event">
                 Admin
-              </NavLink>
+                </NavLink>
             </li>
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/instructor">
@@ -129,8 +129,8 @@ function Nav() {
             </li>
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/student">
-                Student
-              </NavLink>
+Student
+                </NavLink>
             </li>
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/login">

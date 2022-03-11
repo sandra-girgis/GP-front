@@ -5,6 +5,8 @@ import App from './App';
 // import Guitar from './Pages/Guitar';
 import reportWebVitals from './reportWebVitals';
 // import {Navbar} from './components/Navbar';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 

@@ -10,7 +10,7 @@ class Events extends Component {
     super(props);
     this.state = {
       EventList: [],
-      id: 0
+      id: 0,
     };
   }
   async componentDidMount() {
