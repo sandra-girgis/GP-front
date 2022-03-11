@@ -62,7 +62,7 @@ class Instructor extends Component {
               Salary:{instructor.salary}
             </div>
             <div className="ins_info">
-                    <FontAwesomeIcon className="star" icon={faStar} />
+            <FontAwesomeIcon className="star" icon={faStar} />
             </div>
             <button
               className=" edit_pass fs-md-6 btn  mt-3"
@@ -109,8 +109,6 @@ class Instructor extends Component {
                     </Card.Text>
                     <Card.Text className="text-muted">To : {i.to}</Card.Text>
                     <Card.Text className="text-muted">Day : {i.day}</Card.Text>
-                    
-
                   </Card.Body>
                 </Card>
               </>
