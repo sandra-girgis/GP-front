@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 class Login extends Component {
 
     state = {
@@ -6,25 +7,6 @@ class Login extends Component {
             username : "",
             password : ""
         }
-    }
-
-    register = event => {
-        // fetch('http://localhost:8000/Ensan/persons/',{
-        fetch('http://localhost:8000/Ensan/students/',{
-        // fetch('http://localhost:8000/Ensan/instructors/',{
-            method : 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(this.state.details)
-        })
-        .then(
-            data => data.json()
-        )
-        .then(
-            data => {
-                console.log(data.token);
-            }
-        )
-        .catch(error => console.error(error))
     }
 
     login = event => {
@@ -71,8 +53,10 @@ class Login extends Component {
                     </div>
                     <div className="row mb-5 mt-5">
                         <button onClick={this.login} className="btn-outline-light btn-lg mb-5 butt" style={{backgroundColor:"#168eca"}}>Log in</button>
-                        <button onClick={this.register} className="btn-outline-light btn-lg  butt" style={{backgroundColor:"#168eca"}}>Register</button>
                     </div>
+                    <NavLink className="nav nav-link pink bl" exact to="/register">
+                        register
+                    </NavLink>
                 </div>
             </div>
         );

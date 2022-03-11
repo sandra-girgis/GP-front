@@ -59,7 +59,7 @@ export const Piano = () => {
             {/* </div>
           </div>
        </div> */}
-       {/* <div class="card mb-3" style="max-width: 540px;"> */}
+       {/* <div className="card mb-3" style="max-width: 540px;"> */}
 
        <div className="container mt-5 mb-5">
               <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Classes</h1>

@@ -22,7 +22,13 @@ import { NavLink } from "react-router-dom";
 // export default Addevent;
 
 class Addevent extends Component {
-  // export const Addevent = () => {
+    constructor(props) {
+      super(props);
+    }
+
+
+
+    
   render() {
     return (
       <>
@@ -48,18 +54,18 @@ class Addevent extends Component {
               <Form.Label style={{ color: "#168eca" }}>content</Form.Label>
               <Form.Control as="textarea" rows={7} />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="duedate">
+            {/* <Form.Group className="mb-3" controlId="duedate">
               <Form.Label style={{ color: "#168eca" }}>date</Form.Label>
               <Form.Control type="date" name="duedate" placeholder="Due date" />
-            </Form.Group>
+            </Form.Group> */}
 
             {/* <Form.Group className="mb-3" controlId="exampleForm.uploadimage">
             <Form.Control action="/action_page.php"><label for="img" Select 
             image:type="file" id="img" name="img" accept="image/*" ></label>
-             </Form.Control >
- </Form.Group> */}
+            </Form.Control >
+              </Form.Group>
 
-            {/* <Button onClick={onImageRemoveAll}>Remove all images</Button>
+            <Button onClick={onImageRemoveAll}>Remove all images</Button>
             {imageList.map((image, index) => (
               <div key={index} className="image-item">
                 <img src={image['data_url']} alt="" width="100" />
@@ -67,6 +73,12 @@ class Addevent extends Component {
                   <Button onClick={() => onImageUpdate(index)}>Update</Button>
                   <Button onClick={() => onImageRemove(index)}>Remove</Button> */}
 
+              <div className="mb-1">
+                  Image <span className="font-css top">*</span>
+                  <div className="">
+                      <input type="file" id="file-input" name="ImageStyle"/>
+                  </div>
+              </div>
             <Button
               className="btn-outline-light btn-lg ms-5 mb-5 butt"
               style={{ backgroundColor: "#168eca" }}

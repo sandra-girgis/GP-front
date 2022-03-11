@@ -5,12 +5,12 @@ import Table from "react-bootstrap/Table";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Addevent from "./Addevent";
 class Events extends Component {
   constructor(props) {
     super(props);
     this.state = {
       EventList: [],
+      id: 0
     };
   }
   async componentDidMount() {
@@ -24,6 +24,7 @@ class Events extends Component {
       console.log(e);
     }
   }
+
   delete = (e) => {
     // console.log(`http://localhost:8000/Ensan/news/${e.target.id}`)
     fetch(`http://localhost:8000/Ensan/news/${e.target.id}`,{
@@ -41,9 +42,7 @@ class Events extends Component {
         )
         .catch(error => console.error(error))
   }
-  edit = (e) => {
-    <Addevent id={e.target.id} />
-  }
+  
   Event = () => {
     const events = this.state.EventList;
     return events.map((item) => (
@@ -63,11 +62,9 @@ class Events extends Component {
         </td>
         <td>{item.Category_ID}</td>
         <td>
-          <Link to="#" style={{ textDecoration: "none" }}>
-            <button id={item.id} className="butt" style={{ backgroundColor: "#168eca" }} onClick={this.edit}>
+            <button className="butt" style={{ backgroundColor: "#168eca" }} >
             Edit
             </button>
-          </Link>
         </td>
         {/* <td>
           <button className="butt" style={{ backgroundColor: "#168eca" }}>
@@ -123,7 +120,7 @@ class Events extends Component {
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
-            <tr class="text-center">
+            <tr className="text-center">
               <th scope="col">title</th>
               <th scope="col">content</th>
               <th scope="col">date</th>
