@@ -32,12 +32,12 @@ export const Workshop = () => {
      src="https://media.istockphoto.com/photos/cropped-image-of-african-american-parents-and-daughter-painting-eggs-picture-id935695902?k=20&m=935695902&s=612x612&w=0&h=gxNhsYXnJL0YT8rFbhKNpX8bDXhpREz9_4zJzAOIvb8="
       alt="Second slide"/>
   </Carousel.Item>
-  <Carousel.Item >
-    <img
+  {/* <Carousel.Item >
+    {/* <img
       className="d-block w-100"
      src={img1}
       alt="Second slide"/>
-  </Carousel.Item>
+  </Carousel.Item>  */}
   <Carousel.Item >
     <img
       className="d-block w-100"
@@ -50,7 +50,7 @@ export const Workshop = () => {
      src="https://media.istockphoto.com/photos/little-kids-holding-christmas-character-decorated-popsicle-sticks-picture-id881475192?k=20&m=881475192&s=612x612&w=0&h=E1kbcHAs-vuOcI4cO4s0ZR4dJQrv0QMjiO-HeyAYuj0="
       alt="Second slide"/>
   </Carousel.Item>
-  <Carousel.Item >
+  {/* <Carousel.Item >
     <img
       className="d-block w-100"
      src="https://media.istockphoto.com/photos/playing-the-drums-in-class-picture-id1296597806?k=20&m=1296597806&s=612x612&w=0&h=_5irS-wAIoYs9lWRI179eb9SiMcYMRvs_3YGC0Up7xQ="
@@ -61,7 +61,7 @@ export const Workshop = () => {
       className="d-block w-100"
      src="https://media.istockphoto.com/photos/music-class-in-daycare-picture-id1063797254?k=20&m=1063797254&s=612x612&w=0&h=0nPeuLNIcss26QeHk75qRH1B61HYl56VUXhabaU-FFI= "
       alt="Second slide"/>
-  </Carousel.Item>
+  </Carousel.Item> */}
   <Carousel.Item >
     <img
       className="d-block w-100"
@@ -139,7 +139,7 @@ export const Workshop = () => {
                   </div>
                   </div>
                   <div className="col-md-4 border rounded">
-                  <img  src="https://media.istockphoto.com/photos/close-up-two-women-practice-yoga-by-planking-on-mat-work-out-concept-picture-id1166073253?k=20&m=1166073253&s=612x612&w=0&h=2KdOiqfWOnaBnNtfmrJc4vrm1Qdh_yMFvu1WHsE_twc="
+                  <img src="https://images.unsplash.com/photo-1605627079912-97c3810a11a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=807&q=80"
                     className="img-fluid rounded-start" alt="middle age"/>
                   </div>
                 </div>
@@ -147,17 +147,16 @@ export const Workshop = () => {
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border rounded">
-                  <img  src="https://media.istockphoto.com/photos/pupils-playing-musical-instruments-in-school-orchestra-picture-id498131225?k=20&m=498131225&s=612x612&w=0&h=Vukan68nBgbPGqEBfWXMb_kQmQ0iB9IGiP4SEl8qcxc="
+                  <img  src="https://images.unsplash.com/photo-1637195141546-2469a5312504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
                   <div className="col-md-6" style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
                       <h5 className="card-title"style={{color:"#168eca"}}>skills we focus on</h5>
-                      <p className="card-text">• Fine motor skills<br></br>
-                      • Enhancing children's hand-eye coordination and building levels of manual dexterity<br></br>
+                      <p className="card-text">• Fine motor skills
+                      and Enhancing children's hand-eye coordination and building levels of manual dexterity<br></br>
                       • Identification of shapes, color, and texture<br></br>
                       • Working with materials teaches them about colors, shapes, and textures. How things work and how they fit together<br></br>
-                      • the Creativity<br></br>
                       • Craft encourages children to play and experiment in a fun and relaxed environment</p>
 
                   </div>
