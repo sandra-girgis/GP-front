@@ -56,7 +56,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Nav />
+        <Nav token={token} />
         <div>
           <Switch>
             <Route path="/piano" exact component={Piano} />
