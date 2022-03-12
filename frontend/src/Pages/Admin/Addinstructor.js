@@ -1,6 +1,5 @@
     // import React from "react";
     import "../Piano";
-    // import Carousel from 'react-bootstrap/Carousel'
     import Form from 'react-bootstrap/Form'
     import "bootstrap/dist/css/bootstrap.min.css";
     import Button from "react-bootstrap/Button";

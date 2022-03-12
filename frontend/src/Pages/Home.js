@@ -2,18 +2,13 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./Piano.css";
 import { NavLink } from "react-router-dom";
-// import Form from "react-bootstrap/Form";
-// import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-
-import { faRegStar } from "@fortawesome/free-solid-svg-icons";
-
+// import { faStar } from "@fortawesome/free-solid-svg-icons";
+// import { faRegStar } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 
 import img1 from "../images/home.jpg";
-// import img2 from "../images/4.jpg"
 import img6 from "../images/12.jpg";
 import img3 from "../images/v2.jpg";
 import img4 from "../images/k6.jpg";
@@ -36,7 +31,6 @@ export const Home = () => {
                 Our center takes pride in providing drawing classes, music lessons,
                  and ballet courses for kids and adults. Our team consists of highly qualified 
                  teachers</h3>
-              {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -48,7 +42,6 @@ export const Home = () => {
             <Carousel.Caption>
               <h3 className="fs-5" style={{color:"#000000"}}>Our music courses help our students to learn, 
                 read and understand notes, learn theory, and training.</h3>
-              {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -57,9 +50,6 @@ export const Home = () => {
               <h3 className="fs-5" >We provide music lessons such are: Piano, Guitar, Violin classes.
                  Our programs are designed to fully equip our students with the right elements they needed.
                  We are also a registered institution to the prestigious ABRSM and Trinity of London </h3>
-              {/* <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -68,14 +58,11 @@ export const Home = () => {
               <h3 className="fs-5" style={{color:"#000000"}}>The majority of our students and their parents opted to choose Ensan Art 
                 mainly because of our quality education, friendly, family-oriented atmosphere,
                  and the exceptional service that we aim to provide to our customers.</h3>
-              {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
             <img className="d-block w-100" src={img5} alt="Second slide" />
             <Carousel.Caption>
-              {/* <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -105,7 +92,7 @@ export const Home = () => {
                 </p>
                 <div className="col-3  butt">
                     <NavLink
-                      className="show btn"
+                      className="show btn bu"
                       exact
                       to={"/news"}
                     >
@@ -113,40 +100,17 @@ export const Home = () => {
 
                     </NavLink>
                 </div>
-                {/* <div className="col-4 text-center"><FontAwesomeIcon icon="fa-solid fa-circle-arrow-right" /><NavLink className="nav nav-link active colorr" exact to={"/news"}>Show All News</NavLink> */}
-                {/* </div> */}
               </div>
             </div>
           </div>
         </div>
         <br></br>
-        {/* <hr></hr>
-          <h3 className='new2 pt-2'style={{color:"#f1552d"}}>Send us a message</h3>
-          <br></br>
-          <Form style={{width:"50%"}} className="mx-auto">
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label style={{color:"#ee4a8b"}}>Email address</Form.Label>
-            <Form.Control type="email" placeholder="name@example.com" />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label style={{color:"#ee4a8b"}}>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} />
-          </Form.Group>
-          <Button  type="submit">
-            Submit
-          </Button>
-        </Form>
-        <br>
-        </br> */}
-
 <div className="container mt-5">
 <div className="row mt-5 mb-5 justify-content-center">
   <div className="flip-box col-md-6 me-5 mb-5">
     <div className="flip-box-inner">
       <div className="flip-box-front mt-5">
-      {/* <NavLink className="nav nav-link bu active " exact to={"/ballet"}> */}
         <img src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE=" alt="art" className="img"/>
-      {/* </NavLink> */}
       </div>
       <div className="flip-box-back mt-5">
         <img src={img8} alt="art" className="img"/>
@@ -189,199 +153,6 @@ export const Home = () => {
   </div>
 </div>
   </div>
-
-
-
-
-
-
-
-        {/* <div className="container mt-5  mb-5 justify-content-center">
-<div className="row">
-  <div className="flip-box col-md-3 me-md-5">
-    <div className="flip-box-inner mb-5">
-      <div className="flip-box-front">
-        <img src={img9} alt="Paris" className="img"/>
-      </div>
-      <div className="flip-box-back">
-        <img src={img7} alt="Paris" className="img"/>
-      </div>
-    </div>
-  </div>
-  <div className="flip-box col-md-3 me-md-5">
-    <div className="flip-box-inner mb-5">
-      <div className="flip-box-front">
-        <img src={img9} alt="Paris" className="img"/>
-      </div>
-      <div className="flip-box-back">
-        <img src={img6} alt="Paris" className="img"/>
-      </div>
-    </div>
-  </div>
-    <div className="flip-box col-md-3 me-md-5">
-    <div className="flip-box-inner mb-5">
-      <div className="flip-box-front ">
-        <img src={img9} alt="Paris" className="img"/>
-      </div>
-      <div className="flip-box-back ">
-        <img src={img7} alt="Paris" className="img"/>
-      </div>
-    </div>
-  </div>
-  <div className="flip-box col-md-3">
-    <div className="flip-box-inner mb-5">
-      <div className="flip-box-front ">
-        <img src={img9} alt="Paris" className="img"/>
-      </div>
-      <div className="flip-box-back ">
-        <img src={img6} alt="Paris" className="img"/>
-      </div>
-    </div>
-  </div>
-</div>
-  </div> */}
-
-        {/* <div className="card-deck row container  mt-5 mb-5 ">
-  <div className=" col-md-6 flip-box-inner  rounded-start">
-    <div className='flip-box-front'>
-    <img  src="https://media.istockphoto.com/photos/little-ballerinas-in-ballet-studio-picture-id1161652373?k=20&m=1161652373&s=612x612&w=0&h=8xIBoeahwR8G6RRrLGmj9ACtpCaM0sO5uD6NfuLvQQg="/>
-    </div>
-    <div className='flip-box-back'>
-    <img  src={img8} alt="Card image cap"/>
-    </div> 
-  </div>
-  <div className=" col-md-6  flip-box-inner flipp mb-lg-5  rounded-start">
-    <div className='flip-box-front'>
-    <img  src={img9}/>
-    </div>
-    <div className='flip-box-back'>
-    <img  src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134=" alt="Card image cap"/>
-    </div> 
-  </div> */}
-        {/* <div className="flip-box col-md-6 ml-5">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src={img7} alt="kids" 
-        />
-      </div>
-      <div className="flip-box-back">
-        <img src={img6} alt="kids" />
-      </div>
-    </div>
-  </div> */}
-
-        {/* <div className="flip-box col-md-6 ml-5">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src={img7}alt="Paris" 
-        />
-      </div>
-      <div className="flip-box-back">
-        <img src={img6} alt="kan" style={{width:"200px;"}}/>
-      </div>
-    </div>
-  </div>
-  <div className="flip-box col-md-6">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src={img7} alt="Paris" style={{width:"200px;"}}/>
-      </div>
-      <div className="flip-box-back">
-        <img src={img6} alt="Paris" style={{width:"200px;"}}/>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div className="row">
-    <div className="flip-box col-md-6">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src={img7}  alt="Paris"/>
-      </div>
-      <div className="flip-box-back">
-        <img src={img6} alt="Paris" />
-      </div>
-    </div>
-  </div>
-  <div className="flip-box col-md-6">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src={img7} alt="Paris"/>
-      </div>
-      <div className="flip-box-back">
-        <img src={img6}  alt="Paris" />
-      </div>
-    </div>
-  </div> */}
-
-        {/* </div> */}
-
-        {/* <div className="card-group container mb-5 flipp">
-  <div className="card">
-    <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
-  </div>
-  <div className="card">
-    <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
-  </div>
-</div>
-
-<div className="card-group  container mb-5 flip-box">
-  <div className="card">
-    <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
-  </div>
-  <div className="card">
-    <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" alt="Card image cap"/>
-  </div>
-  </div> */}
-
-        {/* <div className="container-fluid row mb-lg-5 ml-5">
-  <div className="flip-box col-md-6 ml-5">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src="img_paris.jpg" alt="Paris" 
-        />
-      </div>
-      <div className="flip-box-back">
-        <img src="img_5terre_wide.jpg" alt="kan" style={{width:"200px;"}}/>
-      </div>
-    </div>
-  </div>
-  <div className="flip-box col-md-6">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src="img_paris.jpg" alt="Paris" style={{width:"200px;"}}/>
-      </div>
-      <div className="flip-box-back">
-        <img src="img_5terre_wide.jpg" alt="Paris" style={{width:"200px;"}}/>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div className="row">
-    <div className="flip-box col-md-6">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src="img_paris.jpg" alt="Paris" style={{width:"200px;"}}/>
-      </div>
-      <div className="flip-box-back">
-        <img src="img_5terre_wide.jpg" alt="Paris" style={{width:"200px;"}}/>
-      </div>
-    </div>
-  </div>
-  <div className="flip-box col-md-6">
-    <div className="flip-box-inner">
-      <div className="flip-box-front">
-        <img src="img_paris.jpg" alt="Paris" style={{width:"200px;"}}/>
-      </div>
-      <div className="flip-box-back">
-        <img src="img_5terre_wide.jpg" alt="Paris" style={{width:"200px;"}}/>
-      </div>
-    </div>
-  </div>
-</div> */}
-
-        {/* <img  src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c=" 
-    classNameName="img-fluid rounded-start  flipp" alt="..."/>  */}
       </div>
     </>
   );

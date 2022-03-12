@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
-// import Carousel from 'react-bootstrap/Carousel'
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -26,7 +25,6 @@ class Events extends Component {
   }
 
   delete = (e) => {
-    // console.log(`http://localhost:8000/Ensan/news/${e.target.id}`)
     fetch(`http://localhost:8000/Ensan/news/${e.target.id}`, {
       method: "delete",
       headers: { "Content-Type": "application/json" },
