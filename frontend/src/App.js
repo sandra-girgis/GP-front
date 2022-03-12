@@ -45,25 +45,20 @@ import  Register  from "./Pages/register";
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import useToken from './Pages/useToken';
 function App() {
-
-  const [token,setToken] = useState('')
-
-
-  const userlogin = (tok) =>{
-    setToken(tok);
-  }
+  const { token, setToken } = useToken();
   return (
     <>
       <BrowserRouter>
-        <Nav token={token} />
+        <Nav />
         <div>
           <Switch>
             <Route path="/piano" exact component={Piano} />
             <Route path="/" exact component={Home} />
             <Route path="/artCourses" exact component={Artcourses} />
             <Route path="/ballet" exact >
-              <Ballet token={token} />
+              <Ballet />
             </Route>
             <Route path="/flute" exact component={Flute} />
             <Route path="/guitar" exact component={Guitar} />
@@ -95,7 +90,7 @@ function App() {
             <Route path="/editstudent" exact component={Editstudent} />
             <Route path="/deletstudent" exact component={Deletstudent} /> */}
             <Route path="/login" exact >
-              <Login userlogin={userlogin} />
+              <Login setToken={setToken} />
             </Route>
             <Route path="/register" exact component={Register} />
           </Switch>

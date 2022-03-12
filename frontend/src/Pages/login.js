@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+// import { Home } from "./Home";
 class Login extends Component {
 
     state = {
@@ -20,7 +21,7 @@ class Login extends Component {
         )
         .then(
             data => {
-                this.props.userlogin(data.token);
+                this.props.setToken(data.token);
             }
         )
         .catch(error => console.error(error))

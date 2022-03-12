@@ -117,7 +117,7 @@ function Nav(props) {
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-            {props.token ? (
+            {sessionStorage.token ? (
               <>
                 <li className="nav-item ms-4">
                   <NavLink className="nav nav-link pink bl" exact to="/event">
@@ -153,7 +153,6 @@ function Nav(props) {
             </li>
               </>
             )}
-
           </ul>
         </Navbar.Collapse>
       </Navbar>

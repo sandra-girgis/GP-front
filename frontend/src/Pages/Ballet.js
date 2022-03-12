@@ -11,8 +11,7 @@ import img1 from "../images/i10.jpg"
 // import img6 from "../images/kkids.jpg"
 // import img7 from "../images/kmag.jpg"
 // import img8 from "../images/kold.jpg"
-export const Ballet = (props) => { 
-  console.log(props.token)
+export const Ballet = () => { 
   return (<>
   <Carousel>
   <Carousel.Item>
