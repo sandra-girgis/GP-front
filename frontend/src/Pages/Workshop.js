@@ -4,7 +4,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import img1 from "../images/k6.jpg"
-
+import img4 from "../images/i6.jpg"
+import img2 from "../images/i19.jpg"
+import img3 from "../images/i11.jpg"
 // import img1 from "../images/v1.jpg"
 // import img2 from "../images/v2.jpg"
 // import img3 from "../images/k8.jpg"
@@ -111,7 +113,7 @@ export const Workshop = () => {
       
   
        <div className="container mt-5 mb-5">
-       <h1 className="mb-5 fw-bold display-4" style={{color:"#ee4a8b"}}> About Our Classes</h1>
+       <h1 className="mb-5 fw-bold display-4" style={{color:"#ee4a8b"}}> About our Workshops</h1>
               <div className="container mb-5 flip-card">
                   <div className="row g-0 ">
                     <div className="col-md-4 border rounded">
@@ -120,9 +122,8 @@ export const Workshop = () => {
                     </div>
                     <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
                       <div className="card-body">
-                        <h5 className="card-title"style={{color:"#168eca"}}>kids</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title"style={{color:"#168eca"}}>Our Classes</h5>
+                        <p className="card-text">We offer weekly craft workshops for kids from 5 years old</p>
                     </div>
                     </div>
                   </div>
@@ -131,9 +132,10 @@ export const Workshop = () => {
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2" style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>middle age</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>Craft workshops </h5>
+                      <p className="card-text">Craft activities foster communication, listening, attention,
+                       and imagination. These activities can enhance mental health and wellbeing as 
+                       well as foster a whole range of developmental skills in pre-schoolers</p>
                   </div>
                   </div>
                   <div className="col-md-4 border rounded">
@@ -150,9 +152,13 @@ export const Workshop = () => {
                   </div>
                   <div className="col-md-6" style={{backgroundColor:"#fff2f7"}}>
                     <div className="card-body">
-                      <h5 className="card-title"style={{color:"#168eca"}}>Elderly</h5>
-                      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 className="card-title"style={{color:"#168eca"}}>skills we focus on</h5>
+                      <p className="card-text">• Fine motor skills<br></br>
+                      • Enhancing children's hand-eye coordination and building levels of manual dexterity<br></br>
+                      • Identification of shapes, color, and texture<br></br>
+                      • Working with materials teaches them about colors, shapes, and textures. How things work and how they fit together<br></br>
+                      • the Creativity<br></br>
+                      • Craft encourages children to play and experiment in a fun and relaxed environment</p>
 
                   </div>
                   </div>
@@ -166,18 +172,18 @@ export const Workshop = () => {
         <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
+              <img src={img4} 
+              className="img-fluid rounded-start rounded-circle art flute" style={{width:"24rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Amira Shousha (visual artist)</h5>
+                <p className="card-text desc">is the head of the trainers at Ensan Art. 
+During her 6 years of instructing art in different shapes(painting, drawing, collage, clay, and crafts), she had organized and prepared for three Art exhibitions Lots of creative workshops
+In addition, she participated in a few art competitions. 
+She is patient and determined to bring the best out of her students At the same time she is a Professional Photographer and a Creative Graphic Designer, Amira uses her skills in designing to create amazing posters, flyers, and posts for Ensan Art. 
+is a graduate of the 2012 faculty of Fine Arts( Graphic department).
+Amira loves and enjoys practicing art with her students.</p>
               </div>
             </div>
           </div>
@@ -188,82 +194,42 @@ export const Workshop = () => {
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}> Maryam Reda saudi (visual artist ) </h5>
+                <p className="card-text desc"> graduated from the faculty of fine arts ( painting department ) 2018
+<br></br>Worked at Rasha el ajroudi's art studio as a painter from 2016 to 2020 
+Participated in several important projects at the new administrative capital and a number of hotels
+<br></br>Worked at ensan art from 2018 - now 
+Make a lot of workshops for kids in different places with ensan art
+Organized and prepared for two art exhibitions
+<br></br>Worked at kaumeya language schools (British department ) from 2021.</p>
               </div>
             </div>
             <div className="col-md-4 im">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              <img src={img2}
               className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
           </div>
         </div>
-        <div className="card mb-5 instractor flip-card shadow2">
+        <div className="card mb-5 instractor flip-card shadow">
             <div className="row g-0">
             <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              <img src={img3} 
               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Menna Allah Hazem (interior designer)</h5>
+                <p className="card-text desc">Is a trainer at Ensan art.<br></br> 
+She graduated from the faculty of fine arts interior design major class 2020<br></br> 
+She continued her love for design by starting her own business in handmade wooden goods and enjoys sharing her experience with other students<br></br>
+She inspires students from every age group to tap into the "inner artist" that she truly believes we all possess<br></br>
+She joined Ensan art team in 2019
+Besides being a teacher she is still learning more art techniques and new design visions<br></br>
+She is a positive, calm, and committed art teacher who encourages and provides young artists with the opportunity to achieve their individual potential.</p>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="card mb-5 flip-card shadow3">
-            <div className="row g-0">
-            
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-            <div className="col-md-4 im">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-              className="img-fluid rounded-end rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-          </div>
-        </div>
-        
-        <div className="card mb-5 instractor flip-card shadow4">
-            <div className="row g-0">
-            <div className="col-md-4">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
+        </div>        
         <div className="col-12 text-center">
           <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>

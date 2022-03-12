@@ -166,13 +166,14 @@ Amira loves and enjoys practicing art with her students.</p>
             
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Maryam Reda</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}> Maryam Reda saudi (visual artist ) </h5>
+                <p className="card-text desc"> graduated from the faculty of fine arts ( painting department ) 2018
+<br></br>Worked at Rasha el ajroudi's art studio as a painter from 2016 to 2020 
+Participated in several important projects at the new administrative capital and a number of hotels
+<br></br>Worked at ensan art from 2018 - now 
+Make a lot of workshops for kids in different places with ensan art
+Organized and prepared for two art exhibitions
+<br></br>Worked at kaumeya language schools (British department ) from 2021.</p>
               </div>
             </div>
             <div className="col-md-4 im">
@@ -189,13 +190,14 @@ Amira loves and enjoys practicing art with her students.</p>
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title"style={{color:"#ee4a8b"}}>Menna Allah Hazem</h5>
-                <p className="card-text desc">Born in Alexandria in 1998.
-                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
-                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
-                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
-                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
-                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Menna Allah Hazem (interior designer)</h5>
+                <p className="card-text desc">Is a trainer at Ensan art.<br></br> 
+She graduated from the faculty of fine arts interior design major class 2020<br></br> 
+She continued her love for design by starting her own business in handmade wooden goods and enjoys sharing her experience with other students<br></br>
+She inspires students from every age group to tap into the "inner artist" that she truly believes we all possess<br></br>
+She joined Ensan art team in 2019
+Besides being a teacher she is still learning more art techniques and new design visions<br></br>
+She is a positive, calm, and committed art teacher who encourages and provides young artists with the opportunity to achieve their individual potential.</p>
               </div>
             </div>
           </div>
