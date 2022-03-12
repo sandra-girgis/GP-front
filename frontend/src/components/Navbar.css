@@ -5,10 +5,7 @@
 .colr {
   margin: 0;
   padding: 0;
-  /* font-family:"Raleway"; */
   color: #8ec63f;
-  /* background: linear-gradient(-45deg,#168eca,#ee4a8b);
-    animation: gradient 15s ease infinite; */
   height: 8vh;
 }
 .log {
@@ -22,12 +19,7 @@
   color: rgb(245, 49, 196) !important;
   text-decoration: none;
 }
-/* 
 
-
-rehab
-
-*/
 
 .nav {
   text-decoration: none;
@@ -51,56 +43,3 @@ rehab
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
-
-/* ul NavDropdown NavDropdown.Item:hover{
-    color:green;
-    display: block;
-} */
-/* ul ul.NavDropdown:hover ul.NavDropdown.Item:hover{
-    display: block;
-}
-ul ul.NavDropdown{
-    display:block;
-} */
-
-/* .home
-{
-    color:#8ec63f;
-	@@ -53,5 +76,3 @@
-           background-position: 0% 50%;
-       } */
-/* }  */
-
-/* samah */
-/* .home
-{
-    color:#8ec63f;
-}
-.news{
-    color: #ee4a8b;
-}
-.Gallery{
-    color:#168ECA;
-}
-.Music{
-    color:#8ec63f;
-}
-.PerformanceArts
-{
-    color: #ee4a8b;
-}
-.ClassicalArts
-{
-    color:#168ECA;
-} */
-/* @keyframes gradient {
-       0% {
-           background-position: 0% 50%;
-       }
-       50% {
-           background-position: 100% 50%;
-       }
-       100% {
-           background-position: 0% 50%;
-       } */
-/* }  */

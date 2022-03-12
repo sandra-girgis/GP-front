@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
-// import Carousel from 'react-bootstrap/Carousel'
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
-
 class Imagealbum extends Component {
   constructor(props) {
     super(props);

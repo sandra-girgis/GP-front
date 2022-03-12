@@ -58,7 +58,6 @@ class Classes extends Component {
       </div>
     ));
   };
-
   render() {
     return (
       <>

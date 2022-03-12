@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Atma&family=PT+Sans+Narrow&family=Smooch+Sans:wght@600&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Atma&family=Lato:ital@1&family=PT+Sans+Narrow&family=Smooch+Sans:wght@600&display=swap');
 body{
     font-family:'Playfair Display', serif;
@@ -11,17 +10,14 @@ p{
 }
 
 .footer{
-    /* height: 25vh; */
-    /* display: flex; */
     align-items: center;
     text-align:center;
-background-color:#168eca;
-width:100%;
-    /* justify-content: space-between; */
+    background-color:#168eca;
+    width:100%;
    }
 
 .foot{
-list-style:none;    /* flex-wrap: wrap; */
+list-style:none;
 }
 .icons{
     padding-right: 6%;
