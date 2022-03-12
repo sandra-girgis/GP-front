@@ -139,7 +139,7 @@ export const Ballet = () => {
             <div className="row g-0">
             <div className="col-md-4">
               <img src={img1}
-              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
+              className="img-fluid rounded-start rounded-circle flute" style={{width:"15rem"}} alt="instractors"/>
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -155,7 +155,9 @@ export const Ballet = () => {
           </div>
         </div>
         
-        <div className="card mb-5 flip-card shadow1">
+
+
+        {/* <div className="card mb-5 flip-card shadow1">
             <div className="row g-0">
             
             <div className="col-md-8">
@@ -234,8 +236,10 @@ export const Ballet = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
  
+
+
         <div className="col-12 text-center">
           <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
