@@ -83,7 +83,7 @@ export const Artcourses = () => {
             {/* </div>
           </div>
        </div> */}
-       {/* <div class="card mb-3" style="max-width: 540px;"> */}
+       {/* <div className="card mb-3" style="max-width: 540px;"> */}
 
        <div className="container mt-5 mb-5">
        <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Classes</h1>
@@ -227,7 +227,7 @@ She is a positive, calm, and committed art teacher who encourages and provides y
         
         
         <div className="col-12 text-center">
-          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+          <button className="btn-outline-light btn-lg fs-2 butt" >
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
         

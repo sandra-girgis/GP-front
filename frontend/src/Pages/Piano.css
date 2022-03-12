@@ -14,7 +14,7 @@
 }
 .card-img{
     height:70vh ;
-    weight: 70vh ;
+    width: 70vh ;
 }
 .card-img-overlay{
     padding: 1rem;
@@ -234,11 +234,17 @@ box-shadow:10px 10px 40px 5px #ee4a8b!important;
 
 
 .butt {
-  border-radius: 20%;
+  border-radius: 15%;
   background-color:#ffffff!important;
   color: #168eca!important;
-  border: 1px solid #168eca;
+  border-color: #168eca;
+
 }
+
+.show{
+text-decoration:none;
+}
+
 .butt:hover{
  /* background-color:#168eca !important; */
  color: #ee4a8b!important;
@@ -302,11 +308,25 @@ th{
   margin-left:15%;
   /* margin-top:8%; */
 }
+.stu_info{
+  margin-left:5%;
+  
+}
+.edit_pass{
+  margin-left:5%;
+  color: #168eca;
+  border:1px solid grey;
+
+}
 .ins_info{
   margin-left:5%;
+  /* border:1px solid grey; */
+}
+.edit_pass:hover{
+  border-color:#ee4a8b;
+  color:#ee4a8b;
 }
 .ins_image{
-
   width:25%;
   border-radius:50%; 
   shape-outside: circle(50%);
@@ -338,14 +358,12 @@ th{
   color:#699af5;
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
+.star{
+  color:rgb(238, 234, 9);
+}
+/* .star:{
+color:rgb(32, 240, 32);
+} */
 
 
 /* @keyframes flip {
@@ -357,4 +375,3 @@ th{
 .flipp {
     animation: flip 1.6s linear infinite;
   } */
-  

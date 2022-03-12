@@ -11,9 +11,8 @@ import img1 from "../images/i10.jpg"
 // import img6 from "../images/kkids.jpg"
 // import img7 from "../images/kmag.jpg"
 // import img8 from "../images/kold.jpg"
-
-
-export const Ballet = () => { 
+export const Ballet = (props) => { 
+  console.log(props.token)
   return (<>
   <Carousel>
   <Carousel.Item>
@@ -71,7 +70,7 @@ export const Ballet = () => {
             {/* </div>
           </div>
        </div> */}
-       {/* <div class="card mb-3" style="max-width: 540px;"> */}
+       {/* <div className="card mb-3" style="max-width: 540px;"> */}
 
 
        
@@ -241,7 +240,7 @@ export const Ballet = () => {
 
 
         <div className="col-12 text-center">
-          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+          <button className="btn-outline-light btn-lg fs-2 butt" >
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
                       

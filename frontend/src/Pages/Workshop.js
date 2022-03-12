@@ -105,7 +105,7 @@ export const Workshop = () => {
             {/* </div>
           </div>
        </div> */}
-       {/* <div class="card mb-3" style="max-width: 540px;"> */}
+       {/* <div className="card mb-3" style="max-width: 540px;"> */}
 
 
        
@@ -230,7 +230,7 @@ She is a positive, calm, and committed art teacher who encourages and provides y
           </div>
         </div>        
         <div className="col-12 text-center">
-          <button className="btn-outline-light btn-lg fs-2 butt" style={{backgroundColor:"#168eca"}}>
+          <button className="btn-outline-light btn-lg fs-2 butt" >
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 
         

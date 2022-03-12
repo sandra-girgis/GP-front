@@ -23,7 +23,6 @@ class News extends Component {
   News = () => {
     const news = this.state.NewsList
     return news.map(item => (
-      <>
         <div key={item.id} className="row flip_card2 ">
           <div className="col-md-6 mt-4 rounded">
             <img src={require('../images'+item.picture.replaceAll('http://localhost:8000',"").replaceAll('%20'," "))} className="img-fluid rounded-start big" alt="..."/>
@@ -38,14 +37,13 @@ class News extends Component {
                 <span className="card-text ps-3 text-muted date">
                   {item.date.replaceAll("T"," ").replaceAll("Z"," ")}
                 </span>
-                <span className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}>
+                <span className="btn-outline-light btn-lg ms-5 mb-5 butt" >
                   {item.Category_ID}
                 </span>
               </div>
             </div>
           </div>
         </div>
-      </>
       )
     )
   }

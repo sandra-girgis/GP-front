@@ -9,31 +9,43 @@ class Events extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      StudentList: [],
+      EventList: [],
+      id: 0,
     };
   }
   async componentDidMount() {
     try {
-      const StudentRes = await fetch(
-        "http://localhost:8000/Ensan/news/"
-      );
-      const StudentList = await StudentRes.json();
-      console.log(StudentList);
+      const EventRes = await fetch("http://localhost:8000/Ensan/news/");
+      const EventList = await EventRes.json();
       this.setState({
-        StudentList,
+        EventList,
       });
     } catch (e) {
       console.log(e);
     }
   }
 
-  Student = () => {
-    const students = this.state.StudentList;
-    return students.map((item) => (
+  delete = (e) => {
+    // console.log(`http://localhost:8000/Ensan/news/${e.target.id}`)
+    fetch(`http://localhost:8000/Ensan/news/${e.target.id}`, {
+      method: "delete",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(this.state.details),
+    })
+      .then((data) => data.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => console.error(error));
+  };
+
+  Event = () => {
+    const events = this.state.EventList;
+    return events.map((item) => (
       <tr key={item.id}>
         <td>{item.title}</td>
         <td>{item.content}</td>
-        <td>{item.date.replaceAll("T"," ").replaceAll("Z"," ")}</td>
+        <td>{item.date.replaceAll("T", " ").replaceAll("Z", " ")}</td>
         <td>
           <img
             src={require("../../images" +
@@ -46,13 +58,20 @@ class Events extends Component {
         </td>
         <td>{item.Category_ID}</td>
         <td>
-       <Link to={"/addevent"} style={{textDecoration:"none"}}>
-        <button className="butt" style={{backgroundColor:"#168eca"}}>Edit</button>
-        </Link> 
+          <Link to={"/addevent"} style={{ textDecoration: "none" }}>
+            <button className="butt">
+              Edit
+            </button>
+          </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" style={{ backgroundColor: "#168eca" }}>
+            <button
+              id={item.id}
+              className="butt"
+              
+              onClick={this.delete}
+            >
               Delete
             </button>
           </Link>
@@ -70,7 +89,7 @@ class Events extends Component {
               Instructors
             </Link>
             <Link className="nav-link  adm" to="/students">
-              Students
+              Student
             </Link>
             <Link className="nav-link  adm" to="/event">
               Events
@@ -87,19 +106,17 @@ class Events extends Component {
         >
           Events
         </h1>
-        {/* <Link to="#" style={{textDecoration:"none"}}> */}
         <button
           className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          style={{ backgroundColor: "#168eca" }}
+          
         >
           <NavLink className="nav nav-link bu active " exact to={"/addevent"}>
             Add Event
           </NavLink>
         </button>
-        {/* </Link> */}
         <Table striped bordered hover className="shado container mb-5">
           <thead>
-            <tr class="text-center">
+            <tr className="text-center">
               <th scope="col">title</th>
               <th scope="col">content</th>
               <th scope="col">date</th>
@@ -109,9 +126,7 @@ class Events extends Component {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>
-            {this.Student()}
-          </tbody>
+          <tbody>{this.Event()}</tbody>
         </Table>
       </>
     );

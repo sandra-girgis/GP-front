@@ -77,7 +77,7 @@
                     <Button onClick={() => onImageUpdate(index)}>Update</Button>
                     <Button onClick={() => onImageRemove(index)}>Remove</Button> */}
 
-    <Button className="btn-outline-light btn-lg ms-5 mb-5 butt" style={{backgroundColor:"#168eca"}}><NavLink className="nav nav-link bu active " exact to={"/instructors"}>Submit</NavLink></Button>
+    <Button className="btn-outline-light btn-lg ms-5 mb-5 butt" ><NavLink className="nav nav-link bu active " exact to={"/instructors"}>Submit</NavLink></Button>
     </Form>
     </div>
 

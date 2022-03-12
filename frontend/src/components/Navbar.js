@@ -5,19 +5,18 @@ import "./Navbar.css";
 import NavDropdown from "react-bootstrap/NavDropdown";
 // import img from "../images/logo.ico"
 
-function Nav() {
+function Nav(props) {
   return (
     <>
       <Navbar bg="light" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <img
-            src={require("../images/logo.ico")}
-            alt="logo.img"
-            className="log"
-            style={{ width: "3rem" }}
-          />
+          src={require("../images/logo.ico")}
+          alt="logo.img"
+          className="log"
+          style={{ width: "3rem" }}
+        />
         <Navbar.Collapse id="basic-navbar-nav">
-        
           <ul className="navbar-nav mb-2 ml-auto">
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/">
@@ -26,7 +25,7 @@ function Nav() {
             </li>
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/news">
-                Events
+                News
               </NavLink>
             </li>
             {/* <li className="nav-item">
@@ -118,26 +117,43 @@ function Nav() {
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-            <li className="nav-item ms-4">
-              <NavLink className="nav nav-link pink bl" exact to="/event">
-                Admin
-              </NavLink>
-            </li>
-            <li className="nav-item ms-4">
-              <NavLink className="nav nav-link pink bl" exact to="/instructor">
-                Instructor
-              </NavLink>
-            </li>
-            <li className="nav-item ms-4">
-              <NavLink className="nav nav-link pink bl" exact to="/student">
-                Student
-              </NavLink>
-            </li>
+            {props.token ? (
+              <>
+                <li className="nav-item ms-4">
+                  <NavLink className="nav nav-link pink bl" exact to="/event">
+                    Admin
+                  </NavLink>
+                </li>
+                <li className="nav-item ms-4">
+                  <NavLink
+                    className="nav nav-link pink bl"
+                    exact
+                    to="/instructor"
+                  >
+                    Instructor
+                  </NavLink>
+                </li>
+                <li className="nav-item ms-4">
+                  <NavLink className="nav nav-link pink bl" exact to="/student">
+                    Student
+                  </NavLink>
+                </li>
+                <li className="nav-item ms-4">
+                  <NavLink className="nav nav-link pink bl" exact to="#">
+                    Logout
+                  </NavLink>
+                </li>
+              </>
+            ) : (
+              <>
             <li className="nav-item ms-4">
               <NavLink className="nav nav-link pink bl" exact to="/login">
                 Login
               </NavLink>
             </li>
+              </>
+            )}
+
           </ul>
         </Navbar.Collapse>
       </Navbar>
