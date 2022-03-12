@@ -57,9 +57,7 @@ function App() {
             <Route path="/piano" exact component={Piano} />
             <Route path="/" exact component={Home} />
             <Route path="/artCourses" exact component={Artcourses} />
-            <Route path="/ballet" exact >
-              <Ballet />
-            </Route>
+            <Route path="/ballet" exact component={Ballet}/>
             <Route path="/flute" exact component={Flute} />
             <Route path="/guitar" exact component={Guitar} />
             <Route path="/news" exact component={News} />
