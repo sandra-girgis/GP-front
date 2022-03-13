@@ -94,7 +94,7 @@ class Instructor extends Component {
             </h3>
             {ins.map((i) => (
               <>
-                <Card className="ms-3 mt-4" style={{ width: "30rem" }}>
+                <Card className="shado ms-3 mt-4" style={{ width: "30rem" }}>
                   <Card.Body>
                     <Card.Title style={{ color: "#236aec" }} className="fs-4">
                       {i.ClassName}
