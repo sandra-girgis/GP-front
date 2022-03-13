@@ -1,13 +1,13 @@
-import  {useState} from "react";
+// import { useState } from "react";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Piano.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Button from 'react-bootstrap/Button';
-import {HashLink} from 'react-router-hash-link';
+// import Button from "react-bootstrap/Button";
+import { HashLink } from "react-router-hash-link";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 // import { faRegStar } from "@fortawesome/free-solid-svg-icons";
@@ -43,7 +43,7 @@ class Instructor extends Component {
         <div className="ins_header">
           <img
             src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
-            className="mt-5 ms-5 ins_image"
+            className="mt-5 ms-5 ins_image" alt="..."
           />
         </div>
         <br></br>
@@ -62,11 +62,9 @@ class Instructor extends Component {
               Salary:{instructor.salary}
             </div>
             <div className="ins_info">
-            <FontAwesomeIcon className="star" icon={faStar} />
+              <FontAwesomeIcon className="star" icon={faStar} />
             </div>
-            <button
-              className=" edit_pass fs-md-6 btn  mt-3"
-            >
+            <button className=" edit_pass fs-md-6 btn  mt-3">
               Edit Password
             </button>
           </div>

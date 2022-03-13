@@ -4,14 +4,12 @@
 // import { NavLink } from "react-router-dom";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
-// export const Theatre = () => { 
+// export const Theatre = () => {
 //   return (<>
 //   <Carousel>
 //   <Carousel.Item>
 //     <img
-//       className="d-block w-100 " 
+//       className="d-block w-100 "
 //       src="https://media.istockphoto.com/photos/red-theatre-curtain-picture-id672272950?k=20&m=672272950&s=612x612&w=0&h=crLfjyP2Oa4neLkgdMu4fFlqsrKrTIO5whQTwm1Q9M8="
 //       alt="First slide"/>
 //   </Carousel.Item>
@@ -59,7 +57,7 @@
 //                     className="img-fluid rounded-start" alt="middle age"/>
 //                   </div>
 //                 </div>
-//               </div>        
+//               </div>
 //               <div className="container mb-5 flip-card">
 //                 <div className="row g-0 ">
 //                   <div className="col-md-4 border rounded">
@@ -77,14 +75,13 @@
 //                 </div>
 //               </div>
 //         </div>
-        
 
 //         <div className="container mb-5">
 //         <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Instructors</h1>
 //         <div className="card mb-5 instractor flip-card shadow">
 //             <div className="row g-0">
 //             <div className="col-md-4">
-//               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+//               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
 //               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
 //             </div>
 //             <div className="col-md-8">
@@ -100,10 +97,10 @@
 //             </div>
 //           </div>
 //         </div>
-        
+
 //         <div className="card mb-5 flip-card shadow1">
 //             <div className="row g-0">
-            
+
 //             <div className="col-md-8">
 //               <div className="card-body">
 //                 <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
@@ -124,7 +121,7 @@
 //         <div className="card mb-5 instractor flip-card shadow2">
 //             <div className="row g-0">
 //             <div className="col-md-4">
-//               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+//               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
 //               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
 //             </div>
 //             <div className="col-md-8">
@@ -143,7 +140,7 @@
 
 //         <div className="card mb-5 flip-card shadow3">
 //             <div className="row g-0">
-            
+
 //             <div className="col-md-8">
 //               <div className="card-body">
 //                 <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
@@ -161,11 +158,11 @@
 //             </div>
 //           </div>
 //         </div>
-        
+
 //         <div className="card mb-5 instractor flip-card shadow4">
 //             <div className="row g-0">
 //             <div className="col-md-4">
-//               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+//               <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
 //               className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
 //             </div>
 //             <div className="col-md-8">
@@ -181,14 +178,12 @@
 //             </div>
 //           </div>
 //         </div>
-        
+
 //         <div className="col-12 text-center">
 //           <button className="btn-outline-light btn-lg fs-2 butt" >
 //             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>Join Us</NavLink></button></div>
 //         </div>
-       
+
 //       </>
 //     );
 //   }
-
-

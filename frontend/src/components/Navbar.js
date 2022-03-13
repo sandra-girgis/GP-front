@@ -5,11 +5,10 @@ import "./Navbar.css";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Nav(props) {
-
   const logout = () => {
     sessionStorage.clear();
-    this.props.history.push('/');
-  }
+    this.props.history.push("/");
+  };
   return (
     <>
       <Navbar bg="light" expand="lg">
@@ -151,7 +150,12 @@ function Nav(props) {
                   </li>
                 )}
                 <li className="nav-item ms-4">
-                  <NavLink onClick={logout} className="nav nav-link pink bl" exact to="#">
+                  <NavLink
+                    onClick={logout}
+                    className="nav nav-link pink bl"
+                    exact
+                    to="#"
+                  >
                     Logout
                   </NavLink>
                 </li>

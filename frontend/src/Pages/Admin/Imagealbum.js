@@ -44,16 +44,12 @@ class Imagealbum extends Component {
         <td>{item.Album_ID}</td>
         <td>
           <Link to="/addimage" style={{ textDecoration: "none" }}>
-            <button className="butt" >
-            Edit
-            </button>
+            <button className="butt">Edit</button>
           </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" >
-              Delete
-            </button>
+            <button className="butt">Delete</button>
           </Link>
         </td>
       </tr>
@@ -84,10 +80,7 @@ class Imagealbum extends Component {
         >
           Image Album
         </h1>
-        <button
-          className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          
-        >
+        <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
           <NavLink className="nav nav-link bu active " exact to={"/addimage"}>
             Add Image
           </NavLink>

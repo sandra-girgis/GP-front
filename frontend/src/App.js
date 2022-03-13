@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -33,7 +33,8 @@ import Register from "./Pages/register";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function App() {
   return (
     <>

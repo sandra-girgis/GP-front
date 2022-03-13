@@ -14,7 +14,9 @@ class Instructors extends Component {
   }
   async componentDidMount() {
     try {
-      const InstructorRes = await fetch("http://localhost:8000/Ensan/instructors/");
+      const InstructorRes = await fetch(
+        "http://localhost:8000/Ensan/instructors/"
+      );
       const InstructorList = await InstructorRes.json();
       console.log(InstructorList);
       this.setState({
@@ -50,15 +52,13 @@ class Instructors extends Component {
         </td>
         <td>{item.salary}</td>
         <td>
-        <Link to="/addinstructor"style={{textDecoration:"none"}}>
-        <button className="butt" >Edit</button>
-        </Link>
+          <Link to="/addinstructor" style={{ textDecoration: "none" }}>
+            <button className="butt">Edit</button>
+          </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" >
-              Delete
-            </button>
+            <button className="butt">Delete</button>
           </Link>
         </td>
       </tr>
@@ -90,10 +90,7 @@ class Instructors extends Component {
         >
           Instructors
         </h1>
-        <button
-          className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          
-        >
+        <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
           <NavLink
             className="nav nav-link bu active "
             exact
@@ -116,9 +113,7 @@ class Instructors extends Component {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>
-            {this.Instructor()}
-          </tbody>
+          <tbody>{this.Instructor()}</tbody>
         </Table>
       </>
     );

@@ -20,7 +20,6 @@
   text-decoration: none;
 }
 
-
 .nav {
   text-decoration: none;
 }
@@ -35,7 +34,7 @@
 
 .bl {
   color: #168eca !important;
-  text-decoration:none;
+  text-decoration: none;
 }
 .dropdown-toggle::after {
   content: none;
