@@ -1,4 +1,4 @@
-import React ,{useState} from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -26,17 +26,15 @@ import Instructors from "./Pages/Admin/Instructors";
 import Students from "./Pages/Admin/Students";
 import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
-import  Addevent  from "./Pages/Admin/Addevent";
-import { Addimage} from "./Pages/Admin/Addimage";
-import  Login  from "./Pages/login";
-import  Register  from "./Pages/register";
+import Addevent from "./Pages/Admin/Addevent";
+import { Addimage } from "./Pages/Admin/Addimage";
+import Login from "./Pages/login";
+import Register from "./Pages/register";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import useToken from './Pages/useToken';
 function App() {
-  const { token, setToken } = useToken();
   return (
     <>
       <BrowserRouter>
@@ -46,7 +44,7 @@ function App() {
             <Route path="/piano" exact component={Piano} />
             <Route path="/" exact component={Home} />
             <Route path="/artCourses" exact component={Artcourses} />
-            <Route path="/ballet" exact component={Ballet}/>
+            <Route path="/ballet" exact component={Ballet} />
             <Route path="/flute" exact component={Flute} />
             <Route path="/guitar" exact component={Guitar} />
             <Route path="/news" exact component={News} />
@@ -55,22 +53,37 @@ function App() {
             <Route path="/workshop" exact component={Workshop} />
             <Route path="/classes" exact component={Classes} />
             <Route path="/concerts" exact component={Concerts} />
-            <Route path="/exhibitions" exact component={Exhibitions} /> 
-            <Route path="/workshops" exact component={Workshops} /> 
+            <Route path="/exhibitions" exact component={Exhibitions} />
+            <Route path="/workshops" exact component={Workshops} />
             <Route path="/joinus" exact component={Joinus} />
-            <Route path="/instructor" exact component={Instructor} />
-            <Route path="/student" exact component={Student} />
-            <Route path="/event" exact component={Events} />
-            <Route path="/imagealbum" exact component={Imagealbum} />
-            <Route path="/instructors" exact component={Instructors} />
-            <Route path="/students" exact component={Students} />
-            <Route path="/addstudent" exact component={Addstudent} />
-            <Route path="/addevent" exact component={Addevent} />
-            <Route path="/addimage" exact component={Addimage} />
-            <Route path="/addinstructor" exact component={Addinstructor} />
-            <Route path="/login" exact >
-              <Login setToken={setToken} />
-            </Route>
+            {sessionStorage.token ? (
+              <>
+                {sessionStorage.is_superuser === "true" ? (
+                  <>
+                    <Route path="/event" exact component={Events} />
+                    <Route path="/imagealbum" exact component={Imagealbum} />
+                    <Route path="/instructors" exact component={Instructors} />
+                    <Route path="/students" exact component={Students} />
+                    <Route path="/addstudent" exact component={Addstudent} />
+                    <Route path="/addevent" exact component={Addevent} />
+                    <Route path="/addimage" exact component={Addimage} />
+                    <Route
+                      path="/addinstructor"
+                      exact
+                      component={Addinstructor}
+                    />
+                  </>
+                ) : sessionStorage.is_staff === "true" ? (
+                  <Route path="/instructor" exact component={Instructor} />
+                ) : (
+                  <Route path="/student" exact component={Student} />
+                )}
+              </>
+            ) : (
+              <Route path="/login" exact>
+                <Login />
+              </Route>
+            )}
             <Route path="/register" exact component={Register} />
           </Switch>
           <Footer />

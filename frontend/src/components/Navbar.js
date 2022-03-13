@@ -4,8 +4,12 @@ import React from "react";
 import "./Navbar.css";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-
 function Nav(props) {
+
+  const logout = () => {
+    sessionStorage.clear();
+    this.props.history.push('/');
+  }
   return (
     <>
       <Navbar bg="light" expand="lg">
@@ -119,38 +123,46 @@ function Nav(props) {
             </NavDropdown>
             {sessionStorage.token ? (
               <>
+                {sessionStorage.is_superuser === "true" ? (
+                  <li className="nav-item ms-4">
+                    <NavLink className="nav nav-link pink bl" exact to="/event">
+                      Admin
+                    </NavLink>
+                  </li>
+                ) : sessionStorage.is_staff === "true" ? (
+                  <li className="nav-item ms-4">
+                    <NavLink
+                      className="nav nav-link pink bl"
+                      exact
+                      to="/instructor"
+                    >
+                      Instructor
+                    </NavLink>
+                  </li>
+                ) : (
+                  <li className="nav-item ms-4">
+                    <NavLink
+                      className="nav nav-link pink bl"
+                      exact
+                      to="/student"
+                    >
+                      Student
+                    </NavLink>
+                  </li>
+                )}
                 <li className="nav-item ms-4">
-                  <NavLink className="nav nav-link pink bl" exact to="/event">
-                    Admin
-                  </NavLink>
-                </li>
-                <li className="nav-item ms-4">
-                  <NavLink
-                    className="nav nav-link pink bl"
-                    exact
-                    to="/instructor"
-                  >
-                    Instructor
-                  </NavLink>
-                </li>
-                <li className="nav-item ms-4">
-                  <NavLink className="nav nav-link pink bl" exact to="/student">
-                    Student
-                  </NavLink>
-                </li>
-                <li className="nav-item ms-4">
-                  <NavLink className="nav nav-link pink bl" exact to="#">
+                  <NavLink onClick={logout} className="nav nav-link pink bl" exact to="#">
                     Logout
                   </NavLink>
                 </li>
               </>
             ) : (
               <>
-            <li className="nav-item ms-4">
-              <NavLink className="nav nav-link pink bl" exact to="/login">
-                Login
-              </NavLink>
-            </li>
+                <li className="nav-item ms-4">
+                  <NavLink className="nav nav-link pink bl" exact to="/login">
+                    Login
+                  </NavLink>
+                </li>
               </>
             )}
           </ul>
