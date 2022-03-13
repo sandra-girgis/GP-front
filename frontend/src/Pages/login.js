@@ -53,7 +53,7 @@ inputChanged = (event) => {
 };
 render() {
     return (
-    <div className="justify-content-center row">
+    <div className="justify-content-center w-100 row">
         <div className="card shado col-md-5 p-5 mt-5 mb-5">
         <h1 style={{ color: "#ee4a8b" }}>Log in form</h1>
         <div className="form-group">

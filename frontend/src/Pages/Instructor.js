@@ -23,7 +23,7 @@ class Instructor extends Component {
   async componentDidMount() {
     try {
       const InstructorRes = await fetch(
-        "http://localhost:8000/Ensan/instructors/2/"
+        `http://localhost:8000/Ensan/instructors/${sessionStorage.id}/`
       );
       const InstructorList = await InstructorRes.json();
       const ins = await InstructorList.classinfo;
@@ -47,7 +47,7 @@ class Instructor extends Component {
           />
         </div>
         <br></br>
-        <div className="col-12 row">
+        <div className="row row w-100">
           <div className="col-md-6">
             <h3 className="mt-4 fs-md-5 mb-5 ins_name ">
               {instructor.username}
@@ -94,7 +94,7 @@ class Instructor extends Component {
             </h3>
             {ins.map((i) => (
               <>
-                <Card className="shado ms-3 mt-4" style={{ width: "30rem" }}>
+                <Card className="shado ms-2 col-md-6 mt-4">
                   <Card.Body>
                     <Card.Title style={{ color: "#236aec" }} className="fs-4">
                       {i.ClassName}

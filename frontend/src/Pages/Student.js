@@ -16,7 +16,7 @@ class Student extends Component {
   async componentDidMount() {
     try {
       const InstructorRes = await fetch(
-        "http://localhost:8000/Ensan/students/5/"
+        `http://localhost:8000/Ensan/students/${sessionStorage.id}/`
       );
       const InstructorList = await InstructorRes.json();
       const ins = await InstructorList.attend;
@@ -44,12 +44,11 @@ class Student extends Component {
           />
         </div>
         <br></br>
-        <div className="col-12 row">
+        <div className="row row w-100">
           <div className="col-md-6">
             <h3 className="mt-4 fs-md-5 mb-5 ins_name ">
               {instructor.username}
             </h3>
-
             <div className=" fs-md-4 ins_info text-muted">
               Email : {instructor.email}
             </div>
@@ -61,7 +60,6 @@ class Student extends Component {
               onClick={this.update}
               style={{ backgroundColor: "white", border: "1px solid grey" }}
               className="ins_info fs-md-6 btn mt-3 pink bl"
-              alt="..."
             >
               Edit Password
             </button>
@@ -72,7 +70,7 @@ class Student extends Component {
             </h3>
             {ins.map((i) => (
               <>
-                <Card className="shado ms-3 mt-4" style={{ width: "30rem" }}>
+                <Card className="shado ms-2 col-md-6 mt-4 ">
                   <Card.Body>
                     <Card.Title style={{ color: "#236aec" }} className="fs-4">
                       {i.ClassName}

@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import React from "react";
 import "./Navbar.css";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { withRouter } from "react-router-dom";
 
 function Nav(props) {
   const logout = () => {
@@ -175,4 +176,4 @@ function Nav(props) {
     </>
   );
 }
-export default Nav;
+export default withRouter(Nav);
