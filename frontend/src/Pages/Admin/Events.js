@@ -23,17 +23,22 @@ class Events extends Component {
       console.log(e);
     }
   }
-
+  // async componentDidUpdate() {
+  //   try {
+  //     const EventRes = await fetch("http://localhost:8000/Ensan/news/");
+  //     const EventList = await EventRes.json();
+  //     this.setState({
+  //       EventList,
+  //     });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
   delete = (e) => {
     fetch(`http://localhost:8000/Ensan/news/${e.target.id}`, {
       method: "delete",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(this.state.details),
     })
       .then((data) => data.json())
-      .then((data) => {
-        console.log(data);
-      })
       .catch((error) => console.error(error));
   };
 

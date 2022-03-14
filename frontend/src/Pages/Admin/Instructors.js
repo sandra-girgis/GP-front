@@ -10,6 +10,7 @@ class Instructors extends Component {
     super(props);
     this.state = {
       InstructorList: [],
+      id: 0,
     };
   }
   async componentDidMount() {
@@ -18,7 +19,6 @@ class Instructors extends Component {
         "http://localhost:8000/Ensan/instructors/"
       );
       const InstructorList = await InstructorRes.json();
-      console.log(InstructorList);
       this.setState({
         InstructorList,
       });
@@ -26,6 +26,28 @@ class Instructors extends Component {
       console.log(e);
     }
   }
+  // async componentDidUpdate() {
+  //   try {
+  //     const InstructorRes = await fetch(
+  //       "http://localhost:8000/Ensan/instructors/"
+  //     );
+  //     const InstructorList = await InstructorRes.json();
+  //     this.setState({
+  //       InstructorList,
+  //     });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
+
+  delete = (e) => {
+    fetch(`http://localhost:8000/Ensan/instructors/${e.target.id}`, {
+      method: "delete",
+    })
+      .then((data) => data.json())
+      .catch((error) => console.error(error));
+  };
+
   Instructor = () => {
     const instructors = this.state.InstructorList;
     return instructors.map((item) => (
@@ -58,7 +80,14 @@ class Instructors extends Component {
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt">Delete</button>
+          <button
+              id={item.id}
+              className="butt"
+              
+              onClick={this.delete}
+            >
+              Delete
+            </button>
           </Link>
         </td>
       </tr>

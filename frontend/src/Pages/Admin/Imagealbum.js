@@ -9,6 +9,7 @@ class Imagealbum extends Component {
     super(props);
     this.state = {
       StudentList: [],
+      id: 0,
     };
   }
   async componentDidMount() {
@@ -17,7 +18,6 @@ class Imagealbum extends Component {
         "http://localhost:8000/Ensan/albumPhotos/"
       );
       const StudentList = await StudentRes.json();
-      console.log(StudentList);
       this.setState({
         StudentList,
       });
@@ -25,6 +25,26 @@ class Imagealbum extends Component {
       console.log(e);
     }
   }
+
+  // async componentDidUpdate() {
+  //   try {
+  //     const StudentRes = await fetch("http://localhost:8000/Ensan/albumPhotos/");
+  //     const StudentList = await StudentRes.json();
+  //     this.setState({
+  //       StudentList,
+  //     });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
+
+  delete = (e) => {
+    fetch(`http://localhost:8000/Ensan/albumPhotos/${e.target.id}`, {
+      method: "delete",
+    })
+      .then((data) => data.json())
+      .catch((error) => console.error(error));
+  };
 
   Student = () => {
     const students = this.state.StudentList;
@@ -49,7 +69,14 @@ class Imagealbum extends Component {
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt">Delete</button>
+            <button
+              id={item.id}
+              className="butt"
+              
+              onClick={this.delete}
+            >
+              Delete
+            </button>
           </Link>
         </td>
       </tr>
