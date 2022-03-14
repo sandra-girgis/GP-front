@@ -10,6 +10,8 @@ import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
 import Instructor from "./Pages/Instructor";
 import Student from "./Pages/Student";
+// import { ShowStudents } from "./Pages/Admin/Events";
+import Gallery from "./Pages/Gallery";
 import Concerts from "./Pages/Concerts";
 import News from "./Pages/News";
 import Classes from "./Pages/Classes";
@@ -20,18 +22,28 @@ import { Piano } from "./Pages/Piano";
 import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
 import { Joinus } from "./Pages/Joinus";
-import Events from "./Pages/Admin/Events";
+import  Events  from "./Pages/Admin/Events";
 import Imagealbum from "./Pages/Admin/Imagealbum";
 import Instructors from "./Pages/Admin/Instructors";
 import Students from "./Pages/Admin/Students";
 import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
-import Addevent from "./Pages/Admin/Addevent";
-import { Addimage } from "./Pages/Admin/Addimage";
-import Login from "./Pages/login";
-import Register from "./Pages/register";
-import Passtd from "./Pages/passtd";
-import Pasins from "./Pages/pasins";
+import { Addimage} from "./Pages/Admin/Addimage";
+import  { Addevent }  from "./Pages/Admin/Addevent";
+
+
+
+// import { Editevent} from "./Pages/Admin/Editevent";
+// import { Deletevent} from "./Pages/Admin/Deletevent";
+// import { Editimage} from "./Pages/Admin/Editimage";
+// import { Deletimage} from "./Pages/Admin/Deletimage";
+// import { Deleteinstractor} from "./Pages/Admin/Deleteinstractor";
+// import { Editinstructor} from "./Pages/Admin/Editinstructor";
+// import { Editstudent} from "./Pages/Admin/Editstudent";
+// import { Deletstudent} from "./Pages/Admin/Deletstudent";
+
+import  Login  from "./Pages/login";
+import  Register  from "./Pages/register";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
