@@ -1,89 +1,67 @@
 import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
-// import Carousel from 'react-bootstrap/Carousel'
+import axios from "axios";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+const MyEvent = (props) => {
+  const [students, setStudents] = React.useState([]);
+  const fetchStudents = async () => {
+    const result = await axios.get("http://localhost:8000/Ensan/news/");
+    console.log(result.data);
+    setStudents(result.data);
+  };
+  useEffect(() => {
+    fetchStudents();
+  }, []);
+
+  const deleted = async (e) => {
+    await axios.delete(`http://localhost:8000/Ensan/news/${e.target.id}`);
+  };
+
+  return students.map((item, index) => (
+    <tr key={item.id}>
+      <td>{item.title}</td>
+      <td>{item.content}</td>
+      <td>{item.date.replaceAll("T", " ").replaceAll("Z", " ")}</td>
+      <td>
+        <img src={require("../../images" +
+              item.picture
+                .replaceAll("http://localhost:8000", "")
+                .replaceAll("%20", " "))} style={{ width: "20rem" }} />
+      </td>
+      <td>{item.Category_ID}</td>
+      <td>
+        <button className="butt" style={{ backgroundColor: "#168eca" }}>
+          Edit
+        </button>
+      </td>
+
+      <td>
+        <Link to="#" style={{ textDecoration: "none" }}>
+          <button
+            id={item.id}
+            className="butt"
+            style={{ backgroundColor: "#168eca" }}
+            onClick={deleted}
+          >
+            Delete
+          </button>
+        </Link>
+      </td>
+    </tr>
+  ));
+};
+
 class Events extends Component {
   constructor(props) {
     super(props);
     this.state = {
       EventList: [],
-      id: 0,
     };
   }
-  async componentDidMount() {
-    try {
-      const EventRes = await fetch("http://localhost:8000/Ensan/news/");
-      const EventList = await EventRes.json();
-      this.setState({
-        EventList,
-      });
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  delete = (e) => {
-    // console.log(`http://localhost:8000/Ensan/news/${e.target.id}`)
-    fetch(`http://localhost:8000/Ensan/news/${e.target.id}`,{
-            method : 'delete',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(this.state.details)
-        })
-        .then(
-            data => data.json()
-        )
-        .then(
-            data => {
-                console.log(data);
-            }
-        )
-        .catch(error => console.error(error))
-  }
-  
-  Event = () => {
-    const events = this.state.EventList;
-    return events.map((item) => (
-      <tr key={item.id}>
-        <td>{item.title}</td>
-        <td>{item.content}</td>
-        <td>{item.date.replaceAll("T", " ").replaceAll("Z", " ")}</td>
-        <td>
-          <img
-            src={require("../../images" +
-              item.picture
-                .replaceAll("http://localhost:8000", "")
-                .replaceAll("%20", " "))}
-            style={{ width: "20rem" }}
-            alt="..."
-          />
-        </td>
-        <td>{item.Category_ID}</td>
-        <td>
-            <button className="butt" style={{ backgroundColor: "#168eca" }} >
-            Edit
-            </button>
-        </td>
-        {/* <td>
-          <button className="butt" style={{ backgroundColor: "#168eca" }}>
-            <NavLink className="nav nav-link bu active " exact to={"/addevent"} id={item.id} >
-              Edit
-            </NavLink>
-          </button>
-        </td> */}
-        <td>
-          <Link to="#" style={{ textDecoration: "none" }}>
-            <button id={item.id} className="butt" style={{ backgroundColor: "#168eca" }} onClick={this.delete}>
-              Delete
-            </button>
-          </Link>
-        </td>
-      </tr>
-    ));
-  };
-
   render() {
     return (
       <>
@@ -103,7 +81,6 @@ class Events extends Component {
             </Link>
           </nav>
         </div>
-
         <h1
           className="fw-bold display-4 text-center"
           style={{ color: "#168eca" }}
@@ -130,7 +107,9 @@ class Events extends Component {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>{this.Event()}</tbody>
+          <tbody>
+            <MyEvent />
+          </tbody>
         </Table>
       </>
     );
