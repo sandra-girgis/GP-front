@@ -69,13 +69,13 @@ text-align:justify;
     text-align: center;
     transform-style: preserve-3d;
     animation-name: example2;
-    /* animation-duration: 6s; */
+    animation-duration: 6s;
     animation-iteration-count: infinite;
   } 
-  .flip-box-inner:hover
+  /* .flip-box-inner:hover
   {
     animation-duration: 6s;
-  }
+  } */
 .flip-box-front, .flip-box-back { 
     position: absolute;
     backface-visibility: hidden;
