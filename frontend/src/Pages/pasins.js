@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 
-class Passtd extends Component {
+class Pasins extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,7 +12,7 @@ class Passtd extends Component {
   async componentDidMount() {
     try {
       const InstructorRes = await fetch(
-        `http://localhost:8000/Ensan/students/${sessionStorage.id}/`
+        `http://localhost:8000/Ensan/instructors/${sessionStorage.id}/`
       );
       const InstructorList = await InstructorRes.json();
       this.setState({
@@ -23,14 +23,14 @@ class Passtd extends Component {
     }
   }
   update = (event) => {
-    fetch(`http://localhost:8000/Ensan/students/${sessionStorage.id}/`, {
+    fetch(`http://localhost:8000/Ensan/instructors/${sessionStorage.id}/`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(this.state.InstructorList),
     })
       .then((data) => data.json())
       .then(() => {
-        this.props.history.push("/student");
+        this.props.history.push("/instructor");
       })
       .catch((error) => console.error(error));
   };
@@ -73,4 +73,4 @@ class Passtd extends Component {
     );
   }
 }
-export default withRouter(Passtd);
+export default withRouter(Pasins);

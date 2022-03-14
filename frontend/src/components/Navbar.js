@@ -8,7 +8,7 @@ import { withRouter } from "react-router-dom";
 function Nav(props) {
   const logout = () => {
     sessionStorage.clear();
-    this.props.history.push("/");
+    props.history.push("/");
   };
   return (
     <>
@@ -155,7 +155,7 @@ function Nav(props) {
                     onClick={logout}
                     className="nav nav-link pink bl"
                     exact
-                    to="#"
+                    to="/"
                   >
                     Logout
                   </NavLink>

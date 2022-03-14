@@ -1,17 +1,12 @@
-// import { useState } from "react";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Piano.css";
-// import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import Button from "react-bootstrap/Button";
 import { HashLink } from "react-router-hash-link";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-
-// import { faRegStar } from "@fortawesome/free-solid-svg-icons";
-
+import { withRouter } from "react-router-dom";
 class Instructor extends Component {
   constructor(props) {
     super(props);
@@ -35,6 +30,9 @@ class Instructor extends Component {
       console.log(e);
     }
   }
+  update = (e) => {
+    this.props.history.push("/pasins");
+  };
   render() {
     const instructor = this.state.InstructorList;
     const ins = this.state.ins;
@@ -47,8 +45,8 @@ class Instructor extends Component {
           />
         </div>
         <br></br>
-        <div className="row row w-100">
-          <div className="col-md-6">
+        <div className="row w-100">
+          <div className="offset-md-1 col-md-5">
             <h3 className="mt-4 fs-md-5 mb-5 ins_name ">
               {instructor.username}
             </h3>
@@ -64,7 +62,12 @@ class Instructor extends Component {
             <div className="ins_info">
               <FontAwesomeIcon className="star" icon={faStar} />
             </div>
-            <button className=" edit_pass fs-md-6 btn  mt-3">
+            <button
+              id={instructor.id}
+              onClick={this.update}
+              style={{ backgroundColor: "white", border: "1px solid grey" }}
+              className="ins_info fs-md-6 btn mt-3 pink bl"
+            >
               Edit Password
             </button>
           </div>
@@ -94,7 +97,7 @@ class Instructor extends Component {
             </h3>
             {ins.map((i) => (
               <>
-                <Card className="shado ms-2 col-md-6 mt-4">
+                <Card className="shado ms-2 col-sm-8 mt-4">
                   <Card.Body>
                     <Card.Title style={{ color: "#236aec" }} className="fs-4">
                       {i.ClassName}
@@ -118,4 +121,4 @@ class Instructor extends Component {
     );
   }
 }
-export default Instructor;
+export default withRouter(Instructor);

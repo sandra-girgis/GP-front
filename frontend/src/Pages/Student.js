@@ -42,8 +42,8 @@ class Student extends Component {
           />
         </div>
         <br></br>
-        <div className="row row w-100">
-          <div className="col-md-6">
+        <div className="row w-100">
+          <div className="offset-md-1 col-md-5">
             <h3 className="mt-4 fs-md-5 mb-5 ins_name ">
               {instructor.username}
             </h3>
@@ -68,7 +68,7 @@ class Student extends Component {
             </h3>
             {ins.map((i) => (
               <>
-                <Card className="shado ms-2 col-md-6 mt-4 ">
+                <Card className="shado ms-2 col-sm-8 mt-4 ">
                   <Card.Body>
                     <Card.Title style={{ color: "#236aec" }} className="fs-4">
                       {i.ClassName}
