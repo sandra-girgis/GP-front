@@ -10,8 +10,10 @@ import { Ballet } from "./Pages/Ballet";
 import { Flute } from "./Pages/Flute";
 import Instructor from "./Pages/Instructor";
 import Student from "./Pages/Student";
+import Passtd from "./Pages/passtd";
+import Pasins from "./Pages/pasins";
+
 // import { ShowStudents } from "./Pages/Admin/Events";
-import Gallery from "./Pages/Gallery";
 import Concerts from "./Pages/Concerts";
 import News from "./Pages/News";
 import Classes from "./Pages/Classes";

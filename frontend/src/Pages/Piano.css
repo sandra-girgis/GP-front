@@ -5,8 +5,11 @@
 .flute {
   height: 60vh !important;
 }
-.art {
-  height: 16rem !important;
+.flut{
+  height: 50vh!important;
+}
+.art{
+  height: 16rem!important;
 }
 .card-img {
   height: 70vh;
@@ -55,14 +58,23 @@
 }
 /* The element to apply the animation to */
 
-@keyframes example2 {
-  from {
-    transform: rotateY(180deg);
+  .flip-box-inner {
+    position: relative; 
+    text-align: center;
+    transform-style: preserve-3d;
+    animation-name: example2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  } 
+  /* .flip-box-inner:hover
+  {
+    animation-duration: 6s;
+  } */
+.flip-box-front, .flip-box-back { 
+    position: absolute;
+    backface-visibility: hidden;
   }
-  to {
-    transform: rotateY(0deg);
-  }
-}
+
 .flip-box {
   width: 20vw;
   height: 20vw;

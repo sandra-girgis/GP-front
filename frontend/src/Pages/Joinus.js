@@ -10,10 +10,8 @@ init("2DgWwUj_l6OTusFnD");
 
 export const Joinus = () => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_d8igfor",

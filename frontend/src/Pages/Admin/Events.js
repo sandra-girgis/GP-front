@@ -21,16 +21,16 @@ const MyEvent = (props) => {
     await axios.delete(`http://localhost:8000/Ensan/news/${e.target.id}`);
   };
 
-  return students.map((item, index) => (
+  return (
+    students.map((item) => 
     <tr key={item.id}>
       <td>{item.title}</td>
       <td>{item.content}</td>
       <td>{item.date.replaceAll("T", " ").replaceAll("Z", " ")}</td>
       <td>
-        <img src={require("../../images" +
-              item.picture
-                .replaceAll("http://localhost:8000", "")
-                .replaceAll("%20", " "))} style={{ width: "20rem" }} />
+        <img src={
+          require("../../images" +item.picture.replaceAll("http://localhost:8000", "").replaceAll("%20", " "))} 
+          style={{ width: "20rem" }} alt="..."/>
       </td>
       <td>{item.Category_ID}</td>
       <td>
@@ -38,7 +38,6 @@ const MyEvent = (props) => {
           Edit
         </button>
       </td>
-
       <td>
         <Link to="#" style={{ textDecoration: "none" }}>
           <button
