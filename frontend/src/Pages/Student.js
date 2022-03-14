@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Piano.css";
-// import { Link } from "react-router-dom";
-// import Navbar from "react-bootstrap/Navbar";
 import Card from "react-bootstrap/Card";
-// import Button from "react-bootstrap/Button";
+import { withRouter } from "react-router-dom";
 class Student extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +27,7 @@ class Student extends Component {
     }
   }
   update = (e) => {
-    console.log(e.target.id);
+    this.props.history.push("/passtd");
   };
   render() {
     const instructor = this.state.InstructorList;
@@ -100,4 +98,4 @@ class Student extends Component {
     );
   }
 }
-export default Student;
+export default withRouter(Student);

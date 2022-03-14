@@ -30,6 +30,7 @@ import Addevent from "./Pages/Admin/Addevent";
 import { Addimage } from "./Pages/Admin/Addimage";
 import Login from "./Pages/login";
 import Register from "./Pages/register";
+import Passtd from "./Pages/passtd";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
@@ -77,7 +78,10 @@ function App() {
                 ) : sessionStorage.is_staff === "true" ? (
                   <Route path="/instructor" exact component={Instructor} />
                 ) : (
-                  <Route path="/student" exact component={Student} />
+                  <>
+                    <Route path="/student" exact component={Student} />
+                    <Route path="/passtd" exact component={Passtd} />
+                  </>
                 )}
               </>
             ) : (
