@@ -3,7 +3,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Piano.css";
 import Card from "react-bootstrap/Card";
 import { withRouter } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar, faFaceSadTear, faFaceGrinHearts } from "@fortawesome/free-solid-svg-icons";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+
+
+
+
+
+
 class Student extends Component {
+
+
+    sendEmail = (e) => {
+   
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -16,6 +35,7 @@ class Student extends Component {
       const InstructorRes = await fetch(
         `http://localhost:8000/Ensan/students/${sessionStorage.id}/`
       );
+
       const InstructorList = await InstructorRes.json();
       const ins = await InstructorList.attend;
       this.setState({
@@ -87,6 +107,38 @@ class Student extends Component {
                     <Card.Text className="text-muted">
                       Category : {i.CategoryName}
                     </Card.Text>
+                    <Card.Text className="text-muted">
+                      Instructor's Name : {i.Instructor_ID}
+                    </Card.Text>
+                    {i.Rating ?
+                      (
+
+                        <Card.Text className="text-muted">
+                          Instructor's Rate : {i.Rating}<FontAwesomeIcon className="star" icon={faStar} />
+                        </Card.Text>
+                      ) :
+                      (
+
+                        <Form className="g-5 mt-3" onSubmit={this.sendEmail}>
+                          <Form.Label style={{ color: "#168eca" }}>Rate</Form.Label>
+                        
+                          <Form.Group className=" mb-3 " controlId="exampleForm.ControlInput1">
+                            where 1=  <FontAwesomeIcon className="Angry " icon={faFaceSadTear} />
+                              <input className="form-control g-1 col-5" type="number" name="rate" placeholder="Rate your instructor from 1 to 5" />
+                           and 5=   <FontAwesomeIcon className="Heart " icon={faFaceGrinHearts} />
+                          </Form.Group>
+                         
+                          <Button
+                            className="btn-outline-light btn-lg butt"
+                            type="submit"
+                            value="Send"
+                          >
+                            Submit
+                          </Button>
+                        </Form>
+
+
+                      )}
                   </Card.Body>
                 </Card>
               </>

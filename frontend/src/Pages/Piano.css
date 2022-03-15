@@ -257,6 +257,16 @@ th {
 .star {
   color: rgb(238, 234, 9);
 }
+
+.Angry{
+  color: #168eca;
+}
+.Heart {
+  color: rgb(238, 82, 9);
+}
+
+
+
 /* .star:{
 color:rgb(32, 240, 32);
 } */
