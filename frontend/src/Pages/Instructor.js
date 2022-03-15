@@ -8,8 +8,10 @@ import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from 'react-bootstrap/Button';
 import {HashLink} from 'react-router-hash-link';
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FaStar } from "react-icons/fa";
+import $ from 'jquery'; 
 
+// import { faStar } from "@fortawesome/free-solid-svg-icons";
 // import { faRegStar } from "@fortawesome/free-solid-svg-icons";
 
 class Instructor extends Component {
@@ -61,9 +63,34 @@ class Instructor extends Component {
             <div className="ins_info fs-md-4 text-muted">
               Salary:{instructor.salary}
             </div>
-            <div className="ins_info">
-            <FontAwesomeIcon className="star" icon={faStar} />
+
+
+            <div className="ins_info ">
+            <div class="row">
+            <div class="col text-center">
+                <a href="{% url 'main-view' %}"><button class="btn btn-primary mt-3">Next</button></a>
             </div>
+            <div class="col text-center">
+
+                <form class="rate-form" action="" method="POST" id="{{object.id}}">
+                    {/* {% csrf_token %} */}
+                    <App/>
+                    <button type="submit" class="fa fa-star fa-3x my-btnnn" id="first"></button>
+                    <button type="submit" class="fa fa-star fa-3x my-btnnn" id="second"></button>
+                    <button type="submit" class="fa fa-star fa-3x my-btnnn" id="third"></button>
+                    <button type="submit" class="fa fa-star fa-3x my-btnnn" id="fourth"></button>
+                    <button type="submit" class="fa fa-star fa-3x my-btnnn" id="fifth"></button>
+                </form>
+            </div>
+            
+        </div>
+
+
+            </div>
+
+            
+
+
             <button
               className=" edit_pass fs-md-6 btn  mt-3"
             >
@@ -120,4 +147,202 @@ class Instructor extends Component {
     );
   }
 }
+
+
 export default Instructor;
+
+function App() {
+
+  const colors = {
+    orange: "#FFBA5A",
+    grey: "#a9a9a9"
+  
+  };
+  
+  
+  const styles = {
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center"
+    },
+    stars: {
+      display: "flex",
+      flexDirection: "row",
+    },
+  
+  
+  };
+  
+    const [currentValue, setCurrentValue] = useState(0);
+    const [hoverValue, setHoverValue] = useState(undefined);
+    const stars = Array(5).fill(0)
+  
+    const handleClick = value => {
+      setCurrentValue(value)
+    }
+  
+    const handleMouseOver = newHoverValue => {
+      setHoverValue(newHoverValue)
+    };
+  
+    const handleMouseLeave = () => {
+      setHoverValue(undefined)
+    }
+
+    const one = document.getElementById('first')
+const two = document.getElementById('second')
+const three = document.getElementById('third')
+const four = document.getElementById('fourth')
+const five = document.getElementById('fifth')
+
+// get the form, confirm-box and csrf token
+const form = document.querySelector('.rate-form')
+const confirmBox = document.getElementById('confirm-box')
+const csrf = document.getElementsByName('csrfmiddlewaretoken')
+
+const handleStarSelect = (size) => {
+    const children = form.children
+    console.log(children[0])
+    for (let i=0; i < children.length; i++) {
+        if(i <= size) {
+            children[i].classList.add('checked')
+        } else {
+            children[i].classList.remove('checked')
+        }
+    }
+}
+
+const handleSelect = (selection) => {
+    switch(selection){
+        case 'first': {
+
+            handleStarSelect(1)
+            return
+        }
+        case 'second': {
+            handleStarSelect(2)
+            return
+        }
+        case 'third': {
+            handleStarSelect(3)
+            return
+        }
+        case 'fourth': {
+            handleStarSelect(4)
+            return
+        }
+        case 'fifth': {
+            handleStarSelect(5)
+            return
+        }
+        default: {
+            handleStarSelect(0)
+        }
+    }
+
+}
+
+const getNumericValue = (stringValue) =>{
+    let numericValue;
+    if (stringValue === 'first') {
+        numericValue = 1
+    } 
+    else if (stringValue === 'second') {
+        numericValue = 2
+    }
+    else if (stringValue === 'third') {
+        numericValue = 3
+    }
+    else if (stringValue === 'fourth') {
+        numericValue = 4
+    }
+    else if (stringValue === 'fifth') {
+        numericValue = 5
+    }
+    else {
+        numericValue = 0
+    }
+    return numericValue
+}
+
+if (one) {
+    const arr = [one, two, three, four, five]
+
+    arr.forEach(item=> item.addEventListener('mouseover', (event)=>{
+        handleSelect(event.target.id)
+    }))
+
+    arr.forEach(item=> item.addEventListener('click', (event)=>{
+        // value of the rating not numeric
+        const val = event.target.id
+        
+        let isSubmit = false
+        form.addEventListener('submit', e=>{
+            e.preventDefault()
+            if (isSubmit) {
+                return
+            }
+            isSubmit = true
+            // picture id
+            const id = e.target.id
+            // value of the rating translated into numeric
+            const val_num = getNumericValue(val)
+
+            $.ajax({
+                type: 'POST',
+                url: '/rate/',
+                data: {
+                    'csrfmiddlewaretoken': csrf[0].value,
+                    'el_id': id,
+                    'val': val_num,
+                },
+                success: function(response){
+                    console.log(response)
+                    confirmBox.innerHTML = `<h1>Successfully rated with ${response.score}</h1>`
+                },
+                error: function(error){
+                    console.log(error)
+                    confirmBox.innerHTML = '<h1>Ups... something went wrong</h1>'
+                }
+            })
+        })
+    }))
+}
+
+
+
+
+
+  
+  
+    return (
+      <div className="ins_info" style={styles.container}>
+        
+        <div style={styles.stars}>
+          {stars.map((_, index) => {
+            return (
+              <FaStar
+                key={index}
+                size={24}
+                onClick={() => handleClick(index + 1)}
+                onMouseOver={() => handleMouseOver(index + 1)}
+                onMouseLeave={handleMouseLeave}
+                color={(hoverValue || currentValue) > index ? colors.orange : colors.grey}
+                style={{
+                  marginRight: 10,
+                  cursor: "pointer"
+                }}
+              />
+            )
+          })}
+        </div>
+      </div>
+    );
+  };
+  
+  
+
+// export default Instructor;
+
+// get all the stars

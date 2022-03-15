@@ -375,3 +375,16 @@ color:rgb(32, 240, 32);
 .flipp {
     animation: flip 1.6s linear infinite;
   } */
+
+
+
+
+
+  .checked {
+    color: red;
+  }
+  
+  .my-btnnn {
+    background-color: inherit !important;
+    border: 0 !important;
+  }
