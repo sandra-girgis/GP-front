@@ -1,39 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Atma&family=PT+Sans+Narrow&family=Smooch+Sans:wght@600&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Atma&family=Lato:ital@1&family=PT+Sans+Narrow&family=Smooch+Sans:wght@600&display=swap');
-body{
-    font-family:'Playfair Display', serif;
-    font-weight: bolder!important;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma&family=Lato:ital@1&family=PT+Sans+Narrow&family=Smooch+Sans:wght@600&display=swap");
+body {
+font-family: "Playfair Display", serif;
+font-weight: bolder !important;
 }
-p{
-    font-family:'Times New Roman', Times, serif;
-    font-weight:900; 
+p {
+font-family: "Times New Roman", Times, serif;
+font-weight: 900;
 }
 
-.footer{
-    /* height: 25vh; */
-    /* display: flex; */
-    align-items: center;
-    text-align:center;
-background-color:#168eca;
-width:100%;
-    /* justify-content: space-between; */
-   }
+.footer {
+align-items: center;
+text-align: center;
+background-color: #168eca;
+width: 100%;
+}
 
-.foot{
-list-style:none;    /* flex-wrap: wrap; */
+.foot {
+list-style: none;
 }
-.icons{
-    padding-right: 6%;
+.icons {
+padding-right: 6%;
 }
-.text{
-    text-align:justify;
+.text {
+text-align: justify;
 }
-.text_color{
-    color:white;
+.text_color {
+color: white;
 text-decoration: none;
 }
 .pink:hover {
-    color: rgb(245, 49, 196) !important;
-    text-decoration: none;
-  }
+color: rgb(245, 49, 196) !important;
+text-decoration: none;
+}

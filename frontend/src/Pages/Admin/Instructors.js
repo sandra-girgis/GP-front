@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
-// import Carousel from 'react-bootstrap/Carousel'
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
@@ -16,9 +15,10 @@ class Instructors extends Component {
   }
   async componentDidMount() {
     try {
-      const InstructorRes = await fetch("http://localhost:8000/Ensan/instructors/");
+      const InstructorRes = await fetch(
+        "http://localhost:8000/Ensan/instructors/"
+      );
       const InstructorList = await InstructorRes.json();
-      console.log(InstructorList);
       this.setState({
         InstructorList,
       });
@@ -26,18 +26,25 @@ class Instructors extends Component {
       console.log(e);
     }
   }
+  // async componentDidUpdate() {
+  //   try {
+  //     const InstructorRes = await fetch(
+  //       "http://localhost:8000/Ensan/instructors/"
+  //     );
+  //     const InstructorList = await InstructorRes.json();
+  //     this.setState({
+  //       InstructorList,
+  //     });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
 
   delete = (e) => {
-    // console.log(`http://localhost:8000/Ensan/instructors/${e.target.id}`)
     fetch(`http://localhost:8000/Ensan/instructors/${e.target.id}`, {
       method: "delete",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(this.state.details),
     })
       .then((data) => data.json())
-      .then((data) => {
-        console.log(data);
-      })
       .catch((error) => console.error(error));
   };
 
@@ -67,9 +74,9 @@ class Instructors extends Component {
         </td>
         <td>{item.salary}</td>
         <td>
-        <Link to="/addinstructor"style={{textDecoration:"none"}}>
-        <button className="butt" >Edit</button>
-        </Link>
+          <Link to="/addinstructor" style={{ textDecoration: "none" }}>
+            <button className="butt">Edit</button>
+          </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
@@ -112,10 +119,7 @@ class Instructors extends Component {
         >
           Instructors
         </h1>
-        <button
-          className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          
-        >
+        <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
           <NavLink
             className="nav nav-link bu active "
             exact
@@ -138,9 +142,7 @@ class Instructors extends Component {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>
-            {this.Instructor()}
-          </tbody>
+          <tbody>{this.Instructor()}</tbody>
         </Table>
       </>
     );

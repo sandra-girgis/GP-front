@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
-// import Carousel from 'react-bootstrap/Carousel'
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
-
 class Imagealbum extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +18,6 @@ class Imagealbum extends Component {
         "http://localhost:8000/Ensan/albumPhotos/"
       );
       const StudentList = await StudentRes.json();
-      console.log(StudentList);
       this.setState({
         StudentList,
       });
@@ -29,21 +26,25 @@ class Imagealbum extends Component {
     }
   }
 
+  // async componentDidUpdate() {
+  //   try {
+  //     const StudentRes = await fetch("http://localhost:8000/Ensan/albumPhotos/");
+  //     const StudentList = await StudentRes.json();
+  //     this.setState({
+  //       StudentList,
+  //     });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
 
   delete = (e) => {
-    // console.log(`http://localhost:8000/Ensan/albumPhotos/${e.target.id}`)
     fetch(`http://localhost:8000/Ensan/albumPhotos/${e.target.id}`, {
       method: "delete",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(this.state.details),
     })
       .then((data) => data.json())
-      .then((data) => {
-        console.log(data);
-      })
       .catch((error) => console.error(error));
   };
-
 
   Student = () => {
     const students = this.state.StudentList;
@@ -63,9 +64,7 @@ class Imagealbum extends Component {
         <td>{item.Album_ID}</td>
         <td>
           <Link to="/addimage" style={{ textDecoration: "none" }}>
-            <button className="butt" >
-            Edit
-            </button>
+            <button className="butt">Edit</button>
           </Link>
         </td>
         <td>
@@ -108,10 +107,7 @@ class Imagealbum extends Component {
         >
           Image Album
         </h1>
-        <button
-          className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          
-        >
+        <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
           <NavLink className="nav nav-link bu active " exact to={"/addimage"}>
             Add Image
           </NavLink>
