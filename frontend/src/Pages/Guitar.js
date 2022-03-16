@@ -92,25 +92,17 @@ export const Guitar = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 border rounded">
+            {/* <div className="col-md-4 border rounded">
               <img
                 src="https://media.istockphoto.com/photos/female-pupil-playing-guitar-in-high-school-orchestra-picture-id498129995?k=20&m=498129995&s=612x612&w=0&h=oqKZBNcoa_YndIOzwyd5JhNyaSKB6gHLzXp5dZaaNy0="
                 className="img-fluid rounded-start"
                 alt="middle age"
               />
-            </div>
+            </div> */}
           {/* </div>
         </div> */}
-        <div className="container mb-5 flip-card">
-          <div className="row g-0 ">
-            <div className="col-md-4 border rounded">
-              <img
-                src="https://media.istockphoto.com/photos/musician-plays-guitar-close-up-picture-id1097767690?k=20&m=1097767690&s=612x612&w=0&h=7YF-DXt5DxaimNnWgq2-f4lIK8Kr64G6kMyvTV_5IUM="
-                className="img-fluid rounded-start"
-                alt="Elderly"
-              />
-            </div>
-            <div className="col-md-6" style={{ backgroundColor: "#fff2f7" }}>
+       
+            {/* <div className="col-md-6" style={{ backgroundColor: "#fff2f7" }}>
               <div className="card-body">
                 <h5 className="card-title" style={{ color: "#168eca" }}>
                   Benefit of playing classical Guitar:
@@ -123,9 +115,9 @@ export const Guitar = () => {
                   coordination<br></br>• Develops self-discipline
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
+            </div> */}
+        {/* //   </div> */}
+        {/* // </div> */}
       {/* </div> */}
 
       <div className="container mb-5">
