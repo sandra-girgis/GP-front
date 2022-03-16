@@ -129,8 +129,29 @@ export const Home = () => {
   </div>
   </div>
   
-  
- 
+  <div className="row mt-5 mb-5 justify-content-center">
+    <div className="flip-box col-md-6 me-5 mb-5">
+    <div className="flip-box-inner">
+      <div className="flip-box-front mt-5">
+        <img src={img7} alt="art" className="img"/>
+      </div>
+      <div className="flip-box-back mt-5">
+        <img src={img6} alt="art" className="img"/>
+      </div>
+    </div>
+  </div>
+  <div className="flip-box col-md-6 mb-5">
+    <div className="flip-box-inner">
+      <div className="flip-box-front mt-5">
+        <img src={img10} alt="art" className="img"/>
+      </div>
+      <div className="flip-box-back mt-5">
+        <img src={img11} alt="art" className="img"/>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
       </div>
     </>
   );
