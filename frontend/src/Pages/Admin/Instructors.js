@@ -10,13 +10,15 @@ class Instructors extends Component {
     super(props);
     this.state = {
       InstructorList: [],
+      id: 0,
     };
   }
   async componentDidMount() {
     try {
-      const InstructorRes = await fetch("http://localhost:8000/Ensan/instructors/");
+      const InstructorRes = await fetch(
+        "http://localhost:8000/Ensan/instructors/"
+      );
       const InstructorList = await InstructorRes.json();
-      console.log(InstructorList);
       this.setState({
         InstructorList,
       });
@@ -24,6 +26,28 @@ class Instructors extends Component {
       console.log(e);
     }
   }
+  // async componentDidUpdate() {
+  //   try {
+  //     const InstructorRes = await fetch(
+  //       "http://localhost:8000/Ensan/instructors/"
+  //     );
+  //     const InstructorList = await InstructorRes.json();
+  //     this.setState({
+  //       InstructorList,
+  //     });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
+
+  delete = (e) => {
+    fetch(`http://localhost:8000/Ensan/instructors/${e.target.id}`, {
+      method: "delete",
+    })
+      .then((data) => data.json())
+      .catch((error) => console.error(error));
+  };
+
   Instructor = () => {
     const instructors = this.state.InstructorList;
     return instructors.map((item) => (
@@ -50,13 +74,18 @@ class Instructors extends Component {
         </td>
         <td>{item.salary}</td>
         <td>
-        <Link to="/addinstructor"style={{textDecoration:"none"}}>
-        <button className="butt" >Edit</button>
-        </Link>
+          <Link to="/addinstructor" style={{ textDecoration: "none" }}>
+            <button className="butt">Edit</button>
+          </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" >
+          <button
+              id={item.id}
+              className="butt"
+              
+              onClick={this.delete}
+            >
               Delete
             </button>
           </Link>
@@ -90,10 +119,7 @@ class Instructors extends Component {
         >
           Instructors
         </h1>
-        <button
-          className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          
-        >
+        <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
           <NavLink
             className="nav nav-link bu active "
             exact
@@ -116,9 +142,7 @@ class Instructors extends Component {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>
-            {this.Instructor()}
-          </tbody>
+          <tbody>{this.Instructor()}</tbody>
         </Table>
       </>
     );

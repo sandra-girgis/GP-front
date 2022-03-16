@@ -193,10 +193,7 @@ export const Violin = () => {
           </div>
         </div>
         <div className="col-12 text-center">
-          <button
-            className="btn-outline-light btn-lg fs-2 butt"
-            
-          >
+          <button className="btn-outline-light btn-lg fs-2 butt">
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>
               Join Us
             </NavLink>

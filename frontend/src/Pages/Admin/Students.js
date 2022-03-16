@@ -9,13 +9,13 @@ class Students extends Component {
     super(props);
     this.state = {
       StudentList: [],
+      id: 0,
     };
   }
   async componentDidMount() {
     try {
       const StudentRes = await fetch("http://localhost:8000/Ensan/students/");
       const StudentList = await StudentRes.json();
-      console.log(StudentList);
       this.setState({
         StudentList,
       });
@@ -23,6 +23,26 @@ class Students extends Component {
       console.log(e);
     }
   }
+
+  // async componentDidUpdate() {
+  //   try {
+  //     const StudentRes = await fetch("http://localhost:8000/Ensan/students/");
+  //     const StudentList = await StudentRes.json();
+  //     this.setState({
+  //       StudentList,
+  //     });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
+
+  delete = (e) => {
+    fetch(`http://localhost:8000/Ensan/students/${e.target.id}`, {
+      method: "delete",
+    })
+      .then((data) => data.json())
+      .catch((error) => console.error(error));
+  };
 
   Student = () => {
     const students = this.state.StudentList;
@@ -49,13 +69,17 @@ class Students extends Component {
           ))}
         </td>
         <td>
-        <Link to="/addstudent"style={{textDecoration:"none"}}>
-        <button className="butt" >Edit</button>
-        </Link> 
+          <Link to="/addstudent" style={{ textDecoration: "none" }}>
+            <button className="butt">Edit</button>
+          </Link>
         </td>
         <td>
           <Link to="#" style={{ textDecoration: "none" }}>
-            <button className="butt" >
+          <button
+              id={item.id}
+              className="butt"
+              onClick={this.delete}
+            >
               Delete
             </button>
           </Link>
@@ -89,10 +113,7 @@ class Students extends Component {
         >
           Students
         </h1>
-        <button
-          className="btn-outline-light btn-lg ms-5 mb-5 butt"
-          
-        >
+        <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
           <NavLink className="nav nav-link bu active " exact to={"/addstudent"}>
             Add Student
           </NavLink>
@@ -110,9 +131,7 @@ class Students extends Component {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>
-            {this.Student()}
-          </tbody>
+          <tbody>{this.Student()}</tbody>
         </Table>
       </>
     );

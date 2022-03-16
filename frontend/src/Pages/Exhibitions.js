@@ -29,7 +29,7 @@ class Exhibitions extends Component {
     return Albums.map((item) => (
       <div className="col-md-4 key={item.id} ">
         <div className="card mb-4 shadow-sm">
-        {item.album.map((i) => (
+          {item.album.map((i) => (
             <>
               <div className="bd-placeholder-img">
                 <img
@@ -119,6 +119,7 @@ function Example(props) {
                     src={require("../images" +
                       item.picture.replaceAll("%20", " "))}
                     className="d-block w-100"
+                    alt="..."
                   />
                 </Carousel.Item>
               ))}

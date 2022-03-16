@@ -3,9 +3,13 @@ import Navbar from "react-bootstrap/Navbar";
 import React from "react";
 import "./Navbar.css";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
+import { withRouter } from "react-router-dom";
 
 function Nav(props) {
+  const logout = () => {
+    sessionStorage.clear();
+    props.history.push("/");
+  };
   return (
     <>
       <Navbar bg="light" expand="lg">
@@ -117,47 +121,59 @@ function Nav(props) {
                 </NavLink>
               </NavDropdown.Item>
             </NavDropdown>
-            {props.token ? (
+            {sessionStorage.token ? (
               <>
-                <li className="nav-item ms-4">
-                  <NavLink className="nav nav-link pink bl" exact to="/event">
-                    Admin
-                  </NavLink>
-                </li>
+                {sessionStorage.is_superuser === "true" ? (
+                  <li className="nav-item ms-4">
+                    <NavLink className="nav nav-link pink bl" exact to="/event">
+                      Admin
+                    </NavLink>
+                  </li>
+                ) : sessionStorage.is_staff === "true" ? (
+                  <li className="nav-item ms-4">
+                    <NavLink
+                      className="nav nav-link pink bl"
+                      exact
+                      to="/instructor"
+                    >
+                      Instructor
+                    </NavLink>
+                  </li>
+                ) : (
+                  <li className="nav-item ms-4">
+                    <NavLink
+                      className="nav nav-link pink bl"
+                      exact
+                      to="/student"
+                    >
+                      Student
+                    </NavLink>
+                  </li>
+                )}
                 <li className="nav-item ms-4">
                   <NavLink
+                    onClick={logout}
                     className="nav nav-link pink bl"
                     exact
-                    to="/instructor"
+                    to="/"
                   >
-                    Instructor
-                  </NavLink>
-                </li>
-                <li className="nav-item ms-4">
-                  <NavLink className="nav nav-link pink bl" exact to="/student">
-                    Student
-                  </NavLink>
-                </li>
-                <li className="nav-item ms-4">
-                  <NavLink className="nav nav-link pink bl" exact to="#">
                     Logout
                   </NavLink>
                 </li>
               </>
             ) : (
               <>
-            <li className="nav-item ms-4">
-              <NavLink className="nav nav-link pink bl" exact to="/login">
-                Login
-              </NavLink>
-            </li>
+                <li className="nav-item ms-4">
+                  <NavLink className="nav nav-link pink bl" exact to="/login">
+                    Login
+                  </NavLink>
+                </li>
               </>
             )}
-
           </ul>
         </Navbar.Collapse>
       </Navbar>
     </>
   );
 }
-export default Nav;
+export default withRouter(Nav);

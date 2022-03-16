@@ -41,6 +41,7 @@ export const Flute = () => {
                     </div>
                   </div>
               </div>
+              
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                 <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
@@ -108,4 +109,3 @@ export const Flute = () => {
       </>
     );
   }
-

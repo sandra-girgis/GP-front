@@ -119,6 +119,7 @@ function Example(props) {
                     src={require("../images" +
                       item.picture.replaceAll("%20", " "))}
                     className="d-block w-100"
+                    alt="..."
                   />
                 </Carousel.Item>
               ))}
