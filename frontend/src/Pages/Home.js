@@ -112,7 +112,7 @@ export const Home = () => {
         <br></br>
         <div className="container my-5">
           <marquee loop width="10%"></marquee>
-          <marquee loop vspace="20" direction="up" scrollamount="7" width="35%">
+          <marquee loop vspace="20" direction="up" scrollamount="10" width="35%">
             <div className="row">
               <div className=" row mb-3">
                 <div className="san1"></div>
@@ -129,7 +129,7 @@ export const Home = () => {
             </div>
           </marquee>
           <marquee loop width="10%"></marquee>
-          <marquee loop vspace="20" direction="down" width="35%">
+          <marquee loop vspace="20" direction="down" scrollamount="10" width="35%">
             <div className="row">
               <div className="row mb-3">
                 <div className="san1"></div>
