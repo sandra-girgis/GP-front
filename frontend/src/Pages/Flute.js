@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import img1 from "../images/v1.jpg"
 import img2 from "../images/v2.jpg"
 import img3 from "../images/i20.jpg"
+import img4 from "../images/g4.jpg"
 
 
 
@@ -59,7 +60,7 @@ export const Flute = () => {
               <div className="container mb-5 flip-card">
                 <div className="row g-0 ">
                   <div className="col-md-4 border rounded">
-                  <img  src="https://media.istockphoto.com/photos/flutist-playing-her-instrument-on-stage-picture-id587817144?k=20&m=587817144&s=612x612&w=0&h=_R2x1qzfl0f0hhfpfw6wKhTEJeqCdV6dbbkuiJN2ERI="
+                  <img  src={img4}
                     className="img-fluid rounded-start" alt="Elderly"/>
                   </div>
                   <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>

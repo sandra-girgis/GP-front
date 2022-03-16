@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import img4 from "../images/i6.jpg"
 import img2 from "../images/i19.jpg"
 import img3 from "../images/i11.jpg"
+import img5 from "../images/ws.jpg"
 
 export const Workshop = () => { 
   return (<>
@@ -38,7 +39,7 @@ export const Workshop = () => {
   <Carousel.Item >
     <img
       className="d-block w-100"
-     src="https://media.istockphoto.com/photos/online-dance-class-homeschooling-during-pandemic-coronavirus-picture-id1217851796?k=20&m=1217851796&s=612x612&w=0&h=f-g6aA-9h9zBFRK-ZeLNNZr0m4AwUIW6NcYTtmbHGfc="
+     src={img5}
       alt="Second slide"/>
   </Carousel.Item>
 </Carousel>
