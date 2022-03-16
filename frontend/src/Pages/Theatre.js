@@ -79,6 +79,28 @@ export const Theatre = () => {
         </div>
         
 
+        <div className="container mb-5">
+        <h1 className="mb-5 fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Instructors</h1>
+        <div className="card mb-5 instractor flip-card shadow">
+            <div className="row g-0">
+            <div className="col-md-4">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+              className="img-fluid rounded-start rounded-circle" style={{width:"15rem"}} alt="instractors"/>
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title"style={{color:"#ee4a8b"}}>Card title</h5>
+                <p className="card-text desc">Born in Alexandria in 1998.
+                                          Omar graduated from Riada International School (IGCSE) and then studied Computer and Communications Engineering at the Faculty of Engineering - Alexandria University.
+                                          In 2006, Omar joined the Suzuki Violin Class and the Alexandria Opera House Youth Orchestra with Dr. Nevine ELMahmoudy.
+                                          Later on , he joined the conservatoire ( Academy of Arts in Alexandria ) where he studied violin with Dr. Nevine ELMahmoudy and Dr. Hassan Sharara.
+                                          Omar performed a lot of solo concerts in Alexandria and Cairo , in which they made a huge success.
+                                          He now works as a violinist in Alexandria Opera House String Orchestra and participated with the Arab Youth Philharmonic Orchestra concerts in Germany , Jordan , Egypt and France.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+     
        
       </>
     );
