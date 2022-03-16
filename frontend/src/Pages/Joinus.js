@@ -8,3 +8,29 @@ import emailjs from "@emailjs/browser";
 import { init } from "@emailjs/browser";
 init("2DgWwUj_l6OTusFnD");
 
+export const Joinus = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_d8igfor",
+        "template_vgss0wj",
+        form.current,
+        "2DgWwUj_l6OTusFnD"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
+ 
+    </>
+  );
+};
