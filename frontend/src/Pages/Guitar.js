@@ -92,34 +92,6 @@ export const Guitar = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="col-md-4 border rounded">
-              <img
-                src="https://media.istockphoto.com/photos/female-pupil-playing-guitar-in-high-school-orchestra-picture-id498129995?k=20&m=498129995&s=612x612&w=0&h=oqKZBNcoa_YndIOzwyd5JhNyaSKB6gHLzXp5dZaaNy0="
-                className="img-fluid rounded-start"
-                alt="middle age"
-              />
-            </div> */}
-          {/* </div>
-        </div> */}
-       
-            {/* <div className="col-md-6" style={{ backgroundColor: "#fff2f7" }}>
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: "#168eca" }}>
-                  Benefit of playing classical Guitar:
-                </h5>
-                <p className="card-text desc">
-                  {" "}
-                  • Improved self-discipline through practicing certain skills
-                  over and over<br></br>• Stronger connections between left and
-                  right brain functions<br></br>• Improved right and left hand
-                  coordination<br></br>• Develops self-discipline
-                </p>
-              </div>
-            </div> */}
-        {/* //   </div> */}
-        {/* // </div> */}
-      {/* </div> */}
-
       <div className="container mb-5">
         <h1 className="mb-5 fw-bold display-4" style={{ color: "#ee4a8b" }}>
           About Our Instructors
