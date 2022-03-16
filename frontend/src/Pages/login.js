@@ -8,7 +8,6 @@ class Login extends Component {
             password : ""
         }
     }
-
     login = event => {
         fetch('http://localhost:8000/Ensan/authtoken/',{
             method : 'POST',
