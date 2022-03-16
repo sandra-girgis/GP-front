@@ -48,16 +48,16 @@
 }
 
 /* The animation code */
-@keyframes example {
+/* @keyframes example {
   from {
     transform: rotateY(0deg);
   }
   to {
     transform: rotateY(180deg);
   }
-}
+} */
 /* The element to apply the animation to */
-
+/* 
   .flip-box-inner {
     position: relative; 
     text-align: center;
@@ -66,10 +66,10 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
   } 
-  /* .flip-box-inner:hover
+  .flip-box-inner:hover
   {
     animation-duration: 6s;
-  } */
+  }
 .flip-box-front, .flip-box-back { 
     position: absolute;
     backface-visibility: hidden;
@@ -80,14 +80,69 @@
   height: 20vw;
   animation-name: example;
   animation-iteration-count: infinite;
+} */
+.san1,
+.san2,
+.san3,
+.san4{
+  width:30vw;
+  height: 20vw;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.san1{
+  animation-name: ex1;
+}
+@keyframes ex1{
+  from {
+    background-image: url("../images/v2.jpg");
+  }
+  to {
+    background-image: url("../images/k6.jpg");
+  }
+}
+.san2{
+  animation-name: ex2;
+}
+@keyframes ex2{
+  from {
+    background-image: url("../images/c2.jpg");
+  }
+  to {
+    background-image: url("../images/kkids.jpg");
+  }
+}
+.san3{
+  animation-name: ex3;
+}
+@keyframes ex3{
+  from {
+    background-image: url("../images/v1.jpg");
+  }
+  to {
+    background-image: url("../images/5.jpg");
+  }
+}
+.san4{
+  animation-name: ex4;
+}
+@keyframes ex4{
+  from {
+    background-image: url("../images/17.jpg");
+  }
+  to {
+    background-image: url("../images/18.jpg");
+  }
 }
 
-.flip-box-inner {
+/* .flip-box-inner {
   position: relative;
   text-align: center;
   transform-style: preserve-3d;
   animation-name: example2;
-  /* animation-duration: 6s; */
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 .flip-box-inner:hover {
@@ -100,7 +155,7 @@
 }
 .flip-box-back {
   transform: rotateY(180deg);
-}
+} */
 .img {
   width: 22vw;
   height: 18vw;
@@ -264,7 +319,9 @@ th {
 .Heart {
   color: rgb(238, 82, 9);
 }
-
+.green{
+color:rgb(32, 240, 32);
+}
 
 
 /* .star:{

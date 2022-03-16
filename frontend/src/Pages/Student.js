@@ -127,30 +127,34 @@ class Student extends Component {
                         <FontAwesomeIcon className="star" icon={faStar} />
                       </Card.Text>
                     ) : (
-                      <Form className="g-5 mt-3">
+                      <Form className="mt-3 gx-2">
                         <Form.Label style={{ color: "#168eca" }}>
-                          Rate
+                        Instructor's Rate :
                         </Form.Label>
                         <Form.Group
                           className=" mb-3 "
                           controlId="exampleForm.ControlInput1"
                         >
-                          <FontAwesomeIcon
-                            className="Angry "
-                            icon={faFaceSadTear}
-                          />
-                          <input
-                            className="form-control g-1 col-5"
+                          <Form.Control
+                            className="form-control col-6"
                             type="number"
                             name="stars"
                             value={this.state.stars}
                             onChange={this.change}
-                            placeholder="Rate your instructor from 1 to 5"
                           />
+                          <span className="input-group-text justify-content-center col-6">
+                            <FontAwesomeIcon
+                            className="Angry d-inline  "
+                            icon={faFaceSadTear}
+                          />
+                          <div className="green d-inline align-top">
+                            1 2 3 4 5
+                          </div>
                           <FontAwesomeIcon
-                            className="Heart "
+                            className="Heart d-inline  "
                             icon={faFaceGrinHearts}
                           />
+                          </span>
                         </Form.Group>
                         <Button
                           className="btn-outline-light btn-lg butt"
