@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,6 +19,7 @@ const MyEvent = (props) => {
 
   const deleted = async (e) => {
     await axios.delete(`http://localhost:8000/Ensan/news/${e.target.id}`);
+    fetchStudents();
   };
 
   return (
@@ -28,9 +29,13 @@ const MyEvent = (props) => {
       <td>{item.content}</td>
       <td>{item.date.replaceAll("T", " ").replaceAll("Z", " ")}</td>
       <td>
-        <img src={
-          require("../../images" +item.picture.replaceAll("http://localhost:8000", "").replaceAll("%20", " "))} 
-          style={{ width: "20rem" }} alt="..."/>
+      <img
+            src={
+              item.picture
+                .replaceAll("http://localhost:8000", "")}
+            style={{ width: "20rem" }}
+            alt="..."
+          />
       </td>
       <td>{item.Category_ID}</td>
       <td>
@@ -75,8 +80,11 @@ class Events extends Component {
             <Link className="nav-link  adm" to="/event">
               Events
             </Link>
-            <Link className="nav-link  adm" to="/imagealbum">
-              Image Album
+            <Link className="nav-link  adm" to="/image">
+              Image
+            </Link>
+            <Link className="nav-link  adm" to="/album">
+              Album
             </Link>
           </nav>
         </div>
