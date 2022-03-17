@@ -1,67 +1,72 @@
-// import React from "react";
-import "../Piano";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
-import React from "react";
-import { NavLink } from "react-router-dom";
 
-// class Addimage extends Component {
-
-//     state = {
-//         details:{
-//   Name: "",
-//   image:"",
-// //         }
-//     }
-// }
-// export default Addimage;
-
-export const Addimage = () => {
+export const Addimage = (props) => {
+const [picture, setPicture] = useState(null);
+const [Album_ID, setAlbum] = useState(null);
+const handleChange = (event) => {
+    setAlbum({ Album_ID: event.target.value });
+};
+const [cat, setcat] = useState([]);
+const addNewStudent = async () => {
+    let formField = new FormData();
+    formField.append("Album_ID", parseInt(Album_ID.Album_ID));
+    if (picture !== null) {
+    formField.append("picture", picture);
+    }
+    await axios({
+    method: "post",
+    url: "http://localhost:8000/Ensan/albumPhotos/",
+    data: formField,
+    })
+    props.history.push("/image");
+};
+useEffect(() => {
+    category();
+}, []);
+const category = async () => {
+    await axios({
+    method: "get",
+    url: "http://localhost:8000/Ensan/albums/",
+    }).then((response) => {
+    setcat(response.data);
+    });
+};
 return (
-    <>
     <div className="shado mb-5 pt-3 container">
-        <Form>
-        <h3
-            className="new2 pt-2 mb-5 text-center"
-            style={{ color: "#ee4a8b" }}
-        >
-            {" "}
-            Add Image{" "}
+    <Form>
+        <h3 className="new2 pt-2 mb-5 text-center" style={{ color: "#ee4a8b" }}>
+        Add Image
         </h3>
         <Form.Group
-            className="mb-3 mt-5"
-            controlId="exampleForm.ControlTextarea1"
+        className="mb-3 mt-5"
+        controlId="exampleForm.ControlTextarea1"
         >
-            <Form.Label style={{ color: "#168eca" }}>Image-Name</Form.Label>
-            <Form.Control as="textarea" rows={1} />
+        <Form.Label style={{ color: "#168eca" }}>Album Name</Form.Label>
+        <Form.Control as="select" multiple onChange={handleChange}>
+            {cat.map((options) => (
+            <option key={options.id} value={parseInt(options.id)}>
+                {options.name}
+            </option>
+            ))}
+        </Form.Control>
         </Form.Group>
-
-        {/* <Form.Group className="mb-3" controlId="exampleForm.uploadimage">
-                <Form.Control action="/action_page.php"><label for="img" Select 
-                image:type="file" id="img" name="img" accept="image/*" ></label>
-                </Form.Control >
-    </Form.Group> */}
-
-        {/* <Button onClick={onImageRemoveAll}>Remove all images</Button>
-                {imageList.map((image, index) => (
-                <div key={index} className="image-item">
-                    <img src={image['data_url']} alt="" width="100" />
-                    <div className="image-item__btn-wrapper">
-                    <Button onClick={() => onImageUpdate(index)}>Update</Button>
-                    <Button onClick={() => onImageRemove(index)}>Remove</Button> */}
-
-        <Button className="btn-outline-light btn-lg ms-5 mb-5 butt">
-            <NavLink
-            className="nav nav-link bu active "
-            exact
-            to={"/imagealbum"}
-            >
+        <input
+        type="file"
+        className="form-control"
+        onChange={(e) => setPicture(e.target.files[0])}
+        />
+        <Button
+        className="btn-outline-light btn-lg ms-5 mb-5 butt"
+        style={{ backgroundColor: "#168eca" }}
+        onClick={addNewStudent}
+        >
             Submit
-            </NavLink>
         </Button>
-        </Form>
+    </Form>
     </div>
-    </>
 );
 };
