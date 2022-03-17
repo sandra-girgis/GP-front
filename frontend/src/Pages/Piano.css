@@ -137,6 +137,17 @@
     background-image: url("../images/3.jpg");
   }
 }
+.san7{
+  animation-name: ex7;
+}
+@keyframes ex7{
+  from {
+    background-image: url("../images/ws.jpg");
+  }
+  to {
+    background-image: url("../images/6.jpg");
+  }
+}
 
 
 
