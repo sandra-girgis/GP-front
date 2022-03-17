@@ -1,62 +1,34 @@
 import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
+import axios from "axios";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
-class Imagealbum extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      StudentList: [],
-      id: 0,
-    };
-  }
-  async componentDidMount() {
-    try {
-      const StudentRes = await fetch(
-        "http://localhost:8000/Ensan/albumPhotos/"
-      );
-      const StudentList = await StudentRes.json();
-      this.setState({
-        StudentList,
-      });
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
-  // async componentDidUpdate() {
-  //   try {
-  //     const StudentRes = await fetch("http://localhost:8000/Ensan/albumPhotos/");
-  //     const StudentList = await StudentRes.json();
-  //     this.setState({
-  //       StudentList,
-  //     });
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // }
-
-  delete = (e) => {
-    fetch(`http://localhost:8000/Ensan/albumPhotos/${e.target.id}`, {
-      method: "delete",
-    })
-      .then((data) => data.json())
-      .catch((error) => console.error(error));
+import "bootstrap/dist/css/bootstrap.min.css";
+const MyAlbum = (props) => {
+  const [students, setStudents] = React.useState([]);
+  const fetchStudents = async () => {
+    const result = await axios.get("http://localhost:8000/Ensan/albumPhotos/");
+    setStudents(result.data);
+  };
+  useEffect(() => {
+    fetchStudents();
+  }, []);
+  const deleted = async (e) => {
+    await axios.delete(`http://localhost:8000/Ensan/albumPhotos/${e.target.id}`);
+    fetchStudents();
   };
 
-  Student = () => {
-    const students = this.state.StudentList;
-    return students.map((item) => (
+  return (
+    students.map((item,index) =>
       <tr key={item.id}>
-        <td>{item.id}</td>
+        <td>{index+1}</td>
         <td>
           <img
-            src={require("../../images" +
+            src={
               item.picture
-                .replaceAll("http://localhost:8000", "")
-                .replaceAll("%20", " "))}
+                .replaceAll("http://localhost:8000", "")}
             style={{ width: "20rem" }}
             alt="..."
           />
@@ -72,16 +44,23 @@ class Imagealbum extends Component {
             <button
               id={item.id}
               className="butt"
-              
-              onClick={this.delete}
+              onClick={deleted}
             >
               Delete
             </button>
           </Link>
         </td>
       </tr>
-    ));
-  };
+  ));
+};
+
+class Image extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      EventList: [],
+    };
+  }
   render() {
     return (
       <>
@@ -91,13 +70,16 @@ class Imagealbum extends Component {
               Instructors
             </Link>
             <Link className="nav-link  adm" to="/students">
-              Students
+              Student
             </Link>
             <Link className="nav-link  adm" to="/event">
               Events
             </Link>
-            <Link className="nav-link  adm" to="/imagealbum">
-              Image Album
+            <Link className="nav-link  adm" to="/image">
+              Image
+            </Link>
+            <Link className="nav-link  adm" to="/album">
+              Album
             </Link>
           </nav>
         </div>
@@ -105,27 +87,29 @@ class Imagealbum extends Component {
           className="fw-bold display-4 text-center"
           style={{ color: "#168eca" }}
         >
-          Image Album
+          Image
         </h1>
         <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
-          <NavLink className="nav nav-link bu active " exact to={"/addimage"}>
-            Add Image
+          <NavLink className="nav nav-link bu active " exact to={"/Addimage"}>
+          Add Image
           </NavLink>
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
             <tr className="text-center">
-              <th scope="col">picture</th>
-              <th scope="col">Album_ID</th>
-              <th scope="col">Name</th>
+            <th scope="col">No.</th>
+              <th scope="col">Picture</th>
+              <th scope="col">Album Name</th>
               <th scope="col">Edit</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>{this.Student()}</tbody>
+          <tbody>
+            <MyAlbum />
+          </tbody>
         </Table>
       </>
     );
   }
 }
-export default Imagealbum;
+export default Image;

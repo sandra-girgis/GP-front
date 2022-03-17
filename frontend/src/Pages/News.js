@@ -32,14 +32,13 @@ class News extends Component {
         {news.map((item) => (
           <div key={item.id} className="row flip_card2 ">
             <div className="col-md-6 mt-4 rounded">
-              <img
-                src={require("../images" +
-                  item.picture
-                    .replaceAll("http://localhost:8000", "")
-                    .replaceAll("%20", " "))}
+          <img
+            src={
+              item.picture
+                .replaceAll("http://localhost:8000", "")}
                 className="img-fluid rounded-start big"
-                alt="..."
-              />
+            alt="..."
+          />
             </div>
             <div className="col-md-5">
               <div className="card-body ">

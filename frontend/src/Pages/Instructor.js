@@ -61,7 +61,7 @@ class Instructor extends Component {
             </div>
             
             <div className="ins_info fs-md-4 text-muted">
-              <span>Your Rate: {instructor.avg_rating}</span>
+              <span>Your Rate: {Math.round(instructor.avg_rating * 100)/100}</span>
               <FontAwesomeIcon className="star" icon={faStar} />
               </div>
               <div className="ins_info fs-md-4 text-muted">

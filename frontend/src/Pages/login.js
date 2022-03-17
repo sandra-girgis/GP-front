@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 class Login extends Component {
 state = {
@@ -92,9 +91,6 @@ render() {
             Log in
             </button>
         </div>
-        <NavLink className="nav nav-link pink bl" exact to="/register">
-            register
-        </NavLink>
         </div>
     </div>
     );

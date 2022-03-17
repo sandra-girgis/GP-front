@@ -1,13 +1,11 @@
-import React from "react";
+import React, { useState, useEffect , Component} from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "./Piano.css";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faStar } from "@fortawesome/free-solid-svg-icons";
-// import { faRegStar } from "@fortawesome/free-solid-svg-icons";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
-
+import axios from "axios";
 import img1 from "../images/home.jpg";
 import img6 from "../images/12.jpg";
 import img3 from "../images/v2.jpg";
@@ -18,8 +16,57 @@ import img8 from "../images/v1.jpg";
 import img9 from "../images/5.jpg";
 import img10 from "../images/17.jpg";
 import img11 from "../images/18.jpg";
+import { useAsync } from "react-async";
+const loadUsers = async () =>
+  await fetch("http://localhost:8000/Ensan/news/")
+    .then((res) => (res.ok ? res : Promise.reject(res)))
+    .then((res) => res.json())
+    .then((res) => res[(res.length)-1]);
+const MyNews = () => {
+  const { data, error, isLoading } = useAsync({
+    promiseFn: loadUsers,
+  });
+  if (isLoading) return "Loading...";
+  if (error) return `Something went wrong: ${error.message}`;
+  if (data)
+  return (
+      <div className="container col-md-12 flip-card shadow px-0">
+        <div className="row g-0 ">
+          <div className="col-md-5">
+            <img
+              src={
+                data.picture
+                  .replaceAll("http://localhost:8000", "")}
+              className="img-fluid rounded-start"
+              alt="event"
+            />
+          </div>
+          <div className="col-md-6">
+            <div className="card-body">
+              <h3 className="card-title fw-bold" style={{ color: "#168eca" }}>
+                News
+              </h3>
+              <h5 className="card-title fw-bold">
+              {data.title}
+              </h5>
+              <p className="card-text">
+                {data.content}
+              </p>
+              <div className="col-3  butt">
+                <NavLink className="show btn bu" exact to={"/news"}>
+                  All Events{" "}
+                  <FontAwesomeIcon className="" icon={faAngleDoubleRight} />
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  );
+}
+class Home extends Component {
 
-export const Home = () => {
+  render() {
   return (
     <>
       <div className="boback">
@@ -80,39 +127,11 @@ export const Home = () => {
           Our Events
         </h2>
         <br></br>
-        <div className="container col-md-12 flip-card shadow px-0">
-          <div className="row g-0 ">
-            <div className="col-md-5">
-              <img
-                src="https://media.istockphoto.com/photos/happy-girls-playing-piano-picture-id1050429232?k=20&m=1050429232&s=612x612&w=0&h=t7s2SBFV3MP9hrHxy1H5WLqqm_26S07qEuclyWeBQ0c="
-                className="img-fluid rounded-start"
-                alt="event"
-              />
-            </div>
-            <div className="col-md-6">
-              <div className="card-body">
-                <h5 className="card-title fw-bold" style={{ color: "#168eca" }}>
-                  News
-                </h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <div className="col-3  butt">
-                  <NavLink className="show btn bu" exact to={"/news"}>
-                    All Events{" "}
-                    <FontAwesomeIcon className="" icon={faAngleDoubleRight} />
-                  </NavLink>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <MyNews />
         <br></br>
         <div className="container my-5">
           <marquee loop width="10%"></marquee>
-          <marquee loop vspace="20" direction="up" scrollamount="7" width="35%">
+          <marquee loop vspace="20" direction="up" scrollamount="10" width="35%">
             <div className="row">
               <div className=" row mb-3">
                 <div className="san1"></div>
@@ -129,7 +148,7 @@ export const Home = () => {
             </div>
           </marquee>
           <marquee loop width="10%"></marquee>
-          <marquee loop vspace="20" direction="down" width="35%">
+          <marquee loop vspace="20" direction="down" scrollamount="10" width="35%">
             <div className="row">
               <div className="row mb-3">
                 <div className="san1"></div>
@@ -142,41 +161,6 @@ export const Home = () => {
               </div>
               <div className="row mb-3">
                 <div className="san4"></div>
-              </div>
-            </div>
-          </marquee>
-          <marquee loop width="10%"></marquee>
-          <marquee loop width="10%"></marquee>
-          <marquee loop direction="up" scrollamount="7" width="35%">
-            <div className="row">
-              <div className="row mb-3">
-                <div className="san1"></div>
-              </div>
-              <div className="row mb-3">
-                <div className="san2"></div>
-              </div>
-              <div className="row mb-3">
-                <div className="san3"></div>
-              </div>
-              <div className="row mb-3">
-                <div className="san4"></div>
-              </div>
-            </div>
-          </marquee>
-          <marquee loop width="10%"></marquee>
-          <marquee loop direction="down" width="35%">
-            <div className="row">
-              <div className=" row mb-3">
-                <div className="san4"></div>
-              </div>
-              <div className=" row mb-3">
-                <div className="san3"></div>
-              </div>
-              <div className=" row mb-3">
-                <div className="san2"></div>
-              </div>
-              <div className=" row mb-3">
-                <div className="san1"></div>
               </div>
             </div>
           </marquee>
@@ -186,136 +170,5 @@ export const Home = () => {
     </>
   );
 };
-
-{
-  /* <marquee loop width = "10%"></marquee>
-<marquee loop vspace="20" direction="right" scrollamount="7" width = "35%">
-  <div className="row">
-    <div className="col-3">
-      <div className="san1"></div>
-    </div>
-    <div className="col-3">
-      <div className="san2"></div>
-    </div>
-    <div className="col-3">
-      <div className="san3"></div>
-    </div>
-    <div className="col-3">
-      <div className="san4"></div>
-    </div>
-  </div>
-</marquee>
-<marquee loop width = "10%">
-</marquee>
-<marquee loop vspace="20" direction="right" width = "35%">
-  <div className="row">
-    <div className="col-3">
-      <div className="san1"></div>
-    </div>
-    <div className="col-3">
-      <div className="san2"></div>
-    </div>
-    <div className="col-3">
-      <div className="san3"></div>
-    </div>
-    <div className="col-3">
-      <div className="san4"></div>
-    </div>
-  </div>
-</marquee>
-<marquee loop width = "10%"></marquee>
-<marquee loop width = "10%"></marquee>
-<marquee loop direction="left" scrollamount="7" width = "35%">
-  <div className="row">
-    <div className="col-3">
-      <div className="san1"></div>
-    </div>
-    <div className="col-3">
-      <div className="san2"></div>
-    </div>
-    <div className="col-3">
-      <div className="san3"></div>
-    </div>
-    <div className="col-3">
-      <div className="san4"></div>
-    </div>
-  </div>
-</marquee>
-<marquee loop width = "10%">
-</marquee>
-<marquee loop direction="left" width = "35%">
-  <div className="row">
-    <div className="col-3">
-      <div className="san4"></div>
-    </div>
-    <div className="col-3">
-      <div className="san3"></div>
-    </div>
-    <div className="col-3">
-      <div className="san2"></div>
-    </div>
-    <div className="col-3">
-      <div className="san1"></div>
-    </div>
-  </div>
-</marquee>
-<marquee loop width = "10%"></marquee> */
 }
-
-{
-  /* <div className="container mt-5">
-<div className="row mt-5 mb-5 justify-content-center">
-  <div className="flip-box col-md-6 me-5 mb-5">
-    <div className="flip-box-inner">
-      <div className="flip-box-front mt-5">
-        <img
-          src="https://media.istockphoto.com/photos/mature-female-ballet-teacher-demonstrating-dancing-moves-in-front-of-picture-id1146322678?k=20&m=1146322678&s=612x612&w=0&h=R_YL0zQB4_m23eRJnvfxSDDwUaKZNv1u26Cnz6bwUkE="
-          alt="art"
-          className="img"
-        />
-      </div>
-      <div className="flip-box-back mt-5">
-        <img src={img8} alt="art" className="img" />
-      </div>
-    </div>
-  </div>
-  <div className="flip-box col-md-6 mb-5">
-    <div className="flip-box-inner">
-      <div className="flip-box-front mt-5">
-        <img src={img9} alt="art" className="img" />
-      </div>
-      <div className="flip-box-back mt-5">
-        <img
-          src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134="
-          alt="art"
-          className="img"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-
-<div className="row mt-5 mb-5 justify-content-center">
-  <div className="flip-box col-md-6 me-5 mb-5">
-    <div className="flip-box-inner">
-      <div className="flip-box-front mt-5">
-        <img src={img7} alt="art" className="img" />
-      </div>
-      <div className="flip-box-back mt-5">
-        <img src={img6} alt="art" className="img" />
-      </div>
-    </div>
-  </div>
-  <div className="flip-box col-md-6 mb-5">
-    <div className="flip-box-inner">
-      <div className="flip-box-front mt-5">
-        <img src={img10} alt="art" className="img" />
-      </div>
-      <div className="flip-box-back mt-5">
-        <img src={img11} alt="art" className="img" />
-      </div>
-    </div>
-  </div>
-</div>
-</div> */
-}
+export default Home;

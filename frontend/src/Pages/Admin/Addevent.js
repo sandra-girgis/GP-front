@@ -3,8 +3,7 @@ import axios from "axios";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
-import { NavLink } from "react-router-dom";
-export const Addevent = () => {
+export const Addevent = (props) => {
   const [picture, setPicture] = useState(null);
   const [title, setTitle] = useState(null);
   const [content, setContent] = useState(null);
@@ -28,6 +27,7 @@ export const Addevent = () => {
     }).then((response) => {
       console.log(response);
     });
+    props.history.push("/event");
   };
   useEffect(() => {
     category();
@@ -94,13 +94,7 @@ export const Addevent = () => {
           style={{ backgroundColor: "#168eca" }}
           onClick={addNewStudent}
         >
-          <NavLink
-            className="nav nav-link bu active "
-            exact
-            to={"/event"}
-          >
             Submit
-          </NavLink>
         </Button>
       </Form>
     </div>
