@@ -1,52 +1,30 @@
 import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
+import axios from "axios";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-class Students extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      StudentList: [],
-      id: 0,
-    };
-  }
-  async componentDidMount() {
-    try {
-      const StudentRes = await fetch("http://localhost:8000/Ensan/students/");
-      const StudentList = await StudentRes.json();
-      this.setState({
-        StudentList,
-      });
-    } catch (e) {
-      console.log(e);
-    }
-  }
 
-  // async componentDidUpdate() {
-  //   try {
-  //     const StudentRes = await fetch("http://localhost:8000/Ensan/students/");
-  //     const StudentList = await StudentRes.json();
-  //     this.setState({
-  //       StudentList,
-  //     });
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // }
+const MyStudent = (props) => {
+  const [students, setStudents] = React.useState([]);
+  const fetchStudents = async () => {
+    const result = await axios.get("http://localhost:8000/Ensan/students/");
+    console.log(result.data);
+    setStudents(result.data);
+  };
+  useEffect(() => {
+    fetchStudents();
+  }, []);
 
-  delete = (e) => {
-    fetch(`http://localhost:8000/Ensan/students/${e.target.id}`, {
-      method: "delete",
-    })
-      .then((data) => data.json())
-      .catch((error) => console.error(error));
+  const deleted = async (e) => {
+    await axios.delete(`http://localhost:8000/Ensan/students/${e.target.id}`);
+    fetchStudents();
   };
 
-  Student = () => {
-    const students = this.state.StudentList;
-    return students.map((item) => (
+  return (
+    students.map((item) => 
       <tr key={item.id}>
         <td>{item.id}</td>
         <td>{item.username}</td>
@@ -78,16 +56,23 @@ class Students extends Component {
           <button
               id={item.id}
               className="butt"
-              onClick={this.delete}
+              onClick={deleted}
             >
               Delete
             </button>
           </Link>
         </td>
       </tr>
-    ));
-  };
+  ));
+};
 
+class Students extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        InstructorList: [],
+    };
+  }
   render() {
     return (
       <>
@@ -97,13 +82,16 @@ class Students extends Component {
               Instructors
             </Link>
             <Link className="nav-link  adm" to="/students">
-              Students
+              Student
             </Link>
             <Link className="nav-link  adm" to="/event">
               Events
             </Link>
-            <Link className="nav-link  adm" to="/imagealbum">
-              Image Album
+            <Link className="nav-link  adm" to="/image">
+              Image
+            </Link>
+            <Link className="nav-link  adm" to="/album">
+              Album
             </Link>
           </nav>
         </div>
@@ -115,13 +103,13 @@ class Students extends Component {
         </h1>
         <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
           <NavLink className="nav nav-link bu active " exact to={"/addstudent"}>
-            Add Student
-          </NavLink>
+          Add Student
+                    </NavLink>
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
             <tr className="text-center">
-              <th scope="col">Id</th>
+            <th scope="col">Id</th>
               <th scope="col">Student-Name</th>
               <th scope="col">Email</th>
               <th scope="col">Phone-Number</th>
@@ -131,7 +119,9 @@ class Students extends Component {
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>{this.Student()}</tbody>
+          <tbody>
+            <MyStudent />
+          </tbody>
         </Table>
       </>
     );
