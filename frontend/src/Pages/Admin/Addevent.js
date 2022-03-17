@@ -2,16 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {Form, Col, InputGroup, Button} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavLink } from "react-router-dom";
-import * as yup from "yup";
-import { Formik } from "formik";
-export const Addevent = () => {
-  const schema = yup.object().shape({
-    title: yup.string().required(),
-    content: yup.string().required(),
-    category: yup.string().required(),
-    picture: yup.string().required()
-  })
+import Button from "react-bootstrap/Button";
+export const Addevent = (props) => {
   const [picture, setPicture] = useState(null);
   const [title, setTitle] = useState(null);
   const [content, setContent] = useState(null);
@@ -35,6 +27,7 @@ export const Addevent = () => {
     }).then((response) => {
       console.log(response);
     });
+    props.history.push("/event");
   };
   useEffect(() => {
     category();
@@ -119,13 +112,7 @@ export const Addevent = () => {
           style={{ backgroundColor: "#168eca" }}
           onClick={addNewStudent}
         >
-          <NavLink
-            className="nav nav-link bu active "
-            exact
-            to={"/event"}
-          >
             Submit
-          </NavLink>
         </Button>
       </Form>
       )}

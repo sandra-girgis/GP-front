@@ -29,20 +29,13 @@ class Workshops extends Component {
     return Albums.map((item) => (
       <div className="col-md-4 key={item.id} ">
         <div className="card mb-4 shadow-sm">
-          {item.album.map((i) => (
-            <>
-              <div className="bd-placeholder-img">
-                <img
-                  src={require("../images/" +
-                    i.pic
-                      .replaceAll("http://localhost:8000", "")
-                      .replaceAll("%20", " "))}
-                  className="img-fluid rounded-start big"
-                  alt="..."
-                />
-              </div>
-            </>
-          ))}
+        <div className="bd-placeholder-img">
+            <img
+              src={item.album[0].replaceAll("http://localhost:8000", "")}
+              className="img-fluid rounded-start big"
+              alt="empty album"
+            />
+          </div>
           <div className="card-body">
             <p className="card-text">
               {item.name}
@@ -116,10 +109,12 @@ function Example(props) {
               {data.map((item) => (
                 <Carousel.Item key={item.id}>
                   <img
-                    src={require("../images" +
-                      item.picture.replaceAll("%20", " "))}
-                    className="d-block w-100" alt="..."
-                  />
+                      src={
+                        item.picture
+                          .replaceAll("http://localhost:8000", "")}
+                          className="d-block w-100"
+                      alt="..."
+                    />
                 </Carousel.Item>
               ))}
             </Carousel>

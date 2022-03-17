@@ -2,16 +2,14 @@ import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
-import { useEffect ,useState} from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-const MyInstructor = (props) => {
+const MyAlbum = () => {
   const [students, setStudents] = React.useState([]);
   const fetchStudents = async () => {
-    const result = await axios.get("http://localhost:8000/Ensan/instructors/");
-    console.log(result.data);
+    const result = await axios.get("http://localhost:8000/Ensan/albums/");
     setStudents(result.data);
   };
   useEffect(() => {
@@ -19,45 +17,41 @@ const MyInstructor = (props) => {
   }, []);
 
   const deleted = async (e) => {
-    await axios.delete(`http://localhost:8000/Ensan/instructors/${e.target.id}`);
+    await axios.delete(`http://localhost:8000/Ensan/albums/${e.target.id}`);
     fetchStudents();
   };
 
   return (
-    students.map((item) => 
-    <tr key={item.id}>
-      <td>{item.id}</td>
-        <td>{item.username}</td>
-        <td>{item.email}</td>
-        <td>{item.phoneNumber}</td>
-        <td>{item.salary}</td>
-        <td>{Math.round(item.avg_rating * 100)/100}</td>
-      <td>
-        <button className="butt" style={{ backgroundColor: "#168eca" }}>
-          Edit
-        </button>
-      </td>
-      <td>
-        <Link to="#" style={{ textDecoration: "none" }}>
-          <button
-            id={item.id}
-            className="butt"
-            style={{ backgroundColor: "#168eca" }}
-            onClick={deleted}
-          >
-            Delete
-          </button>
-        </Link>
-      </td>
-    </tr>
+    students.map((item,index) =>
+      <tr key={item.id}>
+        <td>{index+1}</td>
+        <td>{item.Collection_ID}</td>
+        <td>{item.name}</td>
+        <td>
+          <Link to="/addalbum" style={{ textDecoration: "none" }}>
+            <button className="butt">Edit</button>
+          </Link>
+        </td>
+        <td>
+          <Link to="#" style={{ textDecoration: "none" }}>
+            <button
+              id={item.id}
+              className="butt"
+              onClick={deleted}
+            >
+              Delete
+            </button>
+          </Link>
+        </td>
+      </tr>
   ));
 };
 
-class Instructors extends Component {
+class Album extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        InstructorList: [],
+      EventList: [],
     };
   }
   render() {
@@ -86,32 +80,29 @@ class Instructors extends Component {
           className="fw-bold display-4 text-center"
           style={{ color: "#168eca" }}
         >
-          Instructors
+          Image
         </h1>
         <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
-          <NavLink className="nav nav-link bu active " exact to={"/addinstructor"}>
-          Add Instructors
-                    </NavLink>
+          <NavLink className="nav nav-link bu active " exact to={"/addalbum"}>
+          Add Album
+          </NavLink>
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
             <tr className="text-center">
-            <th scope="col">Id</th>
-              <th scope="col">Name</th>
-              <th scope="col">Email</th>
-              <th scope="col">Phone No.</th>
-              <th scope="col">salary</th>
-              <th scope="col">Rate</th>
+            <th scope="col">No.</th>
+              <th scope="col">Collection Name</th>
+              <th scope="col">Album Name</th>
               <th scope="col">Edit</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>
           <tbody>
-            <MyInstructor />
+            <MyAlbum />
           </tbody>
         </Table>
       </>
     );
   }
 }
-export default Instructors;
+export default Album;
