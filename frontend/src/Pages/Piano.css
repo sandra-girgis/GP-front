@@ -126,6 +126,17 @@
     background-image: url("../images/g4.jpg");
   }
 }
+.san6{
+  animation-name: ex6;
+}
+@keyframes ex6{
+  from {
+    background-image: url("../images/2.jpg");
+  }
+  to {
+    background-image: url("../images/3.jpg");
+  }
+}
 
 
 
