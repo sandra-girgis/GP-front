@@ -134,7 +134,12 @@ export const Home = () => {
               <div className="row mb-3">
                 <div className="san5"></div>
               </div>
-        
+              <div className="row mb-3">
+                <div className="san6"></div>
+              </div>
+             
+            </div>
+          </marquee>
           {/* {/* <marquee loop width="10%"></marquee>
           {/* <marquee loop width="10%"></marquee>
           <marquee loop direction="up" scrollamount="7" width="35%">
