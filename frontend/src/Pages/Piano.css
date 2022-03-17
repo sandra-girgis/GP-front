@@ -104,6 +104,29 @@
   }
 }
 
+.san5,
+.san6,
+.san7,
+.san8{
+  width:30vw;
+  height: 20vw;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.san5{
+  animation-name: ex5;
+}
+@keyframes ex5{
+  from {
+    background-image: url("../images/00.jpg");
+  }
+  to {
+    background-image: url("../images/g4.jpg");
+  }
+}
+
 
 
 
