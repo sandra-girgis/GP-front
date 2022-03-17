@@ -137,7 +137,12 @@ export const Home = () => {
               <div className="row mb-3">
                 <div className="san6"></div>
               </div>
-             
+              <div className="row mb-3">
+                <div className="san7"></div>
+              </div>
+              <div className="row mb-3">
+                <div className="san8"></div>
+              </div>
             </div>
           </marquee>
           {/* {/* <marquee loop width="10%"></marquee>
