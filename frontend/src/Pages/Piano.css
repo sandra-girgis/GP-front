@@ -47,60 +47,121 @@
   border: 1px ridge rgb(240, 191, 229);
 }
 
-/* The animation code */
-@keyframes example {
+
+.san1,
+.san2,
+.san3,
+.san4{
+  width:30vw;
+  height: 20vw;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.san1{
+  animation-name: ex1;
+}
+@keyframes ex1{
   from {
-    transform: rotateY(0deg);
+    background-image: url("../images/v2.jpg");
   }
   to {
-    transform: rotateY(180deg);
+    background-image: url("../images/k6.jpg");
   }
 }
-/* The element to apply the animation to */
-
-  .flip-box-inner {
-    position: relative; 
-    text-align: center;
-    transform-style: preserve-3d;
-    animation-name: example2;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-  } 
-  /* .flip-box-inner:hover
-  {
-    animation-duration: 6s;
-  } */
-.flip-box-front, .flip-box-back { 
-    position: absolute;
-    backface-visibility: hidden;
+.san2{
+  animation-name: ex2;
+}
+@keyframes ex2{
+  from {
+    background-image: url("../images/c2.jpg");
   }
+  to {
+    background-image: url("../images/kkids.jpg");
+  }
+}
+.san3{
+  animation-name: ex3;
+}
+@keyframes ex3{
+  from {
+    background-image: url("../images/v1.jpg");
+  }
+  to {
+    background-image: url("../images/5.jpg");
+  }
+}
+.san4{
+  animation-name: ex4;
+}
+@keyframes ex4{
+  from {
+    background-image: url("../images/17.jpg");
+  }
+  to {
+    background-image: url("../images/18.jpg");
+  }
+}
 
-.flip-box {
-  width: 20vw;
+.san5,
+.san6,
+.san7,
+.san8{
+  width:30vw;
   height: 20vw;
-  animation-name: example;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  animation-duration: 3s;
   animation-iteration-count: infinite;
+}
+.san5{
+  animation-name: ex5;
+}
+@keyframes ex5{
+  from {
+    background-image: url("../images/00.jpg");
+  }
+  to {
+    background-image: url("../images/g4.jpg");
+  }
+}
+.san6{
+  animation-name: ex6;
+}
+@keyframes ex6{
+  from {
+    background-image: url("../images/2.jpg");
+  }
+  to {
+    background-image: url("../images/3.jpg");
+  }
+}
+.san7{
+  animation-name: ex7;
+}
+@keyframes ex7{
+  from {
+    background-image: url("../images/ws.jpg");
+  }
+  to {
+    background-image: url("../images/6.jpg");
+  }
+}
+.san8{
+  animation-name: ex8;
+}
+@keyframes ex8{
+  from {
+    background-image: url("../images/100.jpg");
+  }
+  to {
+    background-image: url("../images/11.jpg");
+  }
 }
 
-.flip-box-inner {
-  position: relative;
-  text-align: center;
-  transform-style: preserve-3d;
-  animation-name: example2;
-  /* animation-duration: 6s; */
-  animation-iteration-count: infinite;
-}
-.flip-box-inner:hover {
-  animation-duration: 6s;
-}
-.flip-box-front,
-.flip-box-back {
-  position: absolute;
-  backface-visibility: hidden;
-}
-.flip-box-back {
-  transform: rotateY(180deg);
-}
+
+
 .img {
   width: 22vw;
   height: 18vw;
@@ -257,6 +318,18 @@ th {
 .star {
   color: rgb(238, 234, 9);
 }
+
+.Angry{
+  color: #168eca;
+}
+.Heart {
+  color: rgb(238, 82, 9);
+}
+.green{
+color:rgb(32, 240, 32);
+}
+
+
 /* .star:{
 color:rgb(32, 240, 32);
 } */

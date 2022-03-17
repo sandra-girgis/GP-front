@@ -3,12 +3,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Piano.css";
 import Card from "react-bootstrap/Card";
 import { withRouter } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faStar,
+  faFaceSadTear,
+  faFaceGrinHearts,
+} from "@fortawesome/free-solid-svg-icons";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios";
+
 class Student extends Component {
   constructor(props) {
     super(props);
     this.state = {
       InstructorList: [],
       ins: [],
+      stars: "",
     };
   }
   async componentDidMount() {
@@ -26,8 +38,27 @@ class Student extends Component {
       console.log(e);
     }
   }
-  update = (e) => {
+  update = () => {
     this.props.history.push("/passtd");
+  };
+  change = (e) => {
+    this.setState({
+      stars: parseInt(e.target.value),
+    });
+  };
+  rate = async (e) => {
+    let formField = new FormData();
+    formField.append("stars", parseInt(this.state.stars));
+    formField.append("student", parseInt(sessionStorage.id));
+    formField.append("instructor", parseInt(e.target.id));
+
+    await axios({
+      method: "post",
+      url: "http://localhost:8000/Ensan/ratings/",
+      data: formField,
+    }).then((response) => {
+      console.log(response);
+    });
   };
   render() {
     const instructor = this.state.InstructorList;
@@ -87,6 +118,54 @@ class Student extends Component {
                     <Card.Text className="text-muted">
                       Category : {i.CategoryName}
                     </Card.Text>
+                    <Card.Text className="text-muted">
+                      Instructor's Name : {i.Instructor_ID}
+                    </Card.Text>
+                    {i.Rating ? (
+                      <Card.Text className="text-muted">
+                        Instructor's Rate : {i.Rating}
+                        <FontAwesomeIcon className="star" icon={faStar} />
+                      </Card.Text>
+                    ) : (
+                      <Form className="mt-3 gx-2">
+                        <Form.Label style={{ color: "#168eca" }}>
+                        Instructor's Rate :
+                        </Form.Label>
+                        <Form.Group
+                          className=" mb-3 "
+                          controlId="exampleForm.ControlInput1"
+                        >
+                          <Form.Control
+                            className="form-control col-6"
+                            type="number"
+                            name="stars"
+                            value={this.state.stars}
+                            onChange={this.change}
+                          />
+                          <span className="input-group-text justify-content-center col-6">
+                            <FontAwesomeIcon
+                            className="Angry d-inline  "
+                            icon={faFaceSadTear}
+                          />
+                          <div className="green d-inline align-top">
+                            1 2 3 4 5
+                          </div>
+                          <FontAwesomeIcon
+                            className="Heart d-inline  "
+                            icon={faFaceGrinHearts}
+                          />
+                          </span>
+                        </Form.Group>
+                        <Button
+                          className="btn-outline-light btn-lg butt"
+                          type="submit"
+                          id={i.InsID}
+                          onClick={this.rate}
+                        >
+                          Submit
+                        </Button>
+                      </Form>
+                    )}
                   </Card.Body>
                 </Card>
               </>

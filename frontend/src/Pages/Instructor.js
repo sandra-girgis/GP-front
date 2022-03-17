@@ -59,9 +59,15 @@ class Instructor extends Component {
             <div className="ins_info fs-md-4 text-muted">
               Salary:{instructor.salary}
             </div>
-            <div className="ins_info">
+            
+            <div className="ins_info fs-md-4 text-muted">
+              <span>Your Rate: {instructor.avg_rating}</span>
               <FontAwesomeIcon className="star" icon={faStar} />
+              </div>
+              <div className="ins_info fs-md-4 text-muted">
+              <span>No. of Students rated you :{instructor.no_of_ratings}</span>
             </div>
+
             <button
               id={instructor.id}
               onClick={this.update}

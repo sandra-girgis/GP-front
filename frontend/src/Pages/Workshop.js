@@ -4,75 +4,64 @@ import Carousel from "react-bootstrap/Carousel";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import img1 from "../images/k6.jpg"
-import img4 from "../images/i6.jpg";
-import img2 from "../images/i19.jpg";
-import img3 from "../images/i11.jpg";
+import img4 from "../images/i6.jpg"
+import img2 from "../images/i19.jpg"
+import img3 from "../images/i11.jpg"
+import img5 from "../images/ws.jpg"
 
-export const Workshop = () => {
-  return (
-    <>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 "
-            src="https://images.unsplash.com/photo-1560831340-b9679dc9e9f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXJ0JTIwd29ya3Nob3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-            alt="First slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://media.istockphoto.com/photos/cropped-image-of-african-american-parents-and-daughter-painting-eggs-picture-id935695902?k=20&m=935695902&s=612x612&w=0&h=gxNhsYXnJL0YT8rFbhKNpX8bDXhpREz9_4zJzAOIvb8="
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://media.istockphoto.com/photos/two-kids-painting-easter-eggs-picture-id1138260123?k=20&m=1138260123&s=612x612&w=0&h=VTOBf26wc5fCHlHxMULZc8gEYljJdYqX_5Duy2GCLe0= "
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://media.istockphoto.com/photos/little-kids-holding-christmas-character-decorated-popsicle-sticks-picture-id881475192?k=20&m=881475192&s=612x612&w=0&h=E1kbcHAs-vuOcI4cO4s0ZR4dJQrv0QMjiO-HeyAYuj0="
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://media.istockphoto.com/photos/online-dance-class-homeschooling-during-pandemic-coronavirus-picture-id1217851796?k=20&m=1217851796&s=612x612&w=0&h=f-g6aA-9h9zBFRK-ZeLNNZr0m4AwUIW6NcYTtmbHGfc="
-            alt="Second slide"
-          />
-        </Carousel.Item>
-      </Carousel>
-      <div className="container mt-5 mb-5">
-        <h1 className="mb-5 fw-bold display-4" style={{ color: "#ee4a8b" }}>
-          About our Workshops
-        </h1>
-        <div className="container mb-5 flip-card">
-          <div className="row g-0 ">
-            <div className="col-md-4 border rounded">
-              <img
-                src="https://media.istockphoto.com/photos/elementary-school-students-picture-id1153552608?k=20&m=1153552608&s=612x612&w=0&h=RKOLQdh12l8mqLM0CsN3DNuIZB6xbXSDzQ9m1rbBD5Q="
-                className="img-fluid rounded-start"
-                alt="kids"
-              />
-            </div>
-            <div className="col-md-6" style={{ backgroundColor: "#fff2f7" }}>
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: "#168eca" }}>
-                  Our Classes
-                </h5>
-                <p className="card-text">
-                  We offer weekly craft workshops for kids from 5 years old
-                </p>
+export const Workshop = () => { 
+  return (<>
+  <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100 " 
+      src="https://images.unsplash.com/photo-1560831340-b9679dc9e9f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXJ0JTIwd29ya3Nob3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+      alt="First slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://media.istockphoto.com/photos/cropped-image-of-african-american-parents-and-daughter-painting-eggs-picture-id935695902?k=20&m=935695902&s=612x612&w=0&h=gxNhsYXnJL0YT8rFbhKNpX8bDXhpREz9_4zJzAOIvb8="
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://media.istockphoto.com/photos/two-kids-painting-easter-eggs-picture-id1138260123?k=20&m=1138260123&s=612x612&w=0&h=VTOBf26wc5fCHlHxMULZc8gEYljJdYqX_5Duy2GCLe0= "
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src="https://media.istockphoto.com/photos/little-kids-holding-christmas-character-decorated-popsicle-sticks-picture-id881475192?k=20&m=881475192&s=612x612&w=0&h=E1kbcHAs-vuOcI4cO4s0ZR4dJQrv0QMjiO-HeyAYuj0="
+      alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+     src={img5}
+      alt="Second slide"/>
+  </Carousel.Item>
+</Carousel>
+       <div className="container mt-5 mb-5">
+       <h1 className="mb-5 fw-bold display-4" style={{color:"#ee4a8b"}}> About our Workshops</h1>
+              <div className="container mb-5 flip-card">
+                  <div className="row g-0 ">
+                    <div className="col-md-4 border rounded">
+                      <img  src="https://media.istockphoto.com/photos/elementary-school-students-picture-id1153552608?k=20&m=1153552608&s=612x612&w=0&h=RKOLQdh12l8mqLM0CsN3DNuIZB6xbXSDzQ9m1rbBD5Q="
+                      className="img-fluid rounded-start" alt="kids"/>
+                    </div>
+                    <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
+                      <div className="card-body">
+                        <h5 className="card-title"style={{color:"#168eca"}}>Our Classes</h5>
+                        <p className="card-text">We offer weekly craft workshops for kids from 5 years old</p>
+                    </div>
+                    </div>
+                  </div>
               </div>
             </div>
-          </div>
-        </div>
+          {/* </div>
+        </div> */}
         <div className="container mb-5 flip-card">
           <div className="row g-0 ">
             <div
@@ -127,7 +116,7 @@ export const Workshop = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
       <div className="container mb-5">
         <h1 className="mb-5 fw-bold display-4" style={{ color: "#ee4a8b" }}>
           About Our Instructors
