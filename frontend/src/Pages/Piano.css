@@ -148,7 +148,17 @@
     background-image: url("../images/6.jpg");
   }
 }
-
+.san8{
+  animation-name: ex8;
+}
+@keyframes ex8{
+  from {
+    background-image: url("../images/100.jpg");
+  }
+  to {
+    background-image: url("../images/11.jpg");
+  }
+}
 
 
 
