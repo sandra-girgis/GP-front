@@ -24,14 +24,24 @@ import { Piano } from "./Pages/Piano";
 import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
 import { Joinus } from "./Pages/Joinus";
-import  Events  from "./Pages/Admin/Events";
-import Imagealbum from "./Pages/Admin/Imagealbum";
+// import  Events  from "./Pages/Admin/Events";
+// import Imagealbum from "./Pages/Admin/Image";
+// import Instructors2 from "./Pages/Admin/Instructors2";
+// import Students from "./Pages/Admin/Students";
+// import { Addstudent } from "./Pages/Admin/Addstudent";
+// import { Addinstructor2 } from "./Pages/Admin/Addinstructor2";
+// import { Addimage} from "./Pages/Admin/Addimage";
+// import  { Addevent }  from "./Pages/Admin/Addevent";
+import Events from "./Pages/Admin/Events";
+import Image from "./Pages/Admin/Image";
+import Album from "./Pages/Admin/Album";
 import Instructors from "./Pages/Admin/Instructors";
 import Students from "./Pages/Admin/Students";
 import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
-import { Addimage} from "./Pages/Admin/Addimage";
-import  { Addevent }  from "./Pages/Admin/Addevent";
+import { Addimage } from "./Pages/Admin/Addimage";
+import { Addalbum } from "./Pages/Admin/Addalbum";
+import { Addevent } from "./Pages/Admin/Addevent";
 
 
 
@@ -73,13 +83,10 @@ function App() {
             <Route path="/exhibitions" exact component={Exhibitions} />
             <Route path="/workshops" exact component={Workshops} />
             <Route path="/joinus" exact component={Joinus} />
-            {sessionStorage.token ? (
-              <>
-                {sessionStorage.is_superuser === "true" ? (
-                  <>
-                    <Route path="/event" exact component={Events} />
+            
+                    {/* <Route path="/event" exact component={Events} />
                     <Route path="/imagealbum" exact component={Imagealbum} />
-                    <Route path="/instructors" exact component={Instructors} />
+                    <Route path="/instructors" exact component={Instructors2} />
                     <Route path="/students" exact component={Students} />
                     <Route path="/addstudent" exact component={Addstudent} />
                     <Route path="/addevent" exact component={Addevent} />
@@ -87,26 +94,29 @@ function App() {
                     <Route
                       path="/addinstructor"
                       exact
-                      component={Addinstructor}
-                    />
-                  </>
-                ) : sessionStorage.is_staff === "true" ? (
-                  <>
+                      component={Addinstructor2}
+                   /> */}
+            <Route path="/event" exact component={Events} />
+            <Route path="/image" exact component={Image} />
+            <Route path="/album" exact component={Album} />
+            <Route path="/instructors" exact component={Instructors} />
+            <Route path="/students" exact component={Students} />
+            <Route path="/addstudent" exact component={Addstudent} />
+            <Route path="/addevent" exact component={Addevent} />
+            <Route path="/addimage" exact component={Addimage} />
+            <Route path="/addalbum" exact component={Addalbum} />
+            <Route path="/addinstructor" exact component={Addinstructor} />
+
                   <Route path="/instructor" exact component={Instructor} />
                   <Route path="/pasins" exact component={Pasins} />
-                  </>
-                ) : (
-                  <>
+                 
                     <Route path="/student" exact component={Student} />
                     <Route path="/passtd" exact component={Passtd} />
-                  </>
-                )}
-              </>
-            ) : (
+                  
               <Route path="/login" exact>
                 <Login />
               </Route>
-            )}
+            
             <Route path="/register" exact component={Register} />
           </Switch>
           <Footer />

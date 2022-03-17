@@ -1,99 +1,65 @@
 import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
+import axios from "axios";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+const MyInstructor = (props) => {
+  const [students, setStudents] = React.useState([]);
+  const fetchStudents = async () => {
+    const result = await axios.get("http://localhost:8000/Ensan/instructors/");
+    console.log(result.data);
+    setStudents(result.data);
+  };
+  useEffect(() => {
+    fetchStudents();
+  }, []);
+
+  const deleted = async (e) => {
+    await axios.delete(`http://localhost:8000/Ensan/instructors/${e.target.id}`);
+    fetchStudents();
+  };
+
+  return (
+    students.map((item) => 
+    <tr key={item.id}>
+      <td>{item.id}</td>
+        <td>{item.username}</td>
+        <td>{item.email}</td>
+        <td>{item.phoneNumber}</td>
+        <td>{item.salary}</td>
+        <td>{Math.round(item.avg_rating * 100)/100}</td>
+      <td>
+        <button className="butt" style={{ backgroundColor: "#168eca" }}>
+          Edit
+        </button>
+      </td>
+      <td>
+        <Link to="#" style={{ textDecoration: "none" }}>
+          <button
+            id={item.id}
+            className="butt"
+            style={{ backgroundColor: "#168eca" }}
+            onClick={deleted}
+          >
+            Delete
+          </button>
+        </Link>
+      </td>
+    </tr>
+  ));
+};
 
 class Instructors extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      InstructorList: [],
-      id: 0,
+        InstructorList: [],
     };
   }
-  async componentDidMount() {
-    try {
-      const InstructorRes = await fetch(
-        "http://localhost:8000/Ensan/instructors/"
-      );
-      const InstructorList = await InstructorRes.json();
-      this.setState({
-        InstructorList,
-      });
-    } catch (e) {
-      console.log(e);
-    }
-  }
-  // async componentDidUpdate() {
-  //   try {
-  //     const InstructorRes = await fetch(
-  //       "http://localhost:8000/Ensan/instructors/"
-  //     );
-  //     const InstructorList = await InstructorRes.json();
-  //     this.setState({
-  //       InstructorList,
-  //     });
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // }
-
-  delete = (e) => {
-    fetch(`http://localhost:8000/Ensan/instructors/${e.target.id}`, {
-      method: "delete",
-    })
-      .then((data) => data.json())
-      .catch((error) => console.error(error));
-  };
-
-  Instructor = () => {
-    const instructors = this.state.InstructorList;
-    return instructors.map((item) => (
-      <tr key={item.id}>
-        <td>{item.id}</td>
-        <td>{item.username}</td>
-        <td>{item.email}</td>
-        <td>{item.phoneNumber}</td>
-        <td>
-          {item.classinfo.map((i) => (
-            <>
-              <span>{i.CategoryName}</span>
-              <br />
-            </>
-          ))}
-        </td>
-        <td>
-          {item.classinfo.map((i) => (
-            <>
-              <span>{i.ClassName}</span>
-              <br />
-            </>
-          ))}
-        </td>
-        <td>{item.salary}</td>
-        <td>
-          <Link to="/addinstructor" style={{ textDecoration: "none" }}>
-            <button className="butt">Edit</button>
-          </Link>
-        </td>
-        <td>
-          <Link to="#" style={{ textDecoration: "none" }}>
-          <button
-              id={item.id}
-              className="butt"
-              
-              onClick={this.delete}
-            >
-              Delete
-            </button>
-          </Link>
-        </td>
-      </tr>
-    ));
-  };
-
   render() {
     return (
       <>
@@ -103,13 +69,16 @@ class Instructors extends Component {
               Instructors
             </Link>
             <Link className="nav-link  adm" to="/students">
-              Students
+              Student
             </Link>
             <Link className="nav-link  adm" to="/event">
               Events
             </Link>
-            <Link className="nav-link  adm" to="/imagealbum">
-              Image Album
+            <Link className="nav-link  adm" to="/image">
+              Image
+            </Link>
+            <Link className="nav-link  adm" to="/album">
+              Album
             </Link>
           </nav>
         </div>
@@ -120,29 +89,26 @@ class Instructors extends Component {
           Instructors
         </h1>
         <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
-          <NavLink
-            className="nav nav-link bu active "
-            exact
-            to={"/addinstructor"}
-          >
-            Add Instructors
-          </NavLink>
+          <NavLink className="nav nav-link bu active " exact to={"/addinstructor"}>
+          Add Instructors
+                    </NavLink>
         </button>
         <Table striped bordered hover className="shado container mb-5">
           <thead>
             <tr className="text-center">
-              <th scope="col">Id</th>
-              <th scope="col">Instructors-Name</th>
+            <th scope="col">Id</th>
+              <th scope="col">Name</th>
               <th scope="col">Email</th>
-              <th scope="col">Phone-Number</th>
-              <th scope="col">Category</th>
-              <th scope="col">Courses</th>
+              <th scope="col">Phone No.</th>
               <th scope="col">salary</th>
+              <th scope="col">Rate</th>
               <th scope="col">Edit</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>
-          <tbody>{this.Instructor()}</tbody>
+          <tbody>
+            <MyInstructor />
+          </tbody>
         </Table>
       </>
     );

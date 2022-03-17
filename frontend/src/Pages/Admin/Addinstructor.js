@@ -10,78 +10,80 @@ import { NavLink } from "react-router-dom";
 
 //     state = {
 //         details:{
-// Instructors-Name: "",
-//  Is-Staff: "",
-//  Email: "",
-//             Phone-Number: "",
-//  Courses: "",
-//   image:"",
-//             salary:"",
-//             Bio:"",
+//          Instructors-Name: "",
+//          Is-Staff: "",
+//          Email: "",
+//          Phone-Number: "",
+//          Courses: "",
+//          image:"",
+//          salary:"",
+//          Bio:"",
 // //         }
 //     }
 // }
 // export default Addinstructor;
 
 export const Addinstructor = () => {
-return (
-    <>
-    <div className="shado mb-5 pt-3 container">
-        <Form>
-        <h3
-            className="new2 pt-2 mb-5 text-center"
-            style={{ color: "#ee4a8b" }}
-        >
-            {" "}
-            Add Instructor{" "}
-        </h3>
-        <Form.Group
-            className="mb-3 mt-5"
-            controlId="exampleForm.ControlTextarea1"
-        >
-            <Form.Label style={{ color: "#168eca" }}>
-            Instructor-Name
-            </Form.Label>
-            <Form.Control as="textarea" rows={1} />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label style={{ color: "#168eca" }}>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-            </Form.Text>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlNumber">
-            <Form.Label style={{ color: "#168eca" }}>Phone Number</Form.Label>
-            <Form.Control as="textarea" rows={1} />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label style={{ color: "#168eca" }}>Bio</Form.Label>
-            <Form.Control as="textarea" rows={7} />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label style={{ color: "#168eca" }}>Courses</Form.Label>
-            <Form.Control as="textarea" rows={2} />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlNumber">
-            <Form.Label style={{ color: "#168eca" }}>salary</Form.Label>
-            <Form.Control as="textarea" rows={1} />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check
-            style={{ color: "#168eca" }}
-            type="checkbox"
-            label="Is Staff"
-            />
-        </Form.Group>
+    return (
+        <>
+            <div className="shado mb-5 pt-3 container">
+                <Form>
+                    <h3
+                        className="new2 pt-2 mb-5 text-center"
+                        style={{ color: "#ee4a8b" }}
+                    >
+                        {" "}
+                        Add Instructor{" "}
+                    </h3>
+                    <Form.Group
+                        className="mb-3 mt-5"
+                        controlId="exampleForm.ControlTextarea1"
+                    >
+                        <Form.Label style={{ color: "#168eca" }}>
+                            Instructor-Name
+                        </Form.Label>
+                        <Form.Control as="textarea" rows={1} />
 
-        {/* <Form.Group className="mb-3" controlId="exampleForm.uploadimage">
+                    </Form.Group>
+                    
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label style={{ color: "#168eca" }}>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Text className="text-muted">
+                            We'll never share your email with anyone else.
+                        </Form.Text>
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlNumber">
+                        <Form.Label style={{ color: "#168eca" }}>Phone Number</Form.Label>
+                        <Form.Control as="textarea" rows={1} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label style={{ color: "#168eca" }}>Bio</Form.Label>
+                        <Form.Control as="textarea" rows={7} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label style={{ color: "#168eca" }}>Courses</Form.Label>
+                        <Form.Control as="textarea" rows={2} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlNumber">
+                        <Form.Label style={{ color: "#168eca" }}>salary</Form.Label>
+                        <Form.Control as="textarea" rows={1} />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <Form.Check
+                            style={{ color: "#168eca" }}
+                            type="checkbox"
+                            label="Is Staff"
+                        />
+                    </Form.Group>
+
+                    {/* <Form.Group className="mb-3" controlId="exampleForm.uploadimage">
                 <Form.Control action="/action_page.php"><label for="img" Select 
                 image:type="file" id="img" name="img" accept="image/*" ></label>
                 </Form.Control >
     </Form.Group> */}
 
-        {/* <Button onClick={onImageRemoveAll}>Remove all images</Button>
+                    {/* <Button onClick={onImageRemoveAll}>Remove all images</Button>
                 {imageList.map((image, index) => (
                 <div key={index} className="image-item">
                     <img src={image['data_url']} alt="" width="100" />
@@ -89,17 +91,17 @@ return (
                     <Button onClick={() => onImageUpdate(index)}>Update</Button>
                     <Button onClick={() => onImageRemove(index)}>Remove</Button> */}
 
-        <Button className="btn-outline-light btn-lg ms-5 mb-5 butt">
-            <NavLink
-            className="nav nav-link bu active "
-            exact
-            to={"/instructors"}
-            >
-            Submit
-            </NavLink>
-        </Button>
-        </Form>
-    </div>
-    </>
-);
+                    <Button className="btn-outline-light btn-lg ms-5 mb-5 butt">
+                        <NavLink
+                            className="nav nav-link bu active "
+                            exact
+                            to={"/instructors"}
+                        >
+                            Submit
+                        </NavLink>
+                    </Button>
+                </Form>
+            </div>
+        </>
+    );
 };
