@@ -104,61 +104,6 @@
   }
 }
 
-.san5,
-.san6,
-.san7,
-.san8{
-  width:30vw;
-  height: 20vw;
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-.san5{
-  animation-name: ex5;
-}
-@keyframes ex5{
-  from {
-    background-image: url("../images/00.jpg");
-  }
-  to {
-    background-image: url("../images/g4.jpg");
-  }
-}
-.san6{
-  animation-name: ex6;
-}
-@keyframes ex6{
-  from {
-    background-image: url("../images/2.jpg");
-  }
-  to {
-    background-image: url("../images/3.jpg");
-  }
-}
-.san7{
-  animation-name: ex7;
-}
-@keyframes ex7{
-  from {
-    background-image: url("../images/ws.jpg");
-  }
-  to {
-    background-image: url("../images/6.jpg");
-  }
-}
-.san8{
-  animation-name: ex8;
-}
-@keyframes ex8{
-  from {
-    background-image: url("../images/100.jpg");
-  }
-  to {
-    background-image: url("../images/11.jpg");
-  }
-}
 
 
 
