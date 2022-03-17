@@ -25,7 +25,7 @@ class Classes extends Component {
     }
   }
   Albums = () => {
-    const Albums = this.state.AlbumsList;
+    const Albums = this.state.AlbumsList.reverse(true);
     return Albums.map((item) => (
       <div className="col-md-4 key={item.id} ">
         <div className="card mb-4 shadow-sm">

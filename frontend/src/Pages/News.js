@@ -22,7 +22,7 @@ class News extends Component {
     }
   }
   render() {
-    const news = this.state.NewsList;
+    const news = this.state.NewsList.reverse(true);
     return (
       <>
         <h1 className="container" style={{ color: "#ee4a8b" }}>

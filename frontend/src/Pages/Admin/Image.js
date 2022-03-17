@@ -10,7 +10,7 @@ const MyAlbum = (props) => {
   const [students, setStudents] = React.useState([]);
   const fetchStudents = async () => {
     const result = await axios.get("http://localhost:8000/Ensan/albumPhotos/");
-    setStudents(result.data);
+    setStudents(result.data.reverse(true));
   };
   useEffect(() => {
     fetchStudents();
