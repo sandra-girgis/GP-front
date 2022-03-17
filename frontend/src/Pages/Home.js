@@ -132,16 +132,16 @@ export const Home = () => {
           <marquee loop vspace="20" direction="down" scrollamount="10" width="35%">
             <div className="row">
               <div className="row mb-3">
-                <div className="san1"></div>
+                <div className="san5"></div>
               </div>
               <div className="row mb-3">
-                <div className="san2"></div>
+                <div className="san6"></div>
               </div>
               <div className="row mb-3">
-                <div className="san3"></div>
+                <div className="san7"></div>
               </div>
               <div className="row mb-3">
-                <div className="san4"></div>
+                <div className="san8"></div>
               </div>
             </div>
           </marquee>

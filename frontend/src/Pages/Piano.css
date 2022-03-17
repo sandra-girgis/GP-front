@@ -47,40 +47,7 @@
   border: 1px ridge rgb(240, 191, 229);
 }
 
-/* The animation code */
-/* @keyframes example {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(180deg);
-  }
-} */
-/* The element to apply the animation to */
-/* 
-  .flip-box-inner {
-    position: relative; 
-    text-align: center;
-    transform-style: preserve-3d;
-    animation-name: example2;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-  } 
-  .flip-box-inner:hover
-  {
-    animation-duration: 6s;
-  }
-.flip-box-front, .flip-box-back { 
-    position: absolute;
-    backface-visibility: hidden;
-  }
 
-.flip-box {
-  width: 20vw;
-  height: 20vw;
-  animation-name: example;
-  animation-iteration-count: infinite;
-} */
 .san1,
 .san2,
 .san3,
@@ -137,25 +104,64 @@
   }
 }
 
-/* .flip-box-inner {
-  position: relative;
-  text-align: center;
-  transform-style: preserve-3d;
-  animation-name: example2;
-  animation-duration: 6s;
+.san5,
+.san6,
+.san7,
+.san8{
+  width:30vw;
+  height: 20vw;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
-.flip-box-inner:hover {
-  animation-duration: 6s;
+.san5{
+  animation-name: ex5;
 }
-.flip-box-front,
-.flip-box-back {
-  position: absolute;
-  backface-visibility: hidden;
+@keyframes ex5{
+  from {
+    background-image: url("../images/00.jpg");
+  }
+  to {
+    background-image: url("../images/g4.jpg");
+  }
 }
-.flip-box-back {
-  transform: rotateY(180deg);
-} */
+.san6{
+  animation-name: ex6;
+}
+@keyframes ex6{
+  from {
+    background-image: url("../images/2.jpg");
+  }
+  to {
+    background-image: url("../images/3.jpg");
+  }
+}
+.san7{
+  animation-name: ex7;
+}
+@keyframes ex7{
+  from {
+    background-image: url("../images/ws.jpg");
+  }
+  to {
+    background-image: url("../images/6.jpg");
+  }
+}
+.san8{
+  animation-name: ex8;
+}
+@keyframes ex8{
+  from {
+    background-image: url("../images/100.jpg");
+  }
+  to {
+    background-image: url("../images/11.jpg");
+  }
+}
+
+
+
 .img {
   width: 22vw;
   height: 18vw;
