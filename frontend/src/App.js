@@ -23,6 +23,7 @@ import { Piano } from "./Pages/Piano";
 import { Violin } from "./Pages/Violin";
 import { Workshop } from "./Pages/Workshop";
 import { Joinus } from "./Pages/Joinus";
+
 import Events from "./Pages/Admin/Events";
 import Image from "./Pages/Admin/Image";
 import Album from "./Pages/Admin/Album";
@@ -33,6 +34,8 @@ import { Addinstructor } from "./Pages/Admin/Addinstructor";
 import { Addimage } from "./Pages/Admin/Addimage";
 import { Addalbum } from "./Pages/Admin/Addalbum";
 import { Addevent } from "./Pages/Admin/Addevent";
+
+
 
 // import { Editevent} from "./Pages/Admin/Editevent";
 // import { Deletevent} from "./Pages/Admin/Deletevent";
@@ -46,8 +49,6 @@ import { Addevent } from "./Pages/Admin/Addevent";
 import Login from "./Pages/login";
 // {}>> <function></function>
 import { Footer } from "./components/Footer";
-// import { faHome } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   return (

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../Piano";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect ,useState} from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
