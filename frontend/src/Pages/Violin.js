@@ -134,7 +134,6 @@ export const Violin = () => {
                   Omar Akl
                 </h5>
                 <p className="card-text desc">
-                  {" "}
                   Born in Alexandria in 1998. Omar graduated from Riada
                   International School (IGCSE) and then studied Computer and
                   Communications Engineering at the Faculty of Engineering -
@@ -192,6 +191,31 @@ export const Violin = () => {
             </div>
           </div>
         </div>
+
+        <div className="card mb-5 instractor flip-card shadow">
+          <div className="row g-0">
+            <div className="col-md-4">
+              <img
+                src={img9}
+                className="img-fluid rounded-start rounded-circle flut"
+                style={{ width: "15rem" }}
+                alt="instractors"
+              />
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: "#ee4a8b" }}>
+                  Omar Akl
+                </h5>
+                <p className="card-text desc">
+                  
+             
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="col-12 text-center">
           <button className="btn-outline-light btn-lg fs-2 butt">
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>
