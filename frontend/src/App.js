@@ -26,25 +26,16 @@ import { Joinus } from "./Pages/Joinus";
 
 import Events from "./Pages/Admin/Events";
 import Image from "./Pages/Admin/Image";
+import Class from "./Pages/Admin/Class";
 import Album from "./Pages/Admin/Album";
 import Instructors from "./Pages/Admin/Instructors";
 import Students from "./Pages/Admin/Students";
 import { Addstudent } from "./Pages/Admin/Addstudent";
 import { Addinstructor } from "./Pages/Admin/Addinstructor";
 import { Addimage } from "./Pages/Admin/Addimage";
+import { Addclass } from "./Pages/Admin/Addclass";
 import { Addalbum } from "./Pages/Admin/Addalbum";
 import { Addevent } from "./Pages/Admin/Addevent";
-
-
-
-// import { Editevent} from "./Pages/Admin/Editevent";
-// import { Deletevent} from "./Pages/Admin/Deletevent";
-// import { Editimage} from "./Pages/Admin/Editimage";
-// import { Deletimage} from "./Pages/Admin/Deletimage";
-// import { Deleteinstractor} from "./Pages/Admin/Deleteinstractor";
-// import { Editinstructor} from "./Pages/Admin/Editinstructor";
-// import { Editstudent} from "./Pages/Admin/Editstudent";
-// import { Deletstudent} from "./Pages/Admin/Deletstudent";
 
 import Login from "./Pages/login";
 // {}>> <function></function>
@@ -72,26 +63,23 @@ function App() {
             <Route path="/exhibitions" exact component={Exhibitions} />
             <Route path="/workshops" exact component={Workshops} />
             <Route path="/joinus" exact component={Joinus} />
-
             <Route path="/event" exact component={Events} />
             <Route path="/image" exact component={Image} />
+            <Route path="/class" exact component={Class} />
             <Route path="/album" exact component={Album} />
             <Route path="/instructors" exact component={Instructors} />
             <Route path="/students" exact component={Students} />
             <Route path="/addstudent" exact component={Addstudent} />
             <Route path="/addevent" exact component={Addevent} />
             <Route path="/addimage" exact component={Addimage} />
+            <Route path="/addclass" exact component={Addclass} />
             <Route path="/addalbum" exact component={Addalbum} />
             <Route path="/addinstructor" exact component={Addinstructor} />
-
             <Route path="/instructor" exact component={Instructor} />
             <Route path="/pasins" exact component={Pasins} />
-
             <Route path="/student" exact component={Student} />
             <Route path="/passtd" exact component={Passtd} />
-
             <Route path="/login" exact component={Login} />
-
           </Switch>
           <Footer />
         </div>
@@ -100,37 +88,3 @@ function App() {
   );
 }
 export default App;
-
-// {sessionStorage.token ? (
-//   <>
-//     {sessionStorage.is_superuser === "true" ? (
-//       <>
-//         <Route path="/event" exact component={Events} />
-//         <Route path="/imagealbum" exact component={Imagealbum} />
-//         <Route path="/instructors" exact component={Instructors} />
-//         <Route path="/students" exact component={Students} />
-//         <Route path="/addstudent" exact component={Addstudent} />
-//         <Route path="/addevent" exact component={Addevent} />
-//         <Route path="/addimage" exact component={Addimage} />
-//         <Route
-//           path="/addinstructor"
-//           exact
-//           component={Addinstructor}
-//         />
-//       </>
-//     ) : sessionStorage.is_staff === "true" ? (
-//       <>
-//       <Route path="/instructor" exact component={Instructor} />
-//       <Route path="/pasins" exact component={Pasins} />
-//       </>
-//     ) : (
-//       <>
-//         <Route path="/student" exact component={Student} />
-//         <Route path="/passtd" exact component={Passtd} />
-//       </>
-//     )}
-//   </>
-// ) : (
-//   <Route path="/login" exact component={Login} />
-// )}
-// <Route path="/register" exact component={Register} />

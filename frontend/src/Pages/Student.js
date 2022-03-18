@@ -56,9 +56,7 @@ class Student extends Component {
       method: "post",
       url: "http://localhost:8000/Ensan/ratings/",
       data: formField,
-    }).then((response) => {
-      console.log(response);
-    });
+    })
   };
   render() {
     const instructor = this.state.InstructorList;
@@ -123,8 +121,10 @@ class Student extends Component {
                     </Card.Text>
                     {i.Rating ? (
                       <Card.Text className="text-muted">
-                        Instructor's Rate : {i.Rating}
-                        <FontAwesomeIcon className="star" icon={faStar} />
+                        Instructor's Rate :
+                        {Array(i.Rating).fill(null).map((value, index) => (
+                              <FontAwesomeIcon key={index} className="star" icon={faStar} />
+                          ))}
                       </Card.Text>
                     ) : (
                       <Form className="mt-3 gx-2">

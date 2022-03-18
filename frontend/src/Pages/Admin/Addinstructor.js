@@ -29,9 +29,7 @@ const addNewStudent = async () => {
     method: "post",
     url: "http://localhost:8000/Ensan/instructors/",
     data: formField,
-    }).then((response) => {
-    console.log(response);
-    });
+    })
     props.history.push("/instructors");
 };
 return (

@@ -39,7 +39,6 @@ class Passtd extends Component {
     const det = this.state.InstructorList;
     det['password'] = event.target.value;
     this.setState({ InstructorList : det });
-    console.log(event.target.value)
   };
 
   render() {

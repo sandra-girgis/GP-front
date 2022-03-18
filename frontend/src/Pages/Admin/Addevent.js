@@ -24,9 +24,7 @@ export const Addevent = (props) => {
       method: "post",
       url: "http://localhost:8000/Ensan/news/",
       data: formField,
-    }).then((response) => {
-      console.log(response);
-    });
+    })
     props.history.push("/event");
   };
   useEffect(() => {

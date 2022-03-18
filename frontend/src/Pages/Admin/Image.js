@@ -35,11 +35,6 @@ const MyAlbum = (props) => {
         </td>
         <td>{item.Album_ID}</td>
         <td>
-          <Link to="/addimage" style={{ textDecoration: "none" }}>
-            <button className="butt">Edit</button>
-          </Link>
-        </td>
-        <td>
           <Link to="#" style={{ textDecoration: "none" }}>
             <button
               id={item.id}
@@ -81,6 +76,9 @@ class Image extends Component {
             <Link className="nav-link  adm" to="/album">
               Album
             </Link>
+            <Link className="nav-link  adm" to="/class">
+              Class
+            </Link>
           </nav>
         </div>
         <h1
@@ -100,7 +98,6 @@ class Image extends Component {
             <th scope="col">No.</th>
               <th scope="col">Picture</th>
               <th scope="col">Album Name</th>
-              <th scope="col">Edit</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>

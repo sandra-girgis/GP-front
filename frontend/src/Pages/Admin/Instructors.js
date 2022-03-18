@@ -8,10 +8,9 @@ import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const MyInstructor = (props) => {
-  const [students, setStudents] = React.useState([]);
+  const [students, setStudents] = useState([]);
   const fetchStudents = async () => {
     const result = await axios.get("http://localhost:8000/Ensan/instructors/");
-    console.log(result.data);
     setStudents(result.data);
   };
   useEffect(() => {
@@ -32,11 +31,6 @@ const MyInstructor = (props) => {
         <td>{item.phoneNumber}</td>
         <td>{item.salary}</td>
         <td>{Math.round(item.avg_rating * 100)/100}</td>
-      <td>
-        <button className="butt" style={{ backgroundColor: "#168eca" }}>
-          Edit
-        </button>
-      </td>
       <td>
         <Link to="#" style={{ textDecoration: "none" }}>
           <button
@@ -80,6 +74,9 @@ class Instructors extends Component {
             <Link className="nav-link  adm" to="/album">
               Album
             </Link>
+            <Link className="nav-link  adm" to="/class">
+              Class
+            </Link>
           </nav>
         </div>
         <h1
@@ -102,7 +99,6 @@ class Instructors extends Component {
               <th scope="col">Phone No.</th>
               <th scope="col">salary</th>
               <th scope="col">Rate</th>
-              <th scope="col">Edit</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>

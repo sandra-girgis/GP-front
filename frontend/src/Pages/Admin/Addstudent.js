@@ -39,9 +39,7 @@ const addNewStudent = async () => {
         method: "post",
         url: "http://localhost:8000/Ensan/attend/",
         data: formField2,
-        }).then((response) => {
-        console.log(response);
-        });
+        })
     props.history.push("/students");
 };
 useEffect(() => {
@@ -66,7 +64,7 @@ return (
         className="mb-3 mt-5"
         controlId="exampleForm.ControlTextarea1"
         >
-        <Form.Label style={{ color: "#168eca" }}>Instructor Name</Form.Label>
+        <Form.Label style={{ color: "#168eca" }}>Student Name</Form.Label>
         <Form.Control
             as="input"
             placeholder="Enter Instructor Name"

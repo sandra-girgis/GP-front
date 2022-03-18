@@ -10,7 +10,6 @@ const MyEvent = (props) => {
   const [students, setStudents] = React.useState([]);
   const fetchStudents = async () => {
     const result = await axios.get("http://localhost:8000/Ensan/news/");
-    console.log(result.data);
     setStudents(result.data.reverse(true));
   };
   useEffect(() => {
@@ -38,11 +37,6 @@ const MyEvent = (props) => {
           />
       </td>
       <td>{item.Category_ID}</td>
-      <td>
-        <button className="butt" style={{ backgroundColor: "#168eca" }}>
-          Edit
-        </button>
-      </td>
       <td>
         <Link to="#" style={{ textDecoration: "none" }}>
           <button
@@ -86,6 +80,9 @@ class Events extends Component {
             <Link className="nav-link  adm" to="/album">
               Album
             </Link>
+            <Link className="nav-link  adm" to="/class">
+              Class
+            </Link>
           </nav>
         </div>
         <h1
@@ -107,7 +104,6 @@ class Events extends Component {
               <th scope="col">date</th>
               <th scope="col">picture</th>
               <th scope="col">Category_ID</th>
-              <th scope="col">Edit</th>
               <th scope="col">Delete</th>
             </tr>
           </thead>

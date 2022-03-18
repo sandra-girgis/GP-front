@@ -85,7 +85,6 @@ function Example(props) {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-  // console.log(props.id)
   const { data, error, isLoading } = useAsync({
     promiseFn: loadUsers,
     id: props.id,
@@ -93,7 +92,6 @@ function Example(props) {
   if (isLoading) return "Loading...";
   if (error) return `Something went wrong: ${error.message}`;
   if (data)
-    // console.log(data)
     return (
       <>
         <Button variant="primary" onClick={handleShow}>
