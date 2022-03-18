@@ -37,13 +37,13 @@ class Classes extends Component {
             />
           </div>
           <div className="card-body">
-            <p className="card-text">
+            <p className="card-text text-center">
               {item.name}
               <br></br>
             </p>
-            <div className="d-flex justify-content-between align-items-center">
-              <div className="btn-group">
-                <Example id={item.id} />
+            <div className="d-flex justify-content-center">
+              <div className="btn-group text-center">
+                <Example id={item.id} name={item.name} />
               </div>
             </div>
           </div>
@@ -94,12 +94,12 @@ function Example(props) {
   if (data)
     return (
       <>
-        <Button variant="primary" onClick={handleShow}>
+        <Button className="butt" onClick={handleShow}>
           View
         </Button>
         <Modal show={show} onHide={handleClose} animation={false}>
           <Modal.Header closeButton>
-            <Modal.Title>Concert Album 1</Modal.Title>
+            <Modal.Title>{props.name}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -117,7 +117,7 @@ function Example(props) {
             </Carousel>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button className="butt" onClick={handleClose}>
               Close
             </Button>
           </Modal.Footer>
