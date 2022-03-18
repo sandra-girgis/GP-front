@@ -13,6 +13,7 @@ import img7 from "../images/kmag.jpg";
 import img8 from "../images/kold.jpg";
 import img9 from "../images/i7.jpg";
 import img10 from "../images/i5.jpg";
+import img11 from "../images/i3.jpg";
 
 export const Violin = () => {
   return (
@@ -50,7 +51,7 @@ export const Violin = () => {
                 </h5>
                 <p className="card-text desc">
                   from 8 years old and above and adults.<br></br>
-                  With: Omar Akl , Maya ElRemaly and Noran ElKobesy<br></br>
+                  With: Omar Akl , Maya ElRemaly and Nouran Qubeisi<br></br>
                   (Group classes from 8 students)
                 </p>
               </div>
@@ -196,7 +197,7 @@ export const Violin = () => {
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src={img9}
+                src={img11}
                 className="img-fluid rounded-start rounded-circle flut"
                 style={{ width: "15rem" }}
                 alt="instractors"
@@ -205,10 +206,14 @@ export const Violin = () => {
             <div className="col-md-8">
               <div className="card-body">
                 <h5 className="card-title" style={{ color: "#ee4a8b" }}>
-                  Omar Akl
+                Nouran Qubeisi
                 </h5>
                 <p className="card-text desc">
-                  
+                Born in Alexandria in 1996, she joined the Academy of Arts, the Conservatoire Institute in 2004, where she was tutored by Dr. Ahmed Fahmy, Dr. Nevin El Mahmoudi, and Dr. Hassan Sharara.<br></br>
+She joined the Suzuki Violin School at the Talent Development Center at the Alexandria Opera House and the Alexandria Opera Children's Orchestra since its inception in 2005 and became its pioneer in 2009.<br></br>
+She participated in the fifth and sixth sessions of the Arab Youth Philharmonic Orchestra with the International Youth Orchestra in Bremen, Germany in 2011, 20012 in Tunisia, 2016 in Berlin, and 2017 in Jordan.<br></br>
+She also participated in the competition of the Supreme Council of Culture in 2012, and in the youth competition of Mediterranean schools for the German language in Greece, where she won second place. She also participated in many recitals at the Creativity Center, the Russian Center, the Jesuit, and the Atelier.
+She is currently working as a member of the Alexandria Opera Orchestra and String Orchestra since 2009 to date. 
              
                 </p>
               </div>
