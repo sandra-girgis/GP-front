@@ -51,7 +51,7 @@ export const Violin = () => {
                 </h5>
                 <p className="card-text desc">
                   from 8 years old and above and adults.<br></br>
-                  With: Omar Akl , Maya ElRemaly and Nouran Qubeisi<br></br>
+                  With: Omar Akl , Maya ElRemaly and Noran Kobeisy<br></br>
                   (Group classes from 8 students)
                 </p>
               </div>
@@ -206,7 +206,7 @@ export const Violin = () => {
             <div className="col-md-8">
               <div className="card-body">
                 <h5 className="card-title" style={{ color: "#ee4a8b" }}>
-                Nouran Qubeisi
+                Noran Kobeisy
                 </h5>
                 <p className="card-text desc">
                 Born in Alexandria in 1996, she joined the Academy of Arts, the Conservatoire Institute in 2004, where she was tutored by Dr. Ahmed Fahmy, Dr. Nevin El Mahmoudi, and Dr. Hassan Sharara,

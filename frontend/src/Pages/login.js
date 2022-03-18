@@ -54,8 +54,8 @@ render() {
     return (
     <div className="justify-content-center w-100 row">
         <div className="card shado col-md-5 p-5 mt-5 mb-5">
-        <h1 style={{ color: "#ee4a8b" }}>Log in form</h1>
-        <div className="form-group">
+        <h1 style={{ color: "#ee4a8b" }}>Login form</h1>
+        <div className="form-group mt-3">
             <label htmlFor="u" style={{ color: "#168eca" }}>
             User Name
             </label>
@@ -83,12 +83,12 @@ render() {
             onChange={this.inputChanged}
             />
         </div>
-        <div className="row mb-5 mt-5">
+        <div className="row justify-content-center  mt-5">
             <button
             onClick={this.login}
-            className="btn-outline-light btn-lg mb-5 butt"
+            className="btn-outline-light col-4 btn-lg butt"
             >
-            Log in
+            Login
             </button>
         </div>
         </div>

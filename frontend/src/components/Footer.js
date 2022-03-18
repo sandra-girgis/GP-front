@@ -139,7 +139,7 @@ return (
                 <p className="px-2 text_color">
                 <a
                     className="px-2 text_color"
-                    href="mailto:totajo1999@gmail.com"
+                    href="mailto:ensan.art@gmail.com"
                 >
                     <FontAwesomeIcon
                     className="px-2 text_color"

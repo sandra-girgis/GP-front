@@ -13,6 +13,7 @@ class Instructor extends Component {
     this.state = {
       InstructorList: [],
       ins: [],
+      picture:""
     };
   }
   async componentDidMount() {
@@ -22,9 +23,11 @@ class Instructor extends Component {
       );
       const InstructorList = await InstructorRes.json();
       const ins = await InstructorList.classinfo;
+      const picture = await InstructorList.picture;
       this.setState({
         InstructorList,
         ins,
+        picture
       });
     } catch (e) {
       console.log(e);
@@ -33,16 +36,22 @@ class Instructor extends Component {
   update = (e) => {
     this.props.history.push("/pasins");
   };
+  imgupdate = (e) => {
+    this.props.history.push("/imgins");
+  };
   render() {
     const instructor = this.state.InstructorList;
     const ins = this.state.ins;
+    const Picture = this.state.picture;
     return (
       <>
         <div className="ins_header">
-          <img
-            src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
-            className="mt-5 ms-5 ins_image" alt="..."
-          />
+            <img
+              src={
+                Picture
+                  .replaceAll("http://localhost:8000", "")}
+                  className="mt-5 ms-5 ins_image" alt="..."
+            />
         </div>
         <br></br>
         <div className="row w-100">
@@ -76,6 +85,14 @@ class Instructor extends Component {
             >
               Edit Password
             </button>
+            {/* <button
+              id={instructor.id}
+              onClick={this.imgupdate}
+              style={{ backgroundColor: "white", border: "1px solid grey" }}
+              className="ins_info fs-md-6 btn mt-3 pink bl"
+            >
+              Edit Image
+            </button> */}
           </div>
           <div className=" col-md-6 ">
             <Navbar>

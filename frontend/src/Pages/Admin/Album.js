@@ -78,7 +78,7 @@ class Album extends Component {
           className="fw-bold display-4 text-center"
           style={{ color: "#168eca" }}
         >
-          Image
+          Albums
         </h1>
         <button className="btn-outline-light btn-lg ms-5 mb-5 butt">
           <NavLink className="nav nav-link bu active " exact to={"/addalbum"}>

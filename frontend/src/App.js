@@ -12,6 +12,8 @@ import Instructor from "./Pages/Instructor";
 import Student from "./Pages/Student";
 import Passtd from "./Pages/passtd";
 import Pasins from "./Pages/pasins";
+import imgstd from "./Pages/imgstd";
+import imgins from "./Pages/imgins";
 
 import Concerts from "./Pages/Concerts";
 import News from "./Pages/News";
@@ -77,8 +79,10 @@ function App() {
             <Route path="/addinstructor" exact component={Addinstructor} />
             <Route path="/instructor" exact component={Instructor} />
             <Route path="/pasins" exact component={Pasins} />
+            <Route path="/imgins" exact component={imgins} />
             <Route path="/student" exact component={Student} />
             <Route path="/passtd" exact component={Passtd} />
+            <Route path="/imgstd" exact component={imgstd} />
             <Route path="/login" exact component={Login} />
           </Switch>
           <Footer />

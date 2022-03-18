@@ -21,6 +21,7 @@ class Student extends Component {
       InstructorList: [],
       ins: [],
       stars: "",
+      picture:""
     };
   }
   async componentDidMount() {
@@ -30,9 +31,11 @@ class Student extends Component {
       );
       const InstructorList = await InstructorRes.json();
       const ins = await InstructorList.attend;
+      const picture = await InstructorList.picture;
       this.setState({
         InstructorList,
         ins,
+        picture
       });
     } catch (e) {
       console.log(e);
@@ -40,6 +43,9 @@ class Student extends Component {
   }
   update = () => {
     this.props.history.push("/passtd");
+  };
+  imgupdate = () => {
+    this.props.history.push("/imgstd");
   };
   change = (e) => {
     this.setState({
@@ -61,14 +67,16 @@ class Student extends Component {
   render() {
     const instructor = this.state.InstructorList;
     const ins = this.state.ins;
+    const Picture = this.state.picture;
     return (
       <>
         <div className="ins_header">
-          <img
-            src="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
-            className="mt-5 ms-5 ins_image"
-            alt="..."
-          />
+        <img
+          src={
+            Picture
+              .replaceAll("http://localhost:8000", "")}
+              className="mt-5 ms-5 ins_image" alt="..."
+        />
         </div>
         <br></br>
         <div className="row w-100">
@@ -90,6 +98,14 @@ class Student extends Component {
             >
               Edit Password
             </button>
+            {/* <button
+              id={instructor.id}
+              onClick={this.imgupdate}
+              style={{ backgroundColor: "white", border: "1px solid grey" }}
+              className="ins_info fs-md-6 btn mt-3 pink bl"
+            >
+              Edit Image
+            </button> */}
           </div>
           <div className=" col-md-6 ">
             <h3 style={{ color: "#ee4a8b" }} className="ms-4 mt-5 fs-1">

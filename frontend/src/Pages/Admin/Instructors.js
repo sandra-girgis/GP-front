@@ -30,6 +30,12 @@ const MyInstructor = (props) => {
         <td>{item.email}</td>
         <td>{item.phoneNumber}</td>
         <td>{item.salary}</td>
+        {/* <img
+              src={
+                item.picture
+                  .replaceAll("http://localhost:8000", "")}
+                  className="mt-5 ms-5 ins_image" alt="..."
+            /> */}
         <td>{Math.round(item.avg_rating * 100)/100}</td>
       <td>
         <Link to="#" style={{ textDecoration: "none" }}>

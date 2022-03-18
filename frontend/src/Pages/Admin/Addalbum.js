@@ -20,7 +20,7 @@ const addNewStudent = async () => {
     url: "http://localhost:8000/Ensan/albums/",
     data: formField,
     })
-    props.history.push("/event");
+    props.history.push("/album");
 };
 
 useEffect(() => {
