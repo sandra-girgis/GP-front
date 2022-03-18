@@ -128,22 +128,14 @@ export const Ballet = () => {
             <div className="col-md-8">
               <div className="card-body">
                 <h5 className="card-title" style={{ color: "#ee4a8b" }}>
-                  Card title
+                Dr. Tahany Hassan 
                 </h5>
                 <p className="card-text desc">
-                  Born in Alexandria in 1998. Omar graduated from Riada
-                  International School (IGCSE) and then studied Computer and
-                  Communications Engineering at the Faculty of Engineering -
-                  Alexandria University. In 2006, Omar joined the Suzuki Violin
-                  Class and the Alexandria Opera House Youth Orchestra with Dr.
-                  Nevine ELMahmoudy. Later on , he joined the conservatoire (
-                  Academy of Arts in Alexandria ) where he studied violin with
-                  Dr. Nevine ELMahmoudy and Dr. Hassan Sharara. Omar performed a
-                  lot of solo concerts in Alexandria and Cairo , in which they
-                  made a huge success. He now works as a violinist in Alexandria
-                  Opera House String Orchestra and participated with the Arab
-                  Youth Philharmonic Orchestra concerts in Germany , Jordan ,
-                  Egypt and France.
+                
+Dancer in the Cairo Opera Ballet Troupe since 89.
+She holds a Ph.D. from the Higher Institute of Ballet - Academy of Arts in Cairo<br></br>
+Director of the Ballet School at the Academy of Arts in Cairo and Director of Units in Alexandria.<br></br>
+Responsible for a ballet studio at the Russian Cultural Center in Cairo.
                 </p>
               </div>
             </div>
