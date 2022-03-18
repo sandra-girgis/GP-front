@@ -29,7 +29,7 @@ function Nav(props) {
             </li>
             <li className="nav-item">
               <NavLink className="nav nav-link pink bl" exact to="/news">
-                News
+                Events
               </NavLink>
             </li>
             {/* <li className="nav-item">

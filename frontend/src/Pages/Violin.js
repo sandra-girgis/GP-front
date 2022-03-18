@@ -13,6 +13,7 @@ import img7 from "../images/kmag.jpg";
 import img8 from "../images/kold.jpg";
 import img9 from "../images/i7.jpg";
 import img10 from "../images/i5.jpg";
+import img11 from "../images/i3.jpg";
 
 export const Violin = () => {
   return (
@@ -50,7 +51,7 @@ export const Violin = () => {
                 </h5>
                 <p className="card-text desc">
                   from 8 years old and above and adults.<br></br>
-                  With: Omar Akl , Maya ElRemaly and Noran ElKobesy<br></br>
+                  With: Omar Akl , Maya ElRemaly and Nouran Qubeisi<br></br>
                   (Group classes from 8 students)
                 </p>
               </div>
@@ -134,7 +135,6 @@ export const Violin = () => {
                   Omar Akl
                 </h5>
                 <p className="card-text desc">
-                  {" "}
                   Born in Alexandria in 1998. Omar graduated from Riada
                   International School (IGCSE) and then studied Computer and
                   Communications Engineering at the Faculty of Engineering -
@@ -192,6 +192,36 @@ export const Violin = () => {
             </div>
           </div>
         </div>
+
+        <div className="card mb-5 instractor flip-card shadow">
+          <div className="row g-0">
+            <div className="col-md-4">
+              <img
+                src={img11}
+                className="img-fluid rounded-start rounded-circle flute"
+                style={{ width: "15rem" }}
+                alt="instractors"
+              />
+            </div>
+            <div className="col-md-8">
+              <div className="card-body">
+                <h5 className="card-title" style={{ color: "#ee4a8b" }}>
+                Nouran Qubeisi
+                </h5>
+                <p className="card-text desc">
+                Born in Alexandria in 1996, she joined the Academy of Arts, the Conservatoire Institute in 2004, where she was tutored by Dr. Ahmed Fahmy, Dr. Nevin El Mahmoudi, and Dr. Hassan Sharara,
+She joined the Suzuki Violin School at the Talent Development Center at the Alexandria Opera House and the Alexandria Opera Children's Orchestra since its inception in 2005 and became its pioneer in 2009,
+She participated in the fifth and sixth sessions of the Arab Youth Philharmonic Orchestra with the International Youth Orchestra in Bremen, Germany in 2011, 2012 in Tunisia, 2016 in Berlin, and 2017 in Jordan,
+She also participated in the competition of the Supreme Council of Culture in 2012, and in the youth competition of Mediterranean schools for the German language in Greece, where she won second place.
+She also participated in many recitals at the Creativity Center, the Russian Center, the Jesuit, and the Atelier,
+She is currently working as a member of the Alexandria Opera Orchestra and String Orchestra since 2009 to date. 
+             
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="col-12 text-center">
           <button className="btn-outline-light btn-lg fs-2 butt">
             <NavLink className="nav nav-link bu active " exact to={"/joinus"}>

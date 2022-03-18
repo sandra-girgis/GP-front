@@ -3,120 +3,95 @@ import "./Piano.css";
 import Carousel from "react-bootstrap/Carousel";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import img1 from "../images/i4.jpg";
+import img1 from "../images/i4.jpg"
+import img2 from "../images/g2.jpg"
+import img3 from "../images/g3.jpg"
+import img4 from "../images/g5.jpg"
+import img5 from "../images/g1.jpg"
 
-export const Guitar = () => {
-  return (
-    <>
-      <Carousel>
-        <Carousel.Item interval={500}>
-          <img
-            className="d-block w-100 "
-            src="https://media.istockphoto.com/photos/vintage-vinyl-record-playing-on-player-and-acoustic-guitar-on-with-picture-id956587676?k=20&m=956587676&s=612x612&w=0&h=ohV_VrGL_4a838UB8QiiZFi3WwPWxBXGoh6o8TklQG4="
-            alt="First slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={500}>
-          <img
-            className="d-block w-100"
-            src="https://media.istockphoto.com/photos/dad-teaching-guitar-and-ukulele-to-his-daughterlittle-girl-learning-picture-id1219407299?k=20&m=1219407299&s=612x612&w=0&h=v5lDASvutwXgi5vE3jSdSKs_v4Mc4MGxdokYhaun9iM="
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://media.istockphoto.com/photos/young-teenager-girl-alone-at-home-childhood-picture-id825882882?k=20&m=825882882&s=612x612&w=0&h=ifc7rhHFqJCHuSoiiho1XFNGGwKu0vc6vzkMTboGx2g="
-            alt="Third slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://media.istockphoto.com/photos/boy-teaching-to-play-guitar-picture-id1048436392?k=20&m=1048436392&s=612x612&w=0&h=rEk017VuXGj2hzIQosYbscycasBlAfwFWKkZBlzMPHo="
-            alt="fourth slide"
-          />
-        </Carousel.Item>
-      </Carousel>
-      <div className="container mt-5 mb-5">
-        <h1 className="mb-5  fw-bold display-4" style={{ color: "#ee4a8b" }}>
-          About Our Classes
-        </h1>
-        <div className="container mb-5 flip-card">
-          <div className="row g-0 ">
-            <div className="col-md-4 border rounded">
-              <img
-                src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134="
-                className="img-fluid rounded-start"
-                alt="kids"
-              />
-            </div>
-            <div className="col-md-6" style={{ backgroundColor: "#fff2f7" }}>
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: "#168eca" }}>
-                  Guitar Classes
-                </h5>
-                <p className="card-text desc">
-                  From 6 year sold and above also for Adults
-                  <br></br>With Dina Dawood
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container mb-5 flip-card">
-          <div className="row g-0 ">
-            <div
-              className="col-md-6 offset-md-2"
-              style={{ backgroundColor: "#fff2f7" }}
-            >
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: "#168eca" }}>
-                  Why to learn Guitar at Ensan Art?
-                </h5>
-                <p className="card-text desc">
-                  {" "}
-                  • Highly qualified and friendly instructors<br></br>•
-                  International Curriculum (ABRSM)<br></br>• Bi-Annual concert
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 border rounded">
-              <img
-                src="https://media.istockphoto.com/photos/female-pupil-playing-guitar-in-high-school-orchestra-picture-id498129995?k=20&m=498129995&s=612x612&w=0&h=oqKZBNcoa_YndIOzwyd5JhNyaSKB6gHLzXp5dZaaNy0="
-                className="img-fluid rounded-start"
-                alt="middle age"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="container mb-5 flip-card">
-          <div className="row g-0 ">
-            <div className="col-md-4 border rounded">
-              <img
-                src="https://media.istockphoto.com/photos/musician-plays-guitar-close-up-picture-id1097767690?k=20&m=1097767690&s=612x612&w=0&h=7YF-DXt5DxaimNnWgq2-f4lIK8Kr64G6kMyvTV_5IUM="
-                className="img-fluid rounded-start"
-                alt="Elderly"
-              />
-            </div>
-            <div className="col-md-6" style={{ backgroundColor: "#fff2f7" }}>
-              <div className="card-body">
-                <h5 className="card-title" style={{ color: "#168eca" }}>
-                  Benefit of playing classical Guitar:
-                </h5>
-                <p className="card-text desc">
-                  {" "}
-                  • Improved self-discipline through practicing certain skills
-                  over and over<br></br>• Stronger connections between left and
-                  right brain functions<br></br>• Improved right and left hand
-                  coordination<br></br>• Develops self-discipline
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
+export const Guitar = () => { 
+  return (<>
+  <Carousel>
+  <Carousel.Item interval={500}>
+    <img
+      className="d-block w-100 " 
+      src="https://media.istockphoto.com/photos/vintage-vinyl-record-playing-on-player-and-acoustic-guitar-on-with-picture-id956587676?k=20&m=956587676&s=612x612&w=0&h=ohV_VrGL_4a838UB8QiiZFi3WwPWxBXGoh6o8TklQG4=" 
+      alt="First slide"/>
+  </Carousel.Item>
+  <Carousel.Item interval={500}>
+    <img
+      className="d-block w-100"
+      src={img2}  
+       alt="Second slide"/>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100"
+      src={img3}
+      alt="Third slide"
+    />
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={img4}
+      alt="fourth slide"
+    />
+  </Carousel.Item>
+</Carousel>
+       <div className="container mt-5 mb-5">
+       <h1 className="mb-5  fw-bold display-4"style={{color:"#ee4a8b"}}>About Our Classes</h1>
+              <div className="container mb-5 flip-card">
+                  <div className="row g-0 ">
+                    <div className="col-md-4 border rounded">
+                      <img  src="https://media.istockphoto.com/photos/guitar-teacher-teaching-boy-to-play-acoustic-guitar-picture-id1130955921?k=20&m=1130955921&s=612x612&w=0&h=peKXfjkeLmclKQbIGfXLfFJ9Q0AHKXxVDzBpYCn3134="
+                      className="img-fluid rounded-start" alt="kids"/>
+                    </div>
+                    <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
+                      <div className="card-body">
+                        <h5 className="card-title"style={{color:"#168eca"}}>Guitar Classes</h5>
+                        <p className="card-text desc">From 6 year sold and above also for Adults 
+                        <br></br>With Dina Dawood</p>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+              <div className="container mb-5 flip-card">
+                <div className="row g-0 ">
+                <div className="col-md-6 offset-md-2"style={{backgroundColor:"#fff2f7"}}>
+                    <div className="card-body">
+                      <h5 className="card-title"style={{color:"#168eca"}}>Why to learn Guitar at Ensan Art?</h5>
+                      <p className="card-text desc">    • Highly qualified and friendly instructors<br></br>
+    • International Curriculum (ABRSM)<br></br> 
+    • Bi-Annual concert</p>
+                  </div>
+                  </div>
+                  <div className="col-md-4 border rounded">
+                    <img  src="https://media.istockphoto.com/photos/female-pupil-playing-guitar-in-high-school-orchestra-picture-id498129995?k=20&m=498129995&s=612x612&w=0&h=oqKZBNcoa_YndIOzwyd5JhNyaSKB6gHLzXp5dZaaNy0="
+                    className="img-fluid rounded-start" alt="middle age"/>
+                  </div>
+                </div>
+              </div>        
+              <div className="container mb-5 flip-card">
+                <div className="row g-0 ">
+                  <div className="col-md-4 border rounded">
+                    <img  src={img5}
+                    className="img-fluid rounded-start" alt="Elderly"/>
+                  </div>
+                  <div className="col-md-6"style={{backgroundColor:"#fff2f7"}}>
+                    <div className="card-body">
+                      <h5 className="card-title"style={{color:"#168eca"}}>Benefit of playing classical Guitar:</h5>
+                      <p className="card-text desc">   • Improved self-discipline through practicing certain skills over and over<br></br>
+    • Stronger connections between left and right brain functions<br></br>
+    • Improved right and left hand coordination<br></br>
+    • Develops self-discipline</p>
+
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       <div className="container mb-5">
         <h1 className="mb-5 fw-bold display-4" style={{ color: "#ee4a8b" }}>
           About Our Instructors
