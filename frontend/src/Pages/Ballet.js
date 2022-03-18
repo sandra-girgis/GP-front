@@ -120,7 +120,7 @@ export const Ballet = () => {
             <div className="col-md-4">
               <img
                 src={img1}
-                className="img-fluid rounded-start rounded-circle flute"
+                className="img-fluid rounded-start rounded-circle flut"
                 style={{ width: "15rem" }}
                 alt="instractors"
               />
