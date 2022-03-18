@@ -50,7 +50,7 @@ class Instructor extends Component {
               src={
                 Picture
                   .replaceAll("http://localhost:8000", "")}
-                  className="mt-5 ms-5 ins_image" alt="..."
+                  className="ms-5 ins_image" alt="..."
             />
         </div>
         <br></br>

@@ -285,7 +285,7 @@ th {
   color: #ee4a8b;
 }
 .ins_image {
-  width: 25%;
+  width: 22%;
   border-radius: 50%;
   shape-outside: circle(50%);
   /* clip-path: circle(9rem at 17rem 9rem); */

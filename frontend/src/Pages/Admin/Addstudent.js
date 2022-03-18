@@ -10,7 +10,7 @@ const [password, setPassword] = useState(null);
 const [email, setEmail] = useState(null);
 const [phoneNumber, setPhoneNumber] = useState(null);
 const [ClassName, setClass] = useState(null);
-const [PaymentStatus, setPaymentStatus] = useState(null);
+const [PaymentStatus, setPaymentStatus] = useState(false);
 
 const handleChange = (event) => {
     setClass({ ClassName: event.target.value });
@@ -67,7 +67,7 @@ return (
         <Form.Label style={{ color: "#168eca" }}>Student Name</Form.Label>
         <Form.Control
             as="input"
-            placeholder="Enter Instructor Name"
+            placeholder="Enter Student Name"
             name="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
