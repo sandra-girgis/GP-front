@@ -95,7 +95,7 @@ return (
                     Ballet
                 </Link>
                 </p>
-                <p>
+                {/* <p>
                 <Link
                     className="text-reset text_color pink"
                     exact
@@ -103,7 +103,7 @@ return (
                 >
                     Theatre
                 </Link>
-                </p>
+                </p> */}
             </div>
 
             <div className="col-md-3 col-lg-2 mx-auto text_color">

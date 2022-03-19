@@ -98,8 +98,8 @@ function Example(props) {
           View
         </Button>
         <Modal show={show} onHide={handleClose} animation={false}>
-          <Modal.Header closeButton>
-            <Modal.Title>{props.name}</Modal.Title>
+          <Modal.Header >
+            <Modal.Title className="fs-6">{props.name}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Carousel activeIndex={index} onSelect={handleSelect}>

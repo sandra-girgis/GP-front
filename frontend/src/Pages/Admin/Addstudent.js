@@ -134,7 +134,7 @@ return (
                     />
                 </Form.Group>
         <Button
-        className="btn-outline-light btn-lg ms-5 mb-5 butt"
+        className="btn-outline-light btn-lg mt-4 mb-4 butt"
         style={{ backgroundColor: "#168eca" }}
         onClick={addNewStudent}
         >
